@@ -5,11 +5,13 @@ jobs:
 - job: Test
   pool:
     vmImage: 'windows-latest'
+  variables:
+    CX_APIKEY: $(env:APIKEY) 
   steps:
   - task: PowerShell@2
     inputs:
       targetType: 'inline'
-      script: './cx.exe scan create -s . --project-name myadotest --branch main --apikey ${env:APIKEY} '
+      script: './cx.exe scan create -s . --project-name myadotest --branch main --debug'
 
   # - task: Checkmarx AST@2
   #   inputs:
