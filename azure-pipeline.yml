@@ -7,9 +7,10 @@ resources:
       image: windows-2019
       memory: 4096 # Set memory limit to 4 GB
 steps:
- - task: checkmarx.checkmarx-ast-azure-plugin.cx-scan-task.Checkmarx AST@2
-  displayName: 'Checkmarx AST'
+- task: Checkmarx AST@2
   inputs:
     CheckmarxService: 'EU PROD21'
+    projectName: '$(Build.Repository.Name)'
+    branchName: '$(Build.SourceBranchName)'
     tenantName: 'cxast_rnd_projects_scans'
     additionalParams: '--debug'
