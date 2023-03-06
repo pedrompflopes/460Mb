@@ -4,7 +4,7 @@ pool:
 jobs:
 - job: Test
   pool:
-    vmImage: 'windows-latest'
+    vmImage: 'windows-2019'
   steps:
   - task: PowerShell@2
     env:
