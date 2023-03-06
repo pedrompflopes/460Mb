@@ -1,11 +1,9 @@
 pool:
   name: Azure Pipelines
 
-resources:
-  containers:
-    - container: mycontainer
-      image: windows-2019
-      memory: 4096 # Set memory limit to 4 GB
+variables:
+  MaxMemoryPerShellMB: "3072"
+  
 steps:
 - task: Checkmarx AST@2
   inputs:
@@ -14,4 +12,3 @@ steps:
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cxast_rnd_projects_scans'
     additionalParams: '--debug'
-  container: mycontainer
