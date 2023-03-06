@@ -1,0 +1,8 @@
+.taglib-flags {
+  display: inline-block; }
+  .taglib-flags span a {
+    margin-right: 2px; }
+  .taglib-flags .icon-flag {
+    color: #999; }
+  .taglib-flags .flag-enable:hover .icon-flag {
+    color: #C00; }

@@ -1,0 +1,168 @@
+﻿ package PackageNo761171435;import _html_portlet_init_jsp;import _html_portlet_navigation_init_ext_jsp; public class configuration_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\configuration.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\configuration.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ String portletResource = ParamUtil.getString(request, "portletResource"); /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ String bulletStyle = PrefsParamUtil.getString(portletPreferences, renderRequest, "bulletStyle", GetterUtil.getString(themeDisplay.getThemeSetting("bullet-style"), "dots")); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ String displayStyle = PrefsParamUtil.getString(portletPreferences, renderRequest, "displayStyle", PropsValues.NAVIGATION_DISPLAY_STYLE_DEFAULT); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ String headerType = PrefsParamUtil.getString(portletPreferences, renderRequest, "headerType", "root-layout"); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ String includedLayouts = PrefsParamUtil.getString(portletPreferences, renderRequest, "includedLayouts", "current"); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ boolean nestedChildren = PrefsParamUtil.getBoolean(portletPreferences, renderRequest, "nestedChildren", true); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ boolean preview = PrefsParamUtil.getBoolean(portletPreferences, renderRequest, "preview"); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ int rootLayoutLevel = PrefsParamUtil.getInteger(portletPreferences, renderRequest, "rootLayoutLevel", 1); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ String rootLayoutType = PrefsParamUtil.getString(portletPreferences, renderRequest, "rootLayoutType", "absolute"); /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\navigation\configuration.jsp */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						for (String displayStyleOption : PropsValues.NAVIGATION_DISPLAY_STYLE_OPTIONS) {
+     						
+
+
+
+   
+     						}
+     						
+
+
+
+
+
+
+  
+     					String[] bulletStyleOptions = theme.getSettingOptions("bullet-style");
+     					
+
+
+
+
+
+
+
+    
+     							for (String bulletStyleOption : bulletStyleOptions) {
+     							
+
+
+
+    
+     							}
+     							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						for (int i = 0; i <= 4; i++) {
+     						
+
+
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( portletResource )+response.write(request.getAttribute(" portletResource "));
+
+  response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+     response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+     response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+     response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+     response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+
+
+
+
+    response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+    response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+    response.write( HtmlUtil.escapeJS(portletResource) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResource) );
+}
+
+}

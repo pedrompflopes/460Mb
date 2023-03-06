@@ -1,0 +1,24 @@
+﻿ package PackageNo2118151505; public class ckeditor_creole_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( Boolean.TRUE.toString() )+response.write(request.getAttribute(" Boolean").TRUE.toString() );
+}
+
+}

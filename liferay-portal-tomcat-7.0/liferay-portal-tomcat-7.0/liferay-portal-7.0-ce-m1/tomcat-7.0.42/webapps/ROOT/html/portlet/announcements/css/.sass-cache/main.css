@@ -1,0 +1,31 @@
+.portlet-alerts .entry {
+  border: 6px solid #C00;
+  margin: 8px 0;
+  padding: 6px; }
+.portlet-alerts .entry-content {
+  display: block;
+  padding: 2px; }
+.portlet-alerts .entry-scope {
+  color: #CCC;
+  display: block; }
+
+.portlet-announcements .entry {
+  margin: 4px 0 1.2em;
+  padding-bottom: 0.5em; }
+.portlet-announcements .entry-content {
+  display: block;
+  margin-bottom: 0.5em;
+  padding: 2px; }
+.portlet-announcements .entry-scope {
+  color: #555;
+  display: block; }
+
+.portlet-announcements .important, .portlet-alerts .important {
+  font-weight: normal; }
+.portlet-announcements .entry-title, .portlet-alerts .entry-title {
+  display: block;
+  margin-bottom: 0;
+  position: relative; }
+.portlet-announcements .read-entries .entry-title, .portlet-alerts .read-entries .entry-title {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5; }

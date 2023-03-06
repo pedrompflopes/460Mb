@@ -1,0 +1,58 @@
+﻿ package PackageNo1049994240;import _html_taglib_taglib_init_jsp;import _html_taglib_aui_panel_init_ext_jspf; public class end_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\end.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\end.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ boolean collapsed = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:panel:collapsed"))); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ boolean collapsible = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:panel:collapsible"))); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ java.lang.String id = GetterUtil.getString((java.lang.String)request.getAttribute("aui:panel:id")); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ java.lang.String label = GetterUtil.getString((java.lang.String)request.getAttribute("aui:panel:label")); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ boolean localizeLabel = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:panel:localizeLabel")), true); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ Map<String, Object> dynamicAttributes = (Map<String, Object>)request.getAttribute("aui:panel:dynamicAttributes"); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ Map<String, Object> scopedAttributes = (Map<String, Object>)request.getAttribute("aui:panel:scopedAttributes"); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\panel\end.jsp */
+
+
+
+
+
+
+  response.write( id )+response.write(request.getAttribute(" id "));
+response.write( collapsed )+response.write(request.getAttribute(" collapsed "));
+  response.write( collapsible )+response.write(request.getAttribute(" collapsible "));
+   response.write( id )+response.write(request.getAttribute(" id "));
+      response.write( label )+response.write(request.getAttribute(" label "));response.write( localizeLabel )+response.write(request.getAttribute(" localizeLabel "));
+
+
+
+
+ 
+     				for (int i = 0; i < toolTags.size(); i++) {
+     					ToolTag toolTag = toolTags.get(i);
+     				
+
+
+       response.write( toolTag.getIcon() );
+     response.write( toolTag.getId() );
+
+
+  response.write( toolTag.getHandler() );
+
+
+
+
+
+
+
+
+
+ 
+     				}
+     				
+}
+
+}

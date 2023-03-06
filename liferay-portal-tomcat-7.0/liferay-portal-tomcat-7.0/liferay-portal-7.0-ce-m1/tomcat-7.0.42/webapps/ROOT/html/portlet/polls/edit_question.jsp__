@@ -1,0 +1,193 @@
+﻿ package PackageNo430886622;import _html_portlet_init_jsp;import _html_portlet_polls_init_ext_jsp;import com.liferay.portlet.polls.DuplicateVoteException;import com.liferay.portlet.polls.NoSuchChoiceException;import com.liferay.portlet.polls.NoSuchQuestionException;import com.liferay.portlet.polls.QuestionChoiceException;import com.liferay.portlet.polls.QuestionDescriptionException;import com.liferay.portlet.polls.QuestionExpirationDateException;import com.liferay.portlet.polls.QuestionTitleException;import com.liferay.portlet.polls.action.EditQuestionAction;import com.liferay.portlet.polls.model.PollsChoice;import com.liferay.portlet.polls.model.PollsQuestion;import com.liferay.portlet.polls.model.PollsVote;import com.liferay.portlet.polls.service.PollsChoiceLocalServiceUtil;import com.liferay.portlet.polls.service.PollsQuestionLocalServiceUtil;import com.liferay.portlet.polls.service.PollsVoteLocalServiceUtil;import com.liferay.portlet.polls.service.permission.PollsPermission;import com.liferay.portlet.polls.service.permission.PollsQuestionPermission;import com.liferay.portlet.polls.util.PollsUtil; public class edit_question_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\edit_question.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\edit_question.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone); /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\polls\edit_question.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     String referringPortletResource = ParamUtil.getString(request, "referringPortletResource");
+     
+     PollsQuestion question = (PollsQuestion)request.getAttribute(WebKeys.POLLS_QUESTION);
+     
+     long questionId = BeanParamUtil.getLong(question, request, "questionId");
+     
+     boolean neverExpire = ParamUtil.getBoolean(request, "neverExpire", true);
+     
+     if (question != null) {
+     	if (question.getExpirationDate() != null) {
+     		neverExpire = false;
+     	}
+     }
+     
+     List choices = new ArrayList();
+     
+     int oldChoicesCount = 0;
+     
+     if (question != null) {
+     	choices = PollsChoiceLocalServiceUtil.getChoices(questionId);
+     
+     	oldChoicesCount = choices.size();
+     }
+     
+     int choicesCount = ParamUtil.getInteger(request, "choicesCount", choices.size());
+     
+     if (choicesCount < 2) {
+     	choicesCount = 2;
+     }
+     
+     int choiceName = ParamUtil.getInteger(request, "choiceName");
+     
+     boolean deleteChoice = false;
+     
+     if (choiceName > 0) {
+     	deleteChoice = true;
+     }
+     
+     boolean showHeader = ParamUtil.getBoolean(request, "showHeader", true);
+     
+
+  response.write( themeDisplay.getRefererPlid() )+response.write(request.getAttribute(" themeDisplay").getRefererPlid() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( redirect )+response.write(request.getAttribute(" redirect "));
+    response.write( (question == null) );
+    response.write( (question == null) ? "new-poll" : question.getTitle(locale) );
+
+
+
+response.write( QuestionChoiceException.class )+response.write(request.getAttribute(" QuestionChoiceException").class );
+response.write( QuestionDescriptionException.class )+response.write(request.getAttribute(" QuestionDescriptionException").class );
+response.write( QuestionExpirationDateException.class )+response.write(request.getAttribute(" QuestionExpirationDateException").class );
+response.write( QuestionTitleException.class )+response.write(request.getAttribute(" QuestionTitleException").class );
+
+    response.write( question );response.write( PollsQuestion.class )+response.write(request.getAttribute(" PollsQuestion").class );
+
+
+
+
+
+
+
+
+
+
+
+     			for (int i = 1; i <= choicesCount; i++) {
+     				char c = (char)(96 + i);
+     
+     				PollsChoice choice = null;
+     
+     				String paramName = null;
+     
+     				if (deleteChoice && (i >= choiceName)) {
+     					paramName = EditQuestionAction.CHOICE_DESCRIPTION_PREFIX + ((char)(96 + i + 1));
+     				}
+     				else {
+     					paramName = EditQuestionAction.CHOICE_DESCRIPTION_PREFIX + c;
+     				}
+     
+     				if ((question != null) && ((i - 1) < choices.size())) {
+     					choice = (PollsChoice)choices.get(i - 1);
+     				}
+     			
+
+ response.write( (i == choicesCount) ? "last-choice" : StringPool.BLANK );
+response.write( choice );response.write( PollsChoice.class );
+
+
+
+
+
+
+
+
+
+
+
+     			}
+     			
+
+
+
+
+
+
+
+
+
+  response.write( PollsQuestion.class.getName() )+response.write(request.getAttribute(" PollsQuestion").class.getName() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( choicesCount + 1 );
+
+response.write( true )+response.write(request.getAttribute(" true "));
+
+  response.write( EditQuestionAction.CHOICE_DESCRIPTION_PREFIX + (char)(96 + choicesCount + 1) );
+
+
+  response.write( addPollChoiceURL )+response.write(request.getAttribute(" addPollChoiceURL "));
+
+
+
+response.write( choicesCount - 1 );
+      response.write( choiceName );
+
+
+
+
+
+  response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( (question == null) ? Constants.ADD : Constants.UPDATE );
+
+
+
+
+
+     
+     if (question != null) {
+     	PortalUtil.addPortletBreadcrumbEntry(request, question.getTitle(locale), null);
+     	PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, "edit"), currentURL);
+     }
+     else {
+     	PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, "add-poll"), currentURL);
+     }
+     
+}
+
+}

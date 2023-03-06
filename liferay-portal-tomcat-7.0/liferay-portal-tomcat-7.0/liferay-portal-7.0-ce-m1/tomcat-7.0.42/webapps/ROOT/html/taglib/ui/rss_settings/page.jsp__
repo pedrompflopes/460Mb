@@ -1,0 +1,85 @@
+﻿ package PackageNo2059492279;import _html_taglib_init_jsp;import com.liferay.util.RSSUtil; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\rss_settings\page.jsp */
+
+     
+     int delta = GetterUtil.getInteger((String)request.getAttribute("liferay-ui:rss-settings:delta"));
+     String displayStyle = (String)request.getAttribute("liferay-ui:rss-settings:displayStyle");
+     String[] displayStyles = (String[])request.getAttribute("liferay-ui:rss-settings:displayStyles");
+     boolean enabled = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:rss-settings:enabled"));
+     String feedType = (String)request.getAttribute("liferay-ui:rss-settings:feedType");
+     String name = (String)request.getAttribute("liferay-ui:rss-settings:name");
+     boolean nameEnabled = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:rss-settings:nameEnabled"));
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     				for (String curDisplayStyle : displayStyles) {
+     				
+
+
+
+ 
+     				}
+     				
+
+
+
+
+
+ 
+     				for (String type : RSSUtil.FEED_TYPES) {
+     				
+
+
+
+ 
+     				}
+     				
+}
+
+}

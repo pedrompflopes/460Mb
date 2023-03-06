@@ -1,0 +1,99 @@
+﻿ package PackageNo335379638;import _html_common_init_jsp;import _html_portlet_init_ext_jsp;import com.liferay.portal.kernel.editor.EditorUtil;import com.liferay.portal.kernel.template.TemplateConstants;import com.liferay.portal.kernel.template.TemplateVariableDefinition;import com.liferay.portal.kernel.template.TemplateVariableGroup;import com.liferay.portal.kernel.template.comparator.TemplateHandlerComparator;import com.liferay.portal.template.TemplateContextHelper;import com.liferay.portlet.documentlibrary.model.DLFileEntryMetadata;import com.liferay.portlet.dynamicdatalists.model.DDLRecordSet;import com.liferay.portlet.dynamicdatamapping.RequiredStructureException;import com.liferay.portlet.dynamicdatamapping.RequiredTemplateException;import com.liferay.portlet.dynamicdatamapping.StructureDefinitionException;import com.liferay.portlet.dynamicdatamapping.StructureDuplicateElementException;import com.liferay.portlet.dynamicdatamapping.StructureFieldException;import com.liferay.portlet.dynamicdatamapping.StructureNameException;import com.liferay.portlet.dynamicdatamapping.TemplateNameException;import com.liferay.portlet.dynamicdatamapping.TemplateScriptException;import com.liferay.portlet.dynamicdatamapping.TemplateSmallImageNameException;import com.liferay.portlet.dynamicdatamapping.TemplateSmallImageSizeException;import com.liferay.portlet.dynamicdatamapping.model.DDMStructureConstants;import com.liferay.portlet.dynamicdatamapping.model.DDMTemplateConstants;import com.liferay.portlet.dynamicdatamapping.search.StructureDisplayTerms;import com.liferay.portlet.dynamicdatamapping.search.StructureSearch;import com.liferay.portlet.dynamicdatamapping.search.StructureSearchTerms;import com.liferay.portlet.dynamicdatamapping.search.TemplateDisplayTerms;import com.liferay.portlet.dynamicdatamapping.search.TemplateSearch;import com.liferay.portlet.dynamicdatamapping.search.TemplateSearchTerms;import com.liferay.portlet.dynamicdatamapping.service.DDMStorageLinkLocalServiceUtil;import com.liferay.portlet.dynamicdatamapping.service.DDMStructureServiceUtil;import com.liferay.portlet.dynamicdatamapping.service.DDMTemplateServiceUtil;import com.liferay.portlet.dynamicdatamapping.service.permission.DDMPermission;import com.liferay.portlet.dynamicdatamapping.service.permission.DDMStructurePermission;import com.liferay.portlet.dynamicdatamapping.storage.StorageType;import com.liferay.portlet.dynamicdatamapping.util.DDMDisplay;import com.liferay.portlet.dynamicdatamapping.util.DDMDisplayRegistryUtil;import com.liferay.portlet.dynamicdatamapping.util.DDMTemplateHelperUtil;import com.liferay.portlet.dynamicdatamapping.util.DDMUtil;import com.liferay.portlet.dynamicdatamapping.util.DDMXSDUtil;import java.util.StringTokenizer; public class init_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ PortletMode portletMode = liferayPortletRequest.getPortletMode(); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ WindowState windowState = liferayPortletRequest.getWindowState(); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ PortletURL currentURLObj = PortletURLUtil.getCurrent(liferayPortletRequest, liferayPortletResponse); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ String currentURL = currentURLObj.toString(); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init.jsp */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     PortalPreferences portalPreferences = PortletPreferencesFactoryUtil.getPortalPreferences(request);
+     
+     String refererPortletName = ParamUtil.getString(request, "refererPortletName", portletName);
+     String refererWebDAVToken = ParamUtil.getString(request, "refererWebDAVToken", portletConfig.getInitParameter("refererWebDAVToken"));
+     String scopeTitle = ParamUtil.getString(request, "scopeTitle");
+     boolean showAncestorScopes = ParamUtil.getBoolean(request, "showAncestorScopes");
+     boolean showManageTemplates = ParamUtil.getBoolean(request, "showManageTemplates", true);
+     boolean showToolbar = ParamUtil.getBoolean(request, "showToolbar", true);
+     
+     DDMDisplay ddmDisplay = DDMDisplayRegistryUtil.getDDMDisplay(refererPortletName);
+     
+     long scopeClassNameId = PortalUtil.getClassNameId(ddmDisplay.getStructureType());
+     
+     String scopeAvailableFields = ddmDisplay.getAvailableFields();
+     String scopeStorageType = ddmDisplay.getStorageType();
+     String scopeTemplateType = ddmDisplay.getTemplateType();
+     
+     String storageTypeValue = StringPool.BLANK;
+     
+     if (scopeStorageType.equals("expando")) {
+     	storageTypeValue = StorageType.EXPANDO.getValue();
+     }
+     else if (scopeStorageType.equals("xml")) {
+     	storageTypeValue = StorageType.XML.getValue();
+     }
+     
+     String templateTypeValue = StringPool.BLANK;
+     
+     if (scopeTemplateType.equals(DDMTemplateConstants.TEMPLATE_TYPE_DISPLAY)) {
+     	templateTypeValue = DDMTemplateConstants.TEMPLATE_TYPE_DISPLAY;
+     }
+     else if (scopeTemplateType.equals(DDMTemplateConstants.TEMPLATE_TYPE_FORM)) {
+     	templateTypeValue = DDMTemplateConstants.TEMPLATE_TYPE_FORM;
+     }
+     
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init.jsp */ /* 96?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init-ext.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 96?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_mapping\init.jsp */
+}
+
+}

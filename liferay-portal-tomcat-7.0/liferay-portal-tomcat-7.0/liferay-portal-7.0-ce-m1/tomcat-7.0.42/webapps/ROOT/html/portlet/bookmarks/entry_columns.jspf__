@@ -1,0 +1,75 @@
+﻿ package PackageNo2052858702; public class entry_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     for (int j = 0; j < entryColumns.length; j++) {
+     	String bookmarksEntryColumn = entryColumns[j];
+     
+
+
+
+
+
+     			String align = SearchEntry.DEFAULT_ALIGN;
+     
+     			if ((j + 1) == entryColumns.length) {
+     				align = "right";
+     			}
+     			
+
+
+     response.write( align )+response.write(request.getAttribute(" align "));
+
+
+
+
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+    response.write( bookmarksEntryColumn );
+     response.write( entry.getModifiedDate() )+response.write(request.getAttribute(" entry").getModifiedDate() );
+
+
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+    response.write( bookmarksEntryColumn );
+     response.write( HtmlUtil.escape(entry.getName()) )+response.write(request.getAttribute(" HtmlUtil").escape(entry.getName()) );
+
+
+
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+    response.write( bookmarksEntryColumn );
+     response.write( HtmlUtil.escape(entry.getUrl()) )+response.write(request.getAttribute(" HtmlUtil").escape(entry.getUrl()) );
+
+
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+    response.write( bookmarksEntryColumn );
+     response.write( String.valueOf(entry.getVisits()) )+response.write(request.getAttribute(" String").valueOf(entry.getVisits()) );
+
+
+
+
+     
+     }
+     
+}
+
+}

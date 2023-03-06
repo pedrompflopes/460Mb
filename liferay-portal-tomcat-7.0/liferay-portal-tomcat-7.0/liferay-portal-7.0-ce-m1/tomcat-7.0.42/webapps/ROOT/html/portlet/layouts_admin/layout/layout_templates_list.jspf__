@@ -1,0 +1,42 @@
+﻿ package PackageNo549308295; public class layout_templates_list_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		layoutTemplates = PluginUtil.restrictPlugins(layoutTemplates, user);
+     
+     		for (int i = 0; i < layoutTemplates.size(); i++) {
+     			LayoutTemplate layoutTemplate = layoutTemplates.get(i);
+     		
+
+
+     response.write( layoutTemplateIdPrefix + "layoutTemplateId" + i );
+
+
+    response.write( layoutTemplateId.equals(layoutTemplate.getLayoutTemplateId()) ? "layout-selected" : StringPool.BLANK ); response.write( layoutTemplateIdPrefix + "layoutTemplateId" + i );     response.write( layoutTemplate.getStaticResourcePath() );response.write( HtmlUtil.escapeAttribute(layoutTemplate.getThumbnailPath()) );
+
+     response.write( HtmlUtil.escape(layoutTemplate.getName(locale)) );
+
+
+
+       
+     		}
+     		
+}
+
+}

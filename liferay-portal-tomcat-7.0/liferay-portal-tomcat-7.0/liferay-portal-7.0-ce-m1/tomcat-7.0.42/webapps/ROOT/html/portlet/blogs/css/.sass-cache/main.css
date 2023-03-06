@@ -1,0 +1,91 @@
+.portlet-blogs .lfr-blogs-small-image-content {
+  background-color: #F5F5F5;
+  padding: 5px; }
+  .portlet-blogs .lfr-blogs-small-image-content th {
+    padding: 5px;
+    white-space: nowrap;
+    width: 1%; }
+.portlet-blogs .lfr-blogs-small-image-content img {
+  margin-right: 1em; }
+.portlet-blogs .taglib-custom-attributes-list {
+  margin-bottom: 1em; }
+.portlet-blogs .taglib-custom-attributes-list label {
+  display: block; }
+.portlet-blogs .entry-author {
+  border-right: 1px solid #999;
+  color: #999;
+  float: left;
+  font-weight: bold;
+  line-height: 20px;
+  margin-right: 10px;
+  padding-right: 10px; }
+.portlet-blogs .entry-body {
+  margin-bottom: 10px; }
+.portlet-blogs .entry-date {
+  color: #999; }
+.portlet-blogs .entry-footer:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden; }
+.portlet-blogs .taglib-asset-categories-summary, .portlet-blogs .taglib-asset-tags-summary {
+  border-left: 1px solid #999;
+  padding-left: 10px; }
+.portlet-blogs .entry-title {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em; }
+.portlet-blogs .entry.draft, .portlet-blogs .entry.pending, .portlet-blogs .entry.scheduled {
+  background: #EEE;
+  border: 1px solid #CCC;
+  color: #555;
+  padding: 5px; }
+  .portlet-blogs .entry.draft h3, .portlet-blogs .entry.pending h3, .portlet-blogs .entry.scheduled h3 {
+    margin-top: 0; }
+.portlet-blogs .entry-navigation {
+  background: #EEE;
+  border-top: 1px solid #CCC;
+  margin: 15px 0 0;
+  overflow: hidden;
+  padding: 5px; }
+  .portlet-blogs .entry-navigation .previous {
+    float: left; }
+  .portlet-blogs .entry-navigation .next {
+    float: right; }
+.portlet-blogs .preview {
+  background: #FFC;
+  border: 1px dotted gray;
+  padding: 3px; }
+.portlet-blogs .search-form {
+  float: right; }
+.portlet-blogs .search-root-entry {
+  color: #999;
+  float: right; }
+.portlet-blogs .stats {
+  color: #999;
+  float: left;
+  padding-right: 10px; }
+.portlet-blogs .subscribe {
+  margin-bottom: 1.5em;
+  text-align: right; }
+.portlet-blogs .taglib-flags {
+  border-left: 1px solid #999;
+  color: #999;
+  padding-left: 10px;
+  padding-right: 10px; }
+.portlet-blogs .taglib-ratings.stars {
+  float: left; }
+.portlet-blogs .taglib-social-bookmarks {
+  float: right; }
+.portlet-blogs .form-search:after {
+  clear: both;
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden; }
+.portlet-blogs #blogsCommentsPanelContainer {
+  border-width: 0; }
+
+.social-boomarks-options {
+  margin-left: 2em; }

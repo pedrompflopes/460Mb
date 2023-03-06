@@ -1,0 +1,172 @@
+﻿ package PackageNo986542639;import _html_portlet_init_jsp;import _html_portlet_dockbar_init_ext_jsp;import com.liferay.portal.util.PortletCategoryUtil;import com.liferay.taglib.aui.AUIUtil;import java.util.regex.Matcher;import java.util.regex.Pattern; public class add_application_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\add_application.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\add_application.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\add_application.jsp */
+
+     
+     PortletURL refererURL = renderResponse.createActionURL();
+     
+     refererURL.setParameter("updateLayout", "true");
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		String panelContainerId = "addApplicationPanelContainer";
+     
+     		List<Portlet> portlets = new ArrayList<Portlet>();
+     
+     		for (String portletId : PropsValues.DOCKBAR_ADD_PORTLETS) {
+     			Portlet portlet = PortletLocalServiceUtil.getPortletById(user.getCompanyId(), portletId);
+     
+     			if ((portlet != null) && portlet.isInclude() && portlet.isActive() && PortletPermissionUtil.contains(permissionChecker, layout, portlet, ActionKeys.ADD_TO_PAGE)) {
+     				portlets.add(portlet);
+     			}
+     		}
+     
+     		int portletCategoryIndex = 0;
+     		
+
+   response.write( BrowserSnifferUtil.isMobile(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isMobile(request) );response.write( panelContainerId )+response.write(request.getAttribute(" panelContainerId "));
+
+
+ 
+     				String panelId = renderResponse.getNamespace() + "portletCategory" + portletCategoryIndex;
+     				
+
+
+      response.write( layout.isTypePortlet() )+response.write(request.getAttribute(" layout").isTypePortlet() ); response.write( true )+response.write(request.getAttribute(" true "));response.write( panelId )+response.write(request.getAttribute(" panelId "));response.write( true )+response.write(request.getAttribute(" true "));response.write( LanguageUtil.get(request, "highlighted") );
+
+
+    
+     							for (Portlet portlet : portlets) {
+     								boolean portletInstanceable = portlet.isInstanceable();
+     
+     								boolean portletUsed = layoutTypePortlet.hasPortletId(portlet.getPortletId());
+     
+     								boolean portletLocked = (!portletInstanceable && portletUsed);
+     
+     								Map<String, Object> data = new HashMap<String, Object>();
+     
+     								data.put("draggable", "true");
+     								data.put("id", renderResponse.getNamespace() + "portletItem" + portlet.getPortletId());
+     								data.put("instanceable", portletInstanceable);
+     								data.put("plid", plid);
+     								data.put("portlet-id", portlet.getPortletId());
+     								data.put("title", PortalUtil.getPortletTitle(portlet, application, locale));
+     
+     								String cssClass = "drag-content-item";
+     
+     								if (portletLocked) {
+     									cssClass += " lfr-portlet-used";
+     								}
+     							
+
+
+response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );response.write( cssClass );
+     response.write( portletInstanceable ? "icon-th-large" : "icon-stop" );
+
+    response.write( PortalUtil.getPortletTitle(portlet, application, locale) );
+
+
+     
+     								data.remove("draggable");
+     								
+
+response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );response.write( portletLocked ? "lfr-portlet-used" : StringPool.BLANK );
+
+
+
+
+    
+     							}
+     							
+
+
+
+
+
+ 
+     				portletCategoryIndex++;
+     				
+
+
+
+
+     			PortletCategory portletCategory = (PortletCategory)WebAppPool.get(company.getCompanyId(), WebKeys.PORTLET_CATEGORY);
+     
+     			portletCategory = PortletCategoryUtil.getRelevantPortletCategory(permissionChecker, user.getCompanyId(), layout, portletCategory, layoutTypePortlet);
+     
+     			List<PortletCategory> categories = ListUtil.fromCollection(portletCategory.getCategories());
+     
+     			categories = ListUtil.sort(categories, new PortletCategoryComparator(locale));
+     
+     			for (PortletCategory curPortletCategory : categories) {
+     				if (curPortletCategory.isHidden()) {
+     					continue;
+     				}
+     
+     				request.setAttribute(WebKeys.PORTLET_CATEGORY, curPortletCategory);
+     				request.setAttribute(WebKeys.PORTLET_CATEGORY_INDEX, String.valueOf(portletCategoryIndex));
+     			
+
+
+ response.write( panelContainerId )+response.write(request.getAttribute(" panelContainerId "));
+
+
+
+     				portletCategoryIndex++;
+     			}
+     			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			long controlPanelPlid = PortalUtil.getControlPanelPlid(company.getCompanyId());
+     
+     			PortletURLImpl marketplaceURL = new PortletURLImpl(request, PortletKeys.MARKETPLACE_STORE, controlPanelPlid, PortletRequest.RENDER_PHASE);
+     			
+}
+
+}

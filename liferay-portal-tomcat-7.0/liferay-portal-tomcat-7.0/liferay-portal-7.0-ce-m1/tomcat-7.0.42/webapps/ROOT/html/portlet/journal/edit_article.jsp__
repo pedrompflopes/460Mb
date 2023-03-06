@@ -1,0 +1,380 @@
+﻿ package PackageNo529740313;import _html_portlet_init_jsp;import _html_portlet_journal_init_ext_jsp;import com.liferay.portal.kernel.search.SearchResult;import com.liferay.portal.kernel.xml.Document;import com.liferay.portal.kernel.xml.Element;import com.liferay.portal.kernel.xml.Node;import com.liferay.portal.kernel.xml.SAXReaderUtil;import com.liferay.portal.kernel.xml.XPath;import com.liferay.portlet.documentlibrary.util.JournalSearcher;import com.liferay.portlet.dynamicdatamapping.NoSuchTemplateException;import com.liferay.portlet.dynamicdatamapping.StorageFieldRequiredException;import com.liferay.portlet.dynamicdatamapping.service.DDMStructureServiceUtil;import com.liferay.portlet.dynamicdatamapping.service.DDMTemplateServiceUtil;import com.liferay.portlet.dynamicdatamapping.service.permission.DDMStructurePermission;import com.liferay.portlet.journal.ArticleContentException;import com.liferay.portlet.journal.ArticleContentSizeException;import com.liferay.portlet.journal.ArticleDisplayDateException;import com.liferay.portlet.journal.ArticleExpirationDateException;import com.liferay.portlet.journal.ArticleIdException;import com.liferay.portlet.journal.ArticleSmallImageNameException;import com.liferay.portlet.journal.ArticleSmallImageSizeException;import com.liferay.portlet.journal.ArticleTitleException;import com.liferay.portlet.journal.ArticleTypeException;import com.liferay.portlet.journal.ArticleVersionException;import com.liferay.portlet.journal.DuplicateArticleIdException;import com.liferay.portlet.journal.DuplicateFeedIdException;import com.liferay.portlet.journal.DuplicateFolderNameException;import com.liferay.portlet.journal.FeedContentFieldException;import com.liferay.portlet.journal.FeedIdException;import com.liferay.portlet.journal.FeedNameException;import com.liferay.portlet.journal.FeedTargetLayoutFriendlyUrlException;import com.liferay.portlet.journal.FeedTargetPortletIdException;import com.liferay.portlet.journal.FolderNameException;import com.liferay.portlet.journal.InvalidDDMStructureException;import com.liferay.portlet.journal.NoSuchFolderException;import com.liferay.portlet.journal.asset.JournalArticleAssetRenderer;import com.liferay.portlet.journal.model.JournalArticleResource;import com.liferay.portlet.journal.model.JournalFeed;import com.liferay.portlet.journal.model.JournalFeedConstants;import com.liferay.portlet.journal.model.JournalFolder;import com.liferay.portlet.journal.model.JournalFolderConstants;import com.liferay.portlet.journal.model.impl.JournalArticleImpl;import com.liferay.portlet.journal.search.ArticleDisplayTerms;import com.liferay.portlet.journal.search.EntriesChecker;import com.liferay.portlet.journal.search.FeedDisplayTerms;import com.liferay.portlet.journal.search.FeedSearch;import com.liferay.portlet.journal.search.FeedSearchTerms;import com.liferay.portlet.journal.service.JournalArticleResourceLocalServiceUtil;import com.liferay.portlet.journal.service.JournalFeedLocalServiceUtil;import com.liferay.portlet.journal.service.JournalFolderLocalServiceUtil;import com.liferay.portlet.journal.service.JournalFolderServiceUtil;import com.liferay.portlet.journal.service.permission.JournalArticlePermission;import com.liferay.portlet.journal.service.permission.JournalFeedPermission;import com.liferay.portlet.journal.service.permission.JournalFolderPermission;import com.liferay.portlet.journal.service.permission.JournalPermission;import com.liferay.portlet.journal.util.JournalConverterUtil;import com.liferay.portlet.journal.util.JournalUtil;import com.liferay.portlet.journal.util.comparator.ArticleVersionComparator;import com.liferay.util.RSSUtil; public class edit_article_jsp {  /* 1 */ private String _getSectionJsp(String name) { /* 384 */ 	return TextFormatter.format(name, TextFormatter.N); /* 385 */ } /* 386 */ private static final String[] _CATEGORY_NAMES = {""}; /* 388 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\edit_article.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\edit_article.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 49?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 50?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 51?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 52?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 53?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 54?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 55?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 56?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 57?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 58?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 59?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 60?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 61?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 62?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 63?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 64?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 65?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 66?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 67?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 68?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 69?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 70?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 71?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 72?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 73?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 74?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 75?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 76?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 77?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ PortalPreferences portalPreferences = PortletPreferencesFactoryUtil.getPortalPreferences(liferayPortletRequest); /* 78?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 79?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ String[] displayViews = StringUtil.split(PrefsParamUtil.getString(portletPreferences, liferayPortletRequest, "displayViews", StringUtil.merge(PropsValues.JOURNAL_DISPLAY_VIEWS))); /* 80?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 81?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone); /* 82?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 83?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 84?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ /* 85?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\edit_article.jsp */
+
+     
+     String tabs2 = ParamUtil.getString(request, "tabs2");
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     // Make sure the redirect is correct. This is a workaround for a layout that
+     // has both the Journal and Journal Content portlets and the user edits an
+     // article through the Journal Content portlet and then hits cancel.
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     String backURL = ParamUtil.getString(request, "backURL");
+     
+     String portletResource = ParamUtil.getString(request, "portletResource");
+     
+     String referringPortletResource = ParamUtil.getString(request, "referringPortletResource");
+     
+     JournalArticle article = (JournalArticle)request.getAttribute(WebKeys.JOURNAL_ARTICLE);
+     
+     long groupId = BeanParamUtil.getLong(article, request, "groupId", scopeGroupId);
+     
+     long folderId = BeanParamUtil.getLong(article, request, "folderId", JournalFolderConstants.DEFAULT_PARENT_FOLDER_ID);
+     
+     long classNameId = BeanParamUtil.getLong(article, request, "classNameId");
+     long classPK = BeanParamUtil.getLong(article, request, "classPK");
+     
+     String articleId = BeanParamUtil.getString(article, request, "articleId");
+     
+     double version = BeanParamUtil.getDouble(article, request, "version", JournalArticleConstants.VERSION_DEFAULT);
+     
+     String structureId = BeanParamUtil.getString(article, request, "structureId");
+     
+     DDMStructure ddmStructure = null;
+     
+     long ddmStructureId = ParamUtil.getLong(request, "ddmStructureId");
+     
+     if (ddmStructureId > 0) {
+     	ddmStructure = DDMStructureLocalServiceUtil.fetchStructure(ddmStructureId);
+     }
+     else if (Validator.isNotNull(structureId)) {
+     	ddmStructure = DDMStructureLocalServiceUtil.fetchStructure(themeDisplay.getSiteGroupId(), PortalUtil.getClassNameId(JournalArticle.class), structureId, true);
+     }
+     
+     String templateId = BeanParamUtil.getString(article, request, "templateId");
+     
+     DDMTemplate ddmTemplate = null;
+     
+     long ddmTemplateId = ParamUtil.getLong(request, "ddmTemplateId");
+     
+     if (ddmTemplateId > 0) {
+     	ddmTemplate = DDMTemplateLocalServiceUtil.fetchDDMTemplate(ddmTemplateId);
+     }
+     else if (Validator.isNotNull(templateId)) {
+     	ddmTemplate = DDMTemplateLocalServiceUtil.fetchTemplate(groupId, PortalUtil.getClassNameId(DDMStructure.class), templateId, true);
+     }
+     
+     if (ddmTemplate == null) {
+     	List<DDMTemplate> ddmTemplates = DDMTemplateServiceUtil.getTemplates(groupId, PortalUtil.getClassNameId(DDMStructure.class), ddmStructure.getStructureId(), true);
+     
+     	if (!ddmTemplates.isEmpty()) {
+     		ddmTemplate = ddmTemplates.get(0);
+     	}
+     }
+     
+     String defaultLanguageId = ParamUtil.getString(request, "defaultLanguageId");
+     
+     String toLanguageId = ParamUtil.getString(request, "toLanguageId");
+     
+     if (Validator.isNull(defaultLanguageId) || !LanguageUtil.isAvailableLocale(themeDisplay.getSiteGroupId(), defaultLanguageId)) {
+     	if (article != null) {
+     		defaultLanguageId = article.getDefaultLanguageId();
+     	}
+     	else {
+     		defaultLanguageId = LocaleUtil.toLanguageId(themeDisplay.getSiteDefaultLocale());
+     	}
+     }
+     
+     boolean showHeader = ParamUtil.getBoolean(request, "showHeader", true);
+     
+     String[] mainSections = PropsValues.JOURNAL_ARTICLE_FORM_ADD;
+     
+     if (Validator.isNotNull(toLanguageId)) {
+     	mainSections = PropsValues.JOURNAL_ARTICLE_FORM_TRANSLATE;
+     }
+     else if (classNameId > JournalArticleConstants.CLASSNAME_ID_DEFAULT) {
+     	mainSections = PropsValues.JOURNAL_ARTICLE_FORM_DEFAULT_VALUES;
+     }
+     else if ((article != null) && (article.getId() > 0)) {
+     	mainSections = PropsValues.JOURNAL_ARTICLE_FORM_UPDATE;
+     }
+     
+     String[][] categorySections = {mainSections};
+     
+     request.setAttribute("edit_article.jsp-redirect", redirect);
+     
+     request.setAttribute("edit_article.jsp-structure", ddmStructure);
+     request.setAttribute("edit_article.jsp-template", ddmTemplate);
+     
+     request.setAttribute("edit_article.jsp-defaultLanguageId", defaultLanguageId);
+     request.setAttribute("edit_article.jsp-toLanguageId", toLanguageId);
+     
+
+   response.write( ((article != null) && !article.isNew()) ? "article-form-edit" : "article-form-add" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( ArticleContentSizeException.class );
+
+ response.write( LiferayFileItemException.class );
+    response.write( TextFormatter.formatStorageSize(LiferayFileItem.THRESHOLD_SIZE, locale) )+response.write(request.getAttribute(" TextFormatter").formatStorageSize(LiferayFileItem.THRESHOLD_SIZE, locale) );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+     response.write( article ); response.write( defaultLanguageId );response.write( JournalArticle.class );
+
+
+
+
+
+ response.write( String.valueOf(article.getArticleId()) );response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));response.write( article.getStatus() );response.write( String.valueOf(article.getVersion()) );
+
+
+
+
+
+
+
+
+
+
+    response.write(HtmlUtil.getEscape(article().getArticleImageURL(themeDisplay)));
+
+
+
+      response.write( HtmlUtil.escape(article.getTitle(locale)) );
+
+
+
+
+
+
+
+
+  
+     					boolean approved = false;
+     					boolean pending = false;
+     
+     					long inheritedWorkflowDDMStructuresFolderId = JournalFolderLocalServiceUtil.getInheritedWorkflowFolderId(folderId);
+     
+     					boolean workflowEnabled = WorkflowDefinitionLinkLocalServiceUtil.hasWorkflowDefinitionLink(themeDisplay.getCompanyId(), groupId, JournalFolder.class.getName(), folderId, ddmStructure.getStructureId()) || WorkflowDefinitionLinkLocalServiceUtil.hasWorkflowDefinitionLink(themeDisplay.getCompanyId(), groupId, JournalFolder.class.getName(), inheritedWorkflowDDMStructuresFolderId, JournalArticleConstants.DDM_STRUCTURE_ID_ALL);
+     
+     					if ((article != null) && (version > 0)) {
+     						approved = article.isApproved();
+     
+     						 if (workflowEnabled) {
+     							pending = article.isPending();
+     						}
+     					}
+     					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						boolean hasSavePermission = false;
+     
+     						if (article != null) {
+     							hasSavePermission = JournalArticlePermission.contains(permissionChecker, article, ActionKeys.UPDATE);
+     						}
+     						else {
+     							hasSavePermission = JournalFolderPermission.contains(permissionChecker, groupId, folderId, ActionKeys.ADD_ARTICLE);
+     						}
+     
+     						String saveButtonLabel = "save";
+     
+     						if ((article == null) || article.isDraft() || article.isApproved()) {
+     							saveButtonLabel = "save-as-draft";
+     						}
+     
+     						String publishButtonLabel = "publish";
+     
+     						if (workflowEnabled) {
+     							publishButtonLabel = "submit-for-publication";
+     						}
+     
+     						if (classNameId > JournalArticleConstants.CLASSNAME_ID_DEFAULT) {
+     							publishButtonLabel = "save";
+     						}
+     						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     								String[] translations = article.getAvailableLanguageIds();
+     								
+
+
+
+
+
+
+
+
+
+
+
+response.write( _CATEGORY_NAMES )+response.write(request.getAttribute(" _CATEGORY_NAMES "));
+   response.write( categorySections )+response.write(request.getAttribute(" categorySections "));
+
+     response.write( htmlBottom )+response.write(request.getAttribute(" htmlBottom "));
+  response.write( htmlTop )+response.write(request.getAttribute(" htmlTop "));
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+   
+     						for (String section : mainSections) {
+     						
+
+
+      response.write( "/html/portlet/journal/article/" + _getSectionJsp(section) + ".jsp" );
+
+
+   
+     						}
+     						
+
+response.write( htmlBottom )+response.write(request.getAttribute(" htmlBottom "));
+
+
+
+
+
+
+
+
+   response.write( JournalUtil.getPreviewPlid(article, themeDisplay) );  response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+
+
+
+     response.write(String.getValueOf(article().getGroupId()));
+     response.write(article.getArticleId());
+     response.write(String.getValueOf(article().getVersion()));
+
+
+
+
+
+    response.write(redirect);
+
+    response.write(String.getValueOf(groupId));
+    response.write(articleId);
+    response.write(String.getValueOf(version));
+
+
+
+
+
+
+  response.write( HtmlUtil.escapeJS(defaultLanguageId) );
+response.write( editArticleURL )+response.write(request.getAttribute(" editArticleURL "));
+   response.write( (article != null) ? HtmlUtil.escape(articleId) : StringPool.BLANK );
+
+
+     response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+       response.write( JournalArticle.class.getName() );
+  response.write( HtmlUtil.escape(article.getTitle(locale)) );
+ response.write( String.valueOf(article.getResourcePrimKey()) );
+
+
+
+response.write( permissionsURL )+response.write(request.getAttribute(" permissionsURL "));
+    response.write( HtmlUtil.escapeJS(previewArticleContentURL.toString()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(previewArticleContentURL.toString()) );
+
+
+      response.write( (article != null) ? HtmlUtil.escapeJS(article.getTitle(locale)) : StringPool.BLANK );
+
+
+
+
+
+
+
+
+
+
+
+      response.write( HtmlUtil.escapeJS(article.getTitle(locale)) );
+    response.write( HtmlUtil.escapeJS(previewArticleContentURL.toString()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(previewArticleContentURL.toString()) );
+}
+
+}

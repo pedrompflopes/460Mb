@@ -1,0 +1,390 @@
+﻿ package PackageNo1073866053;import _html_common_init_jsp;import _html_taglib_init_ext_jsp;import com.liferay.portal.kernel.util.DateFormatFactoryUtil;import com.liferay.taglib.aui.AUIUtil;import com.liferay.taglib.util.InlineUtil; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\app_view_entry\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\app_view_entry\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ PortletRequest portletRequest = (PortletRequest)request.getAttribute(JavaConstants.JAVAX_PORTLET_REQUEST); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ PortletResponse portletResponse = (PortletResponse)request.getAttribute(JavaConstants.JAVAX_PORTLET_RESPONSE); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ String namespace = StringPool.BLANK; /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ boolean auiFormUseNamespace = GetterUtil.getBoolean((String)request.getAttribute("aui:form:useNamespace"), true); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ if ((portletResponse != null) && auiFormUseNamespace) { /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	namespace = GetterUtil.getString(request.getAttribute("aui:form:portletNamespace"), portletResponse.getNamespace()); /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ String currentURL = null; /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ if ((portletRequest != null) && (portletResponse != null)) { /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	PortletURL currentURLObj = PortletURLUtil.getCurrent(PortalUtil.getLiferayPortletRequest(portletRequest), PortalUtil.getLiferayPortletResponse(portletResponse)); /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	currentURL = currentURLObj.toString(); /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ else { /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	currentURL = PortalUtil.getCurrentURL(request); /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\app_view_entry\page.jsp */
+
+     
+     String actionJsp = (String)request.getAttribute("liferay-ui:app-view-entry:actionJsp");
+     String assetCategoryClassName = GetterUtil.getString(request.getAttribute("liferay-ui:app-view-entry:assetCategoryClassName"));
+     long assetCategoryClassPK = GetterUtil.getLong(request.getAttribute("liferay-ui:app-view-entry:assetCategoryClassPK"));
+     String assetTagClassName = GetterUtil.getString(request.getAttribute("liferay-ui:app-view-entry:assetTagClassName"));
+     long assetTagClassPK = GetterUtil.getLong(request.getAttribute("liferay-ui:app-view-entry:assetTagClassPK"));
+     String author = GetterUtil.getString(request.getAttribute("liferay-ui:app-view-entry:author"));
+     String classTypeName = (String)request.getAttribute("liferay-ui:app-view-entry:classTypeName");
+     Date createDate = GetterUtil.getDate(request.getAttribute("liferay-ui:app-view-entry:createDate"), DateFormatFactoryUtil.getDate(locale), null);
+     String cssClass = GetterUtil.getString((String)request.getAttribute("liferay-ui:app-view-entry:cssClass"));
+     Date expirationDate = GetterUtil.getDate(request.getAttribute("liferay-ui:app-view-entry:expirationDate"), DateFormatFactoryUtil.getDate(locale), null);
+     Map<String, Object> data = (Map<String, Object>)request.getAttribute("liferay-ui:app-view-entry:data");
+     String description = (String)request.getAttribute("liferay-ui:app-view-entry:description");
+     Date displayDate = GetterUtil.getDate(request.getAttribute("liferay-ui:app-view-entry:displayDate"), DateFormatFactoryUtil.getDate(locale), null);
+     String displayStyle = (String)request.getAttribute("liferay-ui:app-view-entry:displayStyle");
+     boolean folder = GetterUtil.getBoolean(request.getAttribute("liferay-ui:app-view-entry:folder"));
+     long groupId = GetterUtil.getLong(request.getAttribute("liferay-ui:app-view-entry:groupId"));
+     String iconCssClass = (String)request.getAttribute("liferay-ui:app-view-entry:iconCssClass");
+     String latestApprovedVersion = GetterUtil.getString(request.getAttribute("liferay-ui:app-view-entry:latestApprovedVersion"));
+     String latestApprovedVersionAuthor = GetterUtil.getString(request.getAttribute("liferay-ui:app-view-entry:latestApprovedVersionAuthor"));
+     boolean locked = GetterUtil.getBoolean(request.getAttribute("liferay-ui:app-view-entry:locked"));
+     Date modifiedDate = GetterUtil.getDate(request.getAttribute("liferay-ui:app-view-entry:modifiedDate"), DateFormatFactoryUtil.getDate(locale), null);
+     Date reviewDate = GetterUtil.getDate(request.getAttribute("liferay-ui:app-view-entry:reviewDate"), DateFormatFactoryUtil.getDate(locale), null);
+     String rowCheckerId = (String)request.getAttribute("liferay-ui:app-view-entry:rowCheckerId");
+     String rowCheckerName = (String)request.getAttribute("liferay-ui:app-view-entry:rowCheckerName");
+     boolean shortcut = GetterUtil.getBoolean(request.getAttribute("liferay-ui:app-view-entry:shortcut"));
+     boolean showCheckbox = GetterUtil.getBoolean(request.getAttribute("liferay-ui:app-view-entry:showCheckbox"));
+     boolean showLinkTitle = GetterUtil.getBoolean(request.getAttribute("liferay-ui:app-view-entry:showLinkTitle"));
+     int status = GetterUtil.getInteger(request.getAttribute("liferay-ui:app-view-entry:status"), WorkflowConstants.STATUS_ANY);
+     String thumbnailDivStyle = (String)request.getAttribute("liferay-ui:app-view-entry:thumbnailDivStyle");
+     String thumbnailSrc = (String)request.getAttribute("liferay-ui:app-view-entry:thumbnailSrc");
+     String thumbnailStyle = (String)request.getAttribute("liferay-ui:app-view-entry:thumbnailStyle");
+     String title = (String)request.getAttribute("liferay-ui:app-view-entry:title");
+     String url = (String)request.getAttribute("liferay-ui:app-view-entry:url");
+     String version = GetterUtil.getString(request.getAttribute("liferay-ui:app-view-entry:version"));
+     
+     String shortTitle = StringUtil.shorten(title, 60);
+     
+     String linkTitle = StringPool.BLANK;
+     
+     if (showLinkTitle) {
+     	linkTitle = HtmlUtil.escapeAttribute(HtmlUtil.unescape(title) + " - " + HtmlUtil.unescape(description));
+     }
+     
+
+
+
+     response.write( displayStyle ); response.write( showCheckbox ? "selectable" : StringPool.BLANK );response.write( cssClass );response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );response.write( showCheckbox ? Boolean.TRUE.toString() : Boolean.FALSE.toString() );response.write( HtmlUtil.escapeAttribute(shortTitle) );
+
+
+
+
+
+     			if (!folder) {
+     				request.removeAttribute(WebKeys.SEARCH_CONTAINER_RESULT_ROW);
+     			}
+     			
+
+ response.write( actionJsp )+response.write(request.getAttribute(" actionJsp "));
+
+
+
+     response.write( folder ? Boolean.TRUE.toString() : Boolean.FALSE.toString() );response.write( folder ? "data-folder-id=\"" + rowCheckerId + "\"" : StringPool.BLANK );response.write( linkTitle );
+
+
+  response.write( folder ? Boolean.TRUE.toString() : Boolean.FALSE.toString() );response.write( folder ? "data-folder-id=\"" + rowCheckerId + "\"" : StringPool.BLANK );response.write( url );response.write( linkTitle );
+
+
+
+
+       response.write(thumbnailDivStyle);
+
+
+  response.write(HtmlUtil.getEscapeAttribute(thumbnailSrc));response.write(thumbnailStyle);
+
+
+  response.write(iconCssClass);response.write(thumbnailStyle);
+
+
+
+
+ response.write(true)+response.write(request.getAttribute("true"));       response.write( themeDisplay.getPathThemeImages() )+response.write(request.getAttribute(" themeDisplay").getPathThemeImages() );
+
+
+
+ response.write(true)+response.write(request.getAttribute("true"));   response.write( themeDisplay.getPathThemeImages() )+response.write(request.getAttribute(" themeDisplay").getPathThemeImages() );
+
+
+
+       response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));response.write( status );
+
+
+
+
+
+
+       response.write( HtmlUtil.escape(shortTitle) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( displayStyle ); response.write( showCheckbox ? "selectable" : StringPool.BLANK );response.write( cssClass );response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );response.write( showCheckbox ? Boolean.TRUE.toString() : Boolean.FALSE.toString() );response.write( HtmlUtil.escapeAttribute(shortTitle) );
+
+
+response.write(rowCheckerId);response.write(linkTitle);
+
+
+response.write(rowCheckerId);response.write(url);response.write(linkTitle);
+
+
+
+
+       response.write(thumbnailDivStyle);
+
+
+  response.write(HtmlUtil.getEscapeAttribute(thumbnailSrc));response.write(thumbnailStyle);
+
+
+  response.write(iconCssClass);response.write(thumbnailStyle);
+
+
+
+
+ response.write(true)+response.write(request.getAttribute("true"));       response.write( themeDisplay.getPathThemeImages() )+response.write(request.getAttribute(" themeDisplay").getPathThemeImages() );
+
+
+
+ response.write(true)+response.write(request.getAttribute("true"));   response.write( themeDisplay.getPathThemeImages() )+response.write(request.getAttribute(" themeDisplay").getPathThemeImages() );
+
+
+
+       response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));response.write( status );
+
+
+
+
+
+
+
+response.write( HtmlUtil.escape(title) );
+
+
+
+
+
+
+
+
+ response.write( HtmlUtil.escape(description) );
+
+
+
+
+
+
+
+
+
+
+  response.write( classTypeName );
+
+
+
+
+
+    
+     							Group group = GroupLocalServiceUtil.getGroup(groupId);
+     							
+
+
+
+
+
+
+
+
+      
+     									String groupDescriptiveName = null;
+     
+     									if (group.isLayout()) {
+     										Group parentGroup = group.getParentGroup();
+     
+     										groupDescriptiveName = parentGroup.getDescriptiveName(locale);
+     									}
+     									else {
+     										groupDescriptiveName = group.getDescriptiveName(locale);
+     									}
+     									
+
+   response.write( HtmlUtil.escape(groupDescriptiveName) )+response.write(request.getAttribute(" HtmlUtil").escape(groupDescriptiveName) );
+
+
+
+
+
+
+
+
+
+   response.write( group.getDescriptiveName(locale) )+response.write(request.getAttribute(" group").getDescriptiveName(locale) );
+
+
+
+
+
+
+   response.write( Validator.isNotNull(version) ? "version" : "status" );
+
+
+
+
+   response.write( HtmlUtil.escape(version) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( new String[] {LanguageUtil.getTimeDescription(locale, System.currentTimeMillis() - modifiedDate.getTime(), true), HtmlUtil.escape(author)} );   response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+   
+     						Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone);
+     						
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escape(dateFormatDateTime.format(displayDate)) );
+
+
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escape(dateFormatDateTime.format(expirationDate)) );
+
+
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escape(dateFormatDateTime.format(reviewDate)) );
+
+
+
+
+
+
+
+
+     response.write( assetCategoryClassName );
+   response.write( assetCategoryClassPK );
+
+
+
+
+
+
+
+     response.write( assetTagClassName );
+   response.write( assetTagClassPK );
+
+
+
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escape(latestApprovedVersion) );
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escape(latestApprovedVersionAuthor) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			if (!folder) {
+     				request.removeAttribute(WebKeys.SEARCH_CONTAINER_RESULT_ROW);
+     			}
+     			
+
+ response.write( actionJsp )+response.write(request.getAttribute(" actionJsp "));
+
+
+
+
+
+
+
+     response.write( displayStyle ); response.write( cssClass );response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );
+
+response.write( showCheckbox ? "pull-left app-view-entry app-view-entry-taglib entry-display-style selectable" : "pull-left app-view-entry app-view-entry-taglib entry-display-style" );
+    response.write( data )+response.write(request.getAttribute(" data "));
+    response.write( iconCssClass );
+     response.write( true )+response.write(request.getAttribute(" true "));
+
+       response.write( false )+response.write(request.getAttribute(" false "));
+       response.write( HtmlUtil.escape(title) );
+
+   response.write( thumbnailSrc );
+   response.write( url );
+
+
+
+
+
+
+
+     response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));response.write( status );
+}
+
+}

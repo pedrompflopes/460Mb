@@ -1,0 +1,87 @@
+﻿ package PackageNo367651456;import _html_taglib_taglib_init_jsp;import _html_taglib_aui_button_init_ext_jspf; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.String cssClass = GetterUtil.getString((java.lang.String)request.getAttribute("aui:button:cssClass")); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.util.Map data = (java.util.Map)request.getAttribute("aui:button:data"); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ boolean disabled = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:button:disabled"))); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.String href = GetterUtil.getString((java.lang.String)request.getAttribute("aui:button:href")); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.String icon = GetterUtil.getString((java.lang.String)request.getAttribute("aui:button:icon")); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.String iconAlign = GetterUtil.getString((java.lang.String)request.getAttribute("aui:button:iconAlign"), "left"); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.String name = GetterUtil.getString((java.lang.String)request.getAttribute("aui:button:name")); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.String onClick = GetterUtil.getString((java.lang.String)request.getAttribute("aui:button:onClick")); /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.Object primary = (java.lang.Object)request.getAttribute("aui:button:primary"); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.String type = GetterUtil.getString((java.lang.String)request.getAttribute("aui:button:type"), "button"); /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ boolean useDialog = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:button:useDialog")), false); /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ java.lang.String value = GetterUtil.getString((java.lang.String)request.getAttribute("aui:button:value")); /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ Map<String, Object> dynamicAttributes = (Map<String, Object>)request.getAttribute("aui:button:dynamicAttributes"); /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ Map<String, Object> scopedAttributes = (Map<String, Object>)request.getAttribute("aui:button:scopedAttributes"); /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\button\page.jsp */
+
+
+
+
+    response.write( AUIUtil.buildCss(AUIUtil.BUTTON_PREFIX, disabled, false, false, cssClass) )+response.write(request.getAttribute(" AUIUtil").buildCss(AUIUtil.BUTTON_PREFIX, disabled, false, false, cssClass) );
+   response.write( escapedHREF )+response.write(request.getAttribute(" escapedHREF "));
+
+
+  response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( name )+response.write(request.getAttribute(" name "));
+
+
+
+       response.write( onClick )+response.write(request.getAttribute(" onClick "));
+
+
+     response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );
+     response.write( InlineUtil.buildDynamicAttributes(dynamicAttributes) )+response.write(request.getAttribute(" InlineUtil").buildDynamicAttributes(dynamicAttributes) );
+
+
+
+
+    response.write( AUIUtil.buildCss(AUIUtil.BUTTON_PREFIX, disabled, false, false, cssClass) )+response.write(request.getAttribute(" AUIUtil").buildCss(AUIUtil.BUTTON_PREFIX, disabled, false, false, cssClass) );
+
+
+
+
+
+   response.write( escapedHREF )+response.write(request.getAttribute(" escapedHREF "));
+
+
+  response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( name )+response.write(request.getAttribute(" name "));
+
+
+
+       response.write( onClick )+response.write(request.getAttribute(" onClick "));
+
+
+   response.write( type.equals("cancel") ? "button" : type );
+
+     response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );
+     response.write( InlineUtil.buildDynamicAttributes(dynamicAttributes) )+response.write(request.getAttribute(" InlineUtil").buildDynamicAttributes(dynamicAttributes) );
+
+
+
+
+
+    response.write(icon)+response.write(request.getAttribute("icon"));
+
+
+  response.write( LanguageUtil.get(request, value) )+response.write(request.getAttribute(" LanguageUtil").get(request, value) );
+
+
+    response.write(icon)+response.write(request.getAttribute("icon"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( namespace + name )+response.write(request.getAttribute(" namespace ")+ name );
+}
+
+}

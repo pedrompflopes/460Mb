@@ -1,0 +1,167 @@
+﻿ package PackageNo1063218346; public class view_entries_jspf {  /* 1 */ private List<BlogsEntry> _convertToBlogEntries(List results) throws PortalException, SystemException { /* 167 */ 	if (results.isEmpty() || (results.get(0) instanceof BlogsEntry)) { /* 168 */ 		return results; /* 169 */ 	} /* 170 */ 	List<BlogsEntry> entries = new ArrayList<BlogsEntry>(results.size()); /* 172 */ 	for (Object result : results) { /* 174 */ 		AssetEntry assetEntry = (AssetEntry)result; /* 175 */ 		BlogsEntry entry = BlogsEntryLocalServiceUtil.getEntry(assetEntry.getClassPK()); /* 177 */ 		entries.add(entry); /* 179 */ 	} /* 180 */ 	return entries; /* 182 */ } /* 183 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     boolean showAddEntryButton = BlogsPermission.contains(permissionChecker, scopeGroupId, ActionKeys.ADD_ENTRY);
+     boolean showPermissionsButton = BlogsPermission.contains(permissionChecker, scopeGroupId, ActionKeys.PERMISSIONS);
+     boolean showSubscribeButton = BlogsPermission.contains(permissionChecker, scopeGroupId, ActionKeys.SUBSCRIBE) && (blogsSettings.isEmailEntryAddedEnabled() || blogsSettings.isEmailEntryUpdatedEnabled());
+     showSearch = showSearch && !results.isEmpty();
+     
+
+
+
+
+
+
+
+
+ response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+ response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+   response.write( editEntryURL )+response.write(request.getAttribute(" editEntryURL "));
+
+
+
+
+
+  response.write( HtmlUtil.escape(themeDisplay.getScopeGroupName()) )+response.write(request.getAttribute(" HtmlUtil").escape(themeDisplay.getScopeGroupName()) );
+ response.write( String.valueOf(scopeGroupId) )+response.write(request.getAttribute(" String").valueOf(scopeGroupId) );
+
+     response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+
+
+   response.write( permissionsURL )+response.write(request.getAttribute(" permissionsURL "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+   response.write( windowState.equals(WindowState.MAXIMIZED) )+response.write(request.getAttribute(" windowState").equals(WindowState.MAXIMIZED) );response.write( LanguageUtil.get(locale, "keywords") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( blogsPortletInstanceSettings.getRssDelta() )+response.write(request.getAttribute(" blogsPortletInstanceSettings").getRssDelta() );
+   response.write( blogsPortletInstanceSettings.getRssDisplayStyle() )+response.write(request.getAttribute(" blogsPortletInstanceSettings").getRssDisplayStyle() );
+       response.write( blogsPortletInstanceSettings.getRssFeedType() )+response.write(request.getAttribute(" blogsPortletInstanceSettings").getRssFeedType() );
+  response.write( rssURL )+response.write(request.getAttribute(" rssURL "));
+
+
+
+
+
+
+
+
+response.write(Constants.getUNSUBSCRIBE())+response.write(request.getAttribute("Constants").getUNSUBSCRIBE());
+response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+
+
+      response.write( true )+response.write(request.getAttribute(" true "));
+
+    response.write( unsubscribeURL )+response.write(request.getAttribute(" unsubscribeURL "));
+
+
+
+
+
+response.write(Constants.getSUBSCRIBE())+response.write(request.getAttribute("Constants").getSUBSCRIBE());
+response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+
+
+      response.write( true )+response.write(request.getAttribute(" true "));
+
+    response.write( subscribeURL )+response.write(request.getAttribute(" subscribeURL "));
+
+
+
+
+
+
+
+
+       response.write( portletURL )+response.write(request.getAttribute(" portletURL "));
+
+
+     
+     long portletDisplayDDMTemplateId = PortletDisplayTemplateUtil.getPortletDisplayTemplateDDMTemplateId(blogsPortletInstanceSettings.getDisplayStyleGroupId(themeDisplay.getScopeGroupId()), blogsPortletInstanceSettings.getDisplayStyle());
+     
+     if (portletDisplayDDMTemplateId > 0) {
+     
+
+
+    response.write( PortletDisplayTemplateUtil.renderDDMTemplate(request, response, portletDisplayDDMTemplateId, _convertToBlogEntries(results)) )+response.write(request.getAttribute(" PortletDisplayTemplateUtil").renderDDMTemplate(request, response, portletDisplayDDMTemplateId, _convertToBlogEntries(results)) );
+
+
+     
+     }
+     else {
+     	for (Object result : results) {
+     		BlogsEntry entry = null;
+     
+     		AssetEntry assetEntry = null;
+     
+     		if (result instanceof AssetEntry) {
+     			assetEntry = (AssetEntry)result;
+     
+     			entry = BlogsEntryLocalServiceUtil.getEntry(assetEntry.getClassPK());
+     
+     			AssetUtil.addLayoutTags(request, assetEntry.getTags());
+     		}
+     		else {
+     			entry = (BlogsEntry)result;
+     		}
+     
+     		if (((entry.getStatus() == WorkflowConstants.STATUS_DRAFT) || entry.getDisplayDate().after(new Date())) && (entry.getUserId() != user.getUserId()) && !permissionChecker.isGroupAdmin(scopeGroupId)) {
+     			searchContainer.setTotal(searchContainer.getTotal() - 1);
+     
+     			continue;
+     		}
+     
+     		request.setAttribute("view_entry_content.jsp-searchContainer", searchContainer);
+     
+     		request.setAttribute("view_entry_content.jsp-entry", entry);
+     
+     		request.setAttribute("view_entry_content.jsp-assetEntry", assetEntry);
+     
+
+
+
+     
+     	}
+     }
+     
+
+response.write( searchContainer )+response.write(request.getAttribute(" searchContainer "));
+}
+
+}

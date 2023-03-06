@@ -1,0 +1,116 @@
+﻿ package PackageNo512730590;import com.liferay.portal.kernel.language.LanguageUtil;import com.liferay.portal.kernel.log.Log;import com.liferay.portal.kernel.log.LogFactoryUtil;import com.liferay.portal.kernel.servlet.HttpHeaders;import com.liferay.portal.kernel.util.HtmlUtil;import com.liferay.portal.kernel.util.JavaConstants;import com.liferay.portal.kernel.util.StringUtil;import com.liferay.portal.model.LayoutSet;import com.liferay.portal.util.PortalUtil;import com.liferay.portal.util.WebKeys; public class code_jsp {  /* 1 */ private static Log _log = LogFactoryUtil.getLog("portal-web.docroot.errors.code_jsp"); /* 122 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     
+     // According to http://www.webmasterworld.com/forum91/3087.htm a semicolon in
+     // the URL for a meta-refresh tag does not work in IE 6.
+     
+     // To work around this issue, we use a URL without a session id for meta-refresh
+     // and rely on the load event on the body element to properly rewrite the URL.
+     
+     // However, if the original request was an AJAX request, sending a redirect is
+     // less than ideal. In this case we will simply print the error message.
+     
+     ErrorData errorData = pageContext.getErrorData();
+     
+     int code = errorData.getStatusCode();
+     String msg = String.valueOf(request.getAttribute(JavaConstants.JAVAX_SERVLET_ERROR_MESSAGE));
+     String uri = errorData.getRequestURI();
+     
+     if (_log.isWarnEnabled()) {
+     	_log.warn("{code=\"" + code + "\", msg=\"" + msg + "\", uri=" + uri + "}", exception);
+     }
+     
+     String xRequestWith = request.getHeader(HttpHeaders.X_REQUESTED_WITH);
+     
+
+
+
+
+
+
+       
+     		String redirect = null;
+     
+     		LayoutSet layoutSet = (LayoutSet)request.getAttribute(WebKeys.VIRTUAL_HOST_LAYOUT_SET);
+     
+     		if (layoutSet != null) {
+     			redirect = PortalUtil.getPathMain();
+     		}
+     		else {
+     			String validPortalDomain = PortalUtil.getValidPortalDomain(PortalUtil.getDefaultCompanyId(), request.getServerName());
+     
+     			redirect = PortalUtil.getPortalURL(validPortalDomain, request.getServerPort(), request.isSecure()) + PortalUtil.getPathContext() + PortalUtil.getRelativeHomeURL(request);
+     		}
+     
+     		if (!request.isRequestedSessionIdFromCookie()) {
+     			redirect = PortalUtil.getURLWithSessionId(redirect, session.getId());
+     		}
+     		
+
+
+
+      response.write(redirect)+response.write(request.getAttribute("redirect"));
+
+
+     response.write(redirect)+response.write(request.getAttribute("redirect"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( code );response.write( LanguageUtil.get(request, "http-status-code[" + code + "]") );
+
+
+
+     response.write( code );response.write( LanguageUtil.get(request, "http-status-code[" + code + "]") );
+
+
+      response.write( LanguageUtil.get(request, "message") );response.write( HtmlUtil.escape(msg) );
+
+
+
+      response.write( LanguageUtil.get(request, "resource") );response.write( HtmlUtil.escape(uri) );
+}
+
+}

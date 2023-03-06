@@ -1,0 +1,68 @@
+﻿ package PackageNo81530598; public class panel_content_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if (themeDisplay.isStatePopUp() || (layoutTypePortlet.hasStateMax() && (portlet != null)) || Validator.isNotNull(controlPanelCategory)) {
+     	String velocityTemplateId = null;
+     
+     	String content = null;
+     
+     	if (themeDisplay.isStatePopUp()) {
+     		velocityTemplateId = theme.getThemeId() + LayoutTemplateConstants.STANDARD_SEPARATOR + "pop_up";
+     
+     		content = LayoutTemplateLocalServiceUtil.getContent("pop_up", true, theme.getThemeId());
+     	}
+     	else if (layoutTypePortlet.hasStateMax()) {
+     		PortletURL portletURL = new PortletURLImpl(request, ppid, plid, PortletRequest.RENDER_PHASE);
+     
+     		portletURL.setPortletMode(PortletMode.VIEW);
+     		portletURL.setWindowState(WindowState.MAXIMIZED);
+     
+     		ppid = StringUtil.split(layoutTypePortlet.getStateMax())[0];
+     
+     		velocityTemplateId = theme.getThemeId() + LayoutTemplateConstants.STANDARD_SEPARATOR + "max";
+     
+     		content = LayoutTemplateLocalServiceUtil.getContent("max", true, theme.getThemeId());
+     	}
+     	else {
+     		velocityTemplateId = theme.getThemeId() + LayoutTemplateConstants.STANDARD_SEPARATOR + "max";
+     
+     		content = LayoutTemplateLocalServiceUtil.getContent("max", true, theme.getThemeId());
+     	}
+     
+     	StringBundler sb = null;
+     
+     	if (Validator.isNotNull(velocityTemplateId) && Validator.isNotNull(content)) {
+     		sb = RuntimePageUtil.getProcessedTemplate(request, response, ppid, new StringTemplateResource(velocityTemplateId, content));
+     	}
+     
+     	if (sb != null) {
+     		sb.writeTo(pageContext.getOut());
+     	}
+     }
+     else {
+     
+
+
+    response.write( LanguageUtil.get(request, "please-select-a-tool-from-the-left-menu") );
+
+
+     
+     }
+     
+}
+
+}

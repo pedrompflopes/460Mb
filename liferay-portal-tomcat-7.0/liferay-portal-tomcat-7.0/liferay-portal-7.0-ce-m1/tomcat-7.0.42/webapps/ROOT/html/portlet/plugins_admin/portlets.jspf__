@@ -1,0 +1,126 @@
+﻿ package PackageNo583418066; public class portlets_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	String taglibOnClick = "submitForm(document." + renderResponse.getNamespace() + "fm , '" + marketplaceURL.toString() +"');";
+     	
+
+
+
+
+
+
+     
+     List<Portlet> portlets = PortletLocalServiceUtil.getPortlets(company.getCompanyId(), false, false);
+     
+     portlets = ListUtil.sort(portlets, new PortletTitleComparator(application, locale));
+     
+
+
+response.write( portletURL )+response.write(request.getAttribute(" portletURL "));
+  response.write( portlets.size() )+response.write(request.getAttribute(" portlets").size() );
+
+
+     response.write( ListUtil.subList(portlets, searchContainer.getStart(), searchContainer.getEnd()) )+response.write(request.getAttribute(" ListUtil").subList(portlets, searchContainer.getStart(), searchContainer.getEnd()) );
+
+
+
+
+
+
+
+       
+     		PluginPackage pluginPackage = portlet.getPluginPackage();
+     
+     		PortletURL rowURL = renderResponse.createRenderURL();
+     
+     		rowURL.setParameter("struts_action", "/plugins_admin/edit_plugin");
+     		rowURL.setParameter("redirect", currentURL);
+     
+     		if (pluginPackage != null) {
+     			rowURL.setParameter("moduleId", pluginPackage.getModuleId());
+     		}
+     
+     		rowURL.setParameter("pluginId", portlet.getPortletId());
+     		rowURL.setParameter("pluginType", Plugin.TYPE_PORTLET);
+     
+     		String title = PortalUtil.getPortletTitle(portlet, application, locale);
+     
+     		rowURL.setParameter("title", title);
+     		
+
+
+   response.write( rowURL );
+
+
+
+      response.write( title );
+
+
+
+
+
+
+
+
+
+
+       response.write( HtmlUtil.escape(pluginPackage.getName()) )+response.write(request.getAttribute(" HtmlUtil").escape(pluginPackage.getName()) );
+
+
+ response.write( pluginPackage.getContext() )+response.write(request.getAttribute(" pluginPackage").getContext() );
+
+
+
+
+
+     			String displayName = portlet.getDisplayName();
+     			
+
+
+
+
+      response.write( displayName )+response.write(request.getAttribute(" displayName "));
+
+
+
+
+
+    response.write( LanguageUtil.get(request, (portlet.isActive() ? "yes" : "no")) );
+
+
+
+
+
+
+
+ 
+     				List<String> indexerClasses = portlet.getIndexerClasses();
+     				
+
+
+
+  
+     					Map<String, String> data = new HashMap<String, String>();
+     
+     					data.put(Constants.CMD, "reindex");
+     					data.put("portletid", HtmlUtil.escapeJS(portlet.getPortletId()));
+     					
+}
+
+}

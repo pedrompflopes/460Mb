@@ -1,0 +1,56 @@
+﻿ package PackageNo1639103418; public class permissions_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( DLFileEntryConstants.getClassName() )+response.write(request.getAttribute(" DLFileEntryConstants").getClassName() );
+ response.write( HtmlUtil.unescape(fileEntry.getTitle()) )+response.write(request.getAttribute(" HtmlUtil").unescape(fileEntry.getTitle()) );
+response.write( String.valueOf(fileEntry.getFileEntryId()) )+response.write(request.getAttribute(" String").valueOf(fileEntry.getFileEntryId()) );
+
+    response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+
+
+
+
+
+
+    response.write( permissionsURL )+response.write(request.getAttribute(" permissionsURL "));
+  response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+      response.write( DLFileShortcut.class.getName() )+response.write(request.getAttribute(" DLFileShortcut").class.getName() );
+ response.write( fileEntry.getTitle() )+response.write(request.getAttribute(" fileEntry").getTitle() );
+response.write( String.valueOf(fileShortcut.getFileShortcutId()) );
+
+    response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+
+
+
+
+
+
+    response.write( shortcutPermissionsURL )+response.write(request.getAttribute(" shortcutPermissionsURL "));
+  response.write( true )+response.write(request.getAttribute(" true "));
+}
+
+}

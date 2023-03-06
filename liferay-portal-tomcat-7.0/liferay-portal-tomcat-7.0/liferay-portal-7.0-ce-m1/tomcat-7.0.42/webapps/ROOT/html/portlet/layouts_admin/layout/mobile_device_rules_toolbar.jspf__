@@ -1,0 +1,179 @@
+﻿ package PackageNo1183481141; public class mobile_device_rules_toolbar_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( groupId )+response.write(request.getAttribute(" groupId "));
+   response.write( HtmlUtil.escapeJS(className) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(className) );
+response.write( classPK )+response.write(request.getAttribute(" classPK "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+response.write(String.getValueOf(groupId))+response.write(request.getAttribute("String").getValueOf(groupId));
+response.write(className)+response.write(request.getAttribute("className"));
+response.write(String.getValueOf(classPK))+response.write(request.getAttribute("String").getValueOf(classPK));
+
+
+       response.write( viewRuleGroupInstancesURL.toString() )+response.write(request.getAttribute(" viewRuleGroupInstancesURL").toString() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( UnicodeLanguageUtil.get(request, "device-families") );
+
+response.write( PortletKeys.MOBILE_DEVICE_SITE_ADMIN )+response.write(request.getAttribute(" PortletKeys").MOBILE_DEVICE_SITE_ADMIN );response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+
+  response.write(String.getValueOf(groupId))+response.write(request.getAttribute("String").getValueOf(groupId));
+  response.write(className)+response.write(request.getAttribute("className"));
+  response.write(String.getValueOf(classPK))+response.write(request.getAttribute("String").getValueOf(classPK));
+
+
+
+      response.write( selectRuleGroupURL )+response.write(request.getAttribute(" selectRuleGroupURL "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( UnicodeLanguageUtil.get(request, "rule-priorities") );
+
+response.write( PortletKeys.MOBILE_DEVICE_SITE_ADMIN )+response.write(request.getAttribute(" PortletKeys").MOBILE_DEVICE_SITE_ADMIN );response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+
+  response.write(String.getValueOf(groupId))+response.write(request.getAttribute("String").getValueOf(groupId));
+  response.write(className)+response.write(request.getAttribute("className"));
+  response.write(String.getValueOf(classPK))+response.write(request.getAttribute("String").getValueOf(classPK));
+
+
+
+      response.write( managePrioritiesURL )+response.write(request.getAttribute(" managePrioritiesURL "));
+}
+
+}

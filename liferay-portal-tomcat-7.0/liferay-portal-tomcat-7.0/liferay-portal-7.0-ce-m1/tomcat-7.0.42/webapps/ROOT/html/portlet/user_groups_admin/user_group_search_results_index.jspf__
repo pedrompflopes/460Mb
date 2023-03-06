@@ -1,0 +1,38 @@
+﻿ package PackageNo628080465; public class user_group_search_results_index_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     userGroupParams.put("expandoAttributes", searchTerms.getKeywords());
+     
+     Sort sort = SortFactoryUtil.getSort(UserGroup.class, searchContainer.getOrderByCol(), searchContainer.getOrderByType());
+     
+     BaseModelSearchResult<UserGroup> baseModelSearchResult = null;
+     
+     if (searchTerms.isAdvancedSearch()) {
+     	baseModelSearchResult = UserGroupLocalServiceUtil.searchUserGroups(company.getCompanyId(), searchTerms.getName(), searchTerms.getDescription(), userGroupParams, searchTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(), sort);
+     }
+     else {
+     	baseModelSearchResult = UserGroupLocalServiceUtil.searchUserGroups(company.getCompanyId(), searchTerms.getKeywords(), userGroupParams, searchContainer.getStart(), searchContainer.getEnd(), sort);
+     }
+     
+     results = baseModelSearchResult.getBaseModels();
+     
+     searchContainer.setResults(results);
+     searchContainer.setTotal(baseModelSearchResult.getLength());
+     
+}
+
+}

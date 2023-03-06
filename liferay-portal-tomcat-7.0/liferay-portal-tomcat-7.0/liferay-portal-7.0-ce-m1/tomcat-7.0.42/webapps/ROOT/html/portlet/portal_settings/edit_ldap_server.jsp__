@@ -1,0 +1,626 @@
+﻿ package PackageNo27638887;import _html_portlet_init_jsp;import _html_portlet_portal_settings_init_ext_jsp;import com.liferay.portal.AccountNameException;import com.liferay.portal.CompanyMxException;import com.liferay.portal.CompanyVirtualHostException;import com.liferay.portal.kernel.facebook.FacebookConnectUtil;import com.liferay.portal.kernel.ldap.DuplicateLDAPServerNameException;import com.liferay.portal.kernel.ldap.LDAPFilterException;import com.liferay.portal.kernel.ldap.LDAPServerNameException;import com.liferay.portal.security.auth.AuthSettingsUtil;import com.liferay.portal.security.ldap.LDAPSettingsUtil;import com.liferay.portal.security.ldap.PortalLDAPUtil;import com.liferay.portal.servlet.filters.sso.opensso.OpenSSOUtil;import com.liferay.portlet.social.util.SocialInteractionsConfiguration;import com.liferay.portlet.social.util.SocialInteractionsConfigurationUtil;import com.liferay.portlet.social.util.SocialRelationTypesUtil;import com.liferay.util.ldap.LDAPUtil;import java.net.HttpURLConnection;import java.net.MalformedURLException;import java.net.URL;import javax.naming.directory.Attribute;import javax.naming.directory.Attributes;import javax.naming.directory.SearchResult;import javax.naming.ldap.LdapContext; public class edit_ldap_server_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     String backURL = ParamUtil.getString(request, "backURL", redirect);
+     
+     long ldapServerId = ParamUtil.getLong(request, "ldapServerId", 0);
+     
+     String postfix = LDAPSettingsUtil.getPropertyPostfix(ldapServerId);
+     
+     String ldapServerName = PrefsPropsUtil.getString(company.getCompanyId(), "ldap.server.name" + postfix, StringPool.BLANK);
+     String ldapBaseProviderUrl = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_BASE_PROVIDER_URL + postfix);
+     String ldapBaseDN = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_BASE_DN + postfix);
+     String ldapSecurityPrincipal = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_SECURITY_PRINCIPAL + postfix);
+     
+     String ldapSecurityCredentials = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_SECURITY_CREDENTIALS + postfix);
+     
+     if (Validator.isNotNull(ldapSecurityCredentials)) {
+     	ldapSecurityCredentials = Portal.TEMP_OBFUSCATION_VALUE;
+     }
+     
+     String ldapAuthSearchFilter = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_AUTH_SEARCH_FILTER + postfix);
+     String ldapImportUserSearchFilter = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_IMPORT_USER_SEARCH_FILTER + postfix);
+     String ldapImportGroupSearchFilter = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_IMPORT_GROUP_SEARCH_FILTER + postfix);
+     String ldapUsersDN = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_USERS_DN + postfix);
+     String ldapUserDefaultObjectClasses = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_USER_DEFAULT_OBJECT_CLASSES + postfix);
+     String ldapGroupsDN = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_GROUPS_DN + postfix);
+     String ldapGroupDefaultObjectClasses = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_GROUP_DEFAULT_OBJECT_CLASSES + postfix);
+     
+     String ldapUserMappings = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_USER_MAPPINGS + postfix);
+     
+     String[] userMappingArray = new String[0];
+     
+     if (ldapUserMappings != null) {
+     	userMappingArray = ldapUserMappings.split("\n");
+     }
+     
+     String userMappingEmailAddress = StringPool.BLANK;
+     String userMappingFirstName = StringPool.BLANK;
+     String userMappingFullName = StringPool.BLANK;
+     String userMappingGroup = StringPool.BLANK;
+     String userMappingJobTitle = StringPool.BLANK;
+     String userMappingLastName = StringPool.BLANK;
+     String userMappingMiddleName = StringPool.BLANK;
+     String userMappingPassword = StringPool.BLANK;
+     String userMappingPortrait= StringPool.BLANK;
+     String userMappingScreenName = StringPool.BLANK;
+     String userMappingStatus = StringPool.BLANK;
+     String userMappingUuid = StringPool.BLANK;
+     
+     for (int i = 0 ; i < userMappingArray.length ; i++) {
+     	if (!userMappingArray[i].contains("=")) {
+     		continue;
+     	}
+     
+     	String[] mapping = userMappingArray[i].split("=");
+     
+     	if (mapping.length != 2) {
+     		continue;
+     	}
+     
+     	if (mapping[0].equals("emailAddress")) {
+     		userMappingEmailAddress = mapping[1];
+     	}
+     	else if (mapping[0].equals("firstName")) {
+     		userMappingFirstName = mapping[1];
+     	}
+     	else if (mapping[0].equals("fullName")) {
+     		userMappingFullName = mapping[1];
+     	}
+     	else if (mapping[0].equals("group")) {
+     		userMappingGroup = mapping[1];
+     	}
+     	else if (mapping[0].equals("jobTitle")) {
+     		userMappingJobTitle = mapping[1];
+     	}
+     	else if (mapping[0].equals("lastName")) {
+     		userMappingLastName = mapping[1];
+     	}
+     	else if (mapping[0].equals("middleName")) {
+     		userMappingMiddleName = mapping[1];
+     	}
+     	else if (mapping[0].equals("password")) {
+     		userMappingPassword = mapping[1];
+     	}
+     	else if (mapping[0].equals("portrait")) {
+     		userMappingPortrait = mapping[1];
+     	}
+     	else if (mapping[0].equals("screenName")) {
+     		userMappingScreenName = mapping[1];
+     	}
+     	else if (mapping[0].equals("status")) {
+     		userMappingStatus = mapping[1];
+     	}
+     	else if (mapping[0].equals("uuid")) {
+     		userMappingUuid = mapping[1];
+     	}
+     
+     	mapping[1] = "";
+     }
+     
+     String ldapGroupMappings = PrefsPropsUtil.getString(company.getCompanyId(), PropsKeys.LDAP_GROUP_MAPPINGS + postfix);
+     
+     String[] groupMappingArray = new String[0];
+     
+     if (ldapGroupMappings != null) {
+     	groupMappingArray = ldapGroupMappings.split("\n");
+     }
+     
+     String groupMappingDescription = StringPool.BLANK;
+     String groupMappingGroupName = StringPool.BLANK;
+     String groupMappingUser = StringPool.BLANK;
+     
+     for (int i = 0 ; i < groupMappingArray.length ; i++) {
+     	if (!groupMappingArray[i].contains("=")) {
+     		continue;
+     	}
+     
+     	String[] mapping = groupMappingArray[i].split("=");
+     
+     	if (mapping.length != 2) {
+     		continue;
+     	}
+     
+     	if (mapping[0].equals("description")) {
+     		groupMappingDescription = mapping[1];
+     	}
+     	else if (mapping[0].equals("groupName")) {
+     		groupMappingGroupName = mapping[1];
+     	}
+     	else if (mapping[0].equals("user")) {
+     		groupMappingUser = mapping[1];
+     	}
+     }
+     
+
+
+    response.write( backURL );
+  response.write( (ldapServerId == 0) ? "add-ldap-server" : "edit-ldap-server" );
+
+
+
+
+
+
+
+response.write( DuplicateLDAPServerNameException.class )+response.write(request.getAttribute(" DuplicateLDAPServerNameException").class );
+response.write( LDAPFilterException.class )+response.write(request.getAttribute(" LDAPFilterException").class );
+response.write( LDAPServerNameException.class )+response.write(request.getAttribute(" LDAPServerNameException").class );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			String taglibOnClick = renderResponse.getNamespace() + "testSettings('ldapConnection');";
+     			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server.jsp */ /* 232?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server_user_name.jspf */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 232?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\edit_ldap_server.jsp */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			String taglibOnClick = renderResponse.getNamespace() + "testSettings('ldapUsers');";
+     			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			String taglibOnClick = renderResponse.getNamespace() + "testSettings('ldapGroups');";
+     			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		String taglibOnClick = renderResponse.getNamespace() + "saveLdap();";
+     		
+
+
+
+
+
+
+
+
+
+
+
+    response.write( PropsKeys.LDAP_USER_MAPPINGS + postfix );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( PropsKeys.LDAP_GROUP_MAPPINGS + postfix );
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( ldapServerId <= 0 ? Constants.ADD : Constants.UPDATE );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( PropsKeys.LDAP_IMPORT_GROUP_SEARCH_FILTER + postfix );
+
+
+
+
+
+
+
+  response.write( PropsKeys.LDAP_IMPORT_USER_SEARCH_FILTER + postfix );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( PropsKeys.LDAP_BASE_PROVIDER_URL + postfix );
+  response.write( PropsKeys.LDAP_BASE_DN + postfix );
+     response.write( PropsKeys.LDAP_SECURITY_PRINCIPAL + postfix );
+       response.write( PropsKeys.LDAP_SECURITY_CREDENTIALS + postfix );
+
+
+
+
+
+
+response.write( UnicodeLanguageUtil.get(request, "ldap") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( PropsKeys.LDAP_BASE_PROVIDER_URL + postfix );
+      response.write( PropsKeys.LDAP_BASE_DN + postfix );
+      response.write( PropsKeys.LDAP_SECURITY_PRINCIPAL + postfix );
+      response.write( PropsKeys.LDAP_SECURITY_CREDENTIALS + postfix );
+      response.write( PropsKeys.LDAP_AUTH_SEARCH_FILTER + postfix );
+      response.write( PropsKeys.LDAP_IMPORT_USER_SEARCH_FILTER + postfix );
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( PropsKeys.LDAP_IMPORT_GROUP_SEARCH_FILTER + postfix );
+
+
+
+      response.write( PropsKeys.LDAP_USERS_DN + postfix );
+      response.write( PropsKeys.LDAP_USER_DEFAULT_OBJECT_CLASSES + postfix );
+      response.write( PropsKeys.LDAP_GROUPS_DN + postfix );
+      response.write( PropsKeys.LDAP_GROUP_DEFAULT_OBJECT_CLASSES + postfix );
+
+
+
+
+
+
+     
+     PortalUtil.addPortletBreadcrumbEntry(request, (ldapServerId == 0) ? LanguageUtil.get(request, "add-ldap-server") : ldapServerName, currentURL);
+     
+}
+
+}

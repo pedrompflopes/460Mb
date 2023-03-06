@@ -1,0 +1,45 @@
+﻿ package PackageNo376723727; public class record_row_value_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String dataType = ddmFormField.getDataType();
+     String name = ddmFormField.getName();
+     
+     String value = StringPool.BLANK;
+     
+     if (fieldsModel.contains(name)) {
+     	com.liferay.portlet.dynamicdatamapping.storage.Field field = fieldsModel.get(name);
+     
+     	value = field.getRenderedValue(themeDisplay.getLocale());
+     
+     	if (dataType.equals(FieldConstants.HTML)) {
+     		value = "<a href=\"javascript:Liferay.DDLUtil.openPreviewDialog('" + HtmlUtil.escapeJS(value) + "');\">(" + LanguageUtil.get(request, "preview") + ")</a>";
+     	}
+     	else {
+     		value = HtmlUtil.escape(value);
+     	}
+     }
+     
+     if (editable) {
+     	row.addText(value, rowURL);
+     }
+     else {
+     	row.addText(value);
+     }
+     
+}
+
+}

@@ -1,0 +1,222 @@
+﻿ package PackageNo540092006;import _html_portlet_init_jsp;import _html_portlet_portal_settings_init_ext_jsp;import com.liferay.portal.AccountNameException;import com.liferay.portal.CompanyMxException;import com.liferay.portal.CompanyVirtualHostException;import com.liferay.portal.kernel.facebook.FacebookConnectUtil;import com.liferay.portal.kernel.ldap.DuplicateLDAPServerNameException;import com.liferay.portal.kernel.ldap.LDAPFilterException;import com.liferay.portal.kernel.ldap.LDAPServerNameException;import com.liferay.portal.security.auth.AuthSettingsUtil;import com.liferay.portal.security.ldap.LDAPSettingsUtil;import com.liferay.portal.security.ldap.PortalLDAPUtil;import com.liferay.portal.servlet.filters.sso.opensso.OpenSSOUtil;import com.liferay.portlet.social.util.SocialInteractionsConfiguration;import com.liferay.portlet.social.util.SocialInteractionsConfigurationUtil;import com.liferay.portlet.social.util.SocialRelationTypesUtil;import com.liferay.util.ldap.LDAPUtil;import java.net.HttpURLConnection;import java.net.MalformedURLException;import java.net.URL;import javax.naming.directory.Attribute;import javax.naming.directory.Attributes;import javax.naming.directory.SearchResult;import javax.naming.ldap.LdapContext; public class interactions_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\interactions.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\interactions.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\portal_settings\interactions.jsp */
+
+
+
+
+
+
+
+
+     
+     SocialInteractionsConfiguration defaultSocialInteractionsConfiguration = SocialInteractionsConfigurationUtil.getSocialInteractionsConfiguration(company.getCompanyId(), request);
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		List<Integer> allSocialInteractionsSocialRelationTypes = SocialRelationTypesUtil.getAllSocialRelationTypes();
+     		
+
+
+
+
+ 
+     
+     				// Left list
+     
+     				List leftList = new ArrayList();
+     
+     				int[] socialInteractionsSocialRelationTypesArray = defaultSocialInteractionsConfiguration.getSocialInteractionsSocialRelationTypesArray();
+     
+     				for (int socialInteractionSocialRelationType : socialInteractionsSocialRelationTypesArray) {
+     					leftList.add(new KeyValuePair(Integer.toString(socialInteractionSocialRelationType), LanguageUtil.get(request, SocialRelationTypesUtil.getTypeLabel(socialInteractionSocialRelationType))));
+     				}
+     
+     				// Right list
+     
+     				List rightList = new ArrayList();
+     
+     				for (int socialInteractionsSocialRelationType : allSocialInteractionsSocialRelationTypes) {
+     					if (Arrays.binarySearch(socialInteractionsSocialRelationTypesArray, socialInteractionsSocialRelationType) < 0) {
+     						rightList.add(new KeyValuePair(Integer.toString(socialInteractionsSocialRelationType), LanguageUtil.get(request, SocialRelationTypesUtil.getTypeLabel(socialInteractionsSocialRelationType))));
+     					}
+     				}
+     				
+
+
+
+ response.write( leftList )+response.write(request.getAttribute(" leftList "));
+
+
+  response.write( rightList );
+
+
+
+
+
+
+
+     
+     List<Portlet> socialInteractionsConfigurationPortlets = new ArrayList<Portlet>();
+     
+     List<Portlet> portlets = PortletLocalServiceUtil.getPortlets(company.getCompanyId());
+     
+     String tabs1Names = StringPool.BLANK;
+     
+     for (Portlet portlet : portlets) {
+     	if (portlet.isSocialInteractionsConfiguration()) {
+     		if (Validator.isNotNull(tabs1Names)) {
+     			tabs1Names += (StringPool.COMMA);
+     		}
+     
+     		tabs1Names += PortalUtil.getPortletTitle(portlet, themeDisplay.getLocale());
+     
+     		socialInteractionsConfigurationPortlets.add(portlet);
+     	}
+     }
+     
+
+
+
+
+
+   response.write( tabs1Names );
+     response.write( false )+response.write(request.getAttribute(" false "));
+
+
+       
+     		for (Portlet socialInteractionsConfigurationPortlet : socialInteractionsConfigurationPortlets) {
+     			SocialInteractionsConfiguration socialInteractionsConfiguration = SocialInteractionsConfigurationUtil.getSocialInteractionsConfiguration(company.getCompanyId(), request, socialInteractionsConfigurationPortlet.getPortletId());
+     		
+
+
+
+
+
+
+
+
+
+  response.write( renderResponse.getNamespace() + "socialInteractionsUsersWrapper" + socialInteractionsConfigurationPortlet.getPortletId() );
+
+
+
+
+
+
+      response.write( renderResponse.getNamespace() + "socialRelations" + socialInteractionsConfigurationPortlet.getPortletId() );
+
+
+     
+     
+     								// Left list
+     
+     								List leftList = new ArrayList();
+     
+     								int[] socialInteractionsSocialRelationTypesArray = socialInteractionsConfiguration.getSocialInteractionsSocialRelationTypesArray();
+     
+     								for (int socialInteractionSocialRelationType : socialInteractionsSocialRelationTypesArray) {
+     									leftList.add(new KeyValuePair(Integer.toString(socialInteractionSocialRelationType), LanguageUtil.get(request, SocialRelationTypesUtil.getTypeLabel(socialInteractionSocialRelationType))));
+     								}
+     
+     								// Right list
+     
+     								List rightList = new ArrayList();
+     
+     								for (int socialInteractionsSocialRelationType : allSocialInteractionsSocialRelationTypes) {
+     									if (Arrays.binarySearch(socialInteractionsSocialRelationTypesArray, socialInteractionsSocialRelationType) < 0) {
+     										rightList.add(new KeyValuePair(Integer.toString(socialInteractionsSocialRelationType), LanguageUtil.get(request, SocialRelationTypesUtil.getTypeLabel(socialInteractionsSocialRelationType))));
+     									}
+     								}
+     								
+
+
+response.write( "currentSocialInteractionsSocialRelationTypes" + socialInteractionsConfigurationPortlet.getPortletId() );
+     response.write( leftList )+response.write(request.getAttribute(" leftList "));
+
+ response.write( "availableSocialInteractionsSocialRelationTypes" + socialInteractionsConfigurationPortlet.getPortletId() );
+      response.write( rightList );
+
+
+
+
+
+
+
+
+       
+     		}
+     		
+
+
+
+
+
+
+
+
+
+
+      
+     	for (Portlet socialInteractionsConfigurationPortlet : socialInteractionsConfigurationPortlets) {
+     	
+
+      response.write( renderResponse.getNamespace() + "socialInteractionsSocialRelationTypesEnabled" + socialInteractionsConfigurationPortlet.getPortletId() + "Checkbox" );response.write( renderResponse.getNamespace() + "socialRelations" + socialInteractionsConfigurationPortlet.getPortletId() );
+
+      response.write( renderResponse.getNamespace() + "inheritSocialInteractionsConfiguration" + socialInteractionsConfigurationPortlet.getPortletId() );response.write( renderResponse.getNamespace() + "socialInteractionsUsersWrapper" + socialInteractionsConfigurationPortlet.getPortletId() );
+      response.write( renderResponse.getNamespace() + "socialInteractionsAnyUser" + socialInteractionsConfigurationPortlet.getPortletId() );response.write( renderResponse.getNamespace() + "socialInteractionsUsersWrapper" + socialInteractionsConfigurationPortlet.getPortletId() );
+      response.write( renderResponse.getNamespace() + "socialInteractionsChooseUsers" + socialInteractionsConfigurationPortlet.getPortletId() );response.write( renderResponse.getNamespace() + "socialInteractionsUsersWrapper" + socialInteractionsConfigurationPortlet.getPortletId() );
+
+      
+     	}
+     	
+
+
+
+
+
+
+
+
+
+
+
+     			for (Portlet socialInteractionsConfigurationPortlet : socialInteractionsConfigurationPortlets) {
+     			
+
+    response.write( socialInteractionsConfigurationPortlet.getPortletId() )+response.write(request.getAttribute(" socialInteractionsConfigurationPortlet").getPortletId() );
+
+ response.write( socialInteractionsConfigurationPortlet.getPortletId() )+response.write(request.getAttribute(" socialInteractionsConfigurationPortlet").getPortletId() );
+
+
+     			}
+     			
+}
+
+}

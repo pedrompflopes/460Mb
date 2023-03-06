@@ -1,0 +1,254 @@
+﻿ package PackageNo1831644376; public class form_builder_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String[] availableLanguageIds = LocalizationUtil.getAvailableLanguageIds(script);
+     
+     Locale[] availableLocales = new Locale[availableLanguageIds.length];
+     
+     for (int i = 0; i < availableLanguageIds.length; i++) {
+     	availableLocales[i] = LocaleUtil.fromLanguageId(availableLanguageIds[i]);
+     }
+     
+     String defaultLanguageId = LocalizationUtil.getDefaultLanguageId(script);
+     
+
+
+
+
+
+
+  response.write( LanguageUtil.get(request, "view[action]") + "," + LanguageUtil.get(request, "source") );
+    response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+response.write( availableLocales )+response.write(request.getAttribute(" availableLocales "));
+ response.write( defaultLanguageId );
+
+  response.write( false )+response.write(request.getAttribute(" false "));
+response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     JSONArray availableLocalesJSONArray = JSONFactoryUtil.createJSONArray();
+     
+     for (int i = 0; i < availableLocales.length; i++) {
+     	availableLocalesJSONArray.put(LanguageUtil.getLanguageId(availableLocales[i]));
+     }
+     
+     JSONObject localesMapJSONObject = JSONFactoryUtil.createJSONObject();
+     
+     for (Locale availableLocale : LanguageUtil.getAvailableLocales(themeDisplay.getSiteGroupId())) {
+     	localesMapJSONObject.put(LocaleUtil.toLanguageId(availableLocale), availableLocale.getDisplayName(locale));
+     }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( HtmlUtil.escapeJS(scopeAvailableFields) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(scopeAvailableFields) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( fieldsJSONArray.toString() )+response.write(request.getAttribute(" fieldsJSONArray").toString() );
+
+
+
+response.write( HtmlUtil.escapeJS(portletResourceNamespace) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(portletResourceNamespace) );
+
+
+
+
+ response.write( availableLocalesJSONArray.toString() )+response.write(request.getAttribute(" availableLocalesJSONArray").toString() );
+
+
+
+      response.write( HtmlUtil.escapeJS(defaultLanguageId) );
+  response.write( localesMapJSONObject.toString() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( portletDisplay.getRootPortletId() )+response.write(request.getAttribute(" portletDisplay").getRootPortletId() );
+}
+
+}

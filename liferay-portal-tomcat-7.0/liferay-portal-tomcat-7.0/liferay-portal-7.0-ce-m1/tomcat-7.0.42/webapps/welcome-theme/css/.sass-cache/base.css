@@ -1,0 +1,137 @@
+/* ---------- Flex containers ---------- */
+/* ---------- Flex container behavior ---------- */
+/* ---------- Flex container alignment ---------- */
+/* ---------- Flex items ---------- */
+/* ---------- Flex item alignment ---------- */
+/* ---------- Logo ---------- */
+.logo {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle; }
+
+/* ---------- Table styles ---------- */
+@media (max-width: 979px) {
+  .responsive-table-horizontal {
+    display: block;
+    position: relative;
+    width: 100%; }
+    .responsive-table-horizontal:after {
+      clear: both;
+      content: '';
+      display: block;
+      font-size: 0;
+      height: 0;
+      visibility: hidden; }
+    .responsive-table-horizontal tbody {
+      display: block;
+      overflow-x: auto;
+      position: relative;
+      white-space: nowrap;
+      width: auto; }
+      .responsive-table-horizontal tbody tr {
+        display: inline-block;
+        vertical-align: top; }
+        .responsive-table-horizontal tbody tr td {
+          display: block;
+          margin-bottom: 20px; }
+          .responsive-table-horizontal tbody tr td:first-child {
+            text-align: left; }
+    .responsive-table-horizontal thead {
+      display: block;
+      float: left;
+      margin-right: 10px; }
+      .responsive-table-horizontal thead:after {
+        clear: both;
+        content: "";
+        display: block;
+        font-size: 0;
+        height: 0;
+        visibility: hidden; }
+      .responsive-table-horizontal thead th {
+        display: block;
+        margin-bottom: 20px;
+        text-align: right; }
+        .responsive-table-horizontal thead th:first-child {
+          text-align: right; }
+
+  .ie9 .responsive-table-horizontal thead {
+    float: none; } }
+/* ---------- Text formatting ---------- */
+.important {
+  font-weight: bold; }
+
+/* ---------- Main content body ---------- */
+.portal-iframe #main-content {
+  width: 100%; }
+
+/* ---------- Loading animation ---------- */
+.loading-animation {
+  background: url(../images/progress_bar/loading_animation.gif) no-repeat top center;
+  margin-top: 10px;
+  padding-top: 40px;
+  text-align: left; }
+
+/* ---------- Separator ---------- */
+.separator {
+  border-top: 1px dotted #BFBFBF; }
+
+/* ---------- Update manager ---------- */
+.update-available {
+  margin-top: 10px;
+  padding: 2px;
+  text-align: left; }
+
+/* ---------- Text highlighting ---------- */
+.highlight {
+  background: #FFC;
+  font-weight: bold;
+  margin: 0 1px; }
+
+/* ---------- Miscellaneous ---------- */
+.hide-accessible {
+  clip: rect(0 0 0 0) !important;
+  position: absolute !important;
+  /*Webkit and IE7 let clipped content change the scroll height of the page*/
+  /*Scale webkit to 0*/
+  -webkit-transform: scale(0);
+  -webkit-transform-origin-x: 0;
+  -webkit-transform-origin-y: 0;
+  /*Change IE7 to using fixed*/
+  *position: fixed !important;
+  /*...And reset back to absolute for IE6*/
+  _position: absolute !important; }
+
+.force-offset {
+  display: block !important;
+  position: absolute !important;
+  visibility: hidden !important; }
+
+.unselectable, .unselectable * {
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+span.alert {
+  display: inline-block; }
+
+.quick-access-nav {
+  position: absolute;
+  top: -1000px;
+  width: 100%;
+  z-index: 1000; }
+  .quick-access-nav a {
+    background: #333;
+    background: rgba(51, 51, 51, 0.9);
+    border: 1px solid #FFF;
+    left: 0;
+    outline: none;
+    padding: 8px;
+    position: absolute;
+    right: 0;
+    text-align: center; }
+    .quick-access-nav a:focus {
+      color: #FFF;
+      top: 1000px; }

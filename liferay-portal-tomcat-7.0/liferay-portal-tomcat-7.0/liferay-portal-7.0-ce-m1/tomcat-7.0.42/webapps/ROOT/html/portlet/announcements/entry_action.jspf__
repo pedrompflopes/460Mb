@@ -1,0 +1,56 @@
+﻿ package PackageNo648097828; public class entry_action_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+       response.write(String.getValueOf(entry().getEntryId()))+response.write(request.getAttribute("String").getValueOf(entry().getEntryId()));
+
+
+
+
+     response.write( true )+response.write(request.getAttribute(" true "));
+
+   response.write( editURL )+response.write(request.getAttribute(" editURL "));
+
+
+
+
+
+
+
+
+       response.write(Constants.getDELETE())+response.write(request.getAttribute("Constants").getDELETE());
+       response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+       response.write(String.getValueOf(entry().getEntryId()))+response.write(request.getAttribute("String").getValueOf(entry().getEntryId()));
+
+
+
+     response.write( true )+response.write(request.getAttribute(" true "));
+   response.write( deleteURL )+response.write(request.getAttribute(" deleteURL "));
+
+
+
+
+
+
+      response.write( "javascript:" + renderResponse.getNamespace() + "handleEntry(" + entry.getEntryId() + ");" );       response.write( ((flagValue == AnnouncementsFlagConstants.NOT_HIDDEN) ? "mark-as-read" : "show") );
+}
+
+}

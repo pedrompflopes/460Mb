@@ -1,0 +1,43 @@
+﻿ package PackageNo227085230; public class template_search_results_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     TemplateSearchTerms searchTerms = (TemplateSearchTerms)searchContainer.getSearchTerms();
+     
+     long[] groupIds = ddmDisplay.getTemplateGroupIds(themeDisplay, showAncestorScopes);
+     long[] classNameIds = ddmDisplay.getTemplateClassNameIds(classNameId);
+     long[] classPKs = ddmDisplay.getTemplateClassPKs(company.getCompanyId(), classNameId, classPK);
+     
+     if (searchTerms.isAdvancedSearch()) {
+     	total = DDMTemplateServiceUtil.searchCount(company.getCompanyId(), groupIds, classNameIds, classPKs, searchTerms.getName(), searchTerms.getDescription(), searchTerms.getType(), null, null, searchTerms.isAndOperator());
+     
+     	searchContainer.setTotal(total);
+     
+     	results = DDMTemplateServiceUtil.search(company.getCompanyId(), groupIds, classNameIds, classPKs, searchTerms.getName(), searchTerms.getDescription(), searchTerms.getType(), ddmDisplay.getTemplateMode(), null, searchTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator());
+     }
+     else {
+     	total = DDMTemplateServiceUtil.searchCount(company.getCompanyId(), groupIds, classNameIds, classPKs, searchTerms.getKeywords(), searchTerms.getType(), ddmDisplay.getTemplateMode());
+     
+     	searchContainer.setTotal(total);
+     
+     	results = DDMTemplateServiceUtil.search(company.getCompanyId(), groupIds, classNameIds, classPKs, searchTerms.getKeywords(), searchTerms.getType(), ddmDisplay.getTemplateMode(), searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator());
+     }
+     
+     searchContainer.setResults(results);
+     
+}
+
+}

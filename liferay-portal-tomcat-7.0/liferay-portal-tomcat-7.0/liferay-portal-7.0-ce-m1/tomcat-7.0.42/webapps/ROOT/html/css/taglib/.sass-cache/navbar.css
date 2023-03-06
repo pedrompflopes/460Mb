@@ -1,0 +1,45 @@
+/* ---------- Flex containers ---------- */
+/* ---------- Flex container behavior ---------- */
+/* ---------- Flex container alignment ---------- */
+/* ---------- Flex items ---------- */
+/* ---------- Flex item alignment ---------- */
+.navbar .navbar-collapse {
+  max-height: none; }
+  .navbar .navbar-collapse:after, .navbar .navbar-collapse:before {
+    display: inline; }
+.navbar .navbar-search {
+  background-color: #F3F3F3;
+  border-top-width: 0;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .navbar .navbar-search {
+      background-color: transparent;
+      border-top-width: 1px;
+      width: auto; } }
+  .navbar .navbar-search .form-search {
+    margin: 9px 0; }
+    @media (min-width: 768px) {
+      .navbar .navbar-search .form-search {
+        float: right;
+        margin: 8px 0;
+        max-width: 275px; } }
+    .navbar .navbar-search .form-search .input-group {
+      width: 100%; }
+      @media (min-width: 768px) {
+        .navbar .navbar-search .form-search .input-group {
+          width: auto; } }
+
+@media (max-width: 979px) {
+  .navbar .container .navbar-btn, .navbar .container-fluid .navbar-btn {
+    color: #000;
+    margin-bottom: 5px;
+    width: 45px; }
+    .navbar .container .navbar-btn > .icon-bar:first-child, .navbar .container-fluid .navbar-btn > .icon-bar:first-child {
+      margin-top: 6px; }
+    .navbar .container .navbar-btn > .icon-bar:last-child, .navbar .container-fluid .navbar-btn > .icon-bar:last-child {
+      margin-bottom: 5px; }
+  .navbar .container .navbar-collapse.open, .navbar .container-fluid .navbar-collapse.open {
+    border-width: 0;
+    display: block;
+    height: auto;
+    overflow: visible; } }

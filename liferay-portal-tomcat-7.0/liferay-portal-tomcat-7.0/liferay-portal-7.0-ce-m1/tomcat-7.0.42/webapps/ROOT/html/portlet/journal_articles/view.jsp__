@@ -1,0 +1,287 @@
+﻿ package PackageNo1240019895;import _html_portlet_init_jsp;import _html_portlet_journal_articles_init_ext_jsp;import _html_portlet_journal_article_search_results_index_jspf;import _html_portlet_journal_article_search_results_database_jspf;import com.liferay.portlet.journal.util.JournalUtil; public class view_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\view.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\view.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ long groupId = GetterUtil.getLong(portletPreferences.getValue("groupId", String.valueOf(themeDisplay.getScopeGroupId()))); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ String ddmStructureKey = portletPreferences.getValue("ddmStructureKey", StringPool.BLANK); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ String type = portletPreferences.getValue("type", StringPool.BLANK); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ String pageUrl = portletPreferences.getValue("pageUrl", "maximized"); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ int pageDelta = GetterUtil.getInteger(portletPreferences.getValue("pageDelta", StringPool.BLANK)); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ String orderByCol = portletPreferences.getValue("orderByCol", StringPool.BLANK); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ String orderByType = portletPreferences.getValue("orderByType", StringPool.BLANK); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ OrderByComparator<JournalArticle> orderByComparator = JournalUtil.getArticleOrderByComparator(orderByCol, orderByType); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ DDMStructure ddmStructure = null; /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ if (Validator.isNotNull(ddmStructureKey)) { /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ 	ddmStructure = DDMStructureLocalServiceUtil.fetchStructure(groupId, PortalUtil.getClassNameId(JournalArticle.class), ddmStructureKey); /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ } /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone); /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\view.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     String articleId = ParamUtil.getString(request, "articleId");
+     double version = ParamUtil.getDouble(request, "version");
+     
+
+
+
+
+       
+     		if (Validator.isNull(type)) {
+     			type = null;
+     		}
+     
+     		PortletURL portletURL = renderResponse.createRenderURL();
+     
+     		portletURL.setParameter("struts_action", "/journal_articles/view");
+     
+     		if (pageUrl.equals("normal")) {
+     			portletURL.setWindowState(WindowState.NORMAL);
+     		}
+     		else {
+     			portletURL.setWindowState(WindowState.MAXIMIZED);
+     		}
+     
+     		PortletURL articleURL = PortletURLUtil.clone(portletURL, renderResponse);
+     
+     		ArticleSearch searchContainer = new ArticleSearch(renderRequest, portletURL);
+     
+     		searchContainer.setDelta(pageDelta);
+     		searchContainer.setDeltaConfigurable(false);
+     		searchContainer.setEmptyResultsMessage("no-web-content-was-found-that-matched-the-specified-filters");
+     		searchContainer.setOrderByCol(orderByCol);
+     		searchContainer.setOrderByType(orderByType);
+     		searchContainer.setOrderByComparator(orderByComparator);
+     
+     		List headerNames = searchContainer.getHeaderNames();
+     
+     		headerNames.clear();
+     
+     		headerNames.add("title");
+     		headerNames.add("display-date");
+     		headerNames.add("author");
+     
+     		searchContainer.setOrderableHeaders(null);
+     
+     		ArticleSearchTerms searchTerms = (ArticleSearchTerms)searchContainer.getSearchTerms();
+     
+     		searchTerms.setGroupId(groupId);
+     		searchTerms.setType(type);
+     
+     		if (ddmStructure != null) {
+     			searchTerms.setStructureId(ddmStructure.getStructureKey());
+     		}
+     
+     		searchTerms.setDisplayDateLT(new Date());
+     		searchTerms.setStatus(WorkflowConstants.STATUS_APPROVED);
+     		searchTerms.setVersion(version);
+     		searchTerms.setAdvancedSearch(true);
+     
+     		List<JournalArticle> results = null;
+     		int total = 0;
+     		
+
+  /* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\view.jsp */ /* 84?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\view.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal\article_search_results.jspf */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 84?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_articles\view.jsp */
+
+       
+     		List resultRows = searchContainer.getResultRows();
+     
+     		for (int i = 0; i < results.size(); i++) {
+     			JournalArticle article = results.get(i);
+     
+     			article = article.toEscapedModel();
+     
+     			ResultRow row = new ResultRow(article, article.getArticleId() + EditArticleAction.VERSION_SEPARATOR + article.getVersion(), i);
+     
+     			String rowHREF = null;
+     
+     			if (pageUrl.equals("popUp")) {
+     				StringBundler sb = new StringBundler(7);
+     
+     				sb.append(themeDisplay.getPathMain());
+     				sb.append("/journal_articles/view_article_content?groupId=");
+     				sb.append(article.getGroupId());
+     				sb.append("&articleId=");
+     				sb.append(article.getArticleId());
+     				sb.append("&version=");
+     				sb.append(article.getVersion());
+     
+     				rowHREF = sb.toString();
+     			}
+     			else {
+     				articleURL.setParameter("returnToFullPageURL", currentURL);
+     				articleURL.setParameter("groupId", String.valueOf(article.getGroupId()));
+     				articleURL.setParameter("articleId", article.getArticleId());
+     				articleURL.setParameter("version", String.valueOf(article.getVersion()));
+     
+     				if (pageUrl.equals("viewInContext")) {
+     					AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(JournalArticle.class.getName());
+     
+     					AssetRenderer assetRenderer = assetRendererFactory.getAssetRenderer(article.getId());
+     
+     					String viewFullContentURLString = articleURL.toString();
+     
+     					viewFullContentURLString = HttpUtil.setParameter(viewFullContentURLString, "redirect", currentURL);
+     
+     					rowHREF = assetRenderer.getURLViewInContext(liferayPortletRequest, liferayPortletResponse, viewFullContentURLString);
+     
+     					rowHREF = HttpUtil.setParameter(rowHREF, "redirect", currentURL);
+     
+     					if (Validator.isNull(rowHREF)) {
+     						rowHREF = articleURL.toString();
+     					}
+     				}
+     				else {
+     					rowHREF = articleURL.toString();
+     				}
+     			}
+     
+     			String target = null;
+     
+     			if (pageUrl.equals("popUp")) {
+     				target = "_blank";
+     			}
+     
+     			TextSearchEntry rowTextEntry = new TextSearchEntry();
+     
+     			rowTextEntry.setHref(rowHREF);
+     			rowTextEntry.setName(article.getArticleId());
+     			rowTextEntry.setTarget(target);
+     
+     			      
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     			// Title
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(article.getTitle(locale));
+     
+     			row.addText(rowTextEntry);
+     
+     			// Display date
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(dateFormatDateTime.format(article.getDisplayDate()));
+     
+     			row.addText(rowTextEntry);
+     
+     			// Author
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(PortalUtil.getUserName(article));
+     
+     			row.addText(rowTextEntry);
+     
+     			// Add result row
+     
+     			resultRows.add(row);
+     		}
+     		
+
+ response.write( searchContainer );
+
+
+
+       
+     		String languageId = LanguageUtil.getLanguageId(request);
+     		int articlePage = ParamUtil.getInteger(renderRequest, "page", 1);
+     
+     		JournalArticleDisplay articleDisplay = JournalContentUtil.getDisplay(groupId, articleId, null, null, languageId, articlePage, new PortletRequestModel(renderRequest, renderResponse), themeDisplay);
+     
+     		JournalArticle article = null;
+     
+     		try {
+     			article = JournalArticleLocalServiceUtil.getArticle(groupId, articleId, version);
+     
+     			boolean expired = article.isExpired();
+     
+     			if (!expired) {
+     				Date expirationDate = article.getExpirationDate();
+     
+     				if ((expirationDate != null) && expirationDate.before(new Date())) {
+     					expired = true;
+     				}
+     			}
+     			
+
+
+
+
+
+
+  response.write(redirect)+response.write(request.getAttribute("redirect"));
+
+
+
+  response.write( backURL )+response.write(request.getAttribute(" backURL "));
+response.write( false )+response.write(request.getAttribute(" false "));
+response.write( article.getTitle(locale) );
+
+
+
+  
+     					AssetEntryServiceUtil.incrementViewCounter(JournalArticle.class.getName(), articleDisplay.getResourcePrimKey());
+     					
+
+
+response.write( RuntimePageUtil.processXML(request, response, articleDisplay.getContent()) );
+
+
+
+
+   
+     						PortletURL portletURL = renderResponse.createRenderURL();
+     
+     						portletURL.setParameter("articleId", articleId);
+     						portletURL.setParameter("version", String.valueOf(version));
+     						
+
+
+
+
+      response.write( articleDisplay.getCurrentPage() );
+   response.write( "page" );
+response.write( 1 )+response.write(request.getAttribute(" 1 "));
+
+   response.write( 25 )+response.write(request.getAttribute(" 25 "));
+response.write( articleDisplay.getNumberOfPages() );
+
+      response.write( portletURL.toString() );
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		} catch (NoSuchArticleException nsae) {
+     		
+
+
+      response.write( LanguageUtil.get(request, "the-selected-web-content-no-longer-exists") );
+
+
+       
+     		}
+     		
+}
+
+}

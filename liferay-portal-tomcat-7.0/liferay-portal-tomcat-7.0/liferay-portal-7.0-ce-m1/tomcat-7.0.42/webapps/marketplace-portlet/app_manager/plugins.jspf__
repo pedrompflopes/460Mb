@@ -1,0 +1,217 @@
+﻿ package PackageNo228332683; public class plugins_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	for (Object plugin : plugins) {
+     	
+
+
+
+
+ 
+     				LayoutTemplate layoutTemplate = (LayoutTemplate)plugin;
+     				
+
+
+
+response.write( layoutTemplate.getName(locale) )+response.write(request.getAttribute(" layoutTemplate").getName(locale) );
+
+
+
+
+
+
+   
+     						PluginSetting pluginSetting = PluginSettingLocalServiceUtil.getPluginSetting(company.getCompanyId(), layoutTemplate.getLayoutTemplateId(), Plugin.TYPE_LAYOUT_TEMPLATE);
+     						
+
+
+
+
+    response.write(layoutTemplate.getLayoutTemplateId())+response.write(request.getAttribute("layoutTemplate").getLayoutTemplateId());
+    response.write(Plugin.getTYPE_LAYOUT_TEMPLATE())+response.write(request.getAttribute("Plugin").getTYPE_LAYOUT_TEMPLATE());
+    response.write(String.getValueOf(false))+response.write(request.getAttribute("String").getValueOf(false));
+
+
+   response.write(deactivateURL)+response.write(request.getAttribute("deactivateURL"));
+
+
+
+    response.write(layoutTemplate.getLayoutTemplateId())+response.write(request.getAttribute("layoutTemplate").getLayoutTemplateId());
+    response.write(Plugin.getTYPE_LAYOUT_TEMPLATE())+response.write(request.getAttribute("Plugin").getTYPE_LAYOUT_TEMPLATE());
+    response.write(String.getValueOf(true))+response.write(request.getAttribute("String").getValueOf(true));
+
+
+   response.write(activateURL)+response.write(request.getAttribute("activateURL"));
+
+
+
+
+
+
+
+ 
+     				Portlet portlet = (Portlet)plugin;
+     
+     				portlet = PortletLocalServiceUtil.getPortletById(themeDisplay.getCompanyId(), portlet.getPortletId());
+     				
+
+
+
+
+   
+     						String title = PortalUtil.getPortletTitle(portlet, application, locale);
+     						
+
+response.write( title );
+
+
+  response.write( portlet.getDisplayName() )+response.write(request.getAttribute(" portlet").getDisplayName() );
+
+
+
+
+
+   
+     						String controlPanelEntryCategory = portlet.getControlPanelEntryCategory();
+     						
+
+
+
+    
+     							String tooltipTitle = StringPool.BLANK;
+     
+     							if (controlPanelEntryCategory.startsWith(PortletCategoryKeys.SITE_ADMINISTRATION)) {
+     								tooltipTitle = "this-portlet-is-available-in-site-administration";
+     							}
+     							else if (controlPanelEntryCategory.equals(PortletCategoryKeys.MY)) {
+     								tooltipTitle = "this-portlet-is-available-in-my-account";
+     							}
+     							else {
+     								tooltipTitle = "this-portlet-is-available-in-the-control-panel";
+     							}
+     							
+
+  response.write(tooltipTitle)+response.write(request.getAttribute("tooltipTitle"));
+
+
+
+
+   
+     						List<Indexer> indexers = portlet.getIndexerInstances();
+     						
+
+
+
+    
+     							LiferayPortletURL reindexURL = PortletURLFactoryUtil.create(request, PortletKeys.ADMIN, themeDisplay.getPlid(), PortletRequest.ACTION_PHASE);
+     
+     							reindexURL.setParameter("struts_action", "/admin/edit_server");
+     							reindexURL.setParameter(Constants.CMD, "reindex");
+     							reindexURL.setParameter("redirect", PortalUtil.getCurrentURL(request));
+     							reindexURL.setParameter("portletId", portlet.getPortletId());
+     							
+
+  response.write(reindexURL)+response.write(request.getAttribute("reindexURL"));
+
+
+
+
+
+    response.write(portlet.getPortletId())+response.write(request.getAttribute("portlet").getPortletId());
+    response.write(Plugin.getTYPE_PORTLET())+response.write(request.getAttribute("Plugin").getTYPE_PORTLET());
+    response.write(String.getValueOf(false))+response.write(request.getAttribute("String").getValueOf(false));
+
+
+   response.write(deactivateURL)+response.write(request.getAttribute("deactivateURL"));
+
+
+
+    response.write(portlet.getPortletId())+response.write(request.getAttribute("portlet").getPortletId());
+    response.write(Plugin.getTYPE_PORTLET())+response.write(request.getAttribute("Plugin").getTYPE_PORTLET());
+    response.write(String.getValueOf(true))+response.write(request.getAttribute("String").getValueOf(true));
+
+
+   response.write(activateURL)+response.write(request.getAttribute("activateURL"));
+
+
+
+
+
+
+
+ 
+     				Theme curTheme = (Theme)plugin;
+     				
+
+
+
+response.write( curTheme.getName() )+response.write(request.getAttribute(" curTheme").getName() );
+
+
+
+
+
+
+   
+     						PluginSetting pluginSetting = PluginSettingLocalServiceUtil.getPluginSetting(company.getCompanyId(), curTheme.getThemeId(), Plugin.TYPE_THEME);
+     						
+
+
+
+
+    response.write(curTheme.getThemeId())+response.write(request.getAttribute("curTheme").getThemeId());
+    response.write(Plugin.getTYPE_THEME())+response.write(request.getAttribute("Plugin").getTYPE_THEME());
+    response.write(String.getValueOf(false))+response.write(request.getAttribute("String").getValueOf(false));
+
+
+   response.write(deactivateURL)+response.write(request.getAttribute("deactivateURL"));
+
+
+
+    response.write(curTheme.getThemeId())+response.write(request.getAttribute("curTheme").getThemeId());
+    response.write(Plugin.getTYPE_THEME())+response.write(request.getAttribute("Plugin").getTYPE_THEME());
+    response.write(String.getValueOf(true))+response.write(request.getAttribute("String").getValueOf(true));
+
+
+   response.write(activateURL)+response.write(request.getAttribute("activateURL"));
+
+
+
+
+
+
+
+      
+     	}
+     	
+}
+
+}

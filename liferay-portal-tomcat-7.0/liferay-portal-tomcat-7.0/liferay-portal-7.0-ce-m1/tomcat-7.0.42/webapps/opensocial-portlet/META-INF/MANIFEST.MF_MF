@@ -1,0 +1,8 @@
+﻿public class CxManifestClass865923996 {String Manifest_Version="1.0";
+String Archiver_Version="Plexus Archiver";
+String Created_By="Apache Maven";
+String Built_By="liferay";
+String Build_Jdk="1.6.0_29";
+
+
+}

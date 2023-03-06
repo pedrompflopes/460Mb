@@ -1,0 +1,316 @@
+﻿ package PackageNo1203784670;import _html_portlet_init_jsp;import _html_portlet_trash_init_ext_jsp;import com.liferay.portal.TrashPermissionException;import com.liferay.portal.kernel.trash.TrashHandler;import com.liferay.portal.kernel.trash.TrashHandlerRegistryUtil;import com.liferay.portal.kernel.trash.TrashRenderer;import com.liferay.portlet.trash.RestoreEntryException;import com.liferay.portlet.trash.model.TrashEntryList;import com.liferay.portlet.trash.model.impl.TrashEntryImpl;import com.liferay.portlet.trash.search.EntrySearch;import com.liferay.portlet.trash.search.EntrySearchTerms;import com.liferay.portlet.trash.service.TrashEntryLocalServiceUtil;import com.liferay.portlet.trash.service.TrashEntryServiceUtil; public class view_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\view.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\view.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\trash\view.jsp */
+
+     
+     String tabs1 = ParamUtil.getString(request, "tabs1", "staging");
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     String keywords = ParamUtil.getString(request, "keywords");
+     
+     long groupId = themeDisplay.getScopeGroupId();
+     
+     Group group = GroupLocalServiceUtil.getGroup(groupId);
+     
+     if (group.isStagingGroup() && tabs1.equals("live")) {
+     	groupId = group.getLiveGroupId();
+     }
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/trash/view");
+     portletURL.setParameter("tabs1", tabs1);
+     
+     PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, "recycle-bin"), portletURL.toString());
+     
+     if (Validator.isNotNull(keywords)) {
+     	PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, "search") + ": " + keywords, currentURL);
+     }
+     
+
+
+
+       response.write( RestoreEntryException.class )+response.write(request.getAttribute(" RestoreEntryException").class );
+
+      
+     	RestoreEntryException ree = (RestoreEntryException)errorException;
+     	
+
+
+
+
+
+
+
+
+
+
+       response.write( TrashPermissionException.class )+response.write(request.getAttribute(" TrashPermissionException").class );
+
+      
+     	TrashPermissionException tpe = (TrashPermissionException)errorException;
+     	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( portletURL.toString() );
+
+
+
+
+
+
+
+
+    response.write( new EntrySearch(renderRequest, portletURL) );
+
+
+      
+     	boolean approximate = false;
+     	
+
+
+
+       
+     		EntrySearchTerms searchTerms = (EntrySearchTerms)searchContainer.getSearchTerms();
+     
+     		if (Validator.isNotNull(searchTerms.getKeywords())) {
+     			Sort sort = SortFactoryUtil.getSort(TrashEntry.class, searchContainer.getOrderByCol(), searchContainer.getOrderByType());
+     
+     			BaseModelSearchResult<TrashEntry> baseModelSearchResult = TrashEntryLocalServiceUtil.searchTrashEntries(company.getCompanyId(), groupId, user.getUserId(), searchTerms.getKeywords(), searchContainer.getStart(), searchContainer.getEnd(), sort);
+     
+     			searchContainer.setTotal(baseModelSearchResult.getLength());
+     
+     			results = baseModelSearchResult.getBaseModels();
+     		}
+     		else {
+     			TrashEntryList trashEntryList = TrashEntryServiceUtil.getEntries(groupId, searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator());
+     
+     			searchContainer.setTotal(trashEntryList.getCount());
+     
+     			results = TrashEntryImpl.toModels(trashEntryList.getArray());
+     
+     			approximate = trashEntryList.isApproximate();
+     		}
+     
+     		searchContainer.setResults(results);
+     
+     		if ((searchContainer.getTotal() == 0) && Validator.isNotNull(searchTerms.getKeywords())) {
+     			searchContainer.setEmptyResultsMessage(LanguageUtil.format(request, "no-entries-were-found-that-matched-the-keywords-x", "<strong>" + HtmlUtil.escape(searchTerms.getKeywords()) + "</strong>", false));
+     		}
+     		
+
+
+
+
+
+
+
+
+
+       
+     		TrashHandler trashHandler = TrashHandlerRegistryUtil.getTrashHandler(entry.getClassName());
+     
+     		TrashRenderer trashRenderer = trashHandler.getTrashRenderer(entry.getClassPK());
+     
+     		String viewContentURLString = null;
+     
+     		if (trashRenderer != null) {
+     			PortletURL viewContentURL = renderResponse.createRenderURL();
+     
+     			viewContentURL.setParameter("struts_action", "/trash/view_content");
+     			viewContentURL.setParameter("redirect", currentURL);
+     
+     			if (entry.getRootEntry() != null) {
+     				viewContentURL.setParameter("className", entry.getClassName());
+     				viewContentURL.setParameter("classPK", String.valueOf(entry.getClassPK()));
+     			}
+     			else {
+     				viewContentURL.setParameter("trashEntryId", String.valueOf(entry.getEntryId()));
+     			}
+     
+     			viewContentURL.setParameter("type", trashRenderer.getType());
+     			viewContentURL.setParameter("showActions", Boolean.FALSE.toString());
+     			viewContentURL.setParameter("showAssetMetadata", Boolean.TRUE.toString());
+     			viewContentURL.setParameter("showEditURL", Boolean.FALSE.toString());
+     
+     			viewContentURLString = viewContentURL.toString();
+     		}
+     		
+
+
+
+
+
+    response.write( trashRenderer.getIconCssClass() );
+     response.write( true )+response.write(request.getAttribute(" true "));
+       response.write( HtmlUtil.escape(trashRenderer.getTitle(locale)) );
+
+   response.write( viewContentURLString );
+
+
+
+
+ 
+     				TrashEntry rootEntry = entry.getRootEntry();
+     
+     				TrashHandler rootTrashHandler = TrashHandlerRegistryUtil.getTrashHandler(rootEntry.getClassName());
+     
+     				TrashRenderer rootTrashRenderer = rootTrashHandler.getTrashRenderer(rootEntry.getClassPK());
+     
+     				String viewRootContentURLString = null;
+     
+     				if (rootTrashRenderer != null) {
+     					PortletURL viewContentURL = renderResponse.createRenderURL();
+     
+     					viewContentURL.setParameter("struts_action", "/trash/view_content");
+     					viewContentURL.setParameter("redirect", currentURL);
+     					viewContentURL.setParameter("trashEntryId", String.valueOf(rootEntry.getEntryId()));
+     					viewContentURL.setParameter("type", rootTrashRenderer.getType());
+     					viewContentURL.setParameter("showActions", Boolean.FALSE.toString());
+     					viewContentURL.setParameter("showAssetMetadata", Boolean.TRUE.toString());
+     					viewContentURL.setParameter("showEditURL", Boolean.FALSE.toString());
+     
+     					viewRootContentURLString = viewContentURL.toString();
+     				}
+     				
+
+
+
+      response.write( rootTrashRenderer.getIconCssClass() );
+       response.write( true )+response.write(request.getAttribute(" true "));
+ response.write( HtmlUtil.escape(rootTrashRenderer.getTitle(locale)) );
+
+     response.write( viewRootContentURLString );
+
+
+
+     response.write( rootEntryIcon )+response.write(request.getAttribute(" rootEntryIcon "));response.write( rootTrashHandler.getDeleteMessage() );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+    response.write( ResourceActionsUtil.getModelResource(locale, entry.getClassName()) )+response.write(request.getAttribute(" ResourceActionsUtil").getModelResource(locale, entry.getClassName()) );
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+    response.write( entry.getCreateDate() )+response.write(request.getAttribute(" entry").getCreateDate() );
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+    response.write( HtmlUtil.escape(entry.getUserName()) )+response.write(request.getAttribute(" HtmlUtil").escape(entry.getUserName()) );
+
+
+
+
+
+
+
+     response.write( trashRenderer.renderActions(renderRequest, renderResponse) );
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     					request.removeAttribute(WebKeys.SEARCH_CONTAINER_RESULT_ROW);
+     
+     					request.setAttribute(WebKeys.TRASH_RENDERER, trashRenderer);
+     					
+
+
+
+
+
+
+
+
+
+     response.write(String.getValueOf(groupId));
+
+
+
+response.write( emptyTrashURL )+response.write(request.getAttribute(" emptyTrashURL "));
+  response.write( searchContainer.getTotal() )+response.write(request.getAttribute(" searchContainer").getTotal() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+    response.write( false )+response.write(request.getAttribute(" false "));
+response.write( false )+response.write(request.getAttribute(" false "));
+      response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+     response.write( approximate ? "more" : "regular" );
+}
+
+}

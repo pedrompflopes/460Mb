@@ -1,0 +1,315 @@
+﻿ package PackageNo1448003294; public class calendar_booking_recurrence_container_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     int count = 0;
+     String exceptionDatesString = StringPool.BLANK;
+     Frequency frequency = null;
+     int interval = 0;
+     java.util.Calendar untilJCalendar = startTimeJCalendar;
+     List<Weekday> weekdays = new ArrayList<Weekday>();
+     
+     boolean afterChecked = false;
+     boolean onChecked = false;
+     
+     if (recurrence != null) {
+     	count = recurrence.getCount();
+     	frequency = recurrence.getFrequency();
+     	interval = recurrence.getInterval();
+     
+     	if (recurrence.getUntilJCalendar() != null) {
+     		untilJCalendar = recurrence.getUntilJCalendar();
+     	}
+     
+     	weekdays = recurrence.getWeekdays();
+     
+     	if (count > 0) {
+     		afterChecked = true;
+     	}
+     
+     	if (recurrence.getUntilJCalendar() != null) {
+     		onChecked = true;
+     	}
+     
+     	StringBundler sb = new StringBundler();
+     
+     	List<java.util.Calendar> exceptionJCalendars = recurrence.getExceptionJCalendars();
+     
+     	Iterator<java.util.Calendar> iterator = exceptionJCalendars.iterator();
+     
+     	while (iterator.hasNext()) {
+     		java.util.Calendar exceptionJCalendar = iterator.next();
+     
+     		sb.append(exceptionJCalendar.getTimeInMillis());
+     
+     		if (iterator.hasNext()) {
+     			sb.append(StringPool.COMMA);
+     		}
+     	}
+     
+     	exceptionDatesString = sb.toString();
+     }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						for (Frequency curFrequency : Frequency.values()) {
+     						
+
+  response.write( LanguageUtil.get(locale, StringUtil.toLowerCase(curFrequency.getValue())) )+response.write(request.getAttribute(" LanguageUtil").get(locale, StringUtil.toLowerCase(curFrequency.getValue())) );
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						for (int i = 1; i <= 30; i++) {
+     						
+
+response.write( i )+response.write(request.getAttribute(" i "));
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+ response.write( (frequency == Frequency.WEEKLY) ? "" : "hide" );   response.write( Frequency.WEEKLY )+response.write(request.getAttribute(" Frequency").WEEKLY );
+
+
+
+
+
+       response.write( true )+response.write(request.getAttribute(" true "));
+
+   
+     						for (Weekday weekday : Weekday.values()) {
+     						
+
+
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( untilJCalendar.get(java.util.Calendar.DATE) );
+    response.write( !onChecked );
+
+      response.write( untilJCalendar.get(java.util.Calendar.MONTH) );
+
+
+     response.write( untilJCalendar.get(java.util.Calendar.YEAR) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( renderResponse.getNamespace() + HtmlUtil.getAUICompatibleId("untilDateDatePicker") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( Frequency.WEEKLY )+response.write(request.getAttribute(" Frequency").WEEKLY );response.write( Frequency.WEEKLY )+response.write(request.getAttribute(" Frequency").WEEKLY );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( Frequency.WEEKLY )+response.write(request.getAttribute(" Frequency").WEEKLY );
+}
+
+}

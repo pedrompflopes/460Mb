@@ -1,0 +1,29 @@
+﻿ package PackageNo1170758767; public class mobile_device_rules_header_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     PortletURL portletURL = liferayPortletResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/layouts_admin/edit_layouts");
+     portletURL.setParameter("selPlid", String.valueOf(layoutsAdminDisplayContext.getSelPlid()));
+     portletURL.setParameter("className", className);
+     portletURL.setParameter("classPK", String.valueOf(classPK));
+     
+     request.setAttribute("mobile_device_rules_header.jspf-portletURL", portletURL);
+     
+}
+
+}

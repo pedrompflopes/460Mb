@@ -1,0 +1,39 @@
+﻿ package PackageNo1523459934; public class error_remote_export_exception_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( RemoteExportException.class )+response.write(request.getAttribute(" RemoteExportException").class );
+
+      
+     	RemoteExportException ree = (RemoteExportException)errorException;
+     	
+
+
+   response.write( "<em>" + ree.getURL() + "</em>" );      response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+   response.write( "<em>" + ree.getGroupId() + "</em>" );   response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+   response.write( ree.getGroupId() )+response.write(request.getAttribute(" ree").getGroupId() );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+   response.write( ree.getGroupId() )+response.write(request.getAttribute(" ree").getGroupId() );      response.write( false )+response.write(request.getAttribute(" false "));
+}
+
+}

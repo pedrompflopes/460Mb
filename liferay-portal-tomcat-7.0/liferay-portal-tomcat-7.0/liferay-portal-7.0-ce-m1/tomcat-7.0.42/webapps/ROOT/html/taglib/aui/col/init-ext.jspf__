@@ -1,0 +1,55 @@
+﻿ package PackageNo1341747857; public class init_ext_jspf {  /* 1 */ private static void _getGridCssClasses(String sizes, String sizeType, StringBundler sb) { /* 55 */ 	for (String size : StringUtil.split(sizes)) { /* 56 */ 		sb.append("col-"); /* 57 */ 		sb.append(sizeType); /* 58 */ 		sb.append(StringPool.DASH); /* 59 */ 		sb.append(StringUtil.trim(size)); /* 60 */ 		sb.append(StringPool.SPACE); /* 61 */ 	} /* 62 */ } /* 63 */ private static final int _COLUMNS = 12; /* 65 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if (Validator.isNotNull(id)) {
+     	id = portletResponse.getNamespace() + id;
+     }
+     
+     StringBundler sb = new StringBundler();
+     
+     if (Validator.isNotNull(xs)) {
+     	_getGridCssClasses(xs, "xs", sb);
+     }
+     
+     if (Validator.isNotNull(sm)) {
+     	_getGridCssClasses(sm, "sm", sb);
+     }
+     
+     if (Validator.isNotNull(md)) {
+     	_getGridCssClasses(md, "md", sb);
+     }
+     
+     if (Validator.isNotNull(lg)) {
+     	_getGridCssClasses(lg, "lg", sb);
+     }
+     
+     String gridCssClasses = sb.toString();
+     
+     if (Validator.isNull(gridCssClasses)) {
+     	if (width > 0) {
+     		span = (int)Math.round(_COLUMNS * ((double)width / 100));
+     	}
+     
+     	sb.append("col-md-");
+     	sb.append(span);
+     
+     	gridCssClasses = sb.toString();
+     }
+     
+}
+
+}

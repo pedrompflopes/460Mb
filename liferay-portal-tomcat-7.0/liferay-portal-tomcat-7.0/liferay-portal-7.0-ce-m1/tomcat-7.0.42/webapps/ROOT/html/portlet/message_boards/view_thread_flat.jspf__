@@ -1,0 +1,91 @@
+﻿ package PackageNo253284376; public class view_thread_flat_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/message_boards/view_message");
+     portletURL.setParameter("messageId", String.valueOf(message.getMessageId()));
+     
+     SearchContainer searchContainer = null;
+     
+     if (threadView.equals(MBThreadConstants.THREAD_VIEW_FLAT)) {
+     	int cur = 0;
+     	int delta = SearchContainer.DEFAULT_DELTA;
+     
+     	if (request.getParameter(SearchContainer.DEFAULT_CUR_PARAM) == null) {
+     		int positionInThread = MBMessageLocalServiceUtil.getPositionInThread(message.getMessageId());
+     
+     		if (positionInThread > delta) {
+     			cur = (int)Math.ceil(((double)positionInThread) / delta);
+     		}
+     		else {
+     			cur = SearchContainer.DEFAULT_CUR;
+     		}
+     	}
+     
+     	searchContainer = new SearchContainer(renderRequest, null, null, SearchContainer.DEFAULT_CUR_PARAM, cur, delta, portletURL, null, null);
+     
+     	int total = MBMessageServiceUtil.getThreadMessagesCount(message.getGroupId(), category.getCategoryId(), message.getThreadId(), WorkflowConstants.STATUS_ANY);
+     
+     	searchContainer.setTotal(total);
+     
+     	messages = MBMessageServiceUtil.getThreadMessages(message.getGroupId(), category.getCategoryId(), message.getThreadId(), WorkflowConstants.STATUS_ANY, searchContainer.getStart(), searchContainer.getEnd());
+     
+     	searchContainer.setResults(messages);
+     }
+     
+
+
+
+       response.write( searchContainer );
+
+
+
+     
+     int depth = 0;
+     
+     for (int i = 0; i < messages.size(); i++) {
+     	message = messages.get(i);
+     
+     	if (!MBUtil.isViewableMessage(themeDisplay, message)) {
+     		continue;
+     	}
+     
+     	viewableThread = true;
+     
+     	request.setAttribute("edit_message.jsp-category", category);
+     	request.setAttribute("edit_message.jsp-depth", depth);
+     	request.setAttribute("edit_message.jsp-editable", Boolean.TRUE);
+     	request.setAttribute("edit_message.jsp-message", message);
+     	request.setAttribute("edit-message.jsp-showDeletedAttachmentsFileEntries", Boolean.TRUE);
+     	request.setAttribute("edit-message.jsp-showPermanentLink", Boolean.TRUE);
+     	request.setAttribute("edit-message.jsp-showRecentPosts", Boolean.TRUE);
+     	request.setAttribute("edit_message.jsp-thread", thread);
+     
+
+
+
+     
+     }
+     
+
+
+
+  response.write( searchContainer );
+}
+
+}

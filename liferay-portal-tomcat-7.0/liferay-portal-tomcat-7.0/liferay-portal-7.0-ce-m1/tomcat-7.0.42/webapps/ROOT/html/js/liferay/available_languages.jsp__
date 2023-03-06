@@ -1,0 +1,54 @@
+﻿ package PackageNo903101131;import com.liferay.portal.kernel.language.LanguageUtil;import com.liferay.portal.kernel.servlet.HttpHeaders;import com.liferay.portal.kernel.util.ContentTypes;import com.liferay.portal.kernel.util.LocaleUtil;import java.util.Locale; public class available_languages_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     response.addHeader(HttpHeaders.CONTENT_TYPE, ContentTypes.TEXT_JAVASCRIPT);
+     
+     String languageId = LanguageUtil.getLanguageId(request);
+     
+     Locale locale = LocaleUtil.fromLanguageId(languageId);
+     
+     Locale[] locales = LanguageUtil.getAvailableLocales();
+     
+
+
+
+
+
+
+
+
+       
+     		for (Locale curLocale : locales) {
+     			String selLanguageId = LocaleUtil.toLanguageId(curLocale);
+     		
+
+response.write( selLanguageId );response.write( curLocale.getDisplayName(locale) );
+response.write( selLanguageId );response.write( LanguageUtil.get(curLocale, "lang.dir") );
+
+       
+     		}
+     		
+}
+
+}

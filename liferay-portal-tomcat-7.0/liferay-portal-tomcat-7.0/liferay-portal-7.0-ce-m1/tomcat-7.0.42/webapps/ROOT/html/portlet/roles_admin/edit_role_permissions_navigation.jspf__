@@ -1,0 +1,310 @@
+﻿ package PackageNo1875874999; public class edit_role_permissions_navigation_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write(Constants.getVIEW())+response.write(request.getAttribute("Constants").getVIEW());
+
+       response.write(backURL)+response.write(request.getAttribute("backURL"));
+       response.write(String.getValueOf(role().getRoleId()))+response.write(request.getAttribute("String").getValueOf(role().getRoleId()));
+
+
+
+     			Map<String, Object> data = new HashMap<String, Object>();
+     
+     			data.put("resource-href", viewPermissionsResourceURL.toString());
+     			
+
+
+
+       response.write(Constants.getVIEW())+response.write(request.getAttribute("Constants").getVIEW());
+
+       response.write(backURL)+response.write(request.getAttribute("backURL"));
+       response.write(String.getValueOf(role().getRoleId()))+response.write(request.getAttribute("String").getValueOf(role().getRoleId()));
+
+
+
+
+
+
+
+
+
+
+
+  
+     					Portlet usersAdminPortlet = PortletLocalServiceUtil.getPortletById(company.getCompanyId(), PortletKeys.USERS_ADMIN);
+     
+     					editPermissionsResourceURL.setParameter("portletResource", usersAdminPortlet.getPortletId());
+     
+     					editPermissionsURL.setParameter("portletResource", usersAdminPortlet.getPortletId());
+     
+     					data.put("resource-href", editPermissionsResourceURL.toString());
+     					
+
+
+
+ response.write( PortalUtil.getPortletLongTitle(usersAdminPortlet, application, locale) );
+
+
+
+
+
+  
+     					editPermissionsResourceURL.setParameter("portletResource", PortletKeys.PORTAL);
+     
+     					editPermissionsURL.setParameter("portletResource", PortletKeys.PORTAL);
+     
+     					data.put("resource-href", editPermissionsResourceURL.toString());
+     					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     							for (String category : PortletCategoryKeys.ALL) {
+     								Set<Portlet> categoryPortlets = PortalUtil.getControlPanelPortlets(company.getCompanyId(), category);
+     							
+
+
+
+
+
+
+
+
+
+    response.write( "category." + category );
+
+
+
+
+
+     											for (Portlet categoryPortlet : categoryPortlets) {
+     												editPermissionsResourceURL.setParameter("portletResource", categoryPortlet.getPortletId());
+     
+     												editPermissionsURL.setParameter("portletResource", categoryPortlet.getPortletId());
+     
+     												data.put("resource-href", editPermissionsResourceURL.toString());
+     											
+
+
+
+
+ response.write( PortalUtil.getPortletLongTitle(categoryPortlet, application, locale) );
+
+
+
+
+
+     											}
+     											
+
+
+
+
+
+    
+     							}
+     							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     					for (String category : PortletCategoryKeys.SITE_ADMINISTRATION_ALL) {
+     						Set<Portlet> categoryPortlets = PortalUtil.getControlPanelPortlets(company.getCompanyId(), category);
+     					
+
+
+
+
+
+
+
+
+
+  response.write( "category." + category );
+
+
+
+
+      
+     									for (Portlet categoryPortlet : categoryPortlets) {
+     										editPermissionsResourceURL.setParameter("portletResource", categoryPortlet.getPortletId());
+     
+     										editPermissionsURL.setParameter("portletResource", categoryPortlet.getPortletId());
+     
+     										data.put("resource-href", editPermissionsResourceURL.toString());
+     									
+
+
+
+
+       response.write( PortalUtil.getPortletLongTitle(categoryPortlet, application, locale) );
+
+
+
+
+      
+     									}
+     									
+
+
+
+
+
+  
+     					}
+     
+     					Set<String> hiddenPortletIds = Collections.emptySet();
+     
+     					PortletCategory portletCategory = (PortletCategory)WebAppPool.get(company.getCompanyId(), WebKeys.PORTLET_CATEGORY);
+     
+     					PortletCategory hiddentPortletCategory = portletCategory.getCategory(PortletCategoryConstants.NAME_HIDDEN);
+     
+     					if (hiddentPortletCategory != null) {
+     						hiddenPortletIds = hiddentPortletCategory.getPortletIds();
+     					}
+     					
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     							boolean includeSystemPortlets = false;
+     
+     							List<Portlet> portlets = PortletLocalServiceUtil.getPortlets(company.getCompanyId(), includeSystemPortlets, false);
+     
+     							portlets = ListUtil.sort(portlets, new PortletTitleComparator(application, locale));
+     
+     							for (Portlet curPortlet : portlets) {
+     								if (Validator.isNull(curPortlet.getPortletId()) || hiddenPortletIds.contains(curPortlet.getPortletId())) {
+     									continue;
+     								}
+     
+     								editPermissionsResourceURL.setParameter("portletResource", curPortlet.getPortletId());
+     
+     								editPermissionsURL.setParameter("portletResource", curPortlet.getPortletId());
+     
+     								data.put("resource-href", editPermissionsResourceURL.toString());
+     							
+
+
+
+
+     response.write( PortalUtil.getPortletLongTitle(curPortlet, application, locale) );
+
+
+
+
+    
+     							}
+     							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						Set<Portlet> myAccountPortlets = PortalUtil.getControlPanelPortlets(company.getCompanyId(), PortletCategoryKeys.MY);
+     
+     						for (Portlet myAccountPortlet : myAccountPortlets) {
+     							editPermissionsResourceURL.setParameter("portletResource", myAccountPortlet.getPortletId());
+     
+     							editPermissionsURL.setParameter("portletResource", myAccountPortlet.getPortletId());
+     
+     							data.put("resource-href", editPermissionsResourceURL.toString());
+     						
+
+
+
+
+    response.write( PortalUtil.getPortletLongTitle(myAccountPortlet, application, locale) );
+
+
+
+
+   
+     						}
+     						
+}
+
+}

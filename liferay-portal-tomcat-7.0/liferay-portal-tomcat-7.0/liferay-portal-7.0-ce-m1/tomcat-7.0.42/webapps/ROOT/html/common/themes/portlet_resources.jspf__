@@ -1,0 +1,56 @@
+﻿ package PackageNo632927424; public class portlet_resources_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     List<String> urls = new ArrayList<String>();
+     
+
+
+
+      
+     	Set<String> portletResourceStaticURLs = (Set<String>)request.getAttribute(WebKeys.PORTLET_RESOURCE_STATIC_URLS);
+     
+     	if (portletResourceStaticURLs == null) {
+     		portletResourceStaticURLs = new LinkedHashSet<String>();
+     
+     		request.setAttribute(WebKeys.PORTLET_RESOURCE_STATIC_URLS, portletResourceStaticURLs);
+     	}
+     
+     	if (useComboServletStaticURLGenerator) {
+     		ComboServletStaticURLGenerator comboServletStaticURLGenerator = new ComboServletStaticURLGenerator();
+     
+     		comboServletStaticURLGenerator.setPortletResourceAccessors(portletResourceAccessors);
+     		comboServletStaticURLGenerator.setPredicateFilter(predicateFilter);
+     		comboServletStaticURLGenerator.setTimestamp(theme.getTimestamp());
+     		comboServletStaticURLGenerator.setURLPrefix(PortalUtil.getStaticResourceURL(request, themeDisplay.getCDNDynamicResourcesHost() + themeDisplay.getPathContext() + "/combo", "minifierType=&themeId=" + themeDisplay.getThemeId(), -1));
+     		comboServletStaticURLGenerator.setVisitedURLs(portletResourceStaticURLs);
+     
+     		urls.addAll(comboServletStaticURLGenerator.generate(portlets));
+     	}
+     	else {
+     		PortletResourceStaticURLGenerator portletResourceStaticURLGenerator = new PortletResourceStaticURLGenerator();
+     
+     		portletResourceStaticURLGenerator.setRequest(request);
+     		portletResourceStaticURLGenerator.setVisitedURLs(portletResourceStaticURLs);
+     
+     		for (Portlet curPortlet : portlets) {
+     			urls.addAll(portletResourceStaticURLGenerator.generate(curPortlet, portletResourceAccessors));
+     		}
+     	}
+     	
+}
+
+}

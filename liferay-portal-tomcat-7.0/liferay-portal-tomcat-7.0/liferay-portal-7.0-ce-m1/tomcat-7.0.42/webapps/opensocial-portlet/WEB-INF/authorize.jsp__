@@ -1,0 +1,79 @@
+﻿ package PackageNo483202109;import org.apache.shiro.SecurityUtils;import net.oauth.OAuthConsumer;import org.apache.shindig.social.opensocial.oauth.OAuthEntry;import org.apache.shindig.social.opensocial.oauth.OAuthDataStore;import java.net.URLEncoder; public class authorize_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+       // Gather data passed in to us.
+       OAuthConsumer consumer = (OAuthConsumer)request.getAttribute("CONSUMER");
+       OAuthEntry entry = (OAuthEntry) request.getAttribute("OAUTH_ENTRY");
+       OAuthDataStore dataStore = (OAuthDataStore) request.getAttribute("OAUTH_DATASTORE");
+       String token = (String)request.getAttribute("TOKEN");
+       String callback = (String)request.getAttribute("CALLBACK");
+     
+       // Check if the user already authorized
+       // TODO - this is a bit hard since we cannot get at the jsondb here...
+     
+       // If user clicked on the Authorize button then we're good.
+       if (request.getParameter("Authorize") != null) {
+ // If the user clicked the Authorize button we authorize the token and redirect back.
+ dataStore.authorizeToken(entry, SecurityUtils.getSubject().getPrincipal().toString());
+     
+ // Bounce back to the servlet to handle redirecting to the callback URL
+ request.getRequestDispatcher("/oauth/authorize?oauth_token=" + token + "&oauth_callback=" + callback)
+ .forward(request,response);
+       } else if (request.getParameter("Deny") != null) {
+ dataStore.removeToken(entry);
+       }
+       // Gather some data
+       pageContext.setAttribute("appTitle", consumer.getProperty("title") , PageContext.PAGE_SCOPE);
+       pageContext.setAttribute("appDesc", consumer.getProperty("description"), PageContext.PAGE_SCOPE);
+ 
+       pageContext.setAttribute("appIcon", consumer.getProperty("icon"));
+       pageContext.setAttribute("appThumbnail", consumer.getProperty("thumbnail"));
+     
+
+
+
+
+
+
+
+
+
+
+      c_out.value.response.write(appIcon)+c_out.value.response.write(request.getAttribute("appIcon"));c_out.value.response.write(appIcon+cx_escFalse.escapeXml)+c_out.value.response.write(request.getAttribute("appIcon")+cx_escFalse.escapeXml);c_out.value.response.write(appTitle)+c_out.value.response.write(request.getAttribute("appTitle"));c_out.value.response.write(appTitle)+c_out.value.response.write(request.getAttribute("appTitle"));
+  c_out.value.response.write(appThumbnail)+c_out.value.response.write(request.getAttribute("appThumbnail"));c_out.value.response.write(appThumbnail+cx_escFalse.escapeXml)+c_out.value.response.write(request.getAttribute("appThumbnail")+cx_escFalse.escapeXml);
+     c_out.value.response.write(appDesc)+c_out.value.response.write(request.getAttribute("appDesc"));c_out.value.response.write(appDesc)+c_out.value.response.write(request.getAttribute("appDesc"));
+
+
+
+     response.write(token);
+}
+
+}

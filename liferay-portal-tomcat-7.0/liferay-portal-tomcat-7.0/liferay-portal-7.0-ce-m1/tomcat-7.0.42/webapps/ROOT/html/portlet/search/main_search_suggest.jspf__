@@ -1,0 +1,92 @@
+﻿ package PackageNo128407120; public class main_search_suggest_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     				String taglibSearchCollatedKeywords = renderResponse.getNamespace() + "searchKeywords('" + HtmlUtil.escapeJS(hits.getCollatedSpellCheckResult()) + "')";
+     				
+
+
+
+  
+     					KeywordsSuggestionHolder keywordsSuggestionHolder = new KeywordsSuggestionHolder(hits.getCollatedSpellCheckResult(), searchContext.getKeywords());
+     
+     					for (String suggestedKeyword : keywordsSuggestionHolder.getSuggestedKeywords()) {
+     					
+
+     response.write( keywordsSuggestionHolder.hasChanged(suggestedKeyword) ? "changed-keyword" : "unchanged-keyword" );
+ response.write( HtmlUtil.escape(suggestedKeyword) )+response.write(request.getAttribute(" HtmlUtil").escape(suggestedKeyword) );
+
+
+  
+     					}
+     					
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			for (String querySuggestion : hits.getQuerySuggestions()) {
+     			
+
+
+
+
+   
+     						String taglibOnClick = renderResponse.getNamespace() + "searchKeywords('" + HtmlUtil.escapeJS(querySuggestion) + "')";
+     						
+
+
+
+    
+     							KeywordsSuggestionHolder keywordsSuggestionHolder = new KeywordsSuggestionHolder(querySuggestion, searchContext.getKeywords());
+     
+     							for (String suggestedKeyword : keywordsSuggestionHolder.getSuggestedKeywords()) {
+     							
+
+       response.write( keywordsSuggestionHolder.hasChanged(suggestedKeyword) ? "changed-keyword" : "unchanged-keyword" );
+   response.write( HtmlUtil.escape(suggestedKeyword) )+response.write(request.getAttribute(" HtmlUtil").escape(suggestedKeyword) );
+
+
+    
+     							}
+     							
+
+
+
+
+
+
+     			}
+     			
+}
+
+}

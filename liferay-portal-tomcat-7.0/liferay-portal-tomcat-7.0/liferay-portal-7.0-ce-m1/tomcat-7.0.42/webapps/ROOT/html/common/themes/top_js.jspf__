@@ -1,0 +1,465 @@
+﻿ package PackageNo419716913; public class top_js_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( BrowserSnifferUtil.acceptsGzip(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").acceptsGzip(request) );
+
+
+      response.write( BrowserSnifferUtil.getMajorVersion(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").getMajorVersion(request) );
+
+
+       response.write( BrowserSnifferUtil.getRevision(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").getRevision(request) );
+
+
+       response.write( BrowserSnifferUtil.getVersion(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").getVersion(request) );
+
+
+      response.write( BrowserSnifferUtil.isAir(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isAir(request) );
+
+
+      response.write( BrowserSnifferUtil.isChrome(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isChrome(request) );
+
+
+      response.write( BrowserSnifferUtil.isFirefox(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isFirefox(request) );
+
+
+      response.write( BrowserSnifferUtil.isGecko(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isGecko(request) );
+
+
+      response.write( BrowserSnifferUtil.isIe(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isIe(request) );
+
+
+      response.write( BrowserSnifferUtil.isIphone(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isIphone(request) );
+
+
+      response.write( BrowserSnifferUtil.isLinux(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isLinux(request) );
+
+
+      response.write( BrowserSnifferUtil.isMac(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isMac(request) );
+
+
+      response.write( BrowserSnifferUtil.isMobile(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isMobile(request) );
+
+
+      response.write( BrowserSnifferUtil.isMozilla(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isMozilla(request) );
+
+
+      response.write( BrowserSnifferUtil.isOpera(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isOpera(request) );
+
+
+      response.write( BrowserSnifferUtil.isRtf(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isRtf(request) );
+
+
+      response.write( BrowserSnifferUtil.isSafari(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isSafari(request) );
+
+
+      response.write( BrowserSnifferUtil.isSun(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isSun(request) );
+
+
+      response.write( BrowserSnifferUtil.isWap(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isWap(request) );
+
+
+      response.write( BrowserSnifferUtil.isWapXhtml(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isWapXhtml(request) );
+
+
+      response.write( BrowserSnifferUtil.isWebKit(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isWebKit(request) );
+
+
+      response.write( BrowserSnifferUtil.isWindows(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isWindows(request) );
+
+
+      response.write( BrowserSnifferUtil.isWml(request) )+response.write(request.getAttribute(" BrowserSnifferUtil").isWml(request) );
+
+
+
+
+
+
+
+      response.write( (layoutTypePortlet.isCustomizable() && LayoutPermissionUtil.contains(permissionChecker, layout, ActionKeys.CUSTOMIZE)) )+response.write(request.getAttribute(" (layoutTypePortlet").isCustomizable() && LayoutPermissionUtil.contains(permissionChecker, layout, ActionKeys.CUSTOMIZE)) );
+
+
+
+
+
+
+
+    response.write(themeDisplay.getURLUpdateManager())+response.write(request.getAttribute("themeDisplay").getURLUpdateManager());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( layout.getLayoutId() )+response.write(request.getAttribute(" layout").getLayoutId() );
+
+
+response.write( PortalUtil.getLayoutRelativeURL(layout, themeDisplay) )+response.write(request.getAttribute(" PortalUtil").getLayoutRelativeURL(layout, themeDisplay) );
+
+
+response.write( PortalUtil.getLayoutURL(layout, themeDisplay) )+response.write(request.getAttribute(" PortalUtil").getLayoutURL(layout, themeDisplay) );
+
+
+response.write( layout.getParentLayoutId() )+response.write(request.getAttribute(" layout").getParentLayoutId() );
+
+
+       response.write( layout.isTypeControlPanel() )+response.write(request.getAttribute(" layout").isTypeControlPanel() );
+
+
+response.write( layout.isPrivateLayout() )+response.write(request.getAttribute(" layout").isPrivateLayout() );
+
+
+       response.write( (layout instanceof VirtualLayout) )+response.write(request.getAttribute(" (layout instanceof VirtualLayout) "));
+
+
+
+
+       response.write( LanguageUtil.getBCP47LanguageId(request) )+response.write(request.getAttribute(" LanguageUtil").getBCP47LanguageId(request) );
+
+
+       response.write( themeDisplay.getCDNBaseURL() )+response.write(request.getAttribute(" themeDisplay").getCDNBaseURL() );
+
+
+       response.write( themeDisplay.getCDNDynamicResourcesHost() )+response.write(request.getAttribute(" themeDisplay").getCDNDynamicResourcesHost() );
+
+
+       response.write( themeDisplay.getCDNHost() )+response.write(request.getAttribute(" themeDisplay").getCDNHost() );
+
+
+       response.write( themeDisplay.getCompanyId() )+response.write(request.getAttribute(" themeDisplay").getCompanyId() );
+
+
+       response.write( themeDisplay.getCompanyGroupId() )+response.write(request.getAttribute(" themeDisplay").getCompanyGroupId() );
+
+
+       response.write( LocaleUtil.toLanguageId(themeDisplay.getSiteDefaultLocale()) )+response.write(request.getAttribute(" LocaleUtil").toLanguageId(themeDisplay.getSiteDefaultLocale()) );
+
+
+       response.write( UnicodeFormatter.toString(themeDisplay.getDoAsUserId()) )+response.write(request.getAttribute(" UnicodeFormatter").toString(themeDisplay.getDoAsUserId()) );
+
+
+       response.write( LanguageUtil.getLanguageId(request) )+response.write(request.getAttribute(" LanguageUtil").getLanguageId(request) );
+
+
+       response.write( themeDisplay.getSiteGroupId() )+response.write(request.getAttribute(" themeDisplay").getSiteGroupId() );
+
+
+       response.write( themeDisplay.getPathContext() )+response.write(request.getAttribute(" themeDisplay").getPathContext() );
+
+
+       response.write( themeDisplay.getPathImage() )+response.write(request.getAttribute(" themeDisplay").getPathImage() );
+
+
+       response.write( themeDisplay.getPathJavaScript() )+response.write(request.getAttribute(" themeDisplay").getPathJavaScript() );
+
+
+       response.write( themeDisplay.getPathMain() )+response.write(request.getAttribute(" themeDisplay").getPathMain() );
+
+
+       response.write( themeDisplay.getPathThemeImages() )+response.write(request.getAttribute(" themeDisplay").getPathThemeImages() );
+
+
+       response.write( themeDisplay.getPathThemeRoot() )+response.write(request.getAttribute(" themeDisplay").getPathThemeRoot() );
+
+
+       response.write( themeDisplay.getPlid() )+response.write(request.getAttribute(" themeDisplay").getPlid() );
+
+
+       response.write( themeDisplay.getPortalURL() )+response.write(request.getAttribute(" themeDisplay").getPortalURL() );
+
+
+      response.write( GetterUtil.getString(themeDisplay.getThemeSetting("portlet-setup-show-borders-default"), StringUtil.valueOf(PropsValues.THEME_PORTLET_DECORATE_DEFAULT)) );
+
+
+       response.write( themeDisplay.getScopeGroupId() )+response.write(request.getAttribute(" themeDisplay").getScopeGroupId() );
+
+
+       response.write( themeDisplay.getSiteGroupIdOrLiveGroupId() )+response.write(request.getAttribute(" themeDisplay").getSiteGroupIdOrLiveGroupId() );
+
+
+
+
+ response.write( session.getId() )+response.write(request.getAttribute(" session").getId() );
+
+
+
+
+
+
+
+       response.write( themeDisplay.getSiteGroupId() )+response.write(request.getAttribute(" themeDisplay").getSiteGroupId() );
+
+
+       response.write( themeDisplay.getURLControlPanel() )+response.write(request.getAttribute(" themeDisplay").getURLControlPanel() );
+
+
+       response.write( HtmlUtil.escapeJS(themeDisplay.getURLHome()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(themeDisplay.getURLHome()) );
+
+
+       response.write( themeDisplay.getUserId() )+response.write(request.getAttribute(" themeDisplay").getUserId() );
+
+
+
+
+ response.write( UnicodeFormatter.toString(user.getFullName()) )+response.write(request.getAttribute(" UnicodeFormatter").toString(user.getFullName()) );
+
+
+
+
+
+
+
+      response.write( themeDisplay.isAddSessionIdToURL() )+response.write(request.getAttribute(" themeDisplay").isAddSessionIdToURL() );
+
+
+      response.write( themeDisplay.isFreeformLayout() )+response.write(request.getAttribute(" themeDisplay").isFreeformLayout() );
+
+
+      response.write( themeDisplay.isImpersonated() )+response.write(request.getAttribute(" themeDisplay").isImpersonated() );
+
+
+      response.write( themeDisplay.isSignedIn() )+response.write(request.getAttribute(" themeDisplay").isSignedIn() );
+
+
+      response.write( themeDisplay.isStateExclusive() )+response.write(request.getAttribute(" themeDisplay").isStateExclusive() );
+
+
+      response.write( themeDisplay.isStateMaximized() )+response.write(request.getAttribute(" themeDisplay").isStateMaximized() );
+
+
+      response.write( themeDisplay.isStatePopUp() )+response.write(request.getAttribute(" themeDisplay").isStatePopUp() );
+
+
+
+
+ response.write( PrefsPropsUtil.getBoolean(themeDisplay.getCompanyId(), PropsKeys.NTLM_AUTH_ENABLED, PropsValues.NTLM_AUTH_ENABLED) )+response.write(request.getAttribute(" PrefsPropsUtil").getBoolean(themeDisplay.getCompanyId(), PropsKeys.NTLM_AUTH_ENABLED, PropsValues.NTLM_AUTH_ENABLED) );
+
+
+
+
+
+       
+     		long javaScriptLastModified = ServletContextUtil.getLastModified(application, "/html/js/", true);
+     
+     		String javaScriptRootPath = themeDisplay.getPathContext() + "/html/js";
+     
+     		String alloyComboPath = PortalUtil.getStaticResourceURL(request, themeDisplay.getCDNDynamicResourcesHost() + themeDisplay.getPathContext() + "/combo/", "minifierType=", javaScriptLastModified);
+     		
+
+
+
+      response.write( PortalUtil.getStaticResourceURL(request, "available_languages.jsp", javaScriptLastModified) );
+
+
+     response.write( themeDisplay.isThemeJsFastLoad() );
+
+
+      response.write( alloyComboPath );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( javaScriptRootPath );
+
+
+      response.write( PortalUtil.getStaticResourceURL(request, "aui_lang.jsp", javaScriptLastModified) );
+
+
+
+ response.write( AuthTokenUtil.getToken(request) )+response.write(request.getAttribute(" AuthTokenUtil").getToken(request) );
+
+       
+     		String currentURL = PortalUtil.getCurrentURL(request);
+     		
+
+  response.write( HtmlUtil.escapeJS(currentURL) );
+ response.write( HttpUtil.encodeURL(currentURL) );
+
+
+
+
+
+
+
+   response.write( HtmlUtil.escape(PortalUtil.getStaticResourceURL(request, themeDisplay.getCDNDynamicResourcesHost() + themeDisplay.getPathJavaScript() + "/barebone.jsp", "minifierBundleId=javascript.barebone.files", javaScriptLastModified)) );
+
+
+   response.write( HtmlUtil.escape(PortalUtil.getStaticResourceURL(request, themeDisplay.getCDNDynamicResourcesHost() + themeDisplay.getPathJavaScript() + "/everything.jsp", "minifierBundleId=javascript.everything.files", javaScriptLastModified)) );
+
+
+
+
+
+       
+     		String path = themeDisplay.getCDNHost().concat(themeDisplay.getPathJavaScript());
+     
+     		String[] javaScriptFiles = null;
+     
+     		if (themeDisplay.isThemeJsBarebone()) {
+     			javaScriptFiles = JavaScriptBundleUtil.getFileNames(PropsKeys.JAVASCRIPT_BAREBONE_FILES);
+     		}
+     		else {
+     			javaScriptFiles = JavaScriptBundleUtil.getFileNames(PropsKeys.JAVASCRIPT_EVERYTHING_FILES);
+     		}
+     
+     		for (String javaScriptFile : javaScriptFiles) {
+     		
+
+      response.write(path)+response.write(request.getAttribute("path"));response.write(javaScriptFile)+response.write(request.getAttribute("javaScriptFile"));response.write(javaScriptLastModified);
+
+       
+     		}
+     		
+
+
+
+
+
+
+
+
+
+     			List<Portlet> allPortlets = layoutTypePortlet.getAllPortlets(true);
+     
+     			StringBundler sb = new StringBundler(allPortlets.size() * 2);
+     
+     			for (Portlet portlet : allPortlets) {
+     				if (portlet.isActive() && portlet.isReady() && !portlet.isUndeployedPortlet()) {
+     					sb.append(HtmlUtil.escapeJS(portlet.getPortletId()));
+     					sb.append("', '");
+     				}
+     			}
+     
+     			if (sb.index() > 0) {
+     				sb.setIndex(sb.index() - 1);
+     			}
+     			
+
+
+
+response.write( layoutTypePortlet.getStateMaxPortletId() )+response.write(request.getAttribute(" layoutTypePortlet").getStateMaxPortletId() );
+
+
+response.write( themeDisplay.getPpid() );
+
+
+response.write( sb.toString() );
+
+
+
+
+       
+     		Group group = null;
+     
+     		if (layout != null) {
+     			group = layout.getGroup();
+     		}
+     		
+
+
+
+
+
+
+
+     response.write( HtmlUtil.escapeJS(GetterUtil.getString(SessionClicks.get(request, "liferay_toggle_controls", "visible"), "visible")) );
+
+
+
+
+
+
+
+
+     
+     UnicodeProperties groupTypeSettings = group.getTypeSettingsProperties();
+     
+     String[] analyticsTypes = PrefsPropsUtil.getStringArray(company.getCompanyId(), PropsKeys.ADMIN_ANALYTICS_TYPES, StringPool.NEW_LINE);
+     
+     for (String analyticsType : analyticsTypes) {
+     
+
+
+
+
+
+     			String googleAnalyticsId = groupTypeSettings.getProperty("googleAnalyticsId");
+     			
+
+
+
+
+
+  response.write( HtmlUtil.escapeJS(googleAnalyticsId) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(googleAnalyticsId) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			String analyticsScript = groupTypeSettings.getProperty(Sites.ANALYTICS_PREFIX + analyticsType);
+     			
+
+
+      response.write( analyticsScript );
+
+
+
+
+     
+     }
+     
+}
+
+}

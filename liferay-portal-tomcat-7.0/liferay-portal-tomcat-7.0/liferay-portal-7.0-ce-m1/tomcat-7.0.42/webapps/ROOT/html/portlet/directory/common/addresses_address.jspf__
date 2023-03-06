@@ -1,0 +1,47 @@
+﻿ package PackageNo1999576688; public class addresses_address_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( mailingName )+response.write(request.getAttribute(" mailingName "));
+
+
+   response.write( HtmlUtil.escape(street1) )+response.write(request.getAttribute(" HtmlUtil").escape(street1) );
+
+
+
+   response.write( HtmlUtil.escape(street2) )+response.write(request.getAttribute(" HtmlUtil").escape(street2) );
+
+
+
+   response.write( HtmlUtil.escape(street3) )+response.write(request.getAttribute(" HtmlUtil").escape(street3) );
+
+
+
+   response.write( HtmlUtil.escape(zipCode) )+response.write(request.getAttribute(" HtmlUtil").escape(zipCode) );
+
+
+
+   response.write( HtmlUtil.escape(city) )+response.write(request.getAttribute(" HtmlUtil").escape(city) );
+
+
+
+   response.write( HtmlUtil.escape(regionName) )+response.write(request.getAttribute(" HtmlUtil").escape(regionName) );
+
+
+
+   response.write( HtmlUtil.escape(countryName) )+response.write(request.getAttribute(" HtmlUtil").escape(countryName) );
+}
+
+}

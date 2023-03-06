@@ -1,0 +1,126 @@
+﻿ package PackageNo1209225300;import _html_common_init_jsp;import _html_portlet_init_ext_jsp;import com.liferay.portal.DuplicateLockException;import com.liferay.portal.InvalidRepositoryException;import com.liferay.portal.NoSuchRepositoryException;import com.liferay.portal.kernel.repository.RepositoryException;import com.liferay.portal.kernel.search.Document;import com.liferay.portal.kernel.search.SearchResult;import com.liferay.portal.repository.util.ExternalRepositoryFactoryUtil;import com.liferay.portlet.documentlibrary.DLPortletInstanceSettings;import com.liferay.portlet.documentlibrary.DLSettings;import com.liferay.portlet.documentlibrary.DuplicateFileEntryTypeException;import com.liferay.portlet.documentlibrary.DuplicateFolderNameException;import com.liferay.portlet.documentlibrary.DuplicateRepositoryNameException;import com.liferay.portlet.documentlibrary.FileMimeTypeException;import com.liferay.portlet.documentlibrary.FileShortcutPermissionException;import com.liferay.portlet.documentlibrary.FolderNameException;import com.liferay.portlet.documentlibrary.InvalidFileVersionException;import com.liferay.portlet.documentlibrary.NoSuchDirectoryException;import com.liferay.portlet.documentlibrary.NoSuchFileEntryException;import com.liferay.portlet.documentlibrary.NoSuchFolderException;import com.liferay.portlet.documentlibrary.NoSuchMetadataSetException;import com.liferay.portlet.documentlibrary.RepositoryNameException;import com.liferay.portlet.documentlibrary.RequiredFileEntryTypeException;import com.liferay.portlet.documentlibrary.SourceFileNameException;import com.liferay.portlet.documentlibrary.action.EditFileEntryAction;import com.liferay.portlet.documentlibrary.context.DLActionsDisplayContext;import com.liferay.portlet.documentlibrary.context.DLConfigurationDisplayContext;import com.liferay.portlet.documentlibrary.context.DLEntryListDisplayContext;import com.liferay.portlet.documentlibrary.context.DLFileEntryActionsDisplayContext;import com.liferay.portlet.documentlibrary.context.DLFileEntryActionsDisplayContextUtil;import com.liferay.portlet.documentlibrary.model.DLFileEntryMetadata;import com.liferay.portlet.documentlibrary.model.DLFileEntryType;import com.liferay.portlet.documentlibrary.model.DLFileEntryTypeConstants;import com.liferay.portlet.documentlibrary.model.DLFileShortcut;import com.liferay.portlet.documentlibrary.model.DLFileVersion;import com.liferay.portlet.documentlibrary.model.DLSearchConstants;import com.liferay.portlet.documentlibrary.search.EntriesChecker;import com.liferay.portlet.documentlibrary.service.DLFileEntryMetadataLocalServiceUtil;import com.liferay.portlet.documentlibrary.service.DLFileEntryTypeLocalServiceUtil;import com.liferay.portlet.documentlibrary.service.DLFileEntryTypeServiceUtil;import com.liferay.portlet.documentlibrary.service.permission.DLFileEntryPermission;import com.liferay.portlet.documentlibrary.service.permission.DLFileEntryTypePermission;import com.liferay.portlet.documentlibrary.service.permission.DLFileShortcutPermission;import com.liferay.portlet.documentlibrary.service.permission.DLFolderPermission;import com.liferay.portlet.documentlibrary.service.permission.DLPermission;import com.liferay.portlet.documentlibrary.util.AudioProcessorUtil;import com.liferay.portlet.documentlibrary.util.DLConstants;import com.liferay.portlet.documentlibrary.util.DLProcessorRegistryUtil;import com.liferay.portlet.documentlibrary.util.ImageProcessorUtil;import com.liferay.portlet.documentlibrary.util.PDFProcessorUtil;import com.liferay.portlet.documentlibrary.util.RawMetadataProcessor;import com.liferay.portlet.documentlibrary.util.VideoProcessorUtil;import com.liferay.portlet.dynamicdatamapping.RequiredStructureException;import com.liferay.portlet.dynamicdatamapping.StorageFieldRequiredException;import com.liferay.portlet.dynamicdatamapping.StructureDefinitionException;import com.liferay.portlet.dynamicdatamapping.StructureDuplicateElementException;import com.liferay.portlet.dynamicdatamapping.StructureNameException;import com.liferay.portlet.dynamicdatamapping.search.StructureSearch;import com.liferay.portlet.dynamicdatamapping.search.StructureSearchTerms;import com.liferay.portlet.dynamicdatamapping.service.DDMStorageLinkLocalServiceUtil;import com.liferay.portlet.dynamicdatamapping.storage.StorageEngineUtil;import com.liferay.portlet.dynamicdatamapping.util.DDMXSDUtil;import com.liferay.portlet.dynamicdatamapping.util.comparator.StructureStructureKeyComparator;import com.liferay.portlet.journal.search.FileEntryDisplayTerms;import com.liferay.portlet.journal.search.FileEntrySearch; public class init_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ PortletMode portletMode = liferayPortletRequest.getPortletMode(); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ WindowState windowState = liferayPortletRequest.getWindowState(); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ PortletURL currentURLObj = PortletURLUtil.getCurrent(liferayPortletRequest, liferayPortletResponse); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ String currentURL = currentURLObj.toString(); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init.jsp */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     PortalPreferences portalPreferences = PortletPreferencesFactoryUtil.getPortalPreferences(liferayPortletRequest);
+     
+     String portletResource = ParamUtil.getString(request, "portletResource");
+     
+     String portletId = portletDisplay.getId();
+     
+     if (portletId.equals(PortletKeys.PORTLET_CONFIGURATION)) {
+     	portletId = portletResource;
+     	portletName = portletResource;
+     }
+     
+     DLPortletInstanceSettings dlPortletInstanceSettings = DLPortletInstanceSettings.getInstance(layout, portletId);
+     DLSettings dlSettings = DLSettings.getInstance(scopeGroupId);
+     
+     long rootFolderId = dlPortletInstanceSettings.getRootFolderId();
+     String rootFolderName = StringPool.BLANK;
+     
+     if (rootFolderId != DLFolderConstants.DEFAULT_PARENT_FOLDER_ID) {
+     	try {
+     		Folder rootFolder = DLAppLocalServiceUtil.getFolder(rootFolderId);
+     
+     		rootFolderName = rootFolder.getName();
+     
+     		if (rootFolder.getGroupId() != scopeGroupId) {
+     			rootFolderId = DLFolderConstants.DEFAULT_PARENT_FOLDER_ID;
+     			rootFolderName = StringPool.BLANK;
+     		}
+     	}
+     	catch (NoSuchFolderException nsfe) {
+     		rootFolderId = DLFolderConstants.DEFAULT_PARENT_FOLDER_ID;
+     	}
+     }
+     
+     boolean showHeader = ParamUtil.getBoolean(request, "showHeader", true);
+     
+     Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone);
+     
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init.jsp */ /* 123?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init-ext.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 123?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_library\init.jsp */
+}
+
+}

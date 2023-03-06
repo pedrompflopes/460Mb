@@ -1,0 +1,61 @@
+﻿ package PackageNo270803290;import _html_taglib_init_jsp;import com.liferay.portlet.asset.util.comparator.AssetTagCountComparator; public class page_jsp {  /* 1 */ private String _buildTagsNavigation(long scopeGroupId, long siteGroupId, String selectedTagName, PortletURL portletURL, long classNameId, String displayStyle, int maxAssetTags, boolean showAssetCount, boolean showZeroAssetCount) throws Exception { /* 61 */ 	List<AssetTag> tags = null; /* 62 */ 	if (showAssetCount && (classNameId > 0)) { /* 64 */ 		tags = AssetTagServiceUtil.getTags(scopeGroupId, classNameId, null, 0, maxAssetTags, new AssetTagCountComparator()); /* 65 */ 	} /* 66 */ 	else { /* 67 */ 		tags = AssetTagServiceUtil.getGroupTags(siteGroupId, 0, maxAssetTags, new AssetTagCountComparator()); /* 68 */ 	} /* 69 */ 	if (tags.isEmpty()) { /* 71 */ 		return null; /* 72 */ 	} /* 73 */ 	tags = ListUtil.sort(tags); /* 75 */ 	StringBundler sb = new StringBundler(); /* 77 */ 	sb.append("<ul class=\"tag-items "); /* 79 */ 	if (showAssetCount && displayStyle.equals("cloud")) { /* 81 */ 		sb.append("tag-cloud"); /* 82 */ 	} /* 83 */ 	else { /* 84 */ 		sb.append("tag-list"); /* 85 */ 	} /* 86 */ 	sb.append("\">"); /* 88 */ 	int maxCount = 1; /* 90 */ 	int minCount = 1; /* 91 */ 	if (showAssetCount && displayStyle.equals("cloud")) { /* 93 */ 		for (AssetTag tag : tags) { /* 94 */ 			String tagName = tag.getName(); /* 95 */ 			int count = 0; /* 97 */ 			if (classNameId > 0) { /* 99 */ 				count = AssetTagServiceUtil.getTagsCount(scopeGroupId, classNameId, tagName); /* 100 */ 			} /* 101 */ 			else { /* 102 */ 				count = AssetTagServiceUtil.getTagsCount(scopeGroupId, tagName); /* 103 */ 			} /* 104 */ 			if (!showZeroAssetCount && (count == 0)) { /* 106 */ 				continue; /* 107 */ 			} /* 108 */ 			maxCount = Math.max(maxCount, count); /* 110 */ 			minCount = Math.min(minCount, count); /* 111 */ 		} /* 112 */ 	} /* 113 */ 	double multiplier = 1; /* 115 */ 	if (maxCount != minCount) { /* 117 */ 		multiplier = (double)5 / (maxCount - minCount); /* 118 */ 	} /* 119 */ 	for (AssetTag tag : tags) { /* 121 */ 		String tagName = tag.getName(); /* 122 */ 		int count = 0; /* 124 */ 		if (classNameId > 0) { /* 126 */ 			count = AssetTagServiceUtil.getTagsCount(scopeGroupId, classNameId, tagName); /* 127 */ 		} /* 128 */ 		else { /* 129 */ 			count = AssetTagServiceUtil.getTagsCount(scopeGroupId, tagName); /* 130 */ 		} /* 131 */ 		int popularity = (int)(1 + ((maxCount - (maxCount - (count - minCount))) * multiplier)); /* 133 */ 		if (!showZeroAssetCount && (count == 0)) { /* 135 */ 			continue; /* 136 */ 		} /* 137 */ 		sb.append("<li class=\"tag-popularity-"); /* 139 */ 		sb.append(popularity); /* 140 */ 		sb.append("\"><span>"); /* 141 */ 		if (tagName.equals(selectedTagName)) { /* 143 */ 			portletURL.setParameter("tag", StringPool.BLANK); /* 144 */ 			sb.append("<a class=\"tag-selected\" href=\""); /* 146 */ 		} /* 147 */ 		else { /* 148 */ 			portletURL.setParameter("resetCur", Boolean.TRUE.toString()); /* 149 */ 			portletURL.setParameter("tag", tagName); /* 150 */ 			sb.append("<a href=\""); /* 152 */ 		} /* 153 */ 		sb.append(HtmlUtil.escape(portletURL.toString())); /* 155 */ 		sb.append("\">"); /* 156 */ 		sb.append(tagName); /* 157 */ 		if (showAssetCount) { /* 159 */ 			sb.append("<span class=\"tag-asset-count\">"); /* 160 */ 			sb.append(StringPool.SPACE); /* 161 */ 			sb.append(StringPool.OPEN_PARENTHESIS); /* 162 */ 			sb.append(count); /* 163 */ 			sb.append(StringPool.CLOSE_PARENTHESIS); /* 164 */ 			sb.append("</span>"); /* 165 */ 		} /* 166 */ 		sb.append("</a></span></li>"); /* 168 */ 	} /* 169 */ 	sb.append("</ul><br style=\"clear: both;\" />"); /* 171 */ 	return sb.toString(); /* 173 */ } /* 174 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_tags_navigation\page.jsp */
+
+     
+     long classNameId = GetterUtil.getLong((String)request.getAttribute("liferay-ui:asset-tags-navigation:classNameId"));
+     String displayStyle = (String)request.getAttribute("liferay-ui:asset-tags-navigation:displayStyle");
+     boolean hidePortletWhenEmpty = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:asset-tags-navigation:hidePortletWhenEmpty"));
+     int maxAssetTags= GetterUtil.getInteger((String)request.getAttribute("liferay-ui:asset-tags-navigation:maxAssetTags"));
+     boolean showAssetCount = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:asset-tags-navigation:showAssetCount"));
+     boolean showZeroAssetCount = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:asset-tags-navigation:showZeroAssetCount"));
+     
+     String tag = ParamUtil.getString(request, "tag");
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     String tagsNavigation = _buildTagsNavigation(scopeGroupId, themeDisplay.getSiteGroupId(), tag, portletURL, classNameId, displayStyle, maxAssetTags, showAssetCount, showZeroAssetCount);
+     
+     if (Validator.isNotNull(tagsNavigation)) {
+     
+
+ response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+    response.write( tagsNavigation );
+
+
+     
+     }
+     else {
+     	if (hidePortletWhenEmpty) {
+     		renderRequest.setAttribute(WebKeys.PORTLET_CONFIGURATOR_VISIBILITY, Boolean.TRUE);
+     	}
+     
+
+
+
+
+
+     
+     }
+     
+     if (Validator.isNotNull(tag)) {
+     	PortalUtil.addPortletBreadcrumbEntry(request, tag, currentURL);
+     }
+     
+}
+
+}

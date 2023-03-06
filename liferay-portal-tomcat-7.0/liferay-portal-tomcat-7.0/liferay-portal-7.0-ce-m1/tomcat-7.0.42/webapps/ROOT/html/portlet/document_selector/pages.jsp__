@@ -1,0 +1,208 @@
+﻿ package PackageNo668039010;import _html_portlet_init_jsp;import com.liferay.portlet.documentlibrary.DuplicateFolderNameException;import com.liferay.portlet.documentlibrary.FileMimeTypeException;import com.liferay.portlet.documentlibrary.NoSuchFolderException;import com.liferay.portlet.documentlibrary.SourceFileNameException;import com.liferay.portlet.documentlibrary.model.DLFileEntryMetadata;import com.liferay.portlet.documentlibrary.model.DLFileEntryType;import com.liferay.portlet.documentlibrary.service.DLFileEntryMetadataLocalServiceUtil;import com.liferay.portlet.documentlibrary.service.DLFileEntryTypeLocalServiceUtil;import com.liferay.portlet.documentlibrary.service.permission.DLFolderPermission;import com.liferay.portlet.documentselector.util.DocumentSelectorUtil;import com.liferay.portlet.dynamicdatamapping.storage.StorageEngineUtil;import com.liferay.portlet.journal.search.FileEntryDisplayTerms;import com.liferay.portlet.journal.search.FileEntrySearch;import com.liferay.portlet.layoutsadmin.context.LayoutsAdminDisplayContext;import com.liferay.portlet.wiki.model.WikiPage;import com.liferay.portlet.wiki.model.WikiPageResource;import com.liferay.portlet.wiki.service.WikiPageLocalServiceUtil;import com.liferay.portlet.wiki.service.WikiPageResourceLocalServiceUtil; public class pages_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\pages.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\pages.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\pages.jsp */
+
+     
+     long groupId = ParamUtil.getLong(request, "groupId", scopeGroupId);
+     
+     Group group = GroupLocalServiceUtil.fetchGroup(groupId);
+     
+     request.setAttribute(WebKeys.GROUP, group);
+     
+     boolean showGroupsSelector = ParamUtil.getBoolean(request, "showGroupsSelector");
+     
+
+
+
+
+
+
+
+     
+     String tabs1Names = "";
+     
+     if (group.getPublicLayoutsPageCount() > 0) {
+     	tabs1Names += "public-pages,";
+     }
+     
+     if (group.getPrivateLayoutsPageCount() > 0) {
+     	tabs1Names += "private-pages";
+     }
+     
+
+  response.write( tabs1Names )+response.write(request.getAttribute(" tabs1Names "));
+
+      
+     	boolean checkContentDisplayPage = ParamUtil.getBoolean(request, "checkContentDisplayPage");
+     	String selectedLayoutIds = ParamUtil.getString(request, "selectedLayoutIds");
+     
+     	LayoutsAdminDisplayContext layoutsAdminDisplayContext = new LayoutsAdminDisplayContext(request, liferayPortletResponse);
+     	
+
+
+
+
+
+response.write( checkContentDisplayPage )+response.write(request.getAttribute(" checkContentDisplayPage "));
+      response.write( false )+response.write(request.getAttribute(" false "));
+response.write( groupId )+response.write(request.getAttribute(" groupId "));
+   response.write( layoutsAdminDisplayContext.getEditLayoutURL() );
+     response.write( layoutsAdminDisplayContext.getRootNodeName() );
+  response.write( false )+response.write(request.getAttribute(" false "));
+response.write( layoutsAdminDisplayContext.getSelPlid() );
+  response.write( selectedLayoutIds );
+
+
+
+
+
+
+
+
+
+
+response.write( checkContentDisplayPage )+response.write(request.getAttribute(" checkContentDisplayPage "));
+      response.write( false )+response.write(request.getAttribute(" false "));
+response.write( groupId )+response.write(request.getAttribute(" groupId "));
+   response.write( layoutsAdminDisplayContext.getEditLayoutURL() );
+
+     response.write( layoutsAdminDisplayContext.getRootNodeName() );
+  response.write( false )+response.write(request.getAttribute(" false "));
+response.write( layoutsAdminDisplayContext.getSelPlid() );
+  response.write( selectedLayoutIds );
+
+
+
+
+
+
+
+
+
+      
+     	String ckEditorFuncNum = DocumentSelectorUtil.getCKEditorFuncNum(request);
+     
+     	Map<String, String> params = new HashMap<String, String>();
+     
+     	params.put("ckeditorfuncnum", ckEditorFuncNum);
+     	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( UnicodeLanguageUtil.get(request, "there-is-no-selected-page") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	String eventName = ParamUtil.getString(request, "eventName");
+     	
+
+response.write( HtmlUtil.escapeJS(eventName) );
+}
+
+}

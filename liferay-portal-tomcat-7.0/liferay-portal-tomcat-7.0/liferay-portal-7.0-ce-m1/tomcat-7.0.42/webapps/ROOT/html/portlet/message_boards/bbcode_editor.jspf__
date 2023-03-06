@@ -1,0 +1,57 @@
+﻿ package PackageNo936992811; public class bbcode_editor_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Map<String,String> configParams = new HashMap();
+     
+     configParams.put("emoticonsPath", themeDisplay.getPathThemeImages() + MBUtil.EMOTICONS);
+     
+     if (quote && Validator.isNull(body) && (curParentMessage != null)) {
+     	StringBundler sb = new StringBundler(5);
+     
+     	sb.append("[quote=");
+     	sb.append(StringUtil.replace(parentAuthor, new String[] {"[", "]", "(", ")"}, new String[] {"&#91;", "&#93;", "&#40;", "&#41;"}));
+     	sb.append("]");
+     	sb.append(curParentMessage.getBody(false));
+     	sb.append("[/quote]\n\n\n");
+     
+     	body = sb.toString();
+     }
+     else if (splitThread && Validator.isNull(body)) {
+     	StringBundler sb = new StringBundler(5);
+     
+     	sb.append("[url=");
+     	sb.append(MBThreadConstants.NEW_THREAD_URL);
+     	sb.append("]");
+     	sb.append(MBThreadConstants.NEW_THREAD_URL);
+     	sb.append("[/url]");
+     
+     	body = LanguageUtil.format(request, "the-new-thread-can-be-found-at-x", sb.toString(), false);
+     }
+     
+
+ response.write( false )+response.write(request.getAttribute(" false "));response.write( configParams )+response.write(request.getAttribute(" configParams "));response.write( MBUtil.BB_CODE_EDITOR_WYSIWYG_IMPL_KEY )+response.write(request.getAttribute(" MBUtil").BB_CODE_EDITOR_WYSIWYG_IMPL_KEY );
+
+
+
+
+
+
+
+    response.write( UnicodeFormatter.toString(body) )+response.write(request.getAttribute(" UnicodeFormatter").toString(body) );
+}
+
+}

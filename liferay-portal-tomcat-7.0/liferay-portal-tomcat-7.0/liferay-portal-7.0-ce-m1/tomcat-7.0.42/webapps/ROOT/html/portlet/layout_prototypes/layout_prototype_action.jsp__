@@ -1,0 +1,110 @@
+﻿ package PackageNo1622242669;import _html_portlet_init_jsp;import _html_portlet_layout_prototypes_init_ext_jsp;import com.liferay.portal.NoSuchLayoutPrototypeException;import com.liferay.portal.RequiredLayoutPrototypeException;import com.liferay.portal.service.LayoutPrototypeLocalServiceUtil; public class layout_prototype_action_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\layout_prototype_action.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\layout_prototype_action.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\layout_prototypes\layout_prototype_action.jsp */
+
+     
+     SearchContainer searchContainer = (SearchContainer)request.getAttribute("liferay-ui:search:searchContainer");
+     
+     String redirect = searchContainer.getIteratorURL().toString();
+     
+     ResultRow row = (ResultRow)request.getAttribute(WebKeys.SEARCH_CONTAINER_RESULT_ROW);
+     
+     LayoutPrototype layoutPrototype = (LayoutPrototype)row.getObject();
+     
+
+   response.write( false )+response.write(request.getAttribute(" false "));response.write( StringPool.BLANK )+response.write(request.getAttribute(" StringPool").BLANK );response.write( StringPool.BLANK )+response.write(request.getAttribute(" StringPool").BLANK );response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+      response.write(redirect);
+      response.write(String.getValueOf(layoutPrototype().getLayoutPrototypeId()));
+
+
+
+
+
+  response.write( editURL )+response.write(request.getAttribute(" editURL "));
+
+
+
+
+
+    response.write( LayoutPrototype.class.getName() )+response.write(request.getAttribute(" LayoutPrototype").class.getName() );
+       response.write( layoutPrototype.getName(locale) );
+      response.write( String.valueOf(layoutPrototype.getLayoutPrototypeId()) );
+
+  response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+
+
+
+
+
+
+  response.write( permissionsURL )+response.write(request.getAttribute(" permissionsURL "));
+response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+      response.write(Constants.getEXPORT())+response.write(request.getAttribute("Constants").getEXPORT());
+      response.write(String.getValueOf(layoutPrototype().getGroupId()));
+      response.write(Boolean.getTRUE().getToString())+response.write(request.getAttribute("Boolean").getTRUE().getToString());
+      response.write(layoutPrototype.getName(locale));
+
+
+
+
+
+
+
+  response.write( exportURL )+response.write(request.getAttribute(" exportURL "));
+
+
+
+
+
+
+      response.write(Constants.getIMPORT())+response.write(request.getAttribute("Constants").getIMPORT());
+      response.write(String.getValueOf(layoutPrototype().getGroupId()));
+      response.write(Boolean.getTRUE().getToString())+response.write(request.getAttribute("Boolean").getTRUE().getToString());
+      response.write(layoutPrototype.getName(locale));
+
+
+
+
+
+
+
+  response.write( importURL )+response.write(request.getAttribute(" importURL "));
+
+
+
+
+
+
+      response.write(Constants.getDELETE())+response.write(request.getAttribute("Constants").getDELETE());
+      response.write(redirect);
+      response.write(String.getValueOf(layoutPrototype().getLayoutPrototypeId()));
+
+
+
+  response.write( deleteURL )+response.write(request.getAttribute(" deleteURL "));
+}
+
+}

@@ -1,0 +1,164 @@
+﻿ package PackageNo1411189958; public class view_user_account_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	String portraitURL = HtmlUtil.escape(user.getPortraitURL(themeDisplay));
+     	
+
+
+
+      response.write(true)+response.write(request.getAttribute("true"));response.write(portraitURL)+response.write(request.getAttribute("portraitURL"));
+
+
+      response.write(portraitURL)+response.write(request.getAttribute("portraitURL"));
+
+
+
+
+    response.write( HtmlUtil.escape(user.getFullName()) )+response.write(request.getAttribute(" HtmlUtil").escape(user.getFullName()) );
+
+
+
+
+
+      response.write( themeDisplay.isImpersonated() ? "user-avatar impersonating-user" : "user-avatar" );response.write( true )+response.write(request.getAttribute(" true "));response.write( userName )+response.write(request.getAttribute(" userName "));response.write( false )+response.write(request.getAttribute(" false "));
+
+
+ 
+     				String impersonatingUserLabel = "you-are-impersonating-the-guest-user";
+     
+     				if (themeDisplay.isSignedIn()) {
+     					impersonatingUserLabel = LanguageUtil.format(request, "you-are-impersonating-x", HtmlUtil.escape(user.getFullName()), false);
+     				}
+     				
+
+    response.write( impersonatingUserLabel )+response.write(request.getAttribute(" impersonatingUserLabel "));
+
+
+       response.write( HtmlUtil.escape(realUser.getFullName()) )+response.write(request.getAttribute(" HtmlUtil").escape(realUser.getFullName()) );
+
+
+  response.write( PortalUtil.getLayoutURL(layout, themeDisplay, false) )+response.write(request.getAttribute(" PortalUtil").getLayoutURL(layout, themeDisplay, false) );response.write( leaveImpersonationLabel )+response.write(request.getAttribute(" leaveImpersonationLabel "));
+
+ 
+     				Locale realUserLocale = realUser.getLocale();
+     				Locale userLocale = user.getLocale();
+     				
+
+
+
+  
+     					String doAsUserLanguageId = null;
+     					String changeLanguageMessage = null;
+     
+     					if (locale.getLanguage().equals(realUserLocale.getLanguage()) && locale.getCountry().equals(realUserLocale.getCountry())) {
+     						doAsUserLanguageId = userLocale.getLanguage() + "_" + userLocale.getCountry();
+     						changeLanguageMessage = LanguageUtil.format(realUserLocale, "use-x's-preferred-language-(x)", new String[] {HtmlUtil.escape(user.getFullName()), userLocale.getDisplayLanguage(realUserLocale)}, false);
+     					}
+     					else {
+     						doAsUserLanguageId = realUserLocale.getLanguage() + "_" + realUserLocale.getCountry();
+     						changeLanguageMessage = LanguageUtil.format(realUserLocale, "use-your-preferred-language-(x)", realUserLocale.getDisplayLanguage(realUserLocale), false);
+     					}
+     					
+
+    response.write( HttpUtil.setParameter(PortalUtil.getCurrentURL(request), "doAsUserLanguageId", doAsUserLanguageId) );response.write( changeLanguageMessage );
+
+
+
+
+ 
+     				List<Group> mySiteGroups = user.getMySiteGroups(new String[] {User.class.getName()}, false, QueryUtil.ALL_POS);
+     
+     				for (Group mySiteGroup : mySiteGroups) {
+     				
+
+
+
+   
+     						PortletURL myProfileURL = new PortletURLImpl(request, PortletKeys.SITE_REDIRECTOR, plid, PortletRequest.ACTION_PHASE);
+     
+     						myProfileURL.setParameter("struts_action", "/my_sites/view");
+     						myProfileURL.setParameter("groupId", String.valueOf(mySiteGroup.getGroupId()));
+     						myProfileURL.setParameter("privateLayout", Boolean.FALSE.toString());
+     						myProfileURL.setPortletMode(PortletMode.VIEW);
+     						myProfileURL.setWindowState(WindowState.NORMAL);
+     						
+
+
+  response.write(HtmlUtil.getEscapeHREF(myProfileURL().getToString()))+response.write(request.getAttribute("HtmlUtil").getEscapeHREF(myProfileURL().getToString()));
+
+
+
+
+
+
+
+
+
+   
+     						PortletURL myDashboardURL = new PortletURLImpl(request, PortletKeys.SITE_REDIRECTOR, plid, PortletRequest.ACTION_PHASE);
+     
+     						myDashboardURL.setParameter("struts_action", "/my_sites/view");
+     						myDashboardURL.setParameter("groupId", String.valueOf(mySiteGroup.getGroupId()));
+     						myDashboardURL.setParameter("privateLayout", Boolean.TRUE.toString());
+     						myDashboardURL.setPortletMode(PortletMode.VIEW);
+     						myDashboardURL.setWindowState(WindowState.NORMAL);
+     						
+
+
+  response.write(HtmlUtil.getEscapeHREF(myDashboardURL().getToString()))+response.write(request.getAttribute("HtmlUtil").getEscapeHREF(myDashboardURL().getToString()));
+
+
+
+
+
+
+
+ 
+     				}
+     				
+
+ 
+     				String myAccountURL = themeDisplay.getURLMyAccount().toString();
+     
+     				myAccountURL = HttpUtil.setParameter(myAccountURL, "controlPanelCategory", PortletCategoryKeys.MY);
+     				
+
+  response.write( myAccountURL )+response.write(request.getAttribute(" myAccountURL ")); response.write( PropsValues.DOCKBAR_ADMINISTRATIVE_LINKS_SHOW_IN_POP_UP )+response.write(request.getAttribute(" PropsValues").DOCKBAR_ADMINISTRATIVE_LINKS_SHOW_IN_POP_UP );
+
+
+
+      response.write( themeDisplay.getURLSignOut() )+response.write(request.getAttribute(" themeDisplay").getURLSignOut() );
+
+
+
+
+
+       
+     		Map<String, String> anchorData = new HashMap<String, String>();
+     
+     		anchorData.put("redirect", String.valueOf(PortalUtil.isLoginRedirectRequired(request)));
+     		
+
+      response.write( anchorData )+response.write(request.getAttribute(" anchorData "));response.write( themeDisplay.getURLSignIn() )+response.write(request.getAttribute(" themeDisplay").getURLSignIn() );
+}
+
+}

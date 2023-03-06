@@ -1,0 +1,786 @@
+﻿ package PackageNo1957440057;import _html_taglib_init_jsp;import com.liferay.portlet.messageboards.model.MBCategory;import com.liferay.portlet.messageboards.model.MBDiscussion;import com.liferay.portlet.messageboards.model.MBMessageDisplay;import com.liferay.portlet.messageboards.model.MBThread;import com.liferay.portlet.messageboards.model.MBTreeWalker;import com.liferay.portlet.messageboards.service.permission.MBDiscussionPermission;import com.liferay.portlet.messageboards.util.comparator.MessageCreateDateComparator;import com.liferay.portlet.ratings.model.RatingsEntry;import com.liferay.portlet.ratings.model.RatingsStats;import com.liferay.portlet.ratings.service.RatingsEntryLocalServiceUtil;import com.liferay.portlet.ratings.service.RatingsStatsLocalServiceUtil;import com.liferay.portlet.ratings.service.persistence.RatingsEntryUtil;import com.liferay.portlet.ratings.service.persistence.RatingsStatsUtil; public class page_jsp {  /* 1 */ private RatingsEntry getRatingsEntry(List<RatingsEntry> ratingEntries, long classPK) { /* 838 */ 	for (RatingsEntry ratingsEntry : ratingEntries) { /* 839 */ 		if (ratingsEntry.getClassPK() == classPK) { /* 840 */ 			return ratingsEntry; /* 841 */ 		} /* 842 */ 	} /* 843 */ 	return RatingsEntryUtil.create(0); /* 845 */ } /* 846 */ private RatingsStats getRatingsStats(List<RatingsStats> ratingsStatsList, long classPK) { /* 848 */ 	for (RatingsStats ratingsStats : ratingsStatsList) { /* 849 */ 		if (ratingsStats.getClassPK() == classPK) { /* 850 */ 			return ratingsStats; /* 851 */ 		} /* 852 */ 	} /* 853 */ 	return RatingsStatsUtil.create(0); /* 855 */ } /* 856 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\discussion\page.jsp */
+
+     
+     String randomNamespace = StringUtil.randomId() + StringPool.UNDERLINE;
+     
+     boolean assetEntryVisible = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:discussion:assetEntryVisible"));
+     String className = (String)request.getAttribute("liferay-ui:discussion:className");
+     long classPK = GetterUtil.getLong((String)request.getAttribute("liferay-ui:discussion:classPK"));
+     String formAction = (String)request.getAttribute("liferay-ui:discussion:formAction");
+     String formName = (String)request.getAttribute("liferay-ui:discussion:formName");
+     boolean hideControls = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:discussion:hideControls"));
+     String permissionClassName = (String)request.getAttribute("liferay-ui:discussion:permissionClassName");
+     long permissionClassPK = GetterUtil.getLong((String)request.getAttribute("liferay-ui:discussion:permissionClassPK"));
+     boolean ratingsEnabled = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:discussion:ratingsEnabled"));
+     String redirect = (String)request.getAttribute("liferay-ui:discussion:redirect");
+     long userId = GetterUtil.getLong((String)request.getAttribute("liferay-ui:discussion:userId"));
+     
+     String strutsAction = ParamUtil.getString(request, "struts_action");
+     
+     String threadView = PropsValues.DISCUSSION_THREAD_VIEW;
+     
+     MBMessageDisplay messageDisplay = MBMessageLocalServiceUtil.getDiscussionMessageDisplay(userId, scopeGroupId, className, classPK, WorkflowConstants.STATUS_ANY, threadView);
+     
+     MBCategory category = messageDisplay.getCategory();
+     MBThread thread = messageDisplay.getThread();
+     MBTreeWalker treeWalker = messageDisplay.getTreeWalker();
+     MBMessage rootMessage = null;
+     List<MBMessage> messages = null;
+     int messagesCount = 0;
+     SearchContainer searchContainer = null;
+     
+     if (treeWalker != null) {
+     	rootMessage = treeWalker.getRoot();
+     	messages = treeWalker.getMessages();
+     	messagesCount = messages.size();
+     }
+     else {
+     	rootMessage = MBMessageLocalServiceUtil.getMessage(thread.getRootMessageId());
+     	messagesCount = MBMessageLocalServiceUtil.getThreadMessagesCount(rootMessage.getThreadId(), WorkflowConstants.STATUS_ANY);
+     }
+     
+     Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone);
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			int i = 0;
+     
+     			MBMessage message = rootMessage;
+     			
+
+
+
+response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));response.write(message.getMessageId());
+
+
+
+
+  
+     					String taglibPostReplyURL = "javascript:" + randomNamespace + "showForm('" + randomNamespace + "postReplyForm" + i + "', '" + namespace + randomNamespace + "postReplyBody" + i + "');";
+     					
+
+
+
+
+
+
+
+
+
+
+ response.write(taglibPostReplyURL)+response.write(request.getAttribute("taglibPostReplyURL"));
+
+
+
+
+   response.write( true )+response.write(request.getAttribute(" true "));
+
+ response.write( taglibPostReplyURL )+response.write(request.getAttribute(" taglibPostReplyURL "));
+
+
+
+
+
+
+  
+     					boolean subscribed = SubscriptionLocalServiceUtil.isSubscribed(company.getCompanyId(), user.getUserId(), className, classPK);
+     
+     					String subscriptionURL = "javascript:" + randomNamespace + "subscribeToComments(" + !subscribed + ");";
+     					
+
+
+
+
+
+
+
+  response.write( true )+response.write(request.getAttribute(" true "));
+
+response.write( subscriptionURL );
+
+
+
+
+
+
+  response.write( true )+response.write(request.getAttribute(" true "));
+
+response.write( subscriptionURL );
+
+
+
+
+
+
+
+response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));response.write(i)+response.write(request.getAttribute("i"));
+
+
+   
+     						String postReplyButtonLabel = LanguageUtil.get(request, "reply");
+     
+     						if (!themeDisplay.isSignedIn()) {
+     							postReplyButtonLabel = LanguageUtil.get(request, "reply-as");
+     						}
+     
+     						if (WorkflowDefinitionLinkLocalServiceUtil.hasWorkflowDefinitionLink(themeDisplay.getCompanyId(), scopeGroupId, MBDiscussion.class.getName()) && !strutsAction.contains("workflow")) {
+     							postReplyButtonLabel = LanguageUtil.get(request, "submit-for-publication");
+     						}
+     						
+
+
+
+
+
+
+
+
+    
+     							String taglibCancel = "document.getElementById('" + randomNamespace + "postReplyForm" + i + "').style.display = 'none'; document.getElementById('" + namespace + randomNamespace + "postReplyBody" + i + "').value = ''; void('');";
+     							
+
+
+
+
+
+
+
+
+       response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     					int[] range = treeWalker.getChildrenRange(rootMessage);
+     
+     					for (i = range[0]; i < range[1]; i++) {
+     						message = (MBMessage)messages.get(i);
+     
+     						boolean lastChildNode = false;
+     
+     						if ((i + 1) == range[1]) {
+     							lastChildNode = true;
+     						}
+     
+     						request.setAttribute(WebKeys.MESSAGE_BOARDS_TREE_WALKER, treeWalker);
+     						request.setAttribute(WebKeys.MESSAGE_BOARDS_TREE_WALKER_CATEGORY, category);
+     						request.setAttribute(WebKeys.MESSAGE_BOARDS_TREE_WALKER_CUR_MESSAGE, message);
+     						request.setAttribute(WebKeys.MESSAGE_BOARDS_TREE_WALKER_DEPTH, new Integer(0));
+     						request.setAttribute(WebKeys.MESSAGE_BOARDS_TREE_WALKER_LAST_NODE, Boolean.valueOf(lastChildNode));
+     						request.setAttribute(WebKeys.MESSAGE_BOARDS_TREE_WALKER_SEL_MESSAGE, rootMessage);
+     						request.setAttribute(WebKeys.MESSAGE_BOARDS_TREE_WALKER_THREAD, thread);
+     					
+
+
+
+  
+     					}
+     					
+
+
+
+
+
+
+
+
+
+  
+     					if (messages != null) {
+     						messages = ListUtil.sort(messages, new MessageCreateDateComparator(true));
+     
+     						messages = ListUtil.copy(messages);
+     
+     						messages.remove(0);
+     					}
+     					else {
+     						PortletURL currentURLObj = PortletURLUtil.getCurrent(renderRequest, renderResponse);
+     
+     						searchContainer = new SearchContainer(renderRequest, null, null, SearchContainer.DEFAULT_CUR_PARAM, SearchContainer.DEFAULT_DELTA, currentURLObj, null, null);
+     
+     						searchContainer.setTotal(messagesCount - 1);
+     
+     						messages = MBMessageLocalServiceUtil.getThreadRepliesMessages(message.getThreadId(), WorkflowConstants.STATUS_ANY, searchContainer.getStart(), searchContainer.getEnd());
+     
+     						searchContainer.setResults(messages);
+     					}
+     
+     					List<Long> classPKs = new ArrayList<Long>();
+     
+     					for (MBMessage curMessage : messages) {
+     						classPKs.add(curMessage.getMessageId());
+     					}
+     
+     					List<RatingsEntry> ratingsEntries = RatingsEntryLocalServiceUtil.getEntries(themeDisplay.getUserId(), MBDiscussion.class.getName(), classPKs);
+     					List<RatingsStats> ratingsStatsList = RatingsStatsLocalServiceUtil.getStats(MBDiscussion.class.getName(), classPKs);
+     
+     					for (i = 1; i <= messages.size(); i++) {
+     						message = messages.get(i - 1);
+     
+     						if ((!message.isApproved() && ((message.getUserId() != user.getUserId()) || user.isDefaultUser()) && !permissionChecker.isGroupAdmin(scopeGroupId)) || !MBDiscussionPermission.contains(permissionChecker, company.getCompanyId(), scopeGroupId, permissionClassName, permissionClassPK, userId, ActionKeys.VIEW)) {
+     							continue;
+     						}
+     
+     						String cssClass = StringPool.BLANK;
+     
+     						if (i == 1) {
+     							cssClass = "first";
+     						}
+     						else if (i == messages.size()) {
+     							cssClass = "last";
+     						}
+     					
+
+ response.write(cssClass);
+  response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));response.write(message.getMessageId());
+   response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));response.write(message.getMessageId());
+
+
+
+
+
+
+
+
+
+    response.write( message.getUserId() );
+      response.write( HtmlUtil.escape(message.getUserName()) );
+
+
+
+
+
+     response.write( message );response.write( MBMessage.class );
+
+
+ response.write( MBDiscussion.class );response.write( message.getStatus() );
+
+
+
+
+
+       
+     										String msgBody = message.getBody();
+     
+     										if (message.isFormatBBCode()) {
+     											msgBody = MBUtil.getBBCodeHTML(msgBody, themeDisplay.getPathThemeImages());
+     										}
+     										
+
+    response.write( msgBody )+response.write(request.getAttribute(" msgBody "));
+
+
+
+
+
+
+     											RatingsEntry ratingsEntry = getRatingsEntry(ratingsEntries, message.getMessageId());
+     											RatingsStats ratingStats = getRatingsStats(ratingsStatsList, message.getMessageId());
+     											
+
+
+ response.write( MBDiscussion.class.getName() );
+       response.write( message.getMessageId() );
+    response.write( ratingsEntry )+response.write(request.getAttribute(" ratingsEntry "));
+    response.write( ratingStats );
+
+
+
+
+
+
+
+
+
+   
+     														String taglibPostReplyURL = "javascript:" + randomNamespace + "showForm('" + randomNamespace + "postReplyForm" + i + "', '" + namespace + randomNamespace + "postReplyBody" + i + "'); " + randomNamespace + "hideForm('" + randomNamespace + "editForm" + i + "', '" + namespace + randomNamespace + "editReplyBody" + i + "', '" + HtmlUtil.escapeJS(message.getBody()) + "');";
+     														
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+
+      response.write( taglibPostReplyURL )+response.write(request.getAttribute(" taglibPostReplyURL "));
+
+
+
+
+
+
+  
+     													String taglibTopURL = "#" + randomNamespace + "messages_top";
+     													
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+
+      response.write( taglibTopURL )+response.write(request.getAttribute(" taglibTopURL "));
+
+
+
+
+
+   
+     														String taglibEditURL = "javascript:" + randomNamespace + "showForm('" + randomNamespace + "editForm" + i + "', '" + namespace + randomNamespace + "editReplyBody" + i + "');" + randomNamespace + "hideForm('" + randomNamespace + "postReplyForm" + i + "', '" + namespace + randomNamespace + "postReplyBody" + i + "', '')";
+     														
+
+
+
+
+ response.write( true )+response.write(request.getAttribute(" true "));
+
+       response.write( taglibEditURL )+response.write(request.getAttribute(" taglibEditURL "));
+
+
+
+
+
+
+   
+     														String taglibDeleteURL = "javascript:" + randomNamespace + "deleteMessage(" + i + ");";
+     														
+
+
+
+ response.write( true )+response.write(request.getAttribute(" true "));
+       response.write( taglibDeleteURL )+response.write(request.getAttribute(" taglibDeleteURL "));
+
+
+
+
+
+
+
+
+
+
+
+   response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));response.write(i)+response.write(request.getAttribute("i"));
+
+
+
+    response.write( user.getUserId() )+response.write(request.getAttribute(" user").getUserId() );
+      response.write( HtmlUtil.escape(PortalUtil.getUserName(user.getUserId(), StringPool.BLANK)) )+response.write(request.getAttribute(" HtmlUtil").escape(PortalUtil.getUserName(user.getUserId(), StringPool.BLANK)) );
+
+
+
+
+
+
+
+       
+     										String taglibCancel = randomNamespace + "hideForm('" + randomNamespace + "postReplyForm" + i + "', '" + namespace + randomNamespace + "postReplyBody" + i + "', '');";
+     										
+
+
+
+
+
+
+    response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));response.write(i)+response.write(request.getAttribute("i"));
+
+
+       
+     										boolean pending = message.isPending();
+     
+     										String publishButtonLabel = LanguageUtil.get(request, "publish");
+     
+     										if (WorkflowDefinitionLinkLocalServiceUtil.hasWorkflowDefinitionLink(themeDisplay.getCompanyId(), scopeGroupId, MBDiscussion.class.getName())) {
+     											if (pending) {
+     												publishButtonLabel = "save";
+     											}
+     											else {
+     												publishButtonLabel = LanguageUtil.get(request, "submit-for-publication");
+     											}
+     										}
+     										
+
+
+
+
+
+     											String taglibCancel = randomNamespace + "hideForm('" + randomNamespace + "editForm" + i + "', '" + namespace + randomNamespace + "editReplyBody" + i + "', '" + HtmlUtil.escapeJS(message.getBody()) + "');";
+     											
+
+
+
+
+
+
+
+
+
+
+    response.write( LanguageUtil.format(request, "posted-on-x", dateFormatDateTime.format(message.getModifiedDate()), false) );
+
+
+
+       
+     										MBMessage parentMessage = MBMessageLocalServiceUtil.getMessage(message.getParentMessageId());
+     										
+
+
+
+
+     											User parentMessageUser = UserLocalServiceUtil.fetchUser(parentMessage.getUserId());
+     
+     											boolean male = (parentMessageUser == null) ? true : parentMessageUser.isMale();
+     											long portraitId = (parentMessageUser == null) ? 0 : parentMessageUser.getPortraitId();
+     											String userUuid = (parentMessageUser == null) ? null : parentMessageUser.getUserUuid();
+     											
+
+
+
+response.write(HtmlUtil.getEscapeAttribute(parentMessage().getUserName()))+response.write(request.getAttribute("HtmlUtil").getEscapeAttribute(parentMessage().getUserName()));
+
+
+
+response.write( parentMessage.getUserName() )+response.write(request.getAttribute(" parentMessage").getUserName() );
+
+
+
+       response.write( dateFormatDateTime.format(parentMessage.getCreateDate()) );
+
+
+
+
+       
+     										StringBundler sb = new StringBundler(7);
+     
+     										sb.append("<a class=\"lfr-discussion-parent-link\" data-title=\"");
+     										sb.append(HtmlUtil.escape(buffer));
+     										sb.append("\" data-metaData=\"");
+     										sb.append(HtmlUtil.escape(parentMessage.getBody()));
+     										sb.append("\">");
+     										sb.append(HtmlUtil.escape(parentMessage.getUserName()));
+     										sb.append("</a>");
+     										
+
+    response.write( LanguageUtil.format(request, "posted-on-x-in-reply-to-x", new Object[] {dateFormatDateTime.format(message.getModifiedDate()), sb.toString()}, false) );
+
+
+
+
+
+  
+     					}
+     					
+
+
+
+
+     response.write( searchContainer );
+
+
+
+
+
+      
+     	PortletURL loginURL = PortletURLFactoryUtil.create(request, PortletKeys.FAST_LOGIN, themeDisplay.getPlid(), PortletRequest.RENDER_PHASE);
+     
+     	loginURL.setParameter("saveLastPath", Boolean.FALSE.toString());
+     	loginURL.setParameter("struts_action", "/login/login");
+     	loginURL.setPortletMode(PortletMode.VIEW);
+     	loginURL.setWindowState(LiferayWindowState.POP_UP);
+     	
+
+
+     response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+
+     response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+      response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+     response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+
+
+
+      response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( HtmlUtil.escapeJS(formName) );
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+
+
+
+
+
+
+
+      response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( HtmlUtil.escapeJS(formName) );
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( Constants.DELETE )+response.write(request.getAttribute(" Constants").DELETE );
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+
+
+
+
+
+
+
+
+
+
+response.write( portletDisplay.getId() )+response.write(request.getAttribute(" portletDisplay").getId() );
+
+
+
+   response.write( UnicodeLanguageUtil.get(request, "your-request-processed-successfully") );
+
+
+
+
+
+
+
+
+
+response.write( portletDisplay.getId() )+response.write(request.getAttribute(" portletDisplay").getId() );
+
+
+
+
+
+
+
+      response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( HtmlUtil.escapeJS(formName) );
+
+    response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( randomNamespace)+response.write(request.getAttribute(" randomNamespace"));
+       response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( Constants.ADD )+response.write(request.getAttribute(" Constants").ADD );
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+
+   response.write( namespace )+response.write(request.getAttribute(" namespace "));
+ response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+
+
+
+
+      response.write( namespace )+response.write(request.getAttribute(" namespace "));
+ response.write( UnicodeLanguageUtil.get(request, "sign-in") );
+       response.write( loginURL.toString() )+response.write(request.getAttribute(" loginURL").toString() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( UnicodeLanguageUtil.get(request, "your-request-failed-to-complete") );
+
+
+
+
+
+
+
+
+
+
+
+     response.write( portletDisplay.getId() )+response.write(request.getAttribute(" portletDisplay").getId() );
+
+
+
+
+
+ response.write( portletDisplay.getId() )+response.write(request.getAttribute(" portletDisplay").getId() );
+
+
+   response.write( UnicodeLanguageUtil.get(request, "your-request-failed-to-complete") );
+
+
+response.write( UnicodeLanguageUtil.get(request, "please-enter-a-valid-message") );
+
+
+response.write( UnicodeLanguageUtil.get(request, "the-message-could-not-be-found") );
+
+
+response.write( UnicodeLanguageUtil.get(request, "you-do-not-have-the-required-permissions") );
+
+
+response.write( UnicodeLanguageUtil.get(request, "you-cannot-delete-a-root-message-that-has-more-than-one-immediate-reply") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( HtmlUtil.escapeJS(formName) );
+
+   response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );
+
+    response.write( Constants.UNSUBSCRIBE_FROM_COMMENTS )+response.write(request.getAttribute(" Constants").UNSUBSCRIBE_FROM_COMMENTS );
+
+
+ response.write( Constants.SUBSCRIBE_TO_COMMENTS )+response.write(request.getAttribute(" Constants").SUBSCRIBE_TO_COMMENTS );
+
+
+
+
+
+
+
+
+
+
+
+      response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( HtmlUtil.escapeJS(formName) );
+
+    response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( randomNamespace)+response.write(request.getAttribute(" randomNamespace"));
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+
+  response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( WorkflowConstants.ACTION_SAVE_DRAFT )+response.write(request.getAttribute(" WorkflowConstants").ACTION_SAVE_DRAFT );
+
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( Constants.UPDATE )+response.write(request.getAttribute(" Constants").UPDATE );
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));
+}
+
+}

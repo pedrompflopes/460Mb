@@ -1,0 +1,196 @@
+﻿ package PackageNo664381915;import _html_common_init_jsp;import _html_taglib_init_ext_jsp;import com.liferay.portal.kernel.util.DateFormatFactoryUtil;import com.liferay.taglib.aui.AUIUtil;import com.liferay.taglib.util.InlineUtil; public class alloyeditor_jsp {  /* 1 */ public String marshallParams(Map<String, String> params) { /* 226 */ 	if (params == null) { /* 227 */ 		return StringPool.BLANK; /* 228 */ 	} /* 229 */ 	StringBundler sb = new StringBundler(4 * params.size()); /* 231 */ 	for (Map.Entry<String, String> configParam : params.entrySet()) { /* 233 */ 		sb.append(StringPool.AMPERSAND); /* 234 */ 		sb.append(configParam.getKey()); /* 235 */ 		sb.append(StringPool.EQUAL); /* 236 */ 		sb.append(HttpUtil.encodeURL(configParam.getValue())); /* 237 */ 	} /* 238 */ 	return sb.toString(); /* 240 */ } /* 241 */ private static Set<String> _alloyEditorConfigFileNames = SetUtil.fromArray(new String[] {"alloyconfig.jsp"}); /* 243 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\js\editor\alloyeditor.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\js\editor\alloyeditor.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ PortletRequest portletRequest = (PortletRequest)request.getAttribute(JavaConstants.JAVAX_PORTLET_REQUEST); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ PortletResponse portletResponse = (PortletResponse)request.getAttribute(JavaConstants.JAVAX_PORTLET_RESPONSE); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ String namespace = StringPool.BLANK; /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ boolean auiFormUseNamespace = GetterUtil.getBoolean((String)request.getAttribute("aui:form:useNamespace"), true); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ if ((portletResponse != null) && auiFormUseNamespace) { /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	namespace = GetterUtil.getString(request.getAttribute("aui:form:portletNamespace"), portletResponse.getNamespace()); /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ String currentURL = null; /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ if ((portletRequest != null) && (portletResponse != null)) { /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	PortletURL currentURLObj = PortletURLUtil.getCurrent(PortalUtil.getLiferayPortletRequest(portletRequest), PortalUtil.getLiferayPortletResponse(portletResponse)); /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	currentURL = currentURLObj.toString(); /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ else { /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	currentURL = PortalUtil.getCurrentURL(request); /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\js\editor\alloyeditor.jsp */
+
+     
+     String portletId = portletDisplay.getRootPortletId();
+     
+     String mainPath = themeDisplay.getPathMain();
+     
+     String doAsUserId = themeDisplay.getDoAsUserId();
+     
+     if (Validator.isNull(doAsUserId)) {
+     	doAsUserId = Encryptor.encrypt(company.getKeyObj(), String.valueOf(themeDisplay.getUserId()));
+     }
+     
+     long doAsGroupId = themeDisplay.getDoAsGroupId();
+     
+     String alloyEditorConfigFileName = ParamUtil.getString(request, "ckEditorConfigFileName");
+     
+     if (!_alloyEditorConfigFileNames.contains(alloyEditorConfigFileName)) {
+     	alloyEditorConfigFileName = "alloyconfig.jsp";
+     }
+     
+     Map<String, String> configParamsMap = (Map<String, String>)request.getAttribute("liferay-ui:input-editor:configParams");
+     
+     String configParams = marshallParams(configParamsMap);
+     
+     String contentsLanguageId = (String)request.getAttribute("liferay-ui:input-editor:contentsLanguageId");
+     String cssClasses = GetterUtil.getString((String)request.getAttribute("liferay-ui:input-editor:cssClasses"));
+     String editorImpl = (String)request.getAttribute("liferay-ui:input-editor:editorImpl");
+     String name = namespace + GetterUtil.getString((String)request.getAttribute("liferay-ui:input-editor:name"));
+     String initMethod = (String)request.getAttribute("liferay-ui:input-editor:initMethod");
+     boolean inlineEdit = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:input-editor:inlineEdit"));
+     
+     String onBlurMethod = (String)request.getAttribute("liferay-ui:input-editor:onBlurMethod");
+     
+     if (Validator.isNotNull(onBlurMethod)) {
+     	onBlurMethod = namespace + onBlurMethod;
+     }
+     
+     String onChangeMethod = (String)request.getAttribute("liferay-ui:input-editor:onChangeMethod");
+     
+     if (Validator.isNotNull(onChangeMethod)) {
+     	onChangeMethod = namespace + onChangeMethod;
+     }
+     
+     String onFocusMethod = (String)request.getAttribute("liferay-ui:input-editor:onFocusMethod");
+     
+     if (Validator.isNotNull(onFocusMethod)) {
+     	onFocusMethod = namespace + onFocusMethod;
+     }
+     
+     boolean resizable = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:input-editor:resizable"));
+     boolean skipEditorLoading = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:input-editor:skipEditorLoading"));
+     
+
+
+
+response.write( PortalUtil.getStaticResourceURL(request, themeDisplay.getCDNHost() + themeDisplay.getPathJavaScript() + "/editor/alloyeditor/assets/alloy-editor.css") );
+
+       
+     		long javaScriptLastModified = ServletContextUtil.getLastModified(application, "/html/js/", true);
+     		
+
+ response.write( HtmlUtil.escape(PortalUtil.getStaticResourceURL(request, themeDisplay.getCDNHost() + themeDisplay.getPathJavaScript() + "/editor/ckeditor/ckeditor.js", javaScriptLastModified)) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( HtmlUtil.escape(PortalUtil.getStaticResourceURL(request, themeDisplay.getCDNHost() + themeDisplay.getPathJavaScript() + "/editor/alloyeditor/alloy-editor-core.js", javaScriptLastModified)) );
+
+
+   response.write( editorImpl );
+
+
+
+
+
+
+
+
+
+
+
+   response.write( name );
+
+ response.write( name );
+
+     response.write( name );
+
+
+
+ response.write( name );
+
+
+
+
+
+  response.write( name );response.write( HtmlUtil.escapeJS(namespace + initMethod) );
+     response.write( HtmlUtil.escapeJS(namespace + initMethod) );
+
+
+ response.write( name );
+
+
+
+
+
+
+
+
+
+
+    response.write( name );
+
+
+
+    response.write( name );
+
+
+
+
+
+
+      response.write( HtmlUtil.escapeJS(onBlurMethod) );   response.write( name );
+
+
+
+
+
+ response.write( name );
+
+
+
+       response.write( HtmlUtil.escapeJS(onChangeMethod) );response.write( name );
+
+
+
+
+
+
+
+
+      response.write( HtmlUtil.escapeJS(onFocusMethod) );   response.write( name );
+
+
+
+
+ response.write( name );
+
+
+
+    response.write( name );
+
+
+     response.write( name );
+
+    response.write( PortalUtil.getPathContext() )+response.write(request.getAttribute(" PortalUtil").getPathContext() );response.write( HtmlUtil.escapeJS(alloyEditorConfigFileName) );response.write( HttpUtil.encodeURL(portletId) )+response.write(request.getAttribute(" HttpUtil").encodeURL(portletId) );response.write( HttpUtil.encodeURL(mainPath) );response.write( HttpUtil.encodeURL(contentsLanguageId) );response.write( HttpUtil.encodeURL(themeDisplay.getColorScheme().getCssClass()) )+response.write(request.getAttribute(" HttpUtil").encodeURL(themeDisplay.getColorScheme().getCssClass()) );response.write( HttpUtil.encodeURL(cssClasses) );response.write( HttpUtil.encodeURL(themeDisplay.getPathThemeCss()) )+response.write(request.getAttribute(" HttpUtil").encodeURL(themeDisplay.getPathThemeCss()) );response.write( HttpUtil.encodeURL(String.valueOf(doAsGroupId)) );response.write( HttpUtil.encodeURL(doAsUserId) );response.write( HttpUtil.encodeURL(themeDisplay.getPathThemeImages()) )+response.write(request.getAttribute(" HttpUtil").encodeURL(themeDisplay.getPathThemeImages()) );response.write( inlineEdit );response.write( configParams );response.write( HttpUtil.encodeURL(LocaleUtil.toLanguageId(locale)) )+response.write(request.getAttribute(" HttpUtil").encodeURL(LocaleUtil.toLanguageId(locale)) );response.write( name );response.write( resizable );
+
+
+
+       response.write( name );
+    response.write( name );
+
+
+
+     response.write( portletId )+response.write(request.getAttribute(" portletId "));
+}
+
+}

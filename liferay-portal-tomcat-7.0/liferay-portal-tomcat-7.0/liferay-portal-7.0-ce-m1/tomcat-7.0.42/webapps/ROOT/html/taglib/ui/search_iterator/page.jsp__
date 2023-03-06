@@ -1,0 +1,364 @@
+﻿ package PackageNo1506038670;import _html_common_init_jsp;import _html_taglib_init_ext_jsp;import com.liferay.portal.kernel.util.DateFormatFactoryUtil;import com.liferay.taglib.aui.AUIUtil;import com.liferay.taglib.util.InlineUtil; public class page_jsp {  /* 1 */ private static final String _CLASS_NAME_HOVER = "hover"; /* 366 */ private static final String _ROW_CLASS_NAME_ALTERNATE = ""; /* 368 */ private static final String _ROW_CLASS_NAME_ALTERNATE_HOVER = "-hover"; /* 370 */ private static final String _ROW_CLASS_NAME_BODY = ""; /* 372 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\search_iterator\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\search_iterator\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ PortletRequest portletRequest = (PortletRequest)request.getAttribute(JavaConstants.JAVAX_PORTLET_REQUEST); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ PortletResponse portletResponse = (PortletResponse)request.getAttribute(JavaConstants.JAVAX_PORTLET_RESPONSE); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ String namespace = StringPool.BLANK; /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ boolean auiFormUseNamespace = GetterUtil.getBoolean((String)request.getAttribute("aui:form:useNamespace"), true); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ if ((portletResponse != null) && auiFormUseNamespace) { /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	namespace = GetterUtil.getString(request.getAttribute("aui:form:portletNamespace"), portletResponse.getNamespace()); /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ String currentURL = null; /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ if ((portletRequest != null) && (portletResponse != null)) { /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	PortletURL currentURLObj = PortletURLUtil.getCurrent(PortalUtil.getLiferayPortletRequest(portletRequest), PortalUtil.getLiferayPortletResponse(portletResponse)); /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	currentURL = currentURLObj.toString(); /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ else { /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	currentURL = PortalUtil.getCurrentURL(request); /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\search_iterator\page.jsp */
+
+     
+     SearchContainer searchContainer = (SearchContainer)request.getAttribute("liferay-ui:search:searchContainer");
+     
+     boolean paginate = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:search-iterator:paginate"));
+     String type = (String)request.getAttribute("liferay-ui:search:type");
+     
+     String id = searchContainer.getId(request, namespace);
+     
+     int end = searchContainer.getEnd();
+     int total = searchContainer.getTotal();
+     List resultRows = searchContainer.getResultRows();
+     List<String> headerNames = searchContainer.getHeaderNames();
+     List<String> normalizedHeaderNames = searchContainer.getNormalizedHeaderNames();
+     Map orderableHeaders = searchContainer.getOrderableHeaders();
+     String emptyResultsMessage = searchContainer.getEmptyResultsMessage();
+     RowChecker rowChecker = searchContainer.getRowChecker();
+     
+     if (end > total) {
+     	end = total;
+     }
+     
+     if (rowChecker != null) {
+     	if (headerNames != null) {
+     		headerNames.add(0, rowChecker.getAllRowsCheckBox(request));
+     
+     		normalizedHeaderNames.add(0, "rowChecker");
+     	}
+     }
+     
+     String url = StringPool.BLANK;
+     
+     PortletURL iteratorURL = searchContainer.getIteratorURL();
+     
+     if (iteratorURL != null) {
+     	url = iteratorURL.toString();
+     	url = HttpUtil.removeParameter(url, namespace + searchContainer.getOrderByColParam());
+     	url = HttpUtil.removeParameter(url, namespace + searchContainer.getOrderByTypeParam());
+     }
+     
+     JSONArray primaryKeysJSONArray = JSONFactoryUtil.createJSONArray();
+     
+
+
+
+    response.write( LanguageUtil.get(request, emptyResultsMessage) );
+
+
+
+   response.write( resultRows.isEmpty() ? "hide" : StringPool.BLANK );
+
+
+      response.write( id + "PageIteratorTop" );       response.write( searchContainer )+response.write(request.getAttribute(" searchContainer "));response.write( type );
+
+
+
+
+
+
+
+
+
+
+ 
+     				for (int i = 0; i < headerNames.size(); i++) {
+     					String headerName = headerNames.get(i);
+     
+     					String normalizedHeaderName = null;
+     
+     					if (i < normalizedHeaderNames.size()) {
+     						normalizedHeaderName = normalizedHeaderNames.get(i);
+     					}
+     
+     					if (Validator.isNull(normalizedHeaderName)) {
+     						normalizedHeaderName = String.valueOf(i +1);
+     					}
+     
+     					String orderKey = null;
+     					String orderByType = null;
+     					boolean orderCurrentHeader = false;
+     
+     					if (orderableHeaders != null) {
+     						orderKey = (String)orderableHeaders.get(headerName);
+     
+     						if (orderKey != null) {
+     							orderByType = searchContainer.getOrderByType();
+     
+     							if (orderKey.equals(searchContainer.getOrderByCol())) {
+     								orderCurrentHeader = true;
+     							}
+     						}
+     					}
+     
+     					String cssClass = StringPool.BLANK;
+     
+     					if (headerNames.size() == 1) {
+     						cssClass = "only";
+     					}
+     					else if (i == 0) {
+     						cssClass = "table-first-header";
+     					}
+     					else if (i == (headerNames.size() - 1)) {
+     						cssClass = "table-last-header";
+     					}
+     
+     					if (orderCurrentHeader) {
+     						cssClass += " table-sorted";
+     
+     						if (HtmlUtil.escapeAttribute(orderByType).equals("desc")) {
+     							cssClass += " table-sorted-desc";
+     						}
+     
+     						if (orderByType.equals("asc")) {
+     							orderByType = "desc";
+     						}
+     						else {
+     							orderByType = "asc";
+     						}
+     					}
+     				
+
+  response.write( cssClass );response.write( namespace + id );response.write( normalizedHeaderName );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     								String orderByJS = searchContainer.getOrderByJS();
+     								
+
+
+
+
+       
+     										url = HttpUtil.setParameter(url, namespace + searchContainer.getOrderByColParam(), orderKey);
+     										url = HttpUtil.setParameter(url, namespace + searchContainer.getOrderByTypeParam(), orderByType);
+     										
+
+     response.write(url);
+
+
+     response.write( StringUtil.replace(orderByJS, new String[] { "orderKey", "orderByType" }, new String[] { orderKey, orderByType }) );
+
+
+
+
+    
+     							String headerNameValue = null;
+     
+     							if ((rowChecker == null) || (i > 0)) {
+     								headerNameValue = LanguageUtil.get(request, HtmlUtil.escape(headerName));
+     							}
+     							else {
+     								headerNameValue = headerName;
+     							}
+     							
+
+
+
+   response.write( StringPool.NBSP )+response.write(request.getAttribute(" StringPool").NBSP );
+
+
+   response.write( headerNameValue )+response.write(request.getAttribute(" headerNameValue "));
+
+
+
+
+
+
+
+
+
+
+ 
+     				}
+     				
+
+
+
+
+
+
+
+
+
+
+       response.write( LanguageUtil.get(request, emptyResultsMessage) );
+
+
+
+
+       
+     		boolean allRowsIsChecked = true;
+     
+     		for (int i = 0; i < resultRows.size(); i++) {
+     			com.liferay.portal.kernel.dao.search.ResultRow row = (com.liferay.portal.kernel.dao.search.ResultRow)resultRows.get(i);
+     
+     			primaryKeysJSONArray.put(row.getPrimaryKey());
+     
+     			request.setAttribute(WebKeys.SEARCH_CONTAINER_RESULT_ROW, row);
+     
+     			List entries = row.getEntries();
+     
+     			boolean rowIsChecked = false;
+     
+     			if (rowChecker != null) {
+     				rowIsChecked = rowChecker.isChecked(row.getObject());
+     
+     				boolean rowIsDisabled = rowChecker.isDisabled(row.getObject());
+     
+     				if (!rowIsChecked) {
+     					allRowsIsChecked = false;
+     				}
+     
+     				TextSearchEntry textSearchEntry = new TextSearchEntry();
+     
+     				textSearchEntry.setAlign(rowChecker.getAlign());
+     				textSearchEntry.setColspan(rowChecker.getColspan());
+     				textSearchEntry.setCssClass(rowChecker.getCssClass());
+     				textSearchEntry.setName(rowChecker.getRowCheckBox(request, rowIsChecked, rowIsDisabled, row.getPrimaryKey()));
+     				textSearchEntry.setValign(rowChecker.getValign());
+     
+     				row.addSearchEntry(0, textSearchEntry);
+     			}
+     
+     			request.setAttribute("liferay-ui:search-container-row:rowId", id.concat(StringPool.UNDERLINE.concat(row.getRowId())));
+     
+     			Map<String, Object> data = row.getData();
+     		
+
+response.write( GetterUtil.getString(row.getClassName()) );response.write( rowIsChecked ? "info" : StringPool.BLANK );response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );
+
+
+     			for (int j = 0; j < entries.size(); j++) {
+     				com.liferay.portal.kernel.dao.search.SearchEntry entry = (com.liferay.portal.kernel.dao.search.SearchEntry)entries.get(j);
+     
+     				String normalizedHeaderName = null;
+     
+     				if ((normalizedHeaderNames != null) && (j < normalizedHeaderNames.size())) {
+     					normalizedHeaderName = normalizedHeaderNames.get(j);
+     				}
+     
+     				if (Validator.isNull(normalizedHeaderName)) {
+     					normalizedHeaderName = String.valueOf(j + 1);
+     				}
+     
+     				entry.setIndex(j);
+     
+     				request.setAttribute(WebKeys.SEARCH_CONTAINER_RESULT_ROW_ENTRY, entry);
+     
+     				String columnClassName = entry.getCssClass();
+     
+     				if (entries.size() == 1) {
+     					columnClassName += " only";
+     				}
+     				else if (j == 0) {
+     					columnClassName += " first";
+     				}
+     				else if ((j + 1) == entries.size()) {
+     					columnClassName += " last";
+     				}
+     			
+
+       response.write(columnClassName);response.write(entry.getAlign());response.write(entry.getValign());response.write(entry.getColspan());
+
+  
+     					entry.print(pageContext.getOut(), request, response);
+     					
+
+
+
+
+     			}
+     			
+
+
+
+       
+     			request.removeAttribute("liferay-ui:search-container-row:rowId");
+     		}
+     		
+
+
+
+
+ 
+     				for (int i = 0; i < headerNames.size(); i++) {
+     				
+
+
+
+ 
+     				}
+     				
+
+
+
+
+
+
+
+
+
+
+      response.write( id + "PageIteratorBottom" );       response.write( searchContainer )+response.write(request.getAttribute(" searchContainer "));response.write( type );
+
+
+
+
+
+
+     response.write( rowChecker.getFormName() );response.write( rowChecker.getAllRowsId() );
+
+
+
+
+
+
+
+
+
+       response.write( _CLASS_NAME_HOVER )+response.write(request.getAttribute(" _CLASS_NAME_HOVER "));
+     response.write( searchContainer.isHover() )+response.write(request.getAttribute(" searchContainer").isHover() );
+   response.write( namespace + id );
+      response.write( _ROW_CLASS_NAME_ALTERNATE )+response.write(request.getAttribute(" _ROW_CLASS_NAME_ALTERNATE "));
+   response.write( _ROW_CLASS_NAME_ALTERNATE_HOVER )+response.write(request.getAttribute(" _ROW_CLASS_NAME_ALTERNATE_HOVER "));
+ response.write( _ROW_CLASS_NAME_BODY )+response.write(request.getAttribute(" _ROW_CLASS_NAME_BODY "));
+      response.write( _ROW_CLASS_NAME_BODY )+response.write(request.getAttribute(" _ROW_CLASS_NAME_BODY "));
+
+
+
+    response.write( primaryKeysJSONArray.toString() );
+}
+
+}

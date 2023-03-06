@@ -1,0 +1,181 @@
+2011-08-03 22:54:02,340 [pool-1-thread-1] (CxScanJob.java:78) INFO  - Packing project
+2011-08-03 22:56:18,581 [pool-1-thread-1] (CxScanJob.java:97) INFO  - Project name is "console.project_1312401378581"
+2011-08-03 22:56:18,581 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Log in
+2011-08-03 22:56:18,910 [pool-1-thread-1] (CxScanJob.java:112) INFO  - Retrieving scan configurations
+2011-08-03 22:56:19,035 [pool-1-thread-1] (CxScanJob.java:130) INFO  - Request scan
+2011-08-03 22:56:22,223 [pool-1-thread-1] (CxScanJob.java:392) TRACE - Error during quering scan run.
+com.sun.xml.internal.ws.server.UnsupportedMediaException: Unsupported Content-Type: text/html; charset=utf-8 Supported ones are: [text/xml]
+	at com.sun.xml.internal.ws.encoding.StreamSOAPCodec.decode(Unknown Source)
+	at com.sun.xml.internal.ws.encoding.StreamSOAPCodec.decode(Unknown Source)
+	at com.sun.xml.internal.ws.encoding.SOAPBindingCodec.decode(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.process(Unknown Source)
+	at com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.transport.DeferredTransportPipe.processRequest(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.__doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber._doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.doRun(Unknown Source)
+	at com.sun.xml.internal.ws.api.pipe.Fiber.runSync(Unknown Source)
+	at com.sun.xml.internal.ws.client.Stub.process(Unknown Source)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.doProcess(Unknown Source)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.client.sei.SyncMethodHandler.invoke(Unknown Source)
+	at com.sun.xml.internal.ws.client.sei.SEIStub.invoke(Unknown Source)
+	at $Proxy29.runScanWithZippedSource(Unknown Source)
+	at com.checkmarx.cxviewer.ws.WSMgr.runScanWithZippedSource(WSMgr.java:270)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.requestScan(CxScanJob.java:386)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:133)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:40)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2011-08-03 22:56:22,238 [pool-1-thread-1] (CxScanJob.java:396) INFO  - Error occrred during project scan request: Unsupported Content-Type: text/html; charset=utf-8 Supported ones are: [text/xml]. Operation retry 1
+2011-08-03 22:56:22,238 [main] (ScanFolderCommand.java:97) ERROR - Error during scan job execution: null
+2011-08-03 22:56:22,238 [main] (ScanFolderCommand.java:100) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.NullPointerException
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:88)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:76)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:93)
+Caused by: java.lang.NullPointerException
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.requestScan(CxScanJob.java:400)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:133)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:40)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2011-09-13 03:42:57,951 [pool-1-thread-1] (CxScanJob.java:78) INFO  - Packing project
+2011-09-13 03:44:11,240 [pool-1-thread-1] (CxScanJob.java:97) INFO  - Project name is "liferay-portal_test_2065577lines"
+2011-09-13 03:44:11,240 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Log in
+2011-09-13 03:44:11,661 [pool-1-thread-1] (CxScanJob.java:112) INFO  - Retrieving scan configurations
+2011-09-13 03:44:11,989 [pool-1-thread-1] (CxScanJob.java:133) INFO  - Request scan
+2011-09-13 03:44:12,083 [pool-1-thread-1] (CxScanJob.java:397) INFO  - isVisible to others flag: true
+2011-09-13 03:47:30,101 [pool-1-thread-1] (CxScanJob.java:436) TRACE - Project scan request response:RunScanResult(scanId:d6441418-5bc4-4d3c-a467-65ed397e1fa8)
+2011-09-13 03:47:30,133 [pool-2-thread-1] (WaitScanCompletionJob.java:58) TRACE - getScanStatus: GetStatusOfScanResult(<?xml version="1.0" encoding="utf-16"?>
+<GetScanStatusReplySchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="CxWebAPI.xsd">
+  <IsSuccesfull>true</IsSuccesfull>
+  <ReturnValue>
+    <Status RunId="d6441418-5bc4-4d3c-a467-65ed397e1fa8" RunStatus="Failed" TotalPercent="0" CurrentStage="0" StageName="" CurrentStagePercent="0" StageMessage="Cannot reserve 13645 Mb memory for a current process." StepMessage="" Details="Cannot reserve 13645 Mb memory for a current process." TimeStarted="12/09/2011 17:47:14" TimeFinished="12/09/2011 17:47:29" QueuePosition="-1" />
+  </ReturnValue>
+</GetScanStatusReplySchema>)
+2011-09-13 03:47:30,133 [pool-2-thread-1] (WaitScanCompletionJob.java:70) INFO  - Total scan worked: 0%
+2011-09-13 03:47:30,133 [pool-2-thread-1] (WaitScanCompletionJob.java:74) ERROR - Error during scan: Cannot reserve 13645 Mb memory for a current process.
+2011-09-13 03:47:30,133 [pool-1-thread-1] (CxScanJob.java:148) TRACE - Error occured during scan progress monitoring
+java.lang.Exception: Error during scan: Cannot reserve 13645 Mb memory for a current process.
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:75)
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:12)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2011-09-13 03:47:30,133 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Error during scan: Cannot reserve 13645 Mb memory for a current process.
+2011-09-13 03:47:30,133 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Error during scan: Cannot reserve 13645 Mb memory for a current process.
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Error during scan: Cannot reserve 13645 Mb memory for a current process.
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:154)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:40)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2011-10-03 18:52:13,415 [pool-1-thread-1] (CxScanJob.java:88) INFO  - Packing project
+2011-10-03 18:53:43,185 [pool-1-thread-1] (CxScanJob.java:107) INFO  - Project name is "liferay-portal_test_2065577lines"
+2011-10-03 18:53:44,088 [pool-1-thread-1] (CxScanJob.java:257) INFO  - Check CLI version support: 1.2.3
+2011-10-03 18:53:44,104 [pool-1-thread-1] (CxScanJob.java:270) INFO  - Log in
+2011-10-03 18:53:44,135 [pool-1-thread-1] (CxScanJob.java:119) INFO  - Retrieving scan configurations
+2011-10-03 18:53:44,182 [pool-1-thread-1] (CxScanJob.java:140) INFO  - Request scan
+2011-10-03 18:53:44,291 [pool-1-thread-1] (CxScanJob.java:414) INFO  - isVisible to others flag: true
+2011-10-03 18:53:48,733 [pool-1-thread-1] (CxScanJob.java:439) ERROR - Project scan request was unsuccessful.
+2011-10-03 18:53:48,733 [pool-1-thread-1] (CxScanJob.java:443) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 1
+2011-10-03 18:53:52,847 [pool-1-thread-1] (CxScanJob.java:439) ERROR - Project scan request was unsuccessful.
+2011-10-03 18:53:52,847 [pool-1-thread-1] (CxScanJob.java:443) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 2
+2011-10-03 18:53:59,003 [pool-1-thread-1] (CxScanJob.java:439) ERROR - Project scan request was unsuccessful.
+2011-10-03 18:53:59,003 [pool-1-thread-1] (CxScanJob.java:443) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 3
+2011-10-03 18:53:59,003 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Project scan request was unsuccessful.
+2011-10-03 18:53:59,003 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Project scan request was unsuccessful.
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Project scan request was unsuccessful.
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.requestScan(CxScanJob.java:452)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:143)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:43)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2011-10-04 22:32:55,835 [pool-1-thread-1] (CxScanJob.java:88) INFO  - Packing project
+2011-10-04 22:34:07,640 [pool-1-thread-1] (CxScanJob.java:107) INFO  - Project name is "liferay-portal_test_2065577lines"
+2011-10-04 22:34:08,606 [pool-1-thread-1] (CxScanJob.java:257) INFO  - Check CLI version support: 1.2.3
+2011-10-04 22:34:08,653 [pool-1-thread-1] (CxScanJob.java:270) INFO  - Log in
+2011-10-04 22:34:08,777 [pool-1-thread-1] (CxScanJob.java:119) INFO  - Retrieving scan configurations
+2011-10-04 22:34:08,886 [pool-1-thread-1] (CxScanJob.java:140) INFO  - Request scan
+2011-10-04 22:34:08,996 [pool-1-thread-1] (CxScanJob.java:414) INFO  - isVisible to others flag: true
+2011-10-04 22:34:13,453 [pool-1-thread-1] (CxScanJob.java:439) ERROR - Project scan request was unsuccessful.
+2011-10-04 22:34:13,469 [pool-1-thread-1] (CxScanJob.java:443) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 1
+2011-10-04 22:34:18,191 [pool-1-thread-1] (CxScanJob.java:439) ERROR - Project scan request was unsuccessful.
+2011-10-04 22:34:18,191 [pool-1-thread-1] (CxScanJob.java:443) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 2
+2011-10-04 22:34:25,034 [pool-1-thread-1] (CxScanJob.java:439) ERROR - Project scan request was unsuccessful.
+2011-10-04 22:34:25,034 [pool-1-thread-1] (CxScanJob.java:443) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 3
+2011-10-04 22:34:25,034 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Project scan request was unsuccessful.
+2011-10-04 22:34:25,034 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Project scan request was unsuccessful.
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Project scan request was unsuccessful.
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.requestScan(CxScanJob.java:452)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:143)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:43)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2011-10-27 22:24:35,732 [pool-1-thread-1] (CxScanJob.java:89) INFO  - Packing project
+2011-10-27 22:26:14,049 [pool-1-thread-1] (CxScanJob.java:108) INFO  - Project name is "liferay-portal_test_2065577lines"
+2011-10-27 22:26:15,358 [pool-1-thread-1] (CxScanJob.java:275) INFO  - Check CLI version support: 1.2.6
+2011-10-27 22:26:15,405 [pool-1-thread-1] (CxScanJob.java:290) INFO  - Log in
+2011-10-27 22:26:15,514 [pool-1-thread-1] (CxScanJob.java:120) INFO  - Retrieving scan configurations
+2011-10-27 22:26:15,701 [pool-1-thread-1] (CxScanJob.java:141) INFO  - Request scan
+2011-10-27 22:26:15,841 [pool-1-thread-1] (CxScanJob.java:434) INFO  - isVisible to others flag: true
+2011-10-27 22:26:21,888 [pool-1-thread-1] (CxScanJob.java:462) ERROR - Project scan request was unsuccessful.
+2011-10-27 22:26:21,888 [pool-1-thread-1] (CxScanJob.java:466) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 1
+2011-10-27 22:27:28,784 [pool-1-thread-1] (CxScanJob.java:462) ERROR - Project scan request was unsuccessful.
+2011-10-27 22:27:28,784 [pool-1-thread-1] (CxScanJob.java:466) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 2
+2011-10-27 22:28:40,962 [pool-1-thread-1] (CxScanJob.java:462) ERROR - Project scan request was unsuccessful.
+2011-10-27 22:28:40,962 [pool-1-thread-1] (CxScanJob.java:466) INFO  - Project scan run request unsuccessful: Illegal project name. Operation retry 3
+2011-10-27 22:28:40,962 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Project scan request was unsuccessful.
+2011-10-27 22:28:40,962 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Project scan request was unsuccessful.
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Project scan request was unsuccessful.
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.requestScan(CxScanJob.java:485)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:144)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:44)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

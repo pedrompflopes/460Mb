@@ -1,0 +1,73 @@
+﻿ package PackageNo1498213979; public class init_ext_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if (!useNamespace) {
+     	namespace = StringPool.BLANK;
+     }
+     
+     String baseType = GetterUtil.getString((String)request.getAttribute("aui:input:baseType"));
+     String forLabel = namespace + GetterUtil.getString((String)request.getAttribute("aui:input:forLabel"));
+     boolean wrappedField = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:wrappedField")));
+     
+     if (Validator.isNull(label) && changesContext) {
+     	StringBundler sb = new StringBundler(5);
+     
+     	sb.append(LanguageUtil.get(request, title));
+     	sb.append(StringPool.SPACE);
+     	sb.append(StringPool.OPEN_PARENTHESIS);
+     	sb.append(LanguageUtil.get(request, "changing-the-value-of-this-field-will-reload-the-page"));
+     	sb.append(StringPool.CLOSE_PARENTHESIS);
+     
+     	title = sb.toString();
+     }
+     else if (Validator.isNotNull(title)) {
+     	title = LanguageUtil.get(request, title);
+     }
+     
+     boolean checkboxField = baseType.equals("checkbox") || baseType.equals("boolean");
+     boolean choiceField = checkboxField || baseType.equals("radio");
+     
+     boolean showForLabel = true;
+     
+     if (type.equals("assetCategories") || baseType.equals(Date.class.getName())) {
+     	showForLabel = false;
+     }
+     
+     if (choiceField && Validator.isNull(inlineLabel)) {
+     	inlineLabel = "right";
+     }
+     
+     String addOnCssClass = StringPool.BLANK;
+     
+     if (helpTextCssClass.equals("input-group-addon")) {
+     	addOnCssClass = addOnCssClass.concat("input-group");
+     }
+     
+     String controlGroupCssClass = AUIUtil.buildControlGroupCss(inlineField, inlineLabel, wrapperCssClass, baseType);
+     String baseTypeCssClass = TextFormatter.format(StringUtil.toLowerCase(baseType), TextFormatter.K);
+     
+     String fieldCssClass = AUIUtil.buildCss(AUIUtil.FIELD_PREFIX, disabled, first, last, cssClass);
+     
+     if (baseType.equals("email") || baseType.equals("password") || baseType.equals("text") || baseType.equals("textarea")) {
+     	fieldCssClass += " form-control";
+     }
+     
+     String labelTag = AUIUtil.buildLabel(baseTypeCssClass, inlineField, showForLabel, forLabel);
+     
+}
+
+}

@@ -1,0 +1,23 @@
+﻿ package PackageNo426019864; public class thread_columns_last_post_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( thread.getLastPostDate() )+response.write(request.getAttribute(" thread").getLastPostDate() );
+
+   response.write( thread.getLastPostByUserId() )+response.write(request.getAttribute(" thread").getLastPostByUserId() );
+}
+
+}

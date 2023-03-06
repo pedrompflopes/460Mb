@@ -1,0 +1,223 @@
+﻿ package PackageNo1330710595;import _html_portlet_init_jsp;import _html_portlet_staging_bar_init_ext_jsp;import com.liferay.portal.LayoutBranchNameException;import com.liferay.portal.LayoutSetBranchNameException;import com.liferay.portal.kernel.workflow.WorkflowTask;import com.liferay.portal.lar.backgroundtask.LayoutStagingBackgroundTaskExecutor;import com.liferay.portal.service.LayoutSetBranchLocalServiceUtil;import com.liferay.portal.service.permission.LayoutBranchPermissionUtil;import com.liferay.portal.service.permission.LayoutSetBranchPermissionUtil;import com.liferay.portal.util.comparator.LayoutRevisionCreateDateComparator;import com.liferay.portal.util.comparator.LayoutRevisionIdComparator; public class view_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\view.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\view.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ Layout selLayout = layout; /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ long selPlid = ParamUtil.getLong(request, "selPlid"); /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ if (selPlid > 0) { /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ 	selLayout = LayoutLocalServiceUtil.getLayout(selPlid); /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ } /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ if (selLayout != null) { /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ 	group = selLayout.getGroup(); /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ 	privateLayout = selLayout.isPrivateLayout(); /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ } /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\staging_bar\view.jsp */
+
+     
+     boolean branchingEnabled = false;
+     
+     LayoutRevision layoutRevision = null;
+     
+     LayoutSetBranch layoutSetBranch = null;
+     
+     LayoutBranch layoutBranch = null;
+     
+     Layout liveLayout = null;
+     
+     if (layout != null) {
+     	layoutRevision = LayoutStagingUtil.getLayoutRevision(layout);
+     
+     	if (layoutRevision != null) {
+     		branchingEnabled = true;
+     
+     		layoutSetBranch = LayoutSetBranchLocalServiceUtil.getLayoutSetBranch(layoutRevision.getLayoutSetBranchId());
+     
+     		layoutBranch = layoutRevision.getLayoutBranch();
+     	}
+     }
+     
+
+
+
+      
+     	String liveFriendlyURL = null;
+     
+     	if (liveGroup != null) {
+     		liveLayout = LayoutLocalServiceUtil.fetchLayoutByUuidAndGroupId(layout.getUuid(), liveGroup.getGroupId(), layout.isPrivateLayout());
+     
+     		if (liveLayout != null) {
+     			liveFriendlyURL = PortalUtil.getLayoutFriendlyURL(liveLayout, themeDisplay);
+     		}
+     		else if ((layout.isPrivateLayout() && (liveGroup.getPrivateLayoutsPageCount() > 0)) || (layout.isPublicLayout() && (liveGroup.getPublicLayoutsPageCount() > 0))) {
+     			liveFriendlyURL = PortalUtil.getGroupFriendlyURL(liveGroup, layout.isPrivateLayout(), themeDisplay);
+     		}
+     
+     		if (Validator.isNotNull(liveFriendlyURL)) {
+     			liveFriendlyURL = PortalUtil.addPreservedParameters(themeDisplay, liveFriendlyURL);
+     		}
+     	}
+     
+     	String stagingFriendlyURL = null;
+     
+     	if (stagingGroup != null) {
+     		Layout stagingLayout = LayoutLocalServiceUtil.fetchLayoutByUuidAndGroupId(layout.getUuid(), stagingGroup.getGroupId(), layout.isPrivateLayout());
+     
+     		if (stagingLayout != null) {
+     			stagingFriendlyURL = PortalUtil.getLayoutFriendlyURL(stagingLayout, themeDisplay);
+     		}
+     		else {
+     			stagingFriendlyURL = PortalUtil.getGroupFriendlyURL(stagingGroup, layout.isPrivateLayout(), themeDisplay);
+     		}
+     
+     		if (Validator.isNotNull(stagingFriendlyURL)) {
+     			stagingFriendlyURL = PortalUtil.addPreservedParameters(themeDisplay, stagingFriendlyURL);
+     		}
+     	}
+     
+     	List<LayoutSetBranch> layoutSetBranches = null;
+     
+     	if (group.isStagingGroup() || group.isStagedRemotely()) {
+     		layoutSetBranches = LayoutSetBranchLocalServiceUtil.getLayoutSetBranches(stagingGroup.getGroupId(), layout.isPrivateLayout());
+     	}
+     	
+
+
+
+
+
+
+       response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+       
+     										request.setAttribute("view.jsp-layoutBranch", layoutBranch);
+     										request.setAttribute("view.jsp-layoutRevision", layoutRevision);
+     										request.setAttribute("view.jsp-layoutSetBranch", layoutSetBranch);
+     										request.setAttribute("view.jsp-layoutSetBranches", layoutSetBranches);
+     										request.setAttribute("view.jsp-stagingFriendlyURL", stagingFriendlyURL);
+     										
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( layoutRevision );response.write( LayoutRevision.class )+response.write(request.getAttribute(" LayoutRevision").class );
+
+
+
+
+  response.write( false )+response.write(request.getAttribute(" false "));response.write( layoutRevision.getLayoutSetBranchId() );response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+       response.write( "<strong>" + HtmlUtil.escape(layout.getName(locale)) + "</strong>" );  response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+  
+     													request.setAttribute("view.jsp-typeSettingsProperties", liveLayout.getTypeSettingsProperties());
+     													
+
+
+
+
+
+
+
+     response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+
+       response.write( ((layoutSetBranches != null) ? " active" : StringPool.BLANK) + " staging-toggle" );response.write( (layoutSetBranches != null) ? null : stagingFriendlyURL );
+
+
+
+
+
+
+  
+     					UnicodeProperties typeSettingsProperties = group.getTypeSettingsProperties();
+     
+     					String remoteAddress = typeSettingsProperties.getProperty("remoteAddress");
+     					int remotePort = GetterUtil.getInteger(typeSettingsProperties.getProperty("remotePort"));
+     					String remotePathContext = typeSettingsProperties.getProperty("remotePathContext");
+     					boolean secureConnection = GetterUtil.getBoolean(typeSettingsProperties.getProperty("secureConnection"));
+     					long remoteGroupId = GetterUtil.getLong(typeSettingsProperties.getProperty("remoteGroupId"));
+     
+     					String remoteURL = StagingUtil.buildRemoteURL(remoteAddress, remotePort, remotePathContext, secureConnection, remoteGroupId, layout.isPrivateLayout());
+     					
+
+       response.write( remoteURL );
+
+
+
+ response.write( liveFriendlyURL )+response.write(request.getAttribute(" liveFriendlyURL "));
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+     
+     								request.setAttribute("view.jsp-typeSettingsProperties", liveLayout.getTypeSettingsProperties());
+     								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( portletDisplay.getId() )+response.write(request.getAttribute(" portletDisplay").getId() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( liveGroup.getGroupId() )+response.write(request.getAttribute(" liveGroup").getGroupId() );
+       response.write( LayoutStagingBackgroundTaskExecutor.class.getName() )+response.write(request.getAttribute(" LayoutStagingBackgroundTaskExecutor").class.getName() );
+}
+
+}

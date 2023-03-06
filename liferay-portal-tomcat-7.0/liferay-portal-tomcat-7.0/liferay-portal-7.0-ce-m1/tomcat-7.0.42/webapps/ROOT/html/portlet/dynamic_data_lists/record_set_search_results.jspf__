@@ -1,0 +1,37 @@
+﻿ package PackageNo1484399385; public class record_set_search_results_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if (searchTerms.isAdvancedSearch()) {
+     	total = DDLRecordSetServiceUtil.searchCount(company.getCompanyId(), scopeGroupId, searchTerms.getName(), searchTerms.getDescription(), DDLRecordSetConstants.SCOPE_DYNAMIC_DATA_LISTS, searchTerms.isAndOperator());
+     
+     	searchContainer.setTotal(total);
+     
+     	results = DDLRecordSetServiceUtil.search(company.getCompanyId(), scopeGroupId, searchTerms.getName(), searchTerms.getDescription(), DDLRecordSetConstants.SCOPE_DYNAMIC_DATA_LISTS, searchTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator());
+     }
+     else {
+     	total = DDLRecordSetServiceUtil.searchCount(company.getCompanyId(), scopeGroupId, searchTerms.getKeywords(), DDLRecordSetConstants.SCOPE_DYNAMIC_DATA_LISTS);
+     
+     	searchContainer.setTotal(total);
+     
+     	results = DDLRecordSetServiceUtil.search(company.getCompanyId(), scopeGroupId, searchTerms.getKeywords(), DDLRecordSetConstants.SCOPE_DYNAMIC_DATA_LISTS, searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator());
+     }
+     
+     searchContainer.setResults(results);
+     
+}
+
+}

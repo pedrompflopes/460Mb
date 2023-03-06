@@ -1,0 +1,301 @@
+﻿ package PackageNo1339814132;import _html_portlet_init_jsp;import _html_portlet_expando_init_ext_jsp;import com.liferay.portlet.expando.ColumnNameException;import com.liferay.portlet.expando.ColumnTypeException;import com.liferay.portlet.expando.DuplicateColumnNameException;import com.liferay.portlet.expando.NoSuchColumnException;import com.liferay.portlet.expando.ValueDataException;import com.liferay.portlet.expando.model.CustomAttributesDisplay;import com.liferay.portlet.expando.model.ExpandoColumn;import com.liferay.portlet.expando.model.ExpandoColumnConstants;import com.liferay.portlet.expando.service.ExpandoColumnLocalServiceUtil;import com.liferay.portlet.expando.service.permission.ExpandoColumnPermissionUtil;import com.liferay.portlet.expando.util.ExpandoBridgeFactoryUtil;import com.liferay.portlet.expando.util.comparator.CustomAttributesDisplayComparator; public class edit_expando_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\edit_expando.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\edit_expando.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\expando\edit_expando.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     String modelResource = ParamUtil.getString(request, "modelResource");
+     String modelResourceName = ResourceActionsUtil.getModelResource(request, modelResource);
+     
+     ExpandoColumn column = (ExpandoColumn)request.getAttribute(WebKeys.EXPANDO_COLUMN);
+     
+     long columnId = BeanParamUtil.getLong(column, request, "columnId");
+     int type = BeanParamUtil.getInteger(column, request, "type");
+     
+     ExpandoBridge expandoBridge = ExpandoBridgeFactoryUtil.getExpandoBridge(company.getCompanyId(), modelResource);
+     
+     UnicodeProperties properties = new UnicodeProperties(true);
+     Serializable defaultValue = null;
+     
+     if (column != null) {
+     	properties = expandoBridge.getAttributeProperties(column.getName());
+     	defaultValue = expandoBridge.getAttributeDefault(column.getName());
+     }
+     
+     boolean propertyHidden = GetterUtil.getBoolean(properties.get(ExpandoColumnConstants.PROPERTY_HIDDEN));
+     boolean propertyVisibleWithUpdatePermission = GetterUtil.getBoolean(properties.get(ExpandoColumnConstants.PROPERTY_VISIBLE_WITH_UPDATE_PERMISSION));
+     int propertyIndexType = GetterUtil.getInteger(properties.get(ExpandoColumnConstants.INDEX_TYPE));
+     boolean propertySecret = GetterUtil.getBoolean(properties.get(ExpandoColumnConstants.PROPERTY_SECRET));
+     int propertyHeight = GetterUtil.getInteger(properties.get(ExpandoColumnConstants.PROPERTY_HEIGHT));
+     int propertyWidth = GetterUtil.getInteger(properties.get(ExpandoColumnConstants.PROPERTY_WIDTH));
+     String propertyDisplayType = GetterUtil.getString(properties.get(ExpandoColumnConstants.PROPERTY_DISPLAY_TYPE));
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/expando/view_attributes");
+     portletURL.setParameter("redirect", redirect);
+     portletURL.setParameter("modelResource", modelResource);
+     
+
+
+    response.write( redirect )+response.write(request.getAttribute(" redirect "));
+  response.write( false )+response.write(request.getAttribute(" false "));
+  response.write( modelResourceName + ": " + ((column == null) ? LanguageUtil.get(locale, "new-custom-field") : column.getName()) );
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( ColumnNameException.class )+response.write(request.getAttribute(" ColumnNameException").class );
+response.write( ColumnTypeException.class )+response.write(request.getAttribute(" ColumnTypeException").class );
+response.write( DuplicateColumnNameException.class )+response.write(request.getAttribute(" DuplicateColumnNameException").class );
+response.write( ValueDataException.class )+response.write(request.getAttribute(" ValueDataException").class );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						for (int curType : ExpandoColumnConstants.TYPES) {
+     							if ((curType == ExpandoColumnConstants.BOOLEAN_ARRAY) || (curType == ExpandoColumnConstants.DATE_ARRAY) || (curType == ExpandoColumnConstants.STRING_ARRAY_LOCALIZED)) {
+     								continue;
+     							}
+     						
+
+
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+
+
+
+  
+     					boolean curValue = ((Boolean)defaultValue).booleanValue();
+     					
+
+
+
+
+
+
+
+
+
+
+  
+     					Calendar defaultValueDate = CalendarFactoryUtil.getCalendar(timeZone, locale);
+     
+     					if (defaultValue != null) {
+     						defaultValueDate.setTime((Date)defaultValue);
+     					}
+     					
+
+
+
+
+   response.write( defaultValueDate.get(Calendar.DATE) )+response.write(request.getAttribute(" defaultValueDate").get(Calendar.DATE) );
+   response.write( false )+response.write(request.getAttribute(" false "));
+ response.write( defaultValueDate.getFirstDayOfWeek() - 1 )+response.write(request.getAttribute(" defaultValueDate").getFirstDayOfWeek() - 1 );
+
+     response.write( defaultValueDate.get(Calendar.MONTH) )+response.write(request.getAttribute(" defaultValueDate").get(Calendar.MONTH) );
+
+    response.write( defaultValueDate.get(Calendar.YEAR) )+response.write(request.getAttribute(" defaultValueDate").get(Calendar.YEAR) );
+
+
+
+
+    response.write( defaultValueDate.get(Calendar.AM_PM) )+response.write(request.getAttribute(" defaultValueDate").get(Calendar.AM_PM) );
+   response.write( false )+response.write(request.getAttribute(" false "));
+
+    response.write( defaultValueDate.get(Calendar.HOUR) )+response.write(request.getAttribute(" defaultValueDate").get(Calendar.HOUR) );
+
+      response.write( defaultValueDate.get(Calendar.MINUTE) )+response.write(request.getAttribute(" defaultValueDate").get(Calendar.MINUTE) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     					String xml = StringPool.BLANK;
+     
+     					if (defaultValue != null) {
+     						xml = LocalizationUtil.updateLocalization((Map<Locale,String>)defaultValue, StringPool.BLANK, "Data", LocaleUtil.toLanguageId(locale));
+     					}
+     					
+
+
+ response.write( xml )+response.write(request.getAttribute(" xml "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( (column == null) ? Constants.ADD : Constants.UPDATE );
+
+
+
+
+
+     
+     PortalUtil.addPortletBreadcrumbEntry(request, modelResourceName, portletURL.toString());
+     
+     if (column != null) {
+     	PortalUtil.addPortletBreadcrumbEntry(request, column.getName(), null);
+     }
+     
+     PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, ((column == null) ? "add-attribute" : "edit")), currentURL);
+     
+}
+
+}

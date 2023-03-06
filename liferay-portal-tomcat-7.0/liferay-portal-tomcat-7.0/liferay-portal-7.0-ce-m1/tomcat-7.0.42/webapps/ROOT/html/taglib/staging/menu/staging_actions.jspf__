@@ -1,0 +1,181 @@
+﻿ package PackageNo814981659; public class staging_actions_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( groupId + "publishGlobalLink" );
+      response.write( publishDialogTitle )+response.write(request.getAttribute(" publishDialogTitle "));
+  response.write( publishRenderURL.toString() )+response.write(request.getAttribute(" publishRenderURL").toString() );
+
+
+
+  response.write( groupId + "publishGlobalLink" );
+
+
+
+
+
+
+
+
+
+
+
+  response.write( UnicodeFormatter.toString(publishMessage) )+response.write(request.getAttribute(" UnicodeFormatter").toString(publishMessage) );
+
+
+
+
+
+
+
+
+
+
+       
+     		Group groupType = layout.getGroup();
+     		
+
+
+
+
+     			if (groupId == 0) {
+     				publishRenderURL.setParameter("selPlid", String.valueOf(plid));
+     			}
+     			
+
+
+
+
+  
+     					layoutSetBranch = LayoutSetBranchLocalServiceUtil.getLayoutSetBranch(layoutSetBranchId);
+     
+     					publishRenderURL.setParameter("layoutSetBranchId", String.valueOf(layoutSetBranchId));
+     					publishRenderURL.setParameter("layoutSetBranchName", layoutSetBranch.getName());
+     
+     					publishMessage = LanguageUtil.format(request, publishDialogTitle, HtmlUtil.escape(layoutSetBranch.getName()), false);
+     					
+
+
+
+
+
+   
+     						layoutSetBranch = layoutSetBranches.get(0);
+     
+     						publishRenderURL.setParameter("layoutSetBranchId", String.valueOf(layoutSetBranch.getLayoutSetBranchId()));
+     						
+
+
+
+
+
+
+
+ 
+     				String linkCssClass = StringPool.BLANK;
+     
+     				if (!groupType.isControlPanel()) {
+     					linkCssClass = "btn btn-success";
+     				}
+     				
+
+
+
+
+
+
+
+response.write( publishLink )+response.write(request.getAttribute(" publishLink "));
+
+
+
+response.write(cssClass);
+response.write( publishLink )+response.write(request.getAttribute(" publishLink "));
+
+
+
+
+
+     response.write( layoutSetBranchId + "publishLink" );
+
+
+
+
+
+
+
+
+
+
+
+   response.write( UnicodeFormatter.toString(publishMessage) )+response.write(request.getAttribute(" UnicodeFormatter").toString(publishMessage) );
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write(String.getValueOf(groupId))+response.write(request.getAttribute("String").getValueOf(groupId));
+       response.write(String.getValueOf(privateLayout))+response.write(request.getAttribute("String").getValueOf(privateLayout));
+       response.write(String.getValueOf(selPlid))+response.write(request.getAttribute("String").getValueOf(selPlid));
+
+
+
+
+
+
+
+
+
+response.write( manageSitePagesVariationsLink )+response.write(request.getAttribute(" manageSitePagesVariationsLink "));
+
+
+
+response.write(cssClass);
+response.write( manageSitePagesVariationsLink )+response.write(request.getAttribute(" manageSitePagesVariationsLink "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( UnicodeLanguageUtil.get(request, "manage-site-pages-variations") );
+}
+
+}

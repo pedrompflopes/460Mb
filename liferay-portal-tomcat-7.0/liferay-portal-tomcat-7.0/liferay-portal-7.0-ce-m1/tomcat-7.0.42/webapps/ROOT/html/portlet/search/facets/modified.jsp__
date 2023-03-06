@@ -1,0 +1,383 @@
+﻿ package PackageNo1967694162;import _html_portlet_search_init_jsp; public class modified_jsp {  /* 1 */ private static final String _RANDOM_KEY_INPUT = "portlet_search_facets_" + StringUtil.randomString(); /* 38 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\modified.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\modified.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ String randomNamespace = PortalUtil.generateRandomKey(request, _RANDOM_KEY_INPUT) + StringPool.UNDERLINE; /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ Facet facet = (Facet)request.getAttribute("search.jsp-facet"); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ String fieldParam = ParamUtil.getString(request, facet.getFieldId()); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ FacetConfiguration facetConfiguration = facet.getFacetConfiguration(); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ JSONObject dataJSONObject = facetConfiguration.getData(); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ FacetCollector facetCollector = facet.getFacetCollector(); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ List<TermCollector> termCollectors = facetCollector.getTermCollectors(); /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ String cssClass = "search-facet search-".concat(HtmlUtil.escapeAttribute(facetConfiguration.getDisplayStyle())); /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\modified.jsp */
+
+     
+     String fieldParamSelection = ParamUtil.getString(request, facet.getFieldId() + "selection", "0");
+     String fieldParamFrom = ParamUtil.getString(request, facet.getFieldId() + "from");
+     String fieldParamTo = ParamUtil.getString(request, facet.getFieldId() + "to");
+     
+     JSONArray rangesJSONArray = dataJSONObject.getJSONArray("ranges");
+     
+     String modifiedLabel = StringPool.BLANK;
+     
+     int index = 0;
+     
+     if (fieldParamSelection.equals("0")) {
+     	modifiedLabel = LanguageUtil.get(request, "any-time");
+     }
+     
+     Calendar localeCal = CalendarFactoryUtil.getCalendar(timeZone, locale);
+     
+     int firstDayOfWeek = localeCal.getFirstDayOfWeek() - 1;
+     
+
+   response.write(cssClass)+response.write(request.getAttribute("cssClass"));response.write(HtmlUtil.getEscapeAttribute(facet().getFieldId()))+response.write(request.getAttribute("HtmlUtil").getEscapeAttribute(facet().getFieldId()));response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+
+response.write( randomNamespace + "calendar calendar_" );     response.write( HtmlUtil.escapeAttribute(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeAttribute(facet.getFieldId()) );
+
+       response.write( (fieldParamSelection.equals("0") ? " active" : StringPool.BLANK) );
+
+ 
+     				String taglibClearFacet = "window['" + renderResponse.getNamespace() + HtmlUtil.escapeJS(facet.getFieldId()) + "clearFacet'](0);";
+     				
+
+
+
+
+
+
+
+     			for (int i = 0; i < rangesJSONArray.length(); i++) {
+     				JSONObject rangesJSONObject = rangesJSONArray.getJSONObject(i);
+     
+     				String label = HtmlUtil.escape(rangesJSONObject.getString("label"));
+     				String range = rangesJSONObject.getString("range");
+     
+     				index = (i + 1);
+     
+     				if (fieldParamSelection.equals(String.valueOf(index))) {
+     					modifiedLabel = LanguageUtil.get(request, label);
+     				}
+     			
+
+    response.write( fieldParamSelection.equals(String.valueOf(index)) ? " active" : StringPool.BLANK );
+
+  
+     					String taglibSetRange = "window['" + renderResponse.getNamespace() + HtmlUtil.escapeJS(facet.getFieldId()) + "setRange'](" + index + ", '" + HtmlUtil.escapeJS(range) + "');";
+     					
+
+
+ response.write( label );
+
+   
+     						TermCollector termCollector = facetCollector.getTermCollector(range);
+     						
+
+
+  response.write( termCollector.getFrequency() )+response.write(request.getAttribute(" termCollector").getFrequency() );
+
+
+
+
+
+     			}
+     			
+
+   response.write( fieldParamSelection.equals(String.valueOf(index + 1)) ? " active" : StringPool.BLANK );
+
+ 
+     				TermCollector termCollector = null;
+     
+     				if (fieldParamSelection.equals(String.valueOf(index + 1))) {
+     					modifiedLabel = LanguageUtil.get(request, "custom-range");
+     
+     					termCollector = facetCollector.getTermCollector(fieldParam);
+     				}
+     				
+
+
+
+
+
+ response.write( termCollector.getFrequency() )+response.write(request.getAttribute(" termCollector").getFrequency() );
+
+
+
+
+ response.write( !fieldParamSelection.equals(String.valueOf(index + 1)) ? "hide" : StringPool.BLANK );response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+       response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+
+       response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+
+ 
+     				String taglibSearchCustomRange = "window['" + renderResponse.getNamespace() + HtmlUtil.escapeJS(facet.getFieldId()) + "searchCustomRange'](" + (index + 1) + ");";
+     				
+
+
+
+
+
+
+
+
+
+      
+     	String fieldName = renderResponse.getNamespace() + facet.getFieldId();
+     	
+
+
+
+       
+     		String tokenLabel = modifiedLabel;
+     
+     		if (fieldParamSelection.equals(String.valueOf(index + 1))) {
+     			String fromDateLabel = HtmlUtil.escape(fieldParamFrom);
+     			String toDateLabel = HtmlUtil.escape(fieldParamTo);
+     
+     			tokenLabel = UnicodeLanguageUtil.format(request, "from-x-to-x", new Object[] {"<strong>" + fromDateLabel + "</strong>", "<strong>" + toDateLabel + "</strong>"}, false);
+     		}
+     		
+
+
+
+    response.write( HtmlUtil.escape(HtmlUtil.escapeAttribute(fieldName)) )+response.write(request.getAttribute(" HtmlUtil").escape(HtmlUtil.escapeAttribute(fieldName)) );
+    response.write( HtmlUtil.escape(HtmlUtil.escapeAttribute(fieldName)) + "selection|0" );
+     response.write( tokenLabel )+response.write(request.getAttribute(" tokenLabel "));
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+    response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+    response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+   response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+ response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+
+
+ response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+       response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+      response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+      response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+
+
+
+     response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+     response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+    response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+    response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+    response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+
+
+
+
+
+
+
+
+       response.write( UnicodeLanguageUtil.get(request, "search-custom-range-date-format") );
+      response.write( UnicodeLanguageUtil.get(request, "search-custom-range-invalid-date-range") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+
+    response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( firstDayOfWeek );
+       response.write( locale )+response.write(request.getAttribute(" locale "));
+
+
+
+
+   
+     						String[] fieldParamFromParts = StringUtil.split(fieldParamFrom, "-");
+     						
+
+ response.write( GetterUtil.getInteger(fieldParamFromParts[0]) )+response.write(request.getAttribute(" GetterUtil").getInteger(fieldParamFromParts[0]) );response.write( GetterUtil.getInteger(fieldParamFromParts[1]) - 1 )+response.write(request.getAttribute(" GetterUtil").getInteger(fieldParamFromParts[1]) - 1 );response.write( GetterUtil.getInteger(fieldParamFromParts[2]) )+response.write(request.getAttribute(" GetterUtil").getInteger(fieldParamFromParts[2]) );
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+      response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+
+
+
+
+
+
+
+      response.write( firstDayOfWeek );
+       response.write( locale )+response.write(request.getAttribute(" locale "));
+
+
+
+
+   
+     						String[] fieldParamToParts = StringUtil.split(fieldParamTo, "-");
+     						
+
+ response.write( GetterUtil.getInteger(fieldParamToParts[0]) )+response.write(request.getAttribute(" GetterUtil").getInteger(fieldParamToParts[0]) );response.write( GetterUtil.getInteger(fieldParamToParts[1]) - 1 )+response.write(request.getAttribute(" GetterUtil").getInteger(fieldParamToParts[1]) - 1 );response.write( GetterUtil.getInteger(fieldParamToParts[2]) )+response.write(request.getAttribute(" GetterUtil").getInteger(fieldParamToParts[2]) );
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( HtmlUtil.escapeJS(facet.getFieldId()) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(facet.getFieldId()) );
+
+      response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+   response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+
+
+
+
+     response.write( randomNamespace + "custom-range" );
+}
+
+}

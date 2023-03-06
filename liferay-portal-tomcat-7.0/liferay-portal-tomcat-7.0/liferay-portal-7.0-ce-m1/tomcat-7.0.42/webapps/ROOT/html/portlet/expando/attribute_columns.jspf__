@@ -1,0 +1,66 @@
+﻿ package PackageNo1103086842; public class attribute_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	String localizedName = LanguageUtil.get(request, name);
+     
+     	if (name.equals(localizedName)) {
+     		localizedName = TextFormatter.format(name, TextFormatter.J);
+     	}
+     	
+
+    response.write(rowURL)+response.write(request.getAttribute("rowURL"));response.write( HtmlUtil.escape(localizedName) )+response.write(request.getAttribute(" HtmlUtil").escape(localizedName) );
+
+
+
+     response.write( LanguageUtil.get(request, "key") );
+
+    response.write(rowURL)+response.write(request.getAttribute("rowURL"));response.write( HtmlUtil.escape(name) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( LanguageUtil.get(request, ExpandoColumnConstants.getTypeLabel(type)) )+response.write(request.getAttribute(" LanguageUtil").get(request, ExpandoColumnConstants.getTypeLabel(type)) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+
+      
+     	boolean hidden = GetterUtil.getBoolean(typeSettings.getProperty(ExpandoColumnConstants.PROPERTY_HIDDEN));
+     	
+
+    response.write( String.valueOf(hidden) )+response.write(request.getAttribute(" String").valueOf(hidden) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+
+      
+     	int indexType = GetterUtil.getInteger(typeSettings.getProperty(ExpandoColumnConstants.INDEX_TYPE));
+     	
+}
+
+}

@@ -1,0 +1,127 @@
+﻿ package PackageNo735408106; public class view_entry_content_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		PortletURL showBlogEntryURL = renderResponse.createRenderURL();
+     
+     		showBlogEntryURL.setParameter("struts_action", "/blogs_aggregator/view_entry");
+     		showBlogEntryURL.setParameter("entryId", String.valueOf(entry.getEntryId()));
+     
+     		StringBundler sb = new StringBundler(8);
+     
+     		sb.append(themeDisplay.getPathMain());
+     		sb.append("/blogs/find_entry?noSuchEntryRedirect=");
+     		sb.append(HttpUtil.encodeURL(showBlogEntryURL.toString()));
+     		sb.append("&entryId=");
+     		sb.append(entry.getEntryId());
+     
+     		String viewEntryURL = sb.toString();
+     
+     		sb.append("&showAllEntries=1");
+     
+     		String viewAllEntriesURL = sb.toString();
+     		
+
+
+
+ response.write(viewEntryURL);response.write( HtmlUtil.escape(entry.getTitle()) )+response.write(request.getAttribute(" HtmlUtil").escape(entry.getTitle()) );
+
+    response.write(viewAllEntriesURL);response.write( HtmlUtil.escape(PortalUtil.getUserName(entry)) )+response.write(request.getAttribute(" HtmlUtil").escape(PortalUtil.getUserName(entry)) );
+
+  response.write( dateFormatDateTime.format(entry.getDisplayDate()) )+response.write(request.getAttribute(" dateFormatDateTime").format(entry.getDisplayDate()) );
+
+
+
+   response.write( BlogsEntry.class.getName() )+response.write(request.getAttribute(" BlogsEntry").class.getName() );
+ response.write( entry.getEntryId() )+response.write(request.getAttribute(" entry").getEntryId() );
+
+
+
+
+
+
+    response.write( BlogsEntry.class.getName() )+response.write(request.getAttribute(" BlogsEntry").class.getName() );
+  response.write( entry.getEntryId() )+response.write(request.getAttribute(" entry").getEntryId() );
+
+
+
+
+
+
+
+
+
+
+
+ 
+     				User user2 = UserLocalServiceUtil.fetchUserById(entry.getUserId());
+     
+     				String portraitUrl = null;
+     
+     				if (user2 != null) {
+     					portraitUrl = user2.getPortraitURL(themeDisplay);
+     				}
+     				else {
+     					portraitUrl = UserConstants.getPortraitURL(themeDisplay.getPathImage(), true, 0, null);
+     				}
+     				
+
+       response.write(viewAllEntriesURL); response.write(true)+response.write(request.getAttribute("true")); response.write( portraitUrl );
+
+
+
+       response.write( StringUtil.shorten(HtmlUtil.stripHtml(entry.getDescription()), 200, StringPool.BLANK) )+response.write(request.getAttribute(" StringUtil").shorten(HtmlUtil.stripHtml(entry.getDescription()), 200, StringPool.BLANK) );
+
+
+
+  response.write(HtmlUtil.getEscape(entry().getEntryImageURL(themeDisplay)))+response.write(request.getAttribute("HtmlUtil").getEscape(entry().getEntryImageURL(themeDisplay)));
+
+
+
+
+
+
+ response.write(viewAllEntriesURL);
+       response.write( StringUtil.shorten(StringUtil.trim(HtmlUtil.stripHtml(entry.getContent())), 100, StringPool.BLANK) + StringPool.TRIPLE_PERIOD )+response.write(request.getAttribute(" StringUtil").shorten(StringUtil.trim(HtmlUtil.stripHtml(entry.getContent())), 100, StringPool.BLANK) + StringPool.TRIPLE_PERIOD );
+
+      response.write( new Object[] {"hide-accessible", HtmlUtil.escape(entry.getTitle())} );    response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+       response.write( entry.getContent() )+response.write(request.getAttribute(" entry").getContent() );
+
+
+
+
+
+
+
+response.write(viewEntryURL);       response.write( new Object[] {"hide-accessible", HtmlUtil.escape(entry.getTitle())} );    response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+  
+     					int commentsCount = BlogsUtil.getCommentsCount(entry);
+     					
+
+response.write( PropsValues.PORTLET_URL_ANCHOR_ENABLE ? viewEntryURL : viewEntryURL + "#blogsCommentsPanelContainer" );response.write( commentsCount )+response.write(request.getAttribute(" commentsCount "));response.write( (commentsCount == 1) ? "comment" : "comments" );
+}
+
+}

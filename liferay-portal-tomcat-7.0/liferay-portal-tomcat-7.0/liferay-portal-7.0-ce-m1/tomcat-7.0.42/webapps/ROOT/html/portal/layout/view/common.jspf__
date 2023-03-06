@@ -1,0 +1,38 @@
+﻿ package PackageNo1034609261; public class common_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	for (String portletId : PropsValues.LAYOUT_STATIC_PORTLETS_ALL) {
+     		if (PortletLocalServiceUtil.hasPortlet(company.getCompanyId(), portletId)) {
+     	
+
+   response.write( portletId )+response.write(request.getAttribute(" portletId "));
+
+      
+     		}
+     	}
+     	
+
+
+
+
+
+       response.write( StringUtil.toLowerCase(PortalUtil.getComputerName()) + StringPool.COLON + PortalUtil.getPortalLocalPort(false) )+response.write(request.getAttribute(" StringUtil").toLowerCase(PortalUtil.getComputerName()) + StringPool.COLON + PortalUtil.getPortalLocalPort(false) );
+}
+
+}

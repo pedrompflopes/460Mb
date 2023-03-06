@@ -1,0 +1,39 @@
+﻿ package PackageNo1430166968; public class feed_search_results_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     FeedSearchTerms searchTerms = (FeedSearchTerms)searchContainer.getSearchTerms();
+     
+     if (searchTerms.isAdvancedSearch()) {
+     	total = JournalFeedLocalServiceUtil.searchCount(company.getCompanyId(), searchTerms.getGroupId(), searchTerms.getFeedId(), searchTerms.getName(), searchTerms.getDescription(), searchTerms.isAndOperator());
+     
+     	searchContainer.setTotal(total);
+     
+     	results = JournalFeedLocalServiceUtil.search(company.getCompanyId(), searchTerms.getGroupId(), searchTerms.getFeedId(), searchTerms.getName(), searchTerms.getDescription(), searchTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(), null);
+     }
+     else {
+     	total = JournalFeedLocalServiceUtil.searchCount(company.getCompanyId(), searchTerms.getGroupId(), searchTerms.getKeywords());
+     
+     	searchContainer.setTotal(total);
+     
+     	results = JournalFeedLocalServiceUtil.search(company.getCompanyId(), searchTerms.getGroupId(), searchTerms.getKeywords(), searchContainer.getStart(), searchContainer.getEnd(), null);
+     }
+     
+     searchContainer.setResults(results);
+     
+}
+
+}

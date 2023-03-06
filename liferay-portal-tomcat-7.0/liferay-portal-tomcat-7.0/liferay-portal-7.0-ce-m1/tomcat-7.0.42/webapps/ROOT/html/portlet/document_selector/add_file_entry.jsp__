@@ -1,0 +1,263 @@
+﻿ package PackageNo1290131529;import _html_portlet_init_jsp;import com.liferay.portlet.documentlibrary.DuplicateFolderNameException;import com.liferay.portlet.documentlibrary.FileMimeTypeException;import com.liferay.portlet.documentlibrary.NoSuchFolderException;import com.liferay.portlet.documentlibrary.SourceFileNameException;import com.liferay.portlet.documentlibrary.model.DLFileEntryMetadata;import com.liferay.portlet.documentlibrary.model.DLFileEntryType;import com.liferay.portlet.documentlibrary.service.DLFileEntryMetadataLocalServiceUtil;import com.liferay.portlet.documentlibrary.service.DLFileEntryTypeLocalServiceUtil;import com.liferay.portlet.documentlibrary.service.permission.DLFolderPermission;import com.liferay.portlet.documentselector.util.DocumentSelectorUtil;import com.liferay.portlet.dynamicdatamapping.storage.StorageEngineUtil;import com.liferay.portlet.journal.search.FileEntryDisplayTerms;import com.liferay.portlet.journal.search.FileEntrySearch;import com.liferay.portlet.layoutsadmin.context.LayoutsAdminDisplayContext;import com.liferay.portlet.wiki.model.WikiPage;import com.liferay.portlet.wiki.model.WikiPageResource;import com.liferay.portlet.wiki.service.WikiPageLocalServiceUtil;import com.liferay.portlet.wiki.service.WikiPageResourceLocalServiceUtil; public class add_file_entry_jsp {  /* 1 */ private static Log _log = LogFactoryUtil.getLog("portal-web.docroot.html.portlet.document_selector.add_file_entry_jsp"); /* 263 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\add_file_entry.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\add_file_entry.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\add_file_entry.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     String uploadProgressId = "dlFileEntryUploadProgress";
+     
+     long folderId = ParamUtil.getLong(request, "folderId");
+     
+     if (folderId != DLFolderConstants.DEFAULT_PARENT_FOLDER_ID) {
+     	try {
+     		DLAppServiceUtil.getFolder(folderId);
+     	}
+     	catch (NoSuchFolderException nsfe) {
+     		folderId = DLFolderConstants.DEFAULT_PARENT_FOLDER_ID;
+     	}
+     }
+     
+     long fileEntryTypeId = ParamUtil.getLong(request, "fileEntryTypeId", -1);
+     
+     DLFileEntryType dlFileEntryType = null;
+     
+     if (fileEntryTypeId > 0) {
+     	dlFileEntryType = DLFileEntryTypeLocalServiceUtil.fetchDLFileEntryType(fileEntryTypeId);
+     }
+     
+     String[] mimeTypes = DocumentSelectorUtil.getMimeTypes(request);
+     
+
+
+    response.write( redirect )+response.write(request.getAttribute(" redirect "));
+  response.write( true )+response.write(request.getAttribute(" true "));
+  response.write( LanguageUtil.get(request, "new-document") );
+
+
+
+
+    response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+    response.write(DocumentSelectorUtil.getType(request))+response.write(request.getAttribute("DocumentSelectorUtil").getType(request));
+
+
+
+
+
+
+
+
+response.write( AntivirusScannerException.class )+response.write(request.getAttribute(" AntivirusScannerException").class );
+
+       
+     		AntivirusScannerException ase = (AntivirusScannerException)errorException;
+     		
+
+     response.write( ase.getMessageKey() )+response.write(request.getAttribute(" ase").getMessageKey() );
+
+
+response.write( DuplicateFileException.class )+response.write(request.getAttribute(" DuplicateFileException").class );
+response.write( DuplicateFolderNameException.class )+response.write(request.getAttribute(" DuplicateFolderNameException").class );
+
+response.write( LiferayFileItemException.class )+response.write(request.getAttribute(" LiferayFileItemException").class );
+   response.write( TextFormatter.formatStorageSize(LiferayFileItem.THRESHOLD_SIZE, locale) )+response.write(request.getAttribute(" TextFormatter").formatStorageSize(LiferayFileItem.THRESHOLD_SIZE, locale) );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+response.write( FileExtensionException.class )+response.write(request.getAttribute(" FileExtensionException").class );
+      response.write( StringUtil.merge(PrefsPropsUtil.getStringArray(PropsKeys.DL_FILE_EXTENSIONS, StringPool.COMMA), StringPool.COMMA_AND_SPACE) )+response.write(request.getAttribute(" StringUtil").merge(PrefsPropsUtil.getStringArray(PropsKeys.DL_FILE_EXTENSIONS, StringPool.COMMA), StringPool.COMMA_AND_SPACE) );
+
+
+response.write( FileMimeTypeException.class )+response.write(request.getAttribute(" FileMimeTypeException").class );
+  response.write( StringUtil.merge(mimeTypes, StringPool.COMMA_AND_SPACE) )+response.write(request.getAttribute(" StringUtil").merge(mimeTypes, StringPool.COMMA_AND_SPACE) );
+
+
+response.write( FileNameException.class )+response.write(request.getAttribute(" FileNameException").class );
+response.write( NoSuchFolderException.class )+response.write(request.getAttribute(" NoSuchFolderException").class );
+
+response.write( SourceFileNameException.class )+response.write(request.getAttribute(" SourceFileNameException").class );
+
+
+
+      
+     	long fileMaxSize = PrefsPropsUtil.getLong(PropsKeys.DL_FILE_MAX_SIZE);
+     
+     	if (fileMaxSize == 0) {
+     		fileMaxSize = PrefsPropsUtil.getLong(PropsKeys.UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE);
+     	}
+     	
+
+response.write( FileSizeException.class )+response.write(request.getAttribute(" FileSizeException").class );
+   response.write( TextFormatter.formatStorageSize(fileMaxSize, locale) )+response.write(request.getAttribute(" TextFormatter").formatStorageSize(fileMaxSize, locale) );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+
+
+
+
+
+       response.write( LanguageUtil.format(request, "upload-documents-no-larger-than-x", TextFormatter.formatStorageSize(fileMaxSize, locale), false) );
+
+
+
+
+       
+     		String folderName = StringPool.BLANK;
+     
+     		if (folderId > 0) {
+     			Folder folder = DLAppLocalServiceUtil.getFolder(folderId);
+     
+     			folder = folder.toEscapedModel();
+     
+     			folderId = folder.getFolderId();
+     			folderName = folder.getName();
+     		}
+     		else {
+     			folderName = LanguageUtil.get(request, "home");
+     		}
+     		
+
+
+
+
+
+
+
+       response.write( StringUtil.merge(PrefsPropsUtil.getStringArray(PropsKeys.DL_FILE_EXTENSIONS, StringPool.COMMA)) )+response.write(request.getAttribute(" StringUtil").merge(PrefsPropsUtil.getStringArray(PropsKeys.DL_FILE_EXTENSIONS, StringPool.COMMA)) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		if (fileEntryTypeId > 0) {
+     			try {
+     				List<DDMStructure> ddmStructures = dlFileEntryType.getDDMStructures();
+     
+     				for (DDMStructure ddmStructure : ddmStructures) {
+     					Fields fields = null;
+     
+     					try {
+     						DLFileEntryMetadata fileEntryMetadata = DLFileEntryMetadataLocalServiceUtil.getFileEntryMetadata(ddmStructure.getStructureId(), 0);
+     
+     						fields = StorageEngineUtil.getFields(fileEntryMetadata.getDDMStorageId());
+     					}
+     					catch (Exception e) {
+     					}
+     		
+
+
+     response.write( PortalUtil.getClassNameId(DDMStructure.class) );
+ response.write( ddmStructure.getPrimaryKey() )+response.write(request.getAttribute(" ddmStructure").getPrimaryKey() );
+response.write( fields );
+ response.write( String.valueOf(ddmStructure.getPrimaryKey()) )+response.write(request.getAttribute(" String").valueOf(ddmStructure.getPrimaryKey()) );
+ response.write( locale )+response.write(request.getAttribute(" locale "));
+
+
+       
+     				}
+     			}
+     			catch (Exception e) {
+     				_log.error(e, e);
+     			}
+     		}
+     		
+
+       response.write( DLFileEntryConstants.getClassName() )+response.write(request.getAttribute(" DLFileEntryConstants").getClassName() );
+
+ response.write( DLFileEntryConstants.getClassName() )+response.write(request.getAttribute(" DLFileEntryConstants").getClassName() );
+       response.write( 0 )+response.write(request.getAttribute(" 0 "));
+response.write( true )+response.write(request.getAttribute(" true "));
+     response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+      response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+      response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+  response.write( DLFileEntry.class.getName() );
+response.write( 0 )+response.write(request.getAttribute(" 0 "));
+
+
+
+
+
+
+ response.write( DLFileEntryConstants.getClassName() )+response.write(request.getAttribute(" DLFileEntryConstants").getClassName() );
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( uploadProgressId );
+
+     response.write( redirect )+response.write(request.getAttribute(" redirect "));
+
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(uploadProgressId) );
+
+
+
+
+
+
+
+
+
+     
+     DLUtil.addPortletBreadcrumbEntries(folderId, request, renderResponse);
+     
+     PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, "add-file-entry"), currentURL);
+     
+}
+
+}

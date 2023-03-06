@@ -1,0 +1,76 @@
+﻿ package PackageNo633948182; public class tag_cloud_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String assetTagName = ParamUtil.getString(request, "tag");
+     
+     int maxValue = 0;
+     int minValue = Integer.MAX_VALUE;
+     
+     for (AssetTag assetTag : assetTags) {
+     	maxValue = Math.max(maxValue, assetTag.getAssetCount());
+     	minValue = Math.min(minValue, assetTag.getAssetCount());
+     }
+     
+     double multiplier = 1;
+     
+     if (maxValue != minValue) {
+     	multiplier = (double)5 / (maxValue - minValue);
+     }
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+
+
+
+      
+     	for (AssetTag assetTag : assetTags) {
+     		int popularity = (int)(1 + ((maxValue - (maxValue - (assetTag.getAssetCount() - minValue))) * multiplier));
+     	
+
+     response.write(popularity)+response.write(request.getAttribute("popularity"));
+
+
+ 
+     				if (assetTagName.equals(assetTag.getName())) {
+     					portletURL.setParameter("tag", StringPool.BLANK);
+     				
+
+response.write(portletURL);
+
+ 
+     				}
+     				else {
+     					portletURL.setParameter("tag", assetTag.getName());
+     				
+
+response.write(portletURL);
+
+ 
+     				}
+     				
+
+       response.write( HtmlUtil.escape(assetTag.getName()) )+response.write(request.getAttribute(" HtmlUtil").escape(assetTag.getName()) );
+
+
+
+
+      
+     	}
+     	
+}
+
+}

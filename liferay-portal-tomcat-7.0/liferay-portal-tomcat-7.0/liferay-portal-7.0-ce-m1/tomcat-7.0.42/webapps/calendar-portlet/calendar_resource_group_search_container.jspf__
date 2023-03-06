@@ -1,0 +1,59 @@
+﻿ package PackageNo1766657433; public class calendar_resource_group_search_container_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( new CalendarResourceSearch(renderRequest, CalendarResourceSearch.DEFAULT_CUR_PARAM + "Groups", iteratorURL) );
+
+      
+     	String[] params = {"site:true:boolean"};
+     
+     	if (displayTerms.isAdvancedSearch()) {
+     		total = GroupServiceUtil.searchCount(themeDisplay.getCompanyId(), displayTerms.getName(), displayTerms.getDescription(), params);
+     
+     		searchContainer.setTotal(total);
+     
+     		searchContainer.setResults(GroupServiceUtil.search(themeDisplay.getCompanyId(), displayTerms.getName(), displayTerms.getDescription(), params, searchContainer.getStart(), searchContainer.getEnd()));
+     	}
+     	else {
+     		total = GroupServiceUtil.searchCount(themeDisplay.getCompanyId(), displayTerms.getKeywords(), displayTerms.getKeywords(), params);
+     
+     		searchContainer.setTotal(total);
+     
+     		searchContainer.setResults(GroupServiceUtil.search(themeDisplay.getCompanyId(), displayTerms.getKeywords(), displayTerms.getKeywords(), params, searchContainer.getStart(), searchContainer.getEnd()));
+     	}
+     	
+
+
+
+  response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+    response.write( group.getName() )+response.write(request.getAttribute(" group").getName() );
+
+
+
+
+    response.write( group.getDescription() )+response.write(request.getAttribute(" group").getDescription() );
+
+
+
+
+    response.write( LanguageUtil.get(request, "site") );
+}
+
+}

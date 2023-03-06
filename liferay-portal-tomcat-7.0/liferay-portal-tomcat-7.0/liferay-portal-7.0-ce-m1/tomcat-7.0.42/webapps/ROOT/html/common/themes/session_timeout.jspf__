@@ -1,0 +1,59 @@
+﻿ package PackageNo1593245142; public class session_timeout_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	String autoRememberMe = CookieKeys.getCookie(request, CookieKeys.REMEMBER_ME);
+     	
+
+
+
+       
+     		int sessionTimeout = PropsValues.SESSION_TIMEOUT;
+     		int sessionTimeoutMinute = sessionTimeout * (int)Time.MINUTE;
+     		int sessionTimeoutWarning = PropsValues.SESSION_TIMEOUT_WARNING;
+     
+     		boolean sessionRedirectOnExpire = PropsValues.SESSION_TIMEOUT_REDIRECT_ON_EXPIRE;
+     		String sessionRedirectUrl = themeDisplay.getURLHome();
+     
+     		long companyId = themeDisplay.getCompanyId();
+     
+     		if (PrefsPropsUtil.getBoolean(companyId, PropsKeys.CAS_AUTH_ENABLED, PropsValues.CAS_AUTH_ENABLED) && PropsValues.CAS_LOGOUT_ON_SESSION_EXPIRATION) {
+     			sessionRedirectOnExpire = true;
+     			sessionRedirectUrl = PrefsPropsUtil.getString(companyId, PropsKeys.CAS_LOGOUT_URL, PropsValues.CAS_LOGOUT_URL);
+     		}
+     		else if (PrefsPropsUtil.getBoolean(companyId, PropsKeys.OPEN_SSO_AUTH_ENABLED, PropsValues.OPEN_SSO_AUTH_ENABLED) && PropsValues.OPEN_SSO_LOGOUT_ON_SESSION_EXPIRATION) {
+     			sessionRedirectOnExpire = true;
+     			sessionRedirectUrl = PrefsPropsUtil.getString(companyId, PropsKeys.OPEN_SSO_LOGOUT_URL, PropsValues.OPEN_SSO_LOGOUT_URL);
+     		}
+     
+     		Calendar sessionTimeoutCal = CalendarFactoryUtil.getCalendar(timeZone);
+     
+     		sessionTimeoutCal.add(Calendar.MILLISECOND, sessionTimeoutMinute);
+     		
+
+
+
+
+   response.write( !themeDisplay.isSignedIn() || PropsValues.SESSION_TIMEOUT_AUTO_EXTEND )+response.write(request.getAttribute(" !themeDisplay").isSignedIn() || PropsValues.SESSION_TIMEOUT_AUTO_EXTEND );
+      response.write( sessionTimeout )+response.write(request.getAttribute(" sessionTimeout "));
+ response.write( sessionRedirectOnExpire );
+     response.write( HtmlUtil.escapeJS(sessionRedirectUrl) );
+      response.write( sessionTimeoutWarning );
+}
+
+}

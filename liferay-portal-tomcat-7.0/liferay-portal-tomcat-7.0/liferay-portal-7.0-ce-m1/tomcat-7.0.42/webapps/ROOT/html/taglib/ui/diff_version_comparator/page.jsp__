@@ -1,0 +1,251 @@
+﻿ package PackageNo423410136;import _html_taglib_init_jsp;import com.liferay.portal.kernel.diff.DiffVersion;import com.liferay.portal.kernel.diff.DiffVersionsInfo; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff_version_comparator\page.jsp */
+
+     
+     Set<Locale> availableLocales = (Set<Locale>)request.getAttribute("liferay-ui:diff-version-comparator:availableLocales");
+     String diffHtmlResults = (String)request.getAttribute("liferay-ui:diff-version-comparator:diffHtmlResults");
+     DiffVersionsInfo diffVersionsInfo = (DiffVersionsInfo)request.getAttribute("liferay-ui:diff-version-comparator:diffVersionsInfo");
+     String languageId = (String)request.getAttribute("liferay-ui:diff-version-comparator:languageId");
+     PortletURL portletURL = (PortletURL)request.getAttribute("liferay-ui:diff-version-comparator:portletURL");
+     PortletURL resourceURL = (PortletURL)request.getAttribute("liferay-ui:diff-version-comparator:resourceURL");
+     double sourceVersion = (Double)request.getAttribute("liferay-ui:diff-version-comparator:sourceVersion");
+     double targetVersion = (Double)request.getAttribute("liferay-ui:diff-version-comparator:targetVersion");
+     
+     double nextVersion = diffVersionsInfo.getNextVersion();
+     double previousVersion = diffVersionsInfo.getPreviousVersion();
+     
+     if (Validator.isNotNull(languageId)) {
+     	resourceURL.setParameter("languageId", languageId);
+     }
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( false )+response.write(request.getAttribute(" false "));response.write( LanguageUtil.format(request, "version-x", sourceVersion) );response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+
+   
+     						Map<String, Object> data = new HashMap<String, Object>();
+     
+     						for (DiffVersion diffVersion : diffVersionsInfo.getDiffVersions()) {
+     							data.put("version", diffVersion.getVersion());
+     						
+
+
+response.write( data );
+ response.write( true )+response.write(request.getAttribute(" true "));
+
+   response.write( LanguageUtil.format(request, "version-x", diffVersion.getVersion()) );
+
+
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( false )+response.write(request.getAttribute(" false "));response.write( LanguageUtil.format(request, "version-x", targetVersion) );response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+
+   
+     						Map<String, Object> data = new HashMap<String, Object>();
+     
+     						for (DiffVersion diffVersion : diffVersionsInfo.getDiffVersions()) {
+     							data.put("version", diffVersion.getVersion());
+     						
+
+
+response.write( data );
+ response.write( true )+response.write(request.getAttribute(" true "));
+
+   response.write( LanguageUtil.format(request, "version-x", diffVersion.getVersion()) );
+
+
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     				List<DiffVersion> diffVersions = diffVersionsInfo.getDiffVersions();
+     
+     				int diffVersionsCount = 0;
+     
+     				for (int i = 0; i < diffVersions.size(); i++) {
+     					DiffVersion diffVersion = diffVersions.get(i);
+     
+     					if ((diffVersion.getVersion() <= sourceVersion) || (diffVersion.getVersion() > targetVersion)) {
+     						continue;
+     					}
+     
+     					diffVersionsCount++;
+     				}
+     				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+     							for (Locale availableLocale : availableLocales) {
+     							
+
+
+
+    
+     							}
+     							
+
+
+
+
+
+
+
+  
+     					double previousSourceVersion = sourceVersion;
+     
+     					for (int i = 0; i < diffVersions.size(); i++) {
+     						DiffVersion diffVersion = diffVersions.get(i);
+     
+     						if ((diffVersion.getVersion() <= sourceVersion) || (diffVersion.getVersion() > targetVersion)) {
+     							continue;
+     						}
+     
+     						User userDisplay = UserLocalServiceUtil.getUser(diffVersion.getUserId());
+     
+     						String displayDate = LanguageUtil.format(request, "x-ago", LanguageUtil.getTimeDescription(request, System.currentTimeMillis() - diffVersion.getModifiedDate().getTime(), true), false);
+     					
+
+    response.write( (diffVersion.getVersion() >= targetVersion) ? "last" : StringPool.BLANK );      response.write( displayDate );   response.write( previousSourceVersion )+response.write(request.getAttribute(" previousSourceVersion "));response.write( HtmlUtil.escape(userDisplay.getFullName()) );response.write( diffVersion.getVersion() );response.write( LanguageUtil.format(request, "version-x", diffVersion.getVersion()) );
+
+ response.write( diffVersion.getVersion() );
+
+
+
+   response.write(HtmlUtil.getEscapeAttribute(userDisplay().getFullName()));response.write(HtmlUtil.getEscape(userDisplay().getPortraitURL(themeDisplay)));
+
+
+
+  response.write( HtmlUtil.escapeAttribute(userDisplay.getFullName()) );
+  response.write( displayDate );
+
+
+
+  
+     						previousSourceVersion = diffVersion.getVersion();
+     					}
+     					
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     					request.setAttribute(WebKeys.DIFF_HTML_RESULTS, diffHtmlResults);
+     					
+
+
+
+
+
+
+
+
+       response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+       response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( sourceVersion );
+    response.write( targetVersion );
+
+   response.write( resourceURL.toString() );
+}
+
+}

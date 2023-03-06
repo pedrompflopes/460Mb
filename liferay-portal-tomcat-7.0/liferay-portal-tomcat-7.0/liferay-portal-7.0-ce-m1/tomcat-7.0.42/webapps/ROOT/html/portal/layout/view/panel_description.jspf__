@@ -1,0 +1,62 @@
+﻿ package PackageNo488725067; public class panel_description_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if (themeDisplay.isStatePopUp() || layoutTypePortlet.hasStateMax()) {
+     	String ppid = ParamUtil.getString(request, "p_p_id");
+     
+     	String velocityTemplateId = null;
+     	String velocityTemplateContent = null;
+     
+     	if (themeDisplay.isStatePopUp()) {
+     		velocityTemplateId = theme.getThemeId() + LayoutTemplateConstants.STANDARD_SEPARATOR + "pop_up";
+     		velocityTemplateContent = LayoutTemplateLocalServiceUtil.getContent("pop_up", true, theme.getThemeId());
+     	}
+     	else {
+     		ppid = StringUtil.split(layoutTypePortlet.getStateMax())[0];
+     
+     		velocityTemplateId = theme.getThemeId() + LayoutTemplateConstants.STANDARD_SEPARATOR + "max";
+     		velocityTemplateContent = LayoutTemplateLocalServiceUtil.getContent("max", true, theme.getThemeId());
+     	}
+     
+     	if (Validator.isNotNull(velocityTemplateContent)) {
+     		RuntimePageUtil.processTemplate(request, response, ppid, new StringTemplateResource(velocityTemplateId, velocityTemplateContent));
+     	}
+     }
+     else {
+     	UnicodeProperties typeSettingsProperties = layout.getTypeSettingsProperties();
+     
+     	String description = typeSettingsProperties.getProperty("description");
+     
+     	if (Validator.isNull(description)) {
+     		description = LanguageUtil.get(request, "please-select-a-tool-from-the-left-menu");
+     	}
+     
+
+
+    response.write( HtmlUtil.escape(layout.getName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(layout.getName(locale)) );
+
+
+
+    response.write( HtmlUtil.escape(description) );
+
+
+     
+     }
+     
+}
+
+}

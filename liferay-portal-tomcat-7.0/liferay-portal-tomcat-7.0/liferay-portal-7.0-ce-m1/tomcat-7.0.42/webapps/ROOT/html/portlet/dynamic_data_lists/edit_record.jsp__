@@ -1,0 +1,333 @@
+﻿ package PackageNo1638254429;import _html_portlet_init_jsp;import _html_portlet_dynamic_data_lists_init_ext_jsp;import com.liferay.portlet.dynamicdatalists.NoSuchRecordSetException;import com.liferay.portlet.dynamicdatalists.RecordSetDDMStructureIdException;import com.liferay.portlet.dynamicdatalists.RecordSetNameException;import com.liferay.portlet.dynamicdatalists.model.DDLRecord;import com.liferay.portlet.dynamicdatalists.model.DDLRecordConstants;import com.liferay.portlet.dynamicdatalists.model.DDLRecordSet;import com.liferay.portlet.dynamicdatalists.model.DDLRecordSetConstants;import com.liferay.portlet.dynamicdatalists.model.DDLRecordVersion;import com.liferay.portlet.dynamicdatalists.search.RecordSetDisplayTerms;import com.liferay.portlet.dynamicdatalists.search.RecordSetSearch;import com.liferay.portlet.dynamicdatalists.search.RecordSetSearchTerms;import com.liferay.portlet.dynamicdatalists.service.DDLRecordLocalServiceUtil;import com.liferay.portlet.dynamicdatalists.service.DDLRecordSetServiceUtil;import com.liferay.portlet.dynamicdatalists.service.permission.DDLPermission;import com.liferay.portlet.dynamicdatalists.service.permission.DDLRecordSetPermission;import com.liferay.portlet.dynamicdatalists.util.DDLUtil;import com.liferay.portlet.dynamicdatamapping.StorageFieldRequiredException;import com.liferay.portlet.dynamicdatamapping.model.DDMFormField;import com.liferay.portlet.dynamicdatamapping.model.LocalizedValue;import com.liferay.portlet.dynamicdatamapping.service.DDMStorageLinkLocalServiceUtil;import com.liferay.portlet.dynamicdatamapping.storage.FieldConstants;import com.liferay.portlet.dynamicdatamapping.storage.StorageEngineUtil;import com.liferay.portlet.dynamicdatamapping.util.DDMXSDUtil; public class edit_record_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\edit_record.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\edit_record.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dynamic_data_lists\edit_record.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     DDLRecord record = (DDLRecord)request.getAttribute(WebKeys.DYNAMIC_DATA_LISTS_RECORD);
+     
+     long recordId = BeanParamUtil.getLong(record, request, "recordId");
+     
+     long recordSetId = BeanParamUtil.getLong(record, request, "recordSetId");
+     
+     long formDDMTemplateId = ParamUtil.getLong(request, "formDDMTemplateId");
+     
+     DDLRecordVersion recordVersion = null;
+     
+     if (record != null) {
+     	recordVersion = record.getLatestRecordVersion();
+     }
+     
+     DDLRecordSet recordSet = DDLRecordSetServiceUtil.getRecordSet(recordSetId);
+     
+     DDMStructure ddmStructure = recordSet.getDDMStructure();
+     
+     Fields fields = null;
+     
+     if (recordVersion != null) {
+     	fields = StorageEngineUtil.getFields(recordVersion.getDDMStorageId());
+     }
+     
+     Locale[] availableLocales = new Locale[0];
+     
+     if (fields != null) {
+     	Set<Locale> availableLocalesSet = fields.getAvailableLocales();
+     
+     	availableLocales = availableLocalesSet.toArray(new Locale[availableLocalesSet.size()]);
+     }
+     
+     String defaultLanguageId = ParamUtil.getString(request, "defaultLanguageId");
+     
+     if (Validator.isNull(defaultLanguageId)) {
+     	defaultLanguageId = themeDisplay.getLanguageId();
+     
+     	if (fields != null) {
+     		defaultLanguageId = LocaleUtil.toLanguageId(fields.getDefaultLocale());
+     	}
+     }
+     
+     String languageId = ParamUtil.getString(request, "languageId", defaultLanguageId);
+     
+     boolean translating = false;
+     
+     if (!defaultLanguageId.equals(languageId)) {
+     	translating = true;
+     }
+     
+     if (translating) {
+     	redirect = currentURL;
+     }
+     
+
+
+    response.write( redirect )+response.write(request.getAttribute(" redirect "));
+response.write( !translating );
+  response.write( (record != null) ? LanguageUtil.format(request, "edit-x", ddmStructure.getName(locale), false) : LanguageUtil.format(request, "new-x", ddmStructure.getName(locale), false) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( FileSizeException.class )+response.write(request.getAttribute(" FileSizeException").class );
+
+       
+     		long fileMaxSize = PrefsPropsUtil.getLong(PropsKeys.DL_FILE_MAX_SIZE);
+     
+     		if (fileMaxSize == 0) {
+     			fileMaxSize = PrefsPropsUtil.getLong(PropsKeys.UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE);
+     		}
+     		
+
+   response.write( TextFormatter.formatStorageSize(fileMaxSize, locale) )+response.write(request.getAttribute(" TextFormatter").formatStorageSize(fileMaxSize, locale) );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+response.write( StorageFieldRequiredException.class )+response.write(request.getAttribute(" StorageFieldRequiredException").class );
+
+
+
+      response.write( recordVersion );response.write( DDLRecordVersion.class )+response.write(request.getAttribute(" DDLRecordVersion").class );
+
+ response.write( DDLRecord.class )+response.write(request.getAttribute(" DDLRecord").class );response.write( recordVersion.getStatus() );response.write( recordVersion.getVersion() );
+
+
+
+
+
+
+
+
+response.write( availableLocales )+response.write(request.getAttribute(" availableLocales "));
+ response.write( defaultLanguageId );
+
+response.write( recordId <= 0 );
+
+
+
+
+
+
+
+
+      response.write( UnicodeLanguageUtil.get(request, "changing-the-default-language-will-delete-all-unsaved-content") );
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( updateDefaultLanguageURL )+response.write(request.getAttribute(" updateDefaultLanguageURL "));
+
+   response.write( portletDisplay.getId() )+response.write(request.getAttribute(" portletDisplay").getId() );
+
+
+       response.write( formDDMTemplateId );
+      response.write( recordId );
+ response.write( recordSetId );
+       response.write( HtmlUtil.escapeJS(redirect) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(redirect) );
+
+
+
+
+
+
+
+
+
+
+     response.write( recordId );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( UnicodeLanguageUtil.get(request, "record-translation") );
+
+    response.write( true )+response.write(request.getAttribute(" true "));response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+
+
+
+  response.write( translateRecordURL )+response.write(request.getAttribute(" translateRecordURL "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		long classNameId = PortalUtil.getClassNameId(DDMStructure.class);
+     
+     		long classPK = recordSet.getDDMStructureId();
+     
+     		if (formDDMTemplateId > 0) {
+     			classNameId = PortalUtil.getClassNameId(DDMTemplate.class);
+     
+     			classPK = formDDMTemplateId;
+     		}
+     		
+
+
+  response.write( classNameId );
+      response.write( classPK );
+     response.write( fields );
+ response.write( translating ? false : true );
+      response.write( LocaleUtil.fromLanguageId(languageId) );
+
+
+       
+     		boolean pending = false;
+     
+     		if (recordVersion != null) {
+     			pending = recordVersion.isPending();
+     		}
+     		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( Constants.TRANSLATE )+response.write(request.getAttribute(" Constants").TRANSLATE );
+
+
+
+
+
+  
+     					String saveButtonLabel = "save";
+     
+     					if ((recordVersion == null) || recordVersion.isDraft() || recordVersion.isApproved()) {
+     						saveButtonLabel = "save-as-draft";
+     					}
+     
+     					String publishButtonLabel = "publish";
+     
+     					if (WorkflowDefinitionLinkLocalServiceUtil.hasWorkflowDefinitionLink(themeDisplay.getCompanyId(), scopeGroupId, DDLRecordSet.class.getName(), recordSetId)) {
+     						publishButtonLabel = "submit-for-publication";
+     					}
+     					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( (record == null) ? Constants.ADD : Constants.UPDATE );
+
+
+  response.write( WorkflowConstants.ACTION_SAVE_DRAFT )+response.write(request.getAttribute(" WorkflowConstants").ACTION_SAVE_DRAFT );
+
+
+  response.write( WorkflowConstants.ACTION_PUBLISH )+response.write(request.getAttribute(" WorkflowConstants").ACTION_PUBLISH );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/dynamic_data_lists/view_record_set");
+     portletURL.setParameter("recordSetId", String.valueOf(recordSetId));
+     
+     PortalUtil.addPortletBreadcrumbEntry(request, recordSet.getName(locale), portletURL.toString());
+     
+     if (record != null) {
+     	PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.format(request, "edit-x", ddmStructure.getName(locale), false), currentURL);
+     }
+     else {
+     	PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.format(request, "add-x", ddmStructure.getName(locale), false), currentURL);
+     }
+     
+}
+
+}

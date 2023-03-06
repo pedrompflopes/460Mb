@@ -1,0 +1,35 @@
+.portlet-asset-tag-admin .merge-tags-container {
+  border: 1px solid transparent;
+  padding: 5px; }
+.portlet-asset-tag-admin .merge-tags-label {
+  margin-bottom: 10px; }
+.portlet-asset-tag-admin .merge-tags-label, .portlet-asset-tag-admin .target-tag-label {
+  display: block; }
+.portlet-asset-tag-admin .merge-tags-container {
+  margin-bottom: 50px;
+  overflow: hidden; }
+  .portlet-asset-tag-admin .merge-tags-container .merge-tag {
+    float: left;
+    margin-right: 10px;
+    padding: 5px; }
+    .portlet-asset-tag-admin .merge-tags-container .merge-tag .icon-remove-sign {
+      cursor: pointer; }
+.portlet-asset-tag-admin .target-tag-container .target-tag {
+  border-width: 0;
+  padding: 5px; }
+.portlet-asset-tag-admin .target-tag-container .target-tag-msg {
+  display: block;
+  margin-bottom: 10px; }
+
+/* Skin */
+.portlet-asset-tag-admin .merge-tags-container {
+  border-color: #CCC; }
+.portlet-asset-tag-admin .merge-tags-label, .portlet-asset-tag-admin .control-label {
+  color: #8D8D8D;
+  font-weight: 800; }
+.portlet-asset-tag-admin .merge-tags-container .merge-tag {
+  background-color: #009AE5;
+  color: #FFF; }
+.portlet-asset-tag-admin .target-tag-container .target-tag {
+  background-color: #009AE5;
+  color: #FFF; }

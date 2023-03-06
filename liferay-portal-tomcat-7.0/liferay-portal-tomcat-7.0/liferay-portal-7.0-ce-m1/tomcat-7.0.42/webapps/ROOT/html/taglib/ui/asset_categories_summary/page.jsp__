@@ -1,0 +1,81 @@
+﻿ package PackageNo1071766015;import _html_taglib_init_jsp; public class page_jsp {  /* 1 */ private String _buildCategoryPath(AssetCategory category, ThemeDisplay themeDisplay) throws PortalException, SystemException { /* 81 */ 	List<AssetCategory> ancestorCategories = category.getAncestors(); /* 82 */ 	if (ancestorCategories.isEmpty()) { /* 84 */ 		return category.getTitle(themeDisplay.getLocale()); /* 85 */ 	} /* 86 */ 	Collections.reverse(ancestorCategories); /* 88 */ 	StringBundler sb = new StringBundler(ancestorCategories.size() * 2 + 1); /* 90 */ 	for (AssetCategory ancestorCategory : ancestorCategories) { /* 92 */ 		ancestorCategory = ancestorCategory.toEscapedModel(); /* 93 */ 		sb.append(ancestorCategory.getTitle(themeDisplay.getLocale())); /* 95 */ 		sb.append(" &raquo; "); /* 96 */ 	} /* 97 */ 	sb.append(category.getTitle(themeDisplay.getLocale())); /* 99 */ 	return sb.toString(); /* 101 */ } /* 102 */ private List<AssetCategory> _filterCategories(List<AssetCategory> categories, AssetVocabulary vocabulary) { /* 104 */ 	List<AssetCategory> filteredCategories = new ArrayList<AssetCategory>(); /* 105 */ 	for (AssetCategory category : categories) { /* 107 */ 		if (category.getVocabularyId() == vocabulary.getVocabularyId()) { /* 108 */ 			filteredCategories.add(category); /* 109 */ 		} /* 110 */ 	} /* 111 */ 	return filteredCategories; /* 113 */ } /* 114 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_summary\page.jsp */
+
+     
+     String className = (String)request.getAttribute("liferay-ui:asset-categories-summary:className");
+     long classPK = GetterUtil.getLong((String)request.getAttribute("liferay-ui:asset-categories-summary:classPK"));
+     PortletURL portletURL = (PortletURL)request.getAttribute("liferay-ui:asset-categories-summary:portletURL");
+     
+     AssetEntry assetEntry = AssetEntryLocalServiceUtil.fetchEntry(className, classPK);
+     
+     List<AssetVocabulary> vocabularies = AssetVocabularyServiceUtil.getGroupVocabularies(PortalUtil.getCurrentAndAncestorSiteGroupIds((assetEntry != null) ? assetEntry.getGroupId() : scopeGroupId));
+     List<AssetCategory> categories = AssetCategoryServiceUtil.getCategories(className, classPK);
+     
+     for (AssetVocabulary vocabulary : vocabularies) {
+     	vocabulary = vocabulary.toEscapedModel();
+     
+     	List<AssetCategory> curCategories = _filterCategories(categories, vocabulary);
+     
+
+
+
+     response.write( vocabulary.getUnambiguousTitle(vocabularies, themeDisplay.getSiteGroupId(), themeDisplay.getLocale()) )+response.write(request.getAttribute(" vocabulary").getUnambiguousTitle(vocabularies, themeDisplay.getSiteGroupId(), themeDisplay.getLocale()) );
+
+
+
+
+  
+     					for (AssetCategory category : curCategories) {
+     						category = category.toEscapedModel();
+     
+     						portletURL.setParameter("categoryId", String.valueOf(category.getCategoryId()));
+     					
+
+ response.write(HtmlUtil.getEscape(portletURL().getToString()));       response.write( _buildCategoryPath(category, themeDisplay) )+response.write(request.getAttribute(" _buildCategoryPath(category, themeDisplay) "));
+
+  
+     					}
+     					
+
+
+
+
+  
+     					for (AssetCategory category : curCategories) {
+     						category = category.toEscapedModel();
+     					
+
+
+ response.write( _buildCategoryPath(category, themeDisplay) )+response.write(request.getAttribute(" _buildCategoryPath(category, themeDisplay) "));
+
+
+  
+     					}
+     					
+
+
+
+
+
+
+     
+     }
+     
+}
+
+}

@@ -1,0 +1,29 @@
+﻿ package PackageNo2041720621;import com.liferay.portal.kernel.servlet.taglib.aui.ValidatorTag; public class init_ext_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if (themeDisplay.isAddSessionIdToURL()) {
+     	action = PortalUtil.getURLWithSessionId(action, themeDisplay.getSessionId());
+     }
+     
+     List<String> checkboxNames = (List<String>)request.getAttribute("aui:form:checkboxNames");
+     Map<String, List<ValidatorTag>> validatorTagsMap = (Map<String, List<ValidatorTag>>)request.getAttribute("aui:form:validatorTagsMap");
+     
+}
+
+}

@@ -1,0 +1,77 @@
+﻿ package PackageNo861495452; public class entry_search_results_jspf {  /* 1 */ private static Log _log = LogFactoryUtil.getLog("portal-web.docroot.html.portlet.blogs_admin.entry_search_results_jspf"); /* 77 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if ((assetCategoryId != 0) || Validator.isNotNull(assetTagName)) {
+     	SearchContainerResults<AssetEntry> searchContainerResults = BlogsUtil.getSearchContainerResults(searchContainer);
+     
+     	searchContainer.setTotal(searchContainerResults.getTotal());
+     
+     	List<AssetEntry> assetEntries = searchContainerResults.getResults();
+     
+     	for (AssetEntry assetEntry : assetEntries) {
+     		results.add(BlogsEntryLocalServiceUtil.getBlogsEntry(assetEntry.getClassPK()));
+     	}
+     }
+     else if (Validator.isNull(searchTerms.getKeywords())) {
+     	total = BlogsEntryServiceUtil.getGroupEntriesCount(scopeGroupId, WorkflowConstants.STATUS_ANY);
+     
+     	searchContainer.setTotal(total);
+     
+     	results = BlogsEntryServiceUtil.getGroupEntries(scopeGroupId, WorkflowConstants.STATUS_ANY, searchContainer.getStart(), searchContainer.getEnd());
+     }
+     else {
+     	Indexer indexer = IndexerRegistryUtil.getIndexer(BlogsEntry.class);
+     
+     	SearchContext searchContext = SearchContextFactory.getInstance(request);
+     
+     	searchContext.setEnd(searchContainer.getEnd());
+     	searchContext.setKeywords(searchTerms.getKeywords());
+     	searchContext.setStart(searchContainer.getStart());
+     
+     	Hits hits = indexer.search(searchContext);
+     
+     	searchContainer.setTotal(hits.getLength());
+     
+     	for (int i = 0; i < hits.getDocs().length; i++) {
+     		Document doc = hits.doc(i);
+     
+     		long entryId = GetterUtil.getLong(doc.get(Field.ENTRY_CLASS_PK));
+     
+     		BlogsEntry entry = null;
+     
+     		try {
+     			entry = BlogsEntryServiceUtil.getEntry(entryId);
+     
+     			entry = entry.toEscapedModel();
+     		}
+     		catch (Exception e) {
+     			if (_log.isWarnEnabled()) {
+     				_log.warn("Blogs search index is stale and contains entry " + entryId);
+     			}
+     
+     			continue;
+     		}
+     
+     		results.add(entry);
+     	}
+     }
+     
+     searchContainer.setResults(results);
+     
+}
+
+}

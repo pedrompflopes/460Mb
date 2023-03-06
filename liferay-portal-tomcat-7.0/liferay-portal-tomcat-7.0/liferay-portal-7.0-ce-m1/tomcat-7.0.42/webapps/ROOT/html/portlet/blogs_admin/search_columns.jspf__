@@ -1,0 +1,42 @@
+﻿ package PackageNo211439464; public class search_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+}
+
+}

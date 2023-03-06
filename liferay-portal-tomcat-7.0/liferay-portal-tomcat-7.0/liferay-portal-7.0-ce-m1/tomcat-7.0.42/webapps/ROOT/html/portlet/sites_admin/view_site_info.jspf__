@@ -1,0 +1,110 @@
+﻿ package PackageNo1570468407; public class view_site_info_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     LinkedHashMap<String, Object> userParams = new LinkedHashMap<String, Object>();
+     
+     userParams.put("inherit", Boolean.TRUE);
+     userParams.put("usersGroups", new Long(groupId));
+     
+     int usersCount = UserLocalServiceUtil.searchCount(company.getCompanyId(), null, WorkflowConstants.STATUS_APPROVED, userParams);
+     
+     LinkedHashMap<String, Object> organizationParams = new LinkedHashMap<String, Object>();
+     
+     organizationParams.put("groupOrganization", new Long(groupId));
+     organizationParams.put("organizationsGroups", new Long(groupId));
+     
+     int organizationsCount = OrganizationLocalServiceUtil.searchCount(company.getCompanyId(), OrganizationConstants.ANY_PARENT_ORGANIZATION_ID, null, null, null, null, organizationParams);
+     
+     LinkedHashMap<String, Object> userGroupParams = new LinkedHashMap<String, Object>();
+     
+     userGroupParams.put("userGroupsGroups", new Long(groupId));
+     
+     int userGroupsCount = UserGroupLocalServiceUtil.searchCount(company.getCompanyId(), null, userGroupParams);
+     
+     int pendingRequests = 0;
+     
+     if (group.getType() == GroupConstants.TYPE_SITE_RESTRICTED) {
+     	pendingRequests = MembershipRequestLocalServiceUtil.searchCount(group.getGroupId(), MembershipRequestConstants.STATUS_PENDING);
+     }
+     
+
+
+
+      
+     	Organization groupOrganization = OrganizationLocalServiceUtil.getOrganization(group.getOrganizationId());
+     	
+
+
+
+
+   response.write( new String[] {groupOrganization.getName(), LanguageUtil.get(request, groupOrganization.getType())} );  response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( groupId )+response.write(request.getAttribute(" groupId "));response.write( PortletKeys.SITE_MEMBERSHIPS_ADMIN )+response.write(request.getAttribute(" PortletKeys").SITE_MEMBERSHIPS_ADMIN );
+       response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+response.write(String.getValueOf(group().getGroupId()))+response.write(request.getAttribute("String").getValueOf(group().getGroupId()));
+
+
+
+
+
+
+
+
+
+
+
+     response.write( LanguageUtil.get(request, GroupConstants.getTypeLabel(group.getType())) );
+}
+
+}

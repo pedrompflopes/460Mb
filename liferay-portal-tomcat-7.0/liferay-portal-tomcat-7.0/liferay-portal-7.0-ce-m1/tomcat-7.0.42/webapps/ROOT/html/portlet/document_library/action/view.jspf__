@@ -1,0 +1,31 @@
+﻿ package PackageNo102590007; public class view_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+      response.write(String.getValueOf(fileEntry().getFileEntryId()))+response.write(request.getAttribute("String").getValueOf(fileEntry().getFileEntryId()));
+
+
+
+
+
+  response.write( viewFileEntryURL )+response.write(request.getAttribute(" viewFileEntryURL "));
+}
+
+}

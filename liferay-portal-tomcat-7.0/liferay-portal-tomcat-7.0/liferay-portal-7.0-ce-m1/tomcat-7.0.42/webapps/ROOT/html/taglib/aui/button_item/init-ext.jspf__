@@ -1,0 +1,31 @@
+﻿ package PackageNo612066707;import com.liferay.alloy.util.MarkupUtil; public class init_ext_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String iconTypeClass = null;
+     
+     if (Validator.isNull(label) && Validator.isNotNull(icon)) {
+     	iconTypeClass = "buttonitem-icon-only";
+     }
+     else if (Validator.isNotNull(label) && Validator.isNull(icon)) {
+     	iconTypeClass = "buttonitem-label-only";
+     }
+     
+}
+
+}

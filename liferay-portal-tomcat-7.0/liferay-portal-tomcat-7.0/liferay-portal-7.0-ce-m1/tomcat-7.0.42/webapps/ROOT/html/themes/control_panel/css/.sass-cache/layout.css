@@ -1,0 +1,18 @@
+/* ---------- Flex containers ---------- */
+/* ---------- Flex container behavior ---------- */
+/* ---------- Flex container alignment ---------- */
+/* ---------- Flex items ---------- */
+/* ---------- Flex item alignment ---------- */
+/* ---------- Column widths ---------- */
+.portlet-column-content.empty {
+  padding: 50px; }
+
+/* ---------- Wrapper ---------- */
+#wrapper {
+  padding-bottom: 0;
+  padding-top: 2em;
+  position: relative; }
+  @media (min-width: 980px) {
+    #wrapper {
+      padding-left: 5em;
+      padding-right: 5em; } }

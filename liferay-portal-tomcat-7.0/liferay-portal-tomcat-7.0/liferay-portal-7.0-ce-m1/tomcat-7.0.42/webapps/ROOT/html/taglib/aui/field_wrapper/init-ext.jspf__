@@ -1,0 +1,38 @@
+﻿ package PackageNo123619; public class init_ext_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     boolean showForLabel = false;
+     
+     if (Validator.isNotNull(name)) {
+     	showForLabel = true;
+     
+     	name = namespace + name;
+     }
+     
+     String controlGroupCss = "form-group";
+     
+     if (inlineField) {
+     	controlGroupCss = controlGroupCss.concat(" form-group-inline");
+     }
+     
+     if (Validator.isNotNull(inlineLabel)) {
+     	controlGroupCss = controlGroupCss.concat(" form-inline");
+     }
+     
+}
+
+}

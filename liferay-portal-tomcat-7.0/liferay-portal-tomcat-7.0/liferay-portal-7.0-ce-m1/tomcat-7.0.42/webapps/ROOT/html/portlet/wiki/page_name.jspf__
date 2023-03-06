@@ -1,0 +1,24 @@
+﻿ package PackageNo1174663516; public class page_name_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( redirect )+response.write(request.getAttribute(" redirect "));
+   response.write( false )+response.write(request.getAttribute(" false "));
+   response.write( title )+response.write(request.getAttribute(" title "));
+}
+
+}

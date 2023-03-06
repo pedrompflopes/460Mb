@@ -1,0 +1,40 @@
+﻿ package PackageNo394357885; public class article_search_results_index_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     LinkedHashMap<String, Object> journalParams = new LinkedHashMap<String, Object>();
+     
+     journalParams.put("expandoAttributes", searchTerms.getKeywords());
+     
+     Sort sort = SortFactoryUtil.getSort(JournalArticle.class, searchContainer.getOrderByCol(), searchContainer.getOrderByType());
+     
+     BaseModelSearchResult<JournalArticle> baseModelSearchResult = null;
+     
+     if (searchTerms.isAdvancedSearch()) {
+     	baseModelSearchResult = JournalArticleLocalServiceUtil.searchJournalArticles(company.getCompanyId(), searchTerms.getGroupId(), searchTerms.getFolderIds(), JournalArticleConstants.CLASSNAME_ID_DEFAULT, searchTerms.getArticleId(), searchTerms.getTitle(), searchTerms.getDescription(), searchTerms.getContent(), searchTerms.getType(), searchTerms.getStatus(), searchTerms.getStructureId(), searchTerms.getTemplateId(), journalParams, searchTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(), sort);
+     }
+     else {
+     	baseModelSearchResult = JournalArticleLocalServiceUtil.searchJournalArticles(company.getCompanyId(), searchTerms.getGroupId(), searchTerms.getFolderIds(), JournalArticleConstants.CLASSNAME_ID_DEFAULT, searchTerms.getStructureId(), searchTerms.getTemplateId(), searchTerms.getKeywords(), journalParams, searchContainer.getStart(), searchContainer.getEnd(), sort);
+     }
+     
+     results = baseModelSearchResult.getBaseModels();
+     
+     searchContainer.setResults(results);
+     searchContainer.setTotal(baseModelSearchResult.getLength());
+     
+}
+
+}

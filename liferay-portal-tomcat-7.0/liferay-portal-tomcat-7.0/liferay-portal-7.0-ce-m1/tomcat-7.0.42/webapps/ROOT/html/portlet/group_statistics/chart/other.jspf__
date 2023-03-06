@@ -1,0 +1,214 @@
+﻿ package PackageNo1977455410; public class other_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     SocialActivityCounter highestActivityCounter = null;
+     SocialActivityCounter lowestActivityCounter = null;
+     
+     int[] categories = new int[activityCounters.size()];
+     int[] values = new int[activityCounters.size()];
+     
+     int currentValue = 0;
+     int totalValue = 0;
+     
+     int totalDays = 0;
+     
+     for (int i = 0; i < activityCounters.size(); i++) {
+     	SocialActivityCounter activityCounter = activityCounters.get(i);
+     
+     	if ((highestActivityCounter == null) || (highestActivityCounter.getCurrentValue() < activityCounter.getCurrentValue())) {
+     		highestActivityCounter = activityCounter;
+     	}
+     
+     	if ((lowestActivityCounter == null) || (lowestActivityCounter.getCurrentValue() > activityCounter.getCurrentValue())) {
+     		lowestActivityCounter = activityCounter;
+     	}
+     
+     	categories[i] = i + 1;
+     	values[i] = activityCounter.getCurrentValue();
+     
+     	totalValue = totalValue + activityCounter.getCurrentValue();
+     
+     	if (activityCounter.getEndPeriod() == -1) {
+     		currentValue = activityCounter.getCurrentValue();
+     
+     		totalDays = totalDays + SocialCounterPeriodUtil.getActivityDay() - activityCounter.getStartPeriod() + 1;
+     	}
+     	else {
+     		totalDays = totalDays + activityCounter.getEndPeriod() - activityCounter.getStartPeriod() + 1;
+     	}
+     }
+     
+     Format format = FastDateFormatFactoryUtil.getSimpleDateFormat("MMM d");
+     
+
+
+
+     response.write(displayActivityCounterNameIndex)+response.write(request.getAttribute("displayActivityCounterNameIndex"));
+
+
+
+
+ response.write( currentValue );
+
+      response.write( Math.round(totalValue / totalDays * 100) / 100 );
+
+
+
+       response.write( format.format(SocialCounterPeriodUtil.getDate(highestActivityCounter.getStartPeriod())) );
+
+
+response.write( format.format(SocialCounterPeriodUtil.getDate(highestActivityCounter.getEndPeriod())) );
+
+
+
+response.write( format.format(new Date()) );
+
+
+
+
+      response.write( highestActivityCounter.getCurrentValue() );
+
+
+
+       response.write( format.format(SocialCounterPeriodUtil.getDate(lowestActivityCounter.getStartPeriod())) );
+
+
+response.write( format.format(SocialCounterPeriodUtil.getDate(lowestActivityCounter.getEndPeriod())) );
+
+
+
+response.write( format.format(new Date()) );
+
+
+
+
+      response.write( lowestActivityCounter.getCurrentValue() );
+
+
+
+
+
+     response.write( StringUtil.merge(categories) )+response.write(request.getAttribute(" StringUtil").merge(categories) );
+ response.write( StringUtil.merge(values) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( HtmlUtil.escapeJS(chartType) );
+
+
+
+
+
+
+
+
+    response.write( displayActivityCounterNameIndex )+response.write(request.getAttribute(" displayActivityCounterNameIndex "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( displayHeight - 2 )+response.write(request.getAttribute(" displayHeight - 2 "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( portletDisplay.getId() )+response.write(request.getAttribute(" portletDisplay").getId() );
+      response.write( displayActivityCounterNameIndex )+response.write(request.getAttribute(" displayActivityCounterNameIndex "));
+}
+
+}

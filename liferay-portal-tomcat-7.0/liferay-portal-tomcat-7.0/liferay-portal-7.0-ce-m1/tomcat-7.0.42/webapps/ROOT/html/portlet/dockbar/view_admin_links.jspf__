@@ -1,0 +1,55 @@
+﻿ package PackageNo402817424; public class view_admin_links_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( true )+response.write(request.getAttribute(" true "));  response.write( false )+response.write(request.getAttribute(" false "));
+
+
+ 
+     				Map<String, List<Portlet>> categoriesMap = PortalUtil.getSiteAdministrationCategoriesMap(request);
+     
+     				if (!categoriesMap.isEmpty()) {
+     					String currentSiteCategory = PortletCategoryKeys.CURRENT_SITE.concat(StringPool.PERIOD);
+     				
+
+     response.write( themeDisplay.getURLSiteAdministration() )+response.write(request.getAttribute(" themeDisplay").getURLSiteAdministration() );
+
+
+    
+     							for (String category : categoriesMap.keySet()) {
+     								String url = HttpUtil.setParameter(themeDisplay.getURLSiteAdministration(), "controlPanelCategory", StringUtil.replace(category, PortletCategoryKeys.SITE_ADMINISTRATION, currentSiteCategory));
+     							
+
+  response.write( "siteAdministrationLink-" + category );response.write( url )+response.write(request.getAttribute(" url "));response.write( "category." + category );
+
+    
+     							}
+     							
+
+
+
+
+ 
+     				}
+     				
+
+
+
+
+     response.write( themeDisplay.getURLControlPanel() )+response.write(request.getAttribute(" themeDisplay").getURLControlPanel() );
+}
+
+}

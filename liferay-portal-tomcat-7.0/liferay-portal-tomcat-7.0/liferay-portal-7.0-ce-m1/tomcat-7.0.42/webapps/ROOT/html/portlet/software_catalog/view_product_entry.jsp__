@@ -1,0 +1,353 @@
+﻿ package PackageNo1472653784;import _html_portlet_init_jsp;import _html_portlet_software_catalog_init_ext_jsp;import com.liferay.portal.kernel.search.Document;import com.liferay.portal.kernel.search.DocumentComparator;import com.liferay.portal.plugin.PluginPackageUtil;import com.liferay.portlet.softwarecatalog.DuplicateProductEntryModuleIdException;import com.liferay.portlet.softwarecatalog.DuplicateProductVersionDirectDownloadURLException;import com.liferay.portlet.softwarecatalog.FrameworkVersionNameException;import com.liferay.portlet.softwarecatalog.LicenseNameException;import com.liferay.portlet.softwarecatalog.NoSuchFrameworkVersionException;import com.liferay.portlet.softwarecatalog.NoSuchLicenseException;import com.liferay.portlet.softwarecatalog.NoSuchProductEntryException;import com.liferay.portlet.softwarecatalog.NoSuchProductVersionException;import com.liferay.portlet.softwarecatalog.ProductEntryAuthorException;import com.liferay.portlet.softwarecatalog.ProductEntryLicenseException;import com.liferay.portlet.softwarecatalog.ProductEntryNameException;import com.liferay.portlet.softwarecatalog.ProductEntryPageURLException;import com.liferay.portlet.softwarecatalog.ProductEntryScreenshotsException;import com.liferay.portlet.softwarecatalog.ProductEntryShortDescriptionException;import com.liferay.portlet.softwarecatalog.ProductEntryTypeException;import com.liferay.portlet.softwarecatalog.ProductVersionChangeLogException;import com.liferay.portlet.softwarecatalog.ProductVersionDownloadURLException;import com.liferay.portlet.softwarecatalog.ProductVersionFrameworkVersionException;import com.liferay.portlet.softwarecatalog.ProductVersionNameException;import com.liferay.portlet.softwarecatalog.RequiredLicenseException;import com.liferay.portlet.softwarecatalog.UnavailableProductVersionDirectDownloadURLException;import com.liferay.portlet.softwarecatalog.model.SCFrameworkVersion;import com.liferay.portlet.softwarecatalog.model.SCLicense;import com.liferay.portlet.softwarecatalog.model.SCProductEntry;import com.liferay.portlet.softwarecatalog.model.SCProductScreenshot;import com.liferay.portlet.softwarecatalog.model.SCProductVersion;import com.liferay.portlet.softwarecatalog.service.SCFrameworkVersionLocalServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCFrameworkVersionServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCLicenseLocalServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCProductEntryLocalServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCProductScreenshotLocalServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCProductVersionServiceUtil;import com.liferay.portlet.softwarecatalog.service.permission.SCFrameworkVersionPermission;import com.liferay.portlet.softwarecatalog.service.permission.SCLicensePermission;import com.liferay.portlet.softwarecatalog.service.permission.SCPermission;import com.liferay.portlet.softwarecatalog.service.permission.SCProductEntryPermission;import com.liferay.portlet.softwarecatalog.util.SCUtil; public class view_product_entry_jsp {  /* 1 */ public String _getFrameworkVersions(List<SCFrameworkVersion> frameworkVersions) { /* 353 */ 	if (frameworkVersions.isEmpty()) { /* 354 */ 		return StringPool.BLANK; /* 355 */ 	} /* 356 */ 	StringBundler sb = new StringBundler(frameworkVersions.size() * 6); /* 358 */ 	for (SCFrameworkVersion frameworkVersion : frameworkVersions) { /* 360 */ 		frameworkVersion = frameworkVersion.toEscapedModel(); /* 361 */ 		if (Validator.isNotNull(frameworkVersion.getUrl())) { /* 363 */ 			sb.append("<a href='"); /* 364 */ 			sb.append(frameworkVersion.getUrl()); /* 365 */ 			sb.append("'>"); /* 366 */ 			sb.append(frameworkVersion.getName()); /* 367 */ 			sb.append("</a>"); /* 368 */ 		} /* 369 */ 		else { /* 370 */ 			sb.append(frameworkVersion.getName()); /* 371 */ 		} /* 372 */ 		sb.append(", "); /* 374 */ 	} /* 375 */ 	sb.setIndex(sb.index() - 1); /* 377 */ 	return sb.toString(); /* 379 */ } /* 380 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\view_product_entry.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\view_product_entry.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 49?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 50?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 51?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 52?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 53?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 54?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 55?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 56?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 57?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 58?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 59?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 60?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ PortalPreferences portalPreferences = PortletPreferencesFactoryUtil.getPortalPreferences(request); /* 61?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 62?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone); /* 63?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 64?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 65?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 66?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\view_product_entry.jsp */
+
+     
+     String tabs2 = ParamUtil.getString(request, "tabs2", "version-history");
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     SCProductEntry productEntry = (SCProductEntry)request.getAttribute(WebKeys.SOFTWARE_CATALOG_PRODUCT_ENTRY);
+     
+     productEntry = productEntry.toEscapedModel();
+     
+     long productEntryId = BeanParamUtil.getLong(productEntry, request, "productEntryId");
+     
+     SCProductVersion latestProductVersion = productEntry.getLatestVersion();
+     
+     PortletURL addProductVersionURL = renderResponse.createRenderURL();
+     
+     addProductVersionURL.setParameter("struts_action", "/software_catalog/edit_product_version");
+     addProductVersionURL.setParameter(Constants.CMD, Constants.ADD);
+     addProductVersionURL.setParameter("tabs2", tabs2);
+     addProductVersionURL.setParameter("redirect", currentURL);
+     addProductVersionURL.setParameter("productEntryId", String.valueOf(productEntryId));
+     
+     PortletURL editProductEntryURL = renderResponse.createRenderURL();
+     
+     editProductEntryURL.setParameter("struts_action", "/software_catalog/edit_product_entry");
+     editProductEntryURL.setParameter("tabs2", tabs2);
+     editProductEntryURL.setParameter("redirect", currentURL);
+     editProductEntryURL.setParameter("productEntryId", String.valueOf(productEntryId));
+     
+     PortletURL viewProductEntryURL = renderResponse.createRenderURL();
+     
+     viewProductEntryURL.setParameter("struts_action", "/software_catalog/view_product_entry");
+     viewProductEntryURL.setParameter("tabs2", tabs2);
+     viewProductEntryURL.setParameter("redirect", redirect);
+     viewProductEntryURL.setParameter("productEntryId", String.valueOf(productEntryId));
+     
+
+
+    response.write( redirect );
+      response.write( false )+response.write(request.getAttribute(" false "));
+  response.write( false )+response.write(request.getAttribute(" false "));
+  response.write( productEntry.getName() + " " + ((latestProductVersion == null) ? "" : HtmlUtil.escape(latestProductVersion.getVersion())) );
+
+
+
+
+
+
+
+
+     response.write( productEntry.getType() );
+
+
+
+
+
+
+
+
+       
+     		List<SCLicense> productEntryLicenses = productEntry.getLicenses();
+     
+     		for (int i = 0; i < productEntryLicenses.size(); i++) {
+     			SCLicense license = productEntryLicenses.get(i);
+     		
+
+   response.write( HtmlUtil.escape(license.getName()) );
+
+       
+     		}
+     		
+
+
+
+
+
+
+
+
+    response.write( productEntry.getAuthor() );
+
+
+
+
+
+
+
+     response.write(productEntry.getPageURL());response.write( productEntry.getPageURL() );
+
+
+
+
+
+
+
+
+
+     response.write( productEntry.getTags() );
+
+
+
+
+
+
+
+
+
+    response.write( productEntry.getShortDescription() );
+
+
+
+
+
+
+
+
+
+     response.write( productEntry.getLongDescription() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( dateFormatDateTime.format(latestProductVersion.getModifiedDate()) );
+
+
+
+
+
+
+
+      response.write( HtmlUtil.escape(latestProductVersion.getChangeLog()) );
+
+
+
+
+
+
+
+      response.write( _getFrameworkVersions(latestProductVersion.getFrameworkVersions()) );
+
+
+
+
+
+
+
+
+
+
+
+     response.write( latestProductVersion.getDownloadPageURL() );
+
+
+
+
+
+
+
+     response.write( latestProductVersion.getDirectDownloadURL() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     List productScreenshots = SCProductScreenshotLocalServiceUtil.getProductScreenshots(productEntryId);
+     
+
+
+
+
+       
+     		for (int i = 0; i < productScreenshots.size(); i++) {
+     			SCProductScreenshot productScreenshot = (SCProductScreenshot)productScreenshots.get(i);
+     		
+
+   response.write(true)+response.write(request.getAttribute("true"));   response.write( themeDisplay.getPathImage() )+response.write(request.getAttribute(" themeDisplay").getPathImage() );response.write( productScreenshot.getThumbnailId() );response.write( WebServerServletTokenUtil.getToken(productScreenshot.getThumbnailId()) );
+
+       
+     		}
+     		
+
+
+
+
+
+      response.write( SCProductEntry.class.getName() )+response.write(request.getAttribute(" SCProductEntry").class.getName() );
+    response.write( productEntry.getProductEntryId() );
+
+
+
+
+
+
+       
+     		String taglibEditProductEntry = "location.href = '" + editProductEntryURL.toString() + "';";
+     		
+
+
+
+       
+     		String taglibAddProductVersion = "location.href = '" + addProductVersionURL.toString() + "';";
+     		
+
+
+
+
+
+
+
+
+       response.write( viewProductEntryURL );
+
+
+
+
+
+
+
+
+
+response.write( SCProductEntry.class.getName() )+response.write(request.getAttribute(" SCProductEntry").class.getName() );
+      response.write( productEntry.getProductEntryId() );
+ response.write( discussionURL )+response.write(request.getAttribute(" discussionURL "));
+       response.write( currentURL )+response.write(request.getAttribute(" currentURL "));
+     response.write( productEntry.getUserId() );
+
+
+
+
+       
+     		PortletURL viewProductVersionURL = renderResponse.createRenderURL();
+     
+     		viewProductVersionURL.setParameter("struts_action", "/software_catalog/view_product_entry");
+     		viewProductVersionURL.setParameter("productEntryId", String.valueOf(productEntryId));
+     
+     		List<String> headerNames = new ArrayList<String>();
+     
+     		headerNames.add("version");
+     		headerNames.add("supported-framework-versions");
+     		headerNames.add("modified-date");
+     		headerNames.add(StringPool.BLANK);
+     
+     		SearchContainer searchContainer = new SearchContainer(renderRequest, null, null, "cur1", SearchContainer.DEFAULT_DELTA, viewProductVersionURL, headerNames, null);
+     
+     		int total = SCProductVersionServiceUtil.getProductVersionsCount(productEntryId);
+     
+     		searchContainer.setTotal(total);
+     
+     		List results = SCProductVersionServiceUtil.getProductVersions(productEntryId, searchContainer.getStart(), searchContainer.getEnd());
+     
+     		searchContainer.setResults(results);
+     
+     		List resultRows = searchContainer.getResultRows();
+     
+     		for (int i = 0; i < results.size(); i++) {
+     			SCProductVersion curProductVersion = (SCProductVersion)results.get(i);
+     
+     			curProductVersion = curProductVersion.toEscapedModel();
+     
+     			ResultRow row = new ResultRow(curProductVersion, String.valueOf(curProductVersion.getProductVersionId()), i);
+     
+     			// Name and description
+     
+     			StringBundler sb = new StringBundler(6);
+     
+     			sb.append("<strong>");
+     			sb.append(curProductVersion.getVersion());
+     			sb.append("</strong>");
+     
+     			if (Validator.isNotNull(curProductVersion.getChangeLog())) {
+     				sb.append("<br />");
+     				sb.append(curProductVersion.getChangeLog());
+     			}
+     
+     			sb.append("</a>");
+     
+     			row.addText(sb.toString());
+     
+     			row.addText(_getFrameworkVersions(curProductVersion.getFrameworkVersions()));
+     			row.addDate(curProductVersion.getModifiedDate());
+     
+     			// Action
+     
+     			row.addJSP("right", SearchEntry.DEFAULT_VALIGN, "/html/portlet/software_catalog/product_version_action.jsp");
+     
+     			// Add result row
+     
+     			resultRows.add(row);
+     		}
+     		
+
+ response.write( searchContainer );
+
+
+
+     
+     PortalUtil.setPageSubtitle(productEntry.getName(), request);
+     PortalUtil.setPageDescription(productEntry.getShortDescription(), request);
+     PortalUtil.setPageKeywords(productEntry.getTags(), request);
+     
+     SCProductEntry unescapedProductEntry = productEntry.toUnescapedModel();
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/software_catalog/view_product");
+     portletURL.setParameter("redirect", currentURL);
+     portletURL.setParameter("productEntryId", String.valueOf(productEntry.getProductEntryId()));
+     
+     PortalUtil.addPortletBreadcrumbEntry(request, unescapedProductEntry.getName(), portletURL.toString());
+     
+}
+
+}

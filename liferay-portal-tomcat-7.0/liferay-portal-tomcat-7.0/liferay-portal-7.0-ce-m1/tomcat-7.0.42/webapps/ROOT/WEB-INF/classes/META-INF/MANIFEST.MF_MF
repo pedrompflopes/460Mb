@@ -1,0 +1,8 @@
+﻿public class CxManifestClass1673517678 {String Manifest_Version="1.0";
+String Ant_Version="Apache Ant 1.9.2";
+String Created_By="1.7.0_45-b18 (Oracle Corporation)";
+String Extension_List="crypto";
+String crypto_Extension_Name="javax.crypto";
+
+
+}

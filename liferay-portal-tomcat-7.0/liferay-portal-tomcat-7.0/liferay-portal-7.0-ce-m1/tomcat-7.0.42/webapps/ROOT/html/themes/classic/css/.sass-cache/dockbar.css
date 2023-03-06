@@ -1,0 +1,850 @@
+/* ---------- Flex containers ---------- */
+/* ---------- Flex container behavior ---------- */
+/* ---------- Flex container alignment ---------- */
+/* ---------- Flex items ---------- */
+/* ---------- Flex item alignment ---------- */
+.aui {
+  /* ---------- Staging dockbar ---------- */
+  /* ---------- Add content ---------- */
+  /* ---------- Menus ---------- */
+  /* ---------- Customization bar ---------- */
+  /* -------- Extras -------- */
+  /* -------- Media queries -------- */ }
+  @media (max-width: 979px) {
+    .aui #navigation {
+      border-width: 0;
+      display: none;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 301; }
+      .aui #navigation.open {
+        display: block; }
+        .aui #navigation.open li a {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 27px;
+          margin: 0;
+          max-width: none;
+          padding: 9px 15px; }
+          .aui #navigation.open li a b {
+            position: absolute;
+            right: 5px; }
+      .aui #navigation .nav {
+        margin: 0; }
+      .aui #navigation .navbar-nav, .aui #navigation .navbar-nav > li {
+        float: none; } }
+  .aui .dockbar {
+    height: auto;
+    left: 0;
+    margin-bottom: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 400; }
+    .aui .dockbar.navbar-static-top {
+      position: relative; }
+    .aui .dockbar .btn-link {
+      color: #FFF; }
+    .aui .dockbar .impersonating-user .alert-icon {
+      margin-right: 9px; }
+    .aui .dockbar .impersonating-user .alert-info {
+      border-width: 0;
+      margin-bottom: 6px; }
+    .aui .dockbar .container, .aui .dockbar .container-fluid {
+      background-color: #F3F3F3;
+      border-color: #DDD;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%; }
+      @media (max-width: 979px) {
+        .aui .dockbar .container, .aui .dockbar .container-fluid {
+          display: -webkit-box;
+          display: -moz-box;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: flex;
+          display: -ms-flexbox;
+          padding: 0; } }
+      .aui .dockbar .container > .nav, .aui .dockbar .container-fluid > .nav {
+        margin: 0; }
+        @media (max-width: 979px) {
+          .aui .dockbar .container > .nav, .aui .dockbar .container-fluid > .nav {
+            clear: none;
+            display: inline-block;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -ms-box-flex: 1;
+            -webkit-flex-shrink: 1;
+            -moz-flex-shrink: 1;
+            flex-shrink: 1;
+            -ms-flex-negative: 1;
+            float: left;
+            height: auto;
+            overflow: visible;
+            position: static; } }
+        @media (max-width: 979px) {
+          .aui .dockbar .container > .nav > li, .aui .dockbar .container-fluid > .nav > li {
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -ms-box-flex: 1;
+            -webkit-flex-shrink: 1;
+            -moz-flex-shrink: 1;
+            flex-shrink: 1;
+            -ms-flex-negative: 1;
+            float: left;
+            margin: 5px;
+            position: static; }
+            .aui .dockbar .container > .nav > li.info-link-container, .aui .dockbar .container-fluid > .nav > li.info-link-container {
+              float: right; } }
+        @media (max-width: 979px) {
+          .aui .dockbar .container > .nav > li.dropdown .dropdown-menu, .aui .dockbar .container-fluid > .nav > li.dropdown .dropdown-menu {
+            background-color: #F6F6F6;
+            left: 0;
+            margin: 3px 0 0 0;
+            position: absolute;
+            top: 100%;
+            width: 100%; } }
+        @media (max-width: 979px) {
+          .aui .dockbar .container > .nav > li.dropdown .dropdown-menu > li a:focus, .aui .dockbar .container > .nav > li.dropdown .dropdown-menu > li a:hover, .aui .dockbar .container-fluid > .nav > li.dropdown .dropdown-menu > li a:focus, .aui .dockbar .container-fluid > .nav > li.dropdown .dropdown-menu > li a:hover {
+            background: #555;
+            color: #FFF; } }
+        @media (min-width: 768px) and (max-width: 979px) {
+          .aui .dockbar .container > .nav > li.dropdown .dropdown-menu > li a, .aui .dockbar .container-fluid > .nav > li.dropdown .dropdown-menu > li a {
+            margin: 5px 0; } }
+        .aui .dockbar .container > .nav > li.user-avatar > .dropdown-menu, .aui .dockbar .container-fluid > .nav > li.user-avatar > .dropdown-menu {
+          right: 0; }
+          .aui .dockbar .container > .nav > li.user-avatar > .dropdown-menu, .aui .dockbar .container > .nav > li.user-avatar > .dropdown-menu:after, .aui .dockbar .container > .nav > li.user-avatar > .dropdown-menu:before, .aui .dockbar .container-fluid > .nav > li.user-avatar > .dropdown-menu, .aui .dockbar .container-fluid > .nav > li.user-avatar > .dropdown-menu:after, .aui .dockbar .container-fluid > .nav > li.user-avatar > .dropdown-menu:before {
+            left: auto; }
+          .aui .dockbar .container > .nav > li.user-avatar > .dropdown-menu:after, .aui .dockbar .container-fluid > .nav > li.user-avatar > .dropdown-menu:after {
+            right: 11px; }
+          .aui .dockbar .container > .nav > li.user-avatar > .dropdown-menu:before, .aui .dockbar .container-fluid > .nav > li.user-avatar > .dropdown-menu:before {
+            right: 10px; }
+        .aui .dockbar .container > .nav > li.info-items, .aui .dockbar .container-fluid > .nav > li.info-items {
+          background-color: transparent;
+          left: 0;
+          position: absolute;
+          top: 100%;
+          width: 100%; }
+        @media (max-width: 979px) {
+          .aui .dockbar .container > .nav > li > a, .aui .dockbar .container-fluid > .nav > li > a {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            text-align: center;
+            width: 45px; }
+            .aui .dockbar .container > .nav > li > a > .nav-item-label, .aui .dockbar .container-fluid > .nav > li > a > .nav-item-label {
+              display: none; }
+            .aui .dockbar .container > .nav > li > a:focus, .aui .dockbar .container > .nav > li > a:hover, .aui .dockbar .container-fluid > .nav > li > a:focus, .aui .dockbar .container-fluid > .nav > li > a:hover {
+              background: #555;
+              color: #FFF; }
+              .aui .dockbar .container > .nav > li > a:focus > .nav-item-label, .aui .dockbar .container > .nav > li > a:hover > .nav-item-label, .aui .dockbar .container-fluid > .nav > li > a:focus > .nav-item-label, .aui .dockbar .container-fluid > .nav > li > a:hover > .nav-item-label {
+                display: none; }
+          .aui .dockbar .container > .nav > li.user-avatar .user-avatar-link .nav-item-label, .aui .dockbar .container-fluid > .nav > li.user-avatar .user-avatar-link .nav-item-label {
+            display: inline; }
+            .aui .dockbar .container > .nav > li.user-avatar .user-avatar-link .nav-item-label .user-full-name, .aui .dockbar .container-fluid > .nav > li.user-avatar .user-avatar-link .nav-item-label .user-full-name {
+              display: none; }
+          .aui .dockbar .container > .nav > li .icon-caret-down, .aui .dockbar .container-fluid > .nav > li .icon-caret-down {
+            display: none; }
+          .aui .dockbar .container > .nav > li.sign-in, .aui .dockbar .container-fluid > .nav > li.sign-in {
+            width: 100%; }
+            .aui .dockbar .container > .nav > li.sign-in > a, .aui .dockbar .container-fluid > .nav > li.sign-in > a {
+              float: right;
+              font-weight: bold;
+              width: auto; }
+              .aui .dockbar .container > .nav > li.sign-in > a > .nav-item-label, .aui .dockbar .container-fluid > .nav > li.sign-in > a > .nav-item-label {
+                display: block; } }
+            @media (max-width: 979px) and (min-width: 980px) {
+              .aui .dockbar .container > .nav > li.sign-in > a, .aui .dockbar .container-fluid > .nav > li.sign-in > a {
+                font-weight: normal; } }
+        .aui .dockbar .container > .nav.nav-account-controls, .aui .dockbar .container-fluid > .nav.nav-account-controls {
+          float: right;
+          padding: 0 5px;
+          position: static;
+          width: auto; }
+          @media (min-width: 980px) {
+            .aui .dockbar .container > .nav.nav-account-controls, .aui .dockbar .container-fluid > .nav.nav-account-controls {
+              position: relative; } }
+          @media (max-width: 979px) {
+            .aui .dockbar .container > .nav.nav-account-controls, .aui .dockbar .container-fluid > .nav.nav-account-controls {
+              display: -webkit-box;
+              display: -moz-box;
+              display: -webkit-flex;
+              display: -moz-flex;
+              display: flex;
+              display: -ms-flexbox;
+              float: left;
+              max-width: 100%;
+              min-width: 0;
+              padding: 0; }
+              .aui .dockbar .container > .nav.nav-account-controls .dropdown-menu .nav-item-label, .aui .dockbar .container-fluid > .nav.nav-account-controls .dropdown-menu .nav-item-label {
+                display: inline; } }
+          .aui .dockbar .container > .nav.nav-account-controls > li > a > .nav-item-icon, .aui .dockbar .container-fluid > .nav.nav-account-controls > li > a > .nav-item-icon {
+            display: none; }
+            @media (max-width: 979px) {
+              .aui .dockbar .container > .nav.nav-account-controls > li > a > .nav-item-icon, .aui .dockbar .container-fluid > .nav.nav-account-controls > li > a > .nav-item-icon {
+                display: inline-block; } }
+          .aui .dockbar .container > .nav.nav-account-controls > li.sign-in > a > .nav-item-icon, .aui .dockbar .container-fluid > .nav.nav-account-controls > li.sign-in > a > .nav-item-icon {
+            position: absolute;
+            right: 0;
+            width: auto; }
+            @media (max-width: 979px) {
+              .aui .dockbar .container > .nav.nav-account-controls > li.sign-in > a > .nav-item-icon, .aui .dockbar .container-fluid > .nav.nav-account-controls > li.sign-in > a > .nav-item-icon {
+                display: none; } }
+        @media (max-width: 979px) {
+          .aui .dockbar .container > .nav.nav-add-controls, .aui .dockbar .container > .nav.nav-navigation, .aui .dockbar .container-fluid > .nav.nav-add-controls, .aui .dockbar .container-fluid > .nav.nav-navigation {
+            position: static; } }
+        .aui .dockbar .container > .nav.nav-add-controls > li > a, .aui .dockbar .container > .nav.nav-navigation > li > a, .aui .dockbar .container-fluid > .nav.nav-add-controls > li > a, .aui .dockbar .container-fluid > .nav.nav-navigation > li > a {
+          display: none; }
+          @media (max-width: 979px) {
+            .aui .dockbar .container > .nav.nav-add-controls > li > a, .aui .dockbar .container > .nav.nav-navigation > li > a, .aui .dockbar .container-fluid > .nav.nav-add-controls > li > a, .aui .dockbar .container-fluid > .nav.nav-navigation > li > a {
+              display: inline-block; } }
+        @media (max-width: 979px) {
+          .aui .dockbar .container > .nav.nav-add-controls .open ul.dropdown-menu, .aui .dockbar .container > .nav.nav-navigation .open ul.dropdown-menu, .aui .dockbar .container-fluid > .nav.nav-add-controls .open ul.dropdown-menu, .aui .dockbar .container-fluid > .nav.nav-navigation .open ul.dropdown-menu {
+            display: block; } }
+        .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu {
+          background: transparent;
+          border-width: 0;
+          display: inline-block;
+          margin: 0;
+          padding: 0 5px;
+          position: static;
+          z-index: 350; }
+          @media (max-width: 979px) {
+            .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu {
+              background-color: #F6F6F6;
+              display: none;
+              left: 0;
+              margin: 3px 0 0 0;
+              padding: 0;
+              position: absolute;
+              top: 100%;
+              width: 100%; } }
+          .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu:after, .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu:before, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu:after, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu:before, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu:after, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu:before, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu:after, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu:before {
+            border-width: 0; }
+          .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li {
+            display: inline-block;
+            float: left;
+            margin: 0; }
+            @media (max-width: 979px) {
+              .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li {
+                display: block;
+                float: none; }
+                .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li.page-preview-controls, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li.page-preview-controls, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li.page-preview-controls, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li.page-preview-controls {
+                  display: none; } }
+            .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls a, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li.toggle-controls a, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls a, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li.toggle-controls a {
+              clip: rect(auto auto auto auto);
+              position: static;
+              visibility: visible; }
+            .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a {
+              margin: 0;
+              padding: 15px;
+              white-space: nowrap; }
+              @media (max-width: 979px) {
+                .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a {
+                  line-height: inherit;
+                  padding: 9px 15px; }
+                  .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a:focus, .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a:hover, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a:focus, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a:hover, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a:focus, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a:hover, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a:focus, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a:hover {
+                    background: #555;
+                    color: #FFF; } }
+              .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a:focus, .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a:hover, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a:focus, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a:hover, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a:focus, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a:hover, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a:focus, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a:hover {
+                background-color: transparent;
+                background-image: none;
+                color: #0077B3; }
+              .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a > .nav-item-icon, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a > .nav-item-icon, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a > .nav-item-icon, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a > .nav-item-icon {
+                margin-right: 0;
+                margin-top: 3px; }
+                @media (max-width: 979px) {
+                  .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a > .nav-item-icon, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a > .nav-item-icon, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a > .nav-item-icon, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a > .nav-item-icon {
+                    margin-top: 0; } }
+              .aui .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-label, .aui .dockbar .container > .nav.nav-navigation ul.dropdown-menu > li > a .nav-item-label, .aui .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-label, .aui .dockbar .container-fluid > .nav.nav-navigation ul.dropdown-menu > li > a .nav-item-label {
+                left: 0;
+                margin-left: 0;
+                margin-top: 0;
+                padding: 0;
+                position: relative; }
+      .aui .dockbar .container .site-administration-menu li, .aui .dockbar .container-fluid .site-administration-menu li {
+        list-style: none; }
+        .aui .dockbar .container .site-administration-menu li a, .aui .dockbar .container-fluid .site-administration-menu li a {
+          color: #000;
+          display: block;
+          padding: 3px 5px 3px 40px; }
+          .aui .dockbar .container .site-administration-menu li a:focus, .aui .dockbar .container .site-administration-menu li a:hover, .aui .dockbar .container-fluid .site-administration-menu li a:focus, .aui .dockbar .container-fluid .site-administration-menu li a:hover {
+            background: #0DB5E7;
+            color: #FFF;
+            text-decoration: none; }
+          .aui .dockbar .container .site-administration-menu li a i, .aui .dockbar .container-fluid .site-administration-menu li a i {
+            font-size: 0.8em; }
+    .aui .dockbar .nav.staging-nav-items {
+      margin: 0;
+      position: static; }
+      .aui .dockbar .nav.staging-nav-items li.dropdown.active > .dropdown-toggle {
+        background-color: transparent;
+        display: block; }
+        .aui .dockbar .nav.staging-nav-items li.dropdown.active > .dropdown-toggle:hover {
+          color: #0077B3; }
+      .aui .dockbar .nav.staging-nav-items .staging-link {
+        position: static; }
+    .aui .dockbar .nav > li.staging-toggle.active a, .aui .dockbar .nav > li.staging-toggle > a {
+      color: #555; }
+    .aui .dockbar .nav > li.staging-toggle > a {
+      padding: 4px 10px; }
+    .aui .dockbar .nav .staging-controls {
+      position: static; }
+    .aui .dockbar .nav-account-controls {
+      float: right; }
+    .aui .dockbar .nav-add-controls {
+      float: left; }
+    .aui .dockbar .navbar-brand h1 {
+      display: inline-block;
+      font-size: inherit;
+      line-height: 1;
+      margin-bottom: 0;
+      margin-top: 0; }
+      @media (max-width: 979px) {
+        .aui .dockbar .navbar-brand h1 {
+          line-height: 16px; } }
+    .aui .dockbar .navbar-btn {
+      float: left;
+      padding: 12px 15px; }
+      @media (max-width: 979px) {
+        .aui .dockbar .navbar-btn {
+          display: none; } }
+    .aui .dockbar .nav-navigation {
+      float: left; }
+    .aui .dockbar .page-customization-bar-container {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%; }
+    .aui .dockbar .staging-controls .staging-bar li.dropdown.live-link.open .dropdown-menu:after {
+      left: 73px; }
+    .aui .dockbar .staging-controls .staging-bar li.dropdown.live-link.open .dropdown-menu:before {
+      left: 72px; }
+    .aui .dockbar .staging-controls .staging-bar li.dropdown .dropdown-menu {
+      left: 0;
+      margin-left: 10px;
+      width: 100%; }
+    .aui .dockbar .staging-bar {
+      margin: 6px 0 0; }
+      .aui .dockbar .staging-bar, .aui .dockbar .staging-bar li.staging-toggle {
+        position: static; }
+    .aui .dockbar .user-avatar .user-avatar-image {
+      background: #333 no-repeat center;
+      background-size: auto 16px;
+      display: inline-block;
+      height: 16px;
+      margin-top: -2px;
+      vertical-align: middle;
+      width: 16px; }
+    .aui .dockbar .diamond {
+      display: none; }
+    .aui .dockbar .info-button {
+      margin-right: 5px;
+      right: auto;
+      top: auto; }
+      .aui .dockbar .info-button a {
+        color: #555;
+        display: block;
+        font-size: 20px;
+        padding: 10px 15px;
+        position: relative; }
+        .aui .dockbar .info-button a:focus, .aui .dockbar .info-button a:hover {
+          background-color: #FFF;
+          color: #0077B3;
+          text-decoration: none; }
+    .aui .dockbar .info-link-container {
+      width: auto; }
+      .aui .dockbar .info-link-container.open .info-button a {
+        background-color: #FFF; }
+  .aui .dockbar-split .dockbar {
+    height: 0;
+    position: absolute; }
+    @media (max-width: 979px) {
+      .aui .dockbar-split .dockbar {
+        height: auto;
+        position: relative; } }
+    .aui .dockbar-split .dockbar .diamond {
+      border: 12px solid transparent;
+      border-bottom-color: #1485EB;
+      display: block;
+      height: 0;
+      position: relative;
+      top: -12px;
+      width: 0; }
+      .aui .dockbar-split .dockbar .diamond:after {
+        border: 12px solid transparent;
+        border-top-color: #1485EB;
+        content: '';
+        height: 0;
+        left: -12px;
+        position: absolute;
+        top: 12px;
+        width: 0; }
+    .aui .dockbar-split .dockbar .info-button {
+      right: 12px;
+      top: 10px; }
+      .aui .dockbar-split .dockbar .info-button a {
+        color: #FFF;
+        display: inline;
+        font-size: 14px;
+        padding: 2px 10px;
+        position: absolute; }
+        .aui .dockbar-split .dockbar .info-button a:focus, .aui .dockbar-split .dockbar .info-button a:hover {
+          background-color: transparent; }
+    .aui .dockbar-split .dockbar .info-link-container {
+      position: relative;
+      width: 0; }
+      .aui .dockbar-split .dockbar .info-link-container.open .info-button a {
+        background-color: transparent; }
+    .aui .dockbar-split .dockbar .staging-controls .staging-bar li.dropdown .dropdown-menu {
+      left: 0;
+      margin-left: 0;
+      width: 100%; }
+    .aui .dockbar-split .dockbar .divider-vertical {
+      display: none; }
+    .aui .dockbar-split .dockbar .info-items {
+      left: auto;
+      position: static; }
+    .aui .dockbar-split .dockbar .nav > li.staging-toggle > a {
+      color: #FFF;
+      padding: 6px 10px; }
+    .aui .dockbar-split .dockbar .container, .aui .dockbar-split .dockbar .container-fluid {
+      z-index: 400; }
+      .aui .dockbar-split .dockbar .container.open, .aui .dockbar-split .dockbar .container-fluid.open {
+        overflow: visible; }
+      .aui .dockbar-split .dockbar .container > .nav.nav-account-controls, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-account-controls {
+        background: #333;
+        left: auto;
+        margin-right: 0;
+        padding: 0;
+        position: fixed;
+        right: 5em;
+        z-index: 325; }
+        @media (max-width: 979px) {
+          .aui .dockbar-split .dockbar .container > .nav.nav-account-controls, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-account-controls {
+            background: transparent;
+            position: static;
+            right: auto; } }
+      @media (max-width: 979px) {
+        .aui .dockbar-split .dockbar .container > .nav.nav-add-controls .open ul.dropdown-menu, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls .open ul.dropdown-menu {
+          display: block; } }
+      .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu {
+        background: transparent;
+        display: block;
+        min-width: 0;
+        position: fixed;
+        right: auto;
+        top: 10%;
+        z-index: 350; }
+        @media (max-width: 979px) {
+          .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu {
+            background-color: #F6F6F6;
+            display: none;
+            position: absolute;
+            top: 100%; } }
+        .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li {
+          display: block;
+          float: none;
+          margin: 10px;
+          position: relative; }
+          @media (max-width: 979px) {
+            .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li {
+              margin: 0; }
+              .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li.page-preview-controls, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li.page-preview-controls {
+                display: none; } }
+          .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls a, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls a {
+            clip: rect(0 0 0 0);
+            position: absolute; }
+            @media (max-width: 979px) {
+              .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls a, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls a {
+                clip: rect(auto auto auto auto);
+                position: static; } }
+            .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls a:focus, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls a:focus {
+              clip: rect(auto auto auto auto);
+              position: static; }
+          .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a {
+            background: #333;
+            color: #FFF;
+            padding: 6px 8px;
+            text-align: center; }
+            @media (max-width: 979px) {
+              .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a {
+                background: transparent;
+                color: inherit;
+                padding: 9px 15px;
+                text-align: left; } }
+            .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-icon, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-icon {
+              font-size: 25px;
+              margin-right: 0;
+              position: relative;
+              vertical-align: middle; }
+              @media (max-width: 979px) {
+                .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-icon, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-icon {
+                  font-size: inherit;
+                  margin-top: 0; } }
+            .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-label, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-label {
+              background: #333;
+              display: none;
+              left: 100%;
+              margin-left: 0.5em;
+              margin-top: -1em;
+              padding: 0 20px;
+              position: absolute;
+              top: 50%;
+              white-space: nowrap; }
+              @media (max-width: 979px) {
+                .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-label, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a .nav-item-label {
+                  background: transparent;
+                  display: inline-block;
+                  margin-left: 0;
+                  margin-top: 0;
+                  padding: 0;
+                  position: static; } }
+            @media (max-width: 979px) {
+              .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a:focus, .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a:hover, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a:focus, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a:hover {
+                background: #555;
+                color: #FFF; } }
+            .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a:hover .nav-item-label, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a:hover .nav-item-label {
+              display: block; }
+              @media (max-width: 979px) {
+                .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li > a:hover .nav-item-label, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li > a:hover .nav-item-label {
+                  display: inline-block; } }
+        .aui .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu:hover > li.toggle-controls a, .aui .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu:hover > li.toggle-controls a {
+          clip: rect(auto auto auto auto);
+          position: static; }
+      .aui .dockbar-split .dockbar .container > .nav > li > a, .aui .dockbar-split .dockbar .container-fluid > .nav > li > a {
+        color: #FFF;
+        line-height: 31px;
+        padding: 6px 15px; }
+        @media (max-width: 979px) {
+          .aui .dockbar-split .dockbar .container > .nav > li > a, .aui .dockbar-split .dockbar .container-fluid > .nav > li > a {
+            color: inherit; } }
+      .aui .dockbar-split .dockbar .container > .nav > li.active > a, .aui .dockbar-split .dockbar .container-fluid > .nav > li.active > a {
+        color: #FFF; }
+      .aui .dockbar-split .dockbar .container > .nav > li.info-items, .aui .dockbar-split .dockbar .container-fluid > .nav > li.info-items {
+        left: auto;
+        top: auto; }
+      .aui .dockbar-split .dockbar .container > .nav > li.open > a, .aui .dockbar-split .dockbar .container-fluid > .nav > li.open > a {
+        color: #333; }
+    .aui .dockbar-split .dockbar .page-customization-bar-container {
+      position: absolute;
+      right: 100%;
+      top: 0;
+      width: 320px; }
+    .aui .dockbar-split .dockbar .staging-nav-items li > span {
+      color: #FFF;
+      display: block;
+      line-height: 31px;
+      padding: 10px 15px; }
+  .aui .dockbar-split .info-items {
+    height: 1px; }
+    .aui .dockbar-split .info-items a, .aui .dockbar-split .info-items .btn-link {
+      color: #FFF;
+      text-decoration: underline; }
+      .aui .dockbar-split .info-items a:hover, .aui .dockbar-split .info-items .btn-link:hover {
+        text-decoration: none; }
+        .aui .dockbar-split .info-items a:hover .taglib-text, .aui .dockbar-split .info-items .btn-link:hover .taglib-text {
+          text-decoration: none; }
+    .aui .dockbar-split .info-items .btn-link {
+      border-width: 0;
+      font-size: 14px;
+      font-weight: 300;
+      margin: 0 0 0 6px;
+      padding: 0;
+      text-shadow: none; }
+  .aui .dockbar-split.controls-hidden .dockbar .nav-add-controls li.toggle-controls > .toggle-controls-link {
+    background: #F5AF45; }
+  .aui .dockbar-split.lfr-has-add-content .nav-add-controls ul.dropdown-menu {
+    left: 350px; }
+  .aui .dockbar-split.lfr-has-device-preview .nav-add-controls ul.dropdown-menu {
+    left: 220px; }
+  .aui .dockbar-split.lfr-has-edit-layout .nav-add-controls ul.dropdown-menu {
+    left: 460px; }
+  .aui.dialog-iframe-root-node .dockbar .container > .nav.nav-add-controls .dropdown-menu .page-preview-controls, .aui.dialog-iframe-root-node .dockbar .container-fluid > .nav.nav-add-controls .dropdown-menu .page-preview-controls {
+    display: none; }
+  .aui .signed-out .dockbar .container > .nav-account-controls, .aui .signed-out .dockbar .container-fluid > .nav-account-controls {
+    position: absolute;
+    right: 0; }
+    @media (min-width: 980px) {
+      .aui .signed-out .dockbar .container > .nav-account-controls, .aui .signed-out .dockbar .container-fluid > .nav-account-controls {
+        position: relative; } }
+  .aui .signed-out.dockbar-split .dockbar .container > .nav-account-controls, .aui .signed-out.dockbar-split .dockbar .container-fluid > .nav-account-controls {
+    position: absolute;
+    right: 0; }
+    @media (min-width: 980px) {
+      .aui .signed-out.dockbar-split .dockbar .container > .nav-account-controls, .aui .signed-out.dockbar-split .dockbar .container-fluid > .nav-account-controls {
+        position: fixed;
+        right: 5em; } }
+  .aui .touch .dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls > a.toggle-controls-link, .aui .touch .dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls > a.toggle-controls-link, .aui .controls-hidden.dockbar-split .dockbar .container > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls > a.toggle-controls-link, .aui .controls-hidden.dockbar-split .dockbar .container-fluid > .nav.nav-add-controls ul.dropdown-menu > li.toggle-controls > a.toggle-controls-link {
+    clip: rect(auto auto auto auto);
+    position: static; }
+  .aui .variation-selector {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 1em; }
+  .aui .layout-revision-container {
+    margin: 1em 0 0 1em;
+    padding: 0; }
+    .aui .layout-revision-container .current-version {
+      color: #41801D;
+      display: block; }
+    .aui .layout-revision-container .layout-variation-name {
+      color: #666;
+      font-size: 1.15em;
+      margin-bottom: 0.1em;
+      text-transform: uppercase; }
+    .aui .layout-revision-container .taglib-workflow-status .workflow-status {
+      background: none;
+      padding-left: 0; }
+      .aui .layout-revision-container .taglib-workflow-status .workflow-status .workflow-status-ready-for-publication {
+        color: #41801D;
+        font-weight: bold; }
+  .aui .layout-revision-container-root {
+    margin: 0; }
+  .aui .staging-controls {
+    padding-left: 5px;
+    padding-right: 25px; }
+    .aui .staging-controls select {
+      width: 100%; }
+    .aui .staging-controls .staging-bar .dropdown-menu {
+      font-size: 13px;
+      position: absolute;
+      top: 100%;
+      width: 100%; }
+      .aui .staging-controls .staging-bar .dropdown-menu .btn-link {
+        float: left;
+        font-size: 11px;
+        margin: 0 5px 0 0;
+        padding: 0;
+        text-decoration: underline;
+        text-shadow: none; }
+        .aui .staging-controls .staging-bar .dropdown-menu .btn-link:hover {
+          text-decoration: none; }
+        .aui .staging-controls .staging-bar .dropdown-menu .btn-link.history {
+          float: right; }
+  .aui .lfr-admin-panel {
+    background-color: #FFF;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1100; }
+    .aui .lfr-admin-panel .add-content-menu .content-link {
+      border-color: #488F06;
+      color: #488F06; }
+      .aui .lfr-admin-panel .add-content-menu .content-link:active, .aui .lfr-admin-panel .add-content-menu .content-link:hover {
+        background-color: #488F06;
+        color: #F1FBD1;
+        text-decoration: none; }
+    @media (max-width: 979px) {
+      .aui .lfr-admin-panel {
+        position: static;
+        width: auto; }
+        .aui .lfr-admin-panel.lfr-add-panel .add-content-menu .lfr-add-page-toolbar, .aui .lfr-admin-panel.lfr-edit-layout-panel .taglib-form-navigator .button-holder {
+          margin-top: 0;
+          position: static;
+          width: auto; }
+        .aui .lfr-admin-panel.lfr-edit-layout-panel .taglib-form-navigator .panel-group {
+          margin-bottom: 20px; }
+        .aui .lfr-admin-panel.lfr-edit-layout-panel .site-admin-link {
+          padding: 0;
+          position: static; } }
+      @media (max-width: 979px) and (min-width: 768px) and (max-width: 979px) {
+        .aui .lfr-admin-panel {
+          margin: 0; } }
+  .aui .lfr-has-add-content {
+    padding-left: 350px; }
+  .aui .lfr-has-device-preview {
+    padding-left: 220px; }
+  .aui .lfr-has-edit-layout {
+    padding-left: 460px; }
+  .aui .lfr-has-add-content, .aui .lfr-has-device-preview, .aui .lfr-has-edit-layout {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    -webkit-overflow-scrolling: touch; }
+    @media (max-width: 979px) {
+      .aui .lfr-has-add-content, .aui .lfr-has-device-preview, .aui .lfr-has-edit-layout {
+        height: auto;
+        padding-left: 0;
+        position: static;
+        width: auto; } }
+    .aui .lfr-has-add-content #wrapper, .aui .lfr-has-device-preview #wrapper, .aui .lfr-has-edit-layout #wrapper {
+      height: 100%;
+      overflow: auto;
+      width: 100%;
+      -webkit-overflow-scrolling: touch; }
+  .aui .dropdown-menu > li > a:focus > [class^="icon-"], .aui .dropdown-menu > li > a:focus > [class*=" icon-"], .aui .dropdown-submenu:focus > a > [class^="icon-"], .aui .dropdown-submenu:focus > a > [class*=" icon-"] {
+    background-image: none; }
+  .aui .my-sites-menu .site-type {
+    color: #FFF;
+    display: none;
+    float: right;
+    font-size: 0.8em;
+    font-weight: normal;
+    margin-right: 10px;
+    position: absolute;
+    right: 100%; }
+  .aui .my-sites-menu a:hover .site-type {
+    color: #FFF;
+    display: inline-block; }
+  .aui .ie.rtl .dockbar .menu-button span {
+    background-position-x: -25px; }
+  .aui.ie6 .dockbar .container .nav-account-controls > li, .aui.ie6 .dockbar .container-fluid .nav-account-controls > li, .aui.ie7 .dockbar .container .nav-account-controls > li, .aui.ie7 .dockbar .container-fluid .nav-account-controls > li, .aui.ie8 .dockbar .container .nav-account-controls > li, .aui.ie8 .dockbar .container-fluid .nav-account-controls > li {
+    float: left; }
+  .aui.ie6 .dockbar-split .dockbar .nav-add-controls li.page-preview-controls, .aui.ie7 .dockbar-split .dockbar .nav-add-controls li.page-preview-controls, .aui.ie8 .dockbar-split .dockbar .nav-add-controls li.page-preview-controls {
+    display: none; }
+  .aui.ie6 .dockbar .container .nav-account-controls, .aui.ie6 .dockbar .container-fluid .nav-account-controls, .aui.ie7 .dockbar .container .nav-account-controls, .aui.ie7 .dockbar .container-fluid .nav-account-controls, .aui.ie8 .dockbar .container .nav-account-controls, .aui.ie8 .dockbar .container-fluid .nav-account-controls, .aui.ie9 .dockbar .container .nav-account-controls, .aui.ie9 .dockbar .container-fluid .nav-account-controls {
+    width: auto; }
+  .aui.ie6 .signed-out .dockbar .container .nav-account-controls, .aui.ie6 .signed-out .dockbar .container-fluid .nav-account-controls, .aui.ie7 .signed-out .dockbar .container .nav-account-controls, .aui.ie7 .signed-out .dockbar .container-fluid .nav-account-controls, .aui.ie8 .signed-out .dockbar .container .nav-account-controls, .aui.ie8 .signed-out .dockbar .container-fluid .nav-account-controls, .aui.ie9 .signed-out .dockbar .container .nav-account-controls, .aui.ie9 .signed-out .dockbar .container-fluid .nav-account-controls {
+    float: right; }
+  .aui .ie7 .dockbar {
+    zoom: 1; }
+  .aui .ie7 .my-sites-menu a {
+    overflow: visible;
+    text-align: left; }
+  .aui .ie7 .my-sites-menu .site-name {
+    float: none; }
+  .aui .ie7 .my-sites-menu .site-type {
+    float: none; }
+  .aui .ie6 .dockbar, .aui .ie6 .lfr-dockbar-pinned .dockbar {
+    height: 10px;
+    left: 0;
+    position: relative;
+    top: 0; }
+  .aui .ie6 .dockbar .pin-dockbar {
+    display: none; }
+  .aui .ie6 .my-sites-menu {
+    width: 200px; }
+    .aui .ie6 .my-sites-menu a {
+      zoom: 1; }
+  .aui .ie6 .menu-scroll {
+    height: 300px;
+    overflow-y: auto; }
+  .aui .controls-hidden .info-button, .aui .controls-hidden .page-customization-bar {
+    display: none; }
+  .aui .info-button {
+    cursor: pointer;
+    position: relative;
+    right: 12px;
+    z-index: 1; }
+    .aui .info-button a {
+      color: #FFF;
+      padding: 2px 10px;
+      position: absolute;
+      text-decoration: none;
+      z-index: 1; }
+    .aui .info-button .icon-stop {
+      color: #1485EB;
+      font-size: 20px; }
+  .aui .page-customization-bar {
+    background-color: #555;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    display: table;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0 15px;
+    width: 100%; }
+    .aui .page-customization-bar .customized-icon {
+      margin: 5px;
+      vertical-align: middle; }
+    .aui .page-customization-bar .page-customization-actions {
+      padding-left: 5em; }
+    .aui .page-customization-bar .page-customization-actions a {
+      color: #EEE;
+      font-size: 0.8em;
+      padding: 0 1em; }
+    .aui .page-customization-bar .page-customization-bar-form {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      width: 25%; }
+      .aui .page-customization-bar .page-customization-bar-form a {
+        color: #FFF; }
+        .aui .page-customization-bar .page-customization-bar-form a:focus, .aui .page-customization-bar .page-customization-bar-form a:hover {
+          color: #FFF;
+          text-decoration: none; }
+      .aui .page-customization-bar .page-customization-bar-form span {
+        display: block;
+        line-height: 20px; }
+    .aui .page-customization-bar .page-customization-bar-text {
+      display: table-cell;
+      padding: 12px 0;
+      vertical-align: middle;
+      width: 75%; }
+    .aui .page-customization-bar .page-customization-bar-container {
+      position: absolute; }
+    .aui .page-customization-bar .reset-prototype {
+      display: inline; }
+  .aui .page-customization-bar-container {
+    position: absolute;
+    right: 100%;
+    top: -1px;
+    width: 320px; }
+  .aui .dockbar .container > .nav > li.info-items, .aui .dockbar .container-fluid > .nav > li.info-items {
+    background-image: none; }
+  .aui .dockbar .nav-navigation .dropdown-menu {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  @media (min-width: 1400px) {
+    .aui .dockbar-split .dockbar .page-customization-bar-container {
+      width: 963px; }
+    .aui .dockbar-split.staging-ready .page-customization-bar-container {
+      width: 722px; } }
+  @media (min-width: 1152px) and (max-width: 1399px) {
+    .aui .dockbar-split .dockbar .page-customization-bar-container {
+      width: 715px; }
+    .aui .dockbar-split.staging-ready .page-customization-bar-container {
+      width: 475px; } }
+  @media (min-width: 980px) and (max-width: 1151px) {
+    .aui .dockbar-split .dockbar .page-customization-bar-container {
+      width: 542px; }
+    .aui .dockbar-split.staging-ready .page-customization-bar-container {
+      width: 302px; } }
+  @media (max-width: 979px) {
+    .aui .dockbar .info-link-container, .aui .dockbar-split .dockbar .info-link-container {
+      padding: 0;
+      width: auto; }
+      .aui .dockbar .info-link-container .diamond, .aui .dockbar-split .dockbar .info-link-container .diamond {
+        display: none; }
+      .aui .dockbar .info-link-container .info-button, .aui .dockbar-split .dockbar .info-link-container .info-button {
+        right: auto;
+        top: auto; }
+      .aui .dockbar .info-link-container .info-link, .aui .dockbar-split .dockbar .info-link-container .info-link {
+        color: #333;
+        display: block;
+        margin: 5px 0 0 5px;
+        padding: 12px 18px;
+        position: relative; }
+        .aui .dockbar .info-link-container .info-link:focus, .aui .dockbar .info-link-container .info-link:hover, .aui .dockbar-split .dockbar .info-link-container .info-link:focus, .aui .dockbar-split .dockbar .info-link-container .info-link:hover {
+          background-color: #555;
+          text-decoration: none; }
+    .aui .dockbar-split .dockbar .info-link-container.open .info-button a {
+      background-color: #FFF; }
+    .aui .dockbar-split .dockbar .container > .nav > li.info-items, .aui .dockbar-split .dockbar .container-fluid > .nav > li.info-items {
+      left: 0;
+      top: 100%; }
+    .aui .dockbar-split .dockbar .page-customization-bar-container {
+      position: static;
+      width: 100%; }
+    .aui .portlet-staging-bar .layout-revision-actions a.taglib-icon {
+      padding: 9px 15px; }
+    .aui .portlet-staging-bar .layout-revision-actions [class^="icon-"] {
+      margin-left: 0; }
+    .aui .dockbar .staging-controls {
+      padding: 0; }
+      .aui .dockbar .staging-controls .staging-bar li.dropdown .dropdown-menu {
+        background-color: #FFF;
+        margin: 0;
+        padding: 10px; } }
+  @media (max-width: 767px) {
+    .aui .portlet-staging-bar .layout-revision-actions a.taglib-icon {
+      margin-left: -5px; } }

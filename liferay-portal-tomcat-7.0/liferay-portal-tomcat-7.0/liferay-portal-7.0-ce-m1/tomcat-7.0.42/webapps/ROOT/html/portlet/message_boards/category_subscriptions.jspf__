@@ -1,0 +1,61 @@
+﻿ package PackageNo1873629089; public class category_subscriptions_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( rssDelta )+response.write(request.getAttribute(" rssDelta "));
+     response.write( rssDisplayStyle )+response.write(request.getAttribute(" rssDisplayStyle "));
+ response.write( rssFeedType )+response.write(request.getAttribute(" rssFeedType "));
+    response.write( rssURL )+response.write(request.getAttribute(" rssURL "));
+
+
+
+
+
+
+
+
+  response.write(Constants.getUNSUBSCRIBE())+response.write(request.getAttribute("Constants").getUNSUBSCRIBE());
+  response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+  response.write(String.getValueOf(MBCategoryConstants().getDEFAULT_PARENT_CATEGORY_ID))+response.write(request.getAttribute("String").getValueOf(MBCategoryConstants().getDEFAULT_PARENT_CATEGORY_ID));
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+
+      response.write( unsubscribeURL )+response.write(request.getAttribute(" unsubscribeURL "));
+
+
+
+
+
+  response.write(Constants.getSUBSCRIBE())+response.write(request.getAttribute("Constants").getSUBSCRIBE());
+  response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+  response.write(String.getValueOf(MBCategoryConstants().getDEFAULT_PARENT_CATEGORY_ID))+response.write(request.getAttribute("String").getValueOf(MBCategoryConstants().getDEFAULT_PARENT_CATEGORY_ID));
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+
+      response.write( subscribeURL )+response.write(request.getAttribute(" subscribeURL "));
+}
+
+}

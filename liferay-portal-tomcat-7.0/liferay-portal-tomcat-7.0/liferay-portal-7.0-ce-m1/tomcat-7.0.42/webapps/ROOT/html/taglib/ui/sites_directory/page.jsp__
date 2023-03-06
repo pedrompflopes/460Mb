@@ -1,0 +1,152 @@
+﻿ package PackageNo1437109923;import _html_taglib_init_jsp;import com.liferay.portal.util.comparator.GroupNameComparator;import com.liferay.taglib.ui.SitesDirectoryTag; public class page_jsp {  /* 1 */ private void _buildSitesList(Group rootGroup, Group curGroup, List<Group> branchGroups, ThemeDisplay themeDisplay, int groupLevel, boolean showHierarchy, boolean nestedChildren, StringBundler sb) throws Exception { /* 159 */ 	List<Group> childGroups = null; /* 160 */ 	if (rootGroup != null) { /* 162 */ 		childGroups = rootGroup.getChildrenWithLayouts(true, QueryUtil.ALL_POS, QueryUtil.ALL_POS, new GroupNameComparator(true)); /* 163 */ 	} /* 164 */ 	else { /* 165 */ 		childGroups = GroupLocalServiceUtil.getLayoutsGroups(curGroup.getCompanyId(), GroupConstants.DEFAULT_LIVE_GROUP_ID, true, QueryUtil.ALL_POS, QueryUtil.ALL_POS, new GroupNameComparator(true)); /* 166 */ 	} /* 167 */ 	if (childGroups.isEmpty()) { /* 169 */ 		if (sb.length() == 0) { /* 170 */ 			sb.append("<div class=\"alert alert-info\">"); /* 171 */ 			sb.append(LanguageUtil.get(themeDisplay.getLocale(), "no-sites-were-found")); /* 172 */ 			sb.append("</div>"); /* 173 */ 		} /* 174 */ 		return; /* 176 */ 	} /* 177 */ 	StringBundler tailSB = null; /* 179 */ 	if (!nestedChildren) { /* 181 */ 		tailSB = new StringBundler(); /* 182 */ 	} /* 183 */ 	sb.append("<ul class=\"sites level-"); /* 185 */ 	sb.append(groupLevel); /* 186 */ 	sb.append("\">"); /* 187 */ 	for (Group childGroup : childGroups) { /* 189 */ 		boolean open = false; /* 190 */ 		if (showHierarchy) { /* 192 */ 			open = true; /* 193 */ 		} /* 194 */ 		String className = StringPool.BLANK; /* 196 */ 		if (open) { /* 198 */ 			className += "open "; /* 199 */ 		} /* 200 */ 		if (curGroup.getGroupId() == childGroup.getGroupId()) { /* 202 */ 			className += "selected "; /* 203 */ 		} /* 204 */ 		sb.append("<li "); /* 206 */ 		if (Validator.isNotNull(className)) { /* 208 */ 			sb.append("class=\""); /* 209 */ 			sb.append(className); /* 210 */ 			sb.append("\" "); /* 211 */ 		} /* 212 */ 		sb.append(">"); /* 214 */ 		if (childGroup.getGroupId() != themeDisplay.getScopeGroupId()) { /* 216 */ 			sb.append("<a "); /* 217 */ 		} /* 218 */ 		else { /* 219 */ 			sb.append("<span "); /* 220 */ 		} /* 221 */ 		if (Validator.isNotNull(className)) { /* 223 */ 			sb.append("class=\""); /* 224 */ 			sb.append(className); /* 225 */ 			sb.append("\" "); /* 226 */ 		} /* 227 */ 		if (childGroup.getGroupId() != themeDisplay.getScopeGroupId()) { /* 229 */ 			sb.append("href=\""); /* 230 */ 			sb.append(HtmlUtil.escapeHREF(PortalUtil.getGroupFriendlyURL(childGroup, !childGroup.hasPublicLayouts(), themeDisplay))); /* 231 */ 			sb.append("\""); /* 232 */ 		} /* 233 */ 		sb.append("> "); /* 235 */ 		sb.append(HtmlUtil.escape(childGroup.getDescriptiveName(themeDisplay.getLocale()))); /* 237 */ 		if (childGroup.getGroupId() != themeDisplay.getScopeGroupId()) { /* 239 */ 			sb.append("</a>"); /* 240 */ 		} /* 241 */ 		else { /* 242 */ 			sb.append("</span>"); /* 243 */ 		} /* 244 */ 		if (open) { /* 246 */ 			StringBundler childGroupSB = null; /* 247 */ 			if (nestedChildren) { /* 249 */ 				childGroupSB = sb; /* 250 */ 			} /* 251 */ 			else { /* 252 */ 				childGroupSB = tailSB; /* 253 */ 			} /* 254 */ 			_buildSitesList(childGroup, curGroup, branchGroups, themeDisplay, groupLevel + 1, showHierarchy, nestedChildren, childGroupSB); /* 256 */ 		} /* 257 */ 		sb.append("</li>"); /* 259 */ 	} /* 260 */ 	sb.append("</ul>"); /* 262 */ 	if (!nestedChildren) { /* 264 */ 		sb.append(tailSB); /* 265 */ 	} /* 266 */ } /* 267 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ String displayStyle = (String)request.getAttribute("liferay-ui:sites-directory:displayStyle"); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ String sites = (String)request.getAttribute("liferay-ui:sites-directory:sites"); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ Group group = GroupLocalServiceUtil.getGroup(scopeGroupId); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\sites_directory\page.jsp */
+
+
+
+      
+     	Group rootGroup = null;
+     	boolean hidden = false;
+     
+     	List<Group> branchGroups = new ArrayList<Group>();
+     
+     	branchGroups.add(group);
+     	branchGroups.addAll(group.getAncestors());
+     
+     	if (sites.equals(SitesDirectoryTag.SITES_TOP_LEVEL)) {
+     	}
+     	else if (sites.equals(SitesDirectoryTag.SITES_CHILDREN) && (branchGroups.size() > 0)) {
+     		rootGroup = branchGroups.get(0);
+     	}
+     	else if (sites.equals(SitesDirectoryTag.SITES_SIBLINGS) && (branchGroups.size() > 1)) {
+     		rootGroup = branchGroups.get(1);
+     	}
+     	else if (sites.equals(SitesDirectoryTag.SITES_SIBLINGS) && group.isRoot()) {
+     	}
+     	else if (sites.equals(SitesDirectoryTag.SITES_PARENT_LEVEL) && (branchGroups.size() > 2)) {
+     		rootGroup = branchGroups.get(2);
+     	}
+     	else if (sites.equals(SitesDirectoryTag.SITES_PARENT_LEVEL) && (branchGroups.size() == 2)) {
+     	}
+     	else {
+     		hidden = true;
+     	}
+     	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( displayStyle )+response.write(request.getAttribute(" displayStyle "));
+
+
+
+
+     
+     								PortletURL portletURL = PortletURLFactoryUtil.create(request, portletDisplay.getId(), plid, PortletRequest.RENDER_PHASE);
+     								
+
+      response.write( portletURL )+response.write(request.getAttribute(" portletURL "));
+
+      
+     									List<Group> childGroups = null;
+     
+     									if (rootGroup != null) {
+     										childGroups = rootGroup.getChildrenWithLayouts(true, QueryUtil.ALL_POS, QueryUtil.ALL_POS, new GroupNameComparator(true));
+     									}
+     									else {
+     										childGroups = GroupLocalServiceUtil.getLayoutsGroups(group.getCompanyId(), GroupConstants.DEFAULT_LIVE_GROUP_ID, true, QueryUtil.ALL_POS, QueryUtil.ALL_POS, new GroupNameComparator(true));
+     									}
+     
+     									Set<Group> visibleGroups = new LinkedHashSet<Group>();
+     
+     									for (Group childGroup : childGroups) {
+     										if (childGroup.hasPublicLayouts()) {
+     											visibleGroups.add(childGroup);
+     										}
+     										else if (GroupLocalServiceUtil.hasUserGroup(user.getUserId(), childGroup.getGroupId())) {
+     											visibleGroups.add(childGroup);
+     										}
+     									}
+     
+     									total = visibleGroups.size();
+     
+     									searchContainer.setTotal(total);
+     									
+
+
+     response.write( ListUtil.subList(new ArrayList<Group>(visibleGroups), searchContainer.getStart(), searchContainer.getEnd()) )+response.write(request.getAttribute(" ListUtil").subList(new ArrayList<Group>(visibleGroups), searchContainer.getStart(), searchContainer.getEnd()) );
+
+
+
+
+
+
+
+       
+     										LayoutSet layoutSet = null;
+     
+     										if (childGroup.hasPublicLayouts()) {
+     											layoutSet = childGroup.getPublicLayoutSet();
+     										}
+     										else {
+     											layoutSet = childGroup.getPrivateLayoutSet();
+     										}
+     										
+
+
+     response.write( Group.class.getName() );
+   response.write( childGroup.getGroupId() )+response.write(request.getAttribute(" childGroup").getGroupId() );
+response.write( Group.class.getName() );
+      response.write( childGroup.getGroupId() )+response.write(request.getAttribute(" childGroup").getGroupId() );
+  response.write( HtmlUtil.escape(childGroup.getDescription()) )+response.write(request.getAttribute(" HtmlUtil").escape(childGroup.getDescription()) );
+   response.write( displayStyle )+response.write(request.getAttribute(" displayStyle "));
+   response.write( false )+response.write(request.getAttribute(" false "));
+   response.write( themeDisplay.getPathImage() + "/layout_set_logo?img_id=" + layoutSet.getLogoId() + "&t=" + WebServerServletTokenUtil.getToken(layoutSet.getLogoId()) );
+    response.write( HtmlUtil.escape(childGroup.getDescriptiveName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(childGroup.getDescriptiveName(locale)) );
+  response.write( (childGroup.getGroupId() != scopeGroupId) ? PortalUtil.getGroupFriendlyURL(childGroup, !childGroup.hasPublicLayouts(), themeDisplay) : null );
+
+
+
+ response.write( searchContainer )+response.write(request.getAttribute(" searchContainer "));
+
+
+
+
+
+
+   
+     						StringBundler sb = new StringBundler();
+     
+     						_buildSitesList(rootGroup, group, branchGroups, themeDisplay, 1, displayStyle.equals("list-hierarchy"), true, sb);
+     
+     						String content = sb.toString();
+     						
+
+response.write( content );
+}
+
+}

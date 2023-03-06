@@ -1,0 +1,149 @@
+﻿ package PackageNo101038314; public class display_settings_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+  response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+ 
+     				String taglibRemoveFolder = "Liferay.Util.removeFolderSelection('rootFolderId', 'rootFolderName', '" + renderResponse.getNamespace() + "');";
+     				
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     				Set<String> availableFolderColumns = SetUtil.fromArray(StringUtil.split(allFolderColumns));
+     
+     				// Left list
+     
+     				List leftList = new ArrayList();
+     
+     				for (String folderColumn : folderColumns) {
+     					leftList.add(new KeyValuePair(folderColumn, LanguageUtil.get(request, folderColumn)));
+     				}
+     
+     				// Right list
+     
+     				List rightList = new ArrayList();
+     
+     				Arrays.sort(folderColumns);
+     
+     				for (String folderColumn : availableFolderColumns) {
+     					if (Arrays.binarySearch(folderColumns, folderColumn) < 0) {
+     						rightList.add(new KeyValuePair(folderColumn, LanguageUtil.get(request, folderColumn)));
+     					}
+     				}
+     
+     				rightList = ListUtil.sort(rightList, new KeyValuePairComparator(false, true));
+     				
+
+
+
+ response.write( leftList );
+
+
+
+  response.write( rightList );
+
+
+
+
+
+
+  response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+ 
+     				Set<String> availableEntryColumns = SetUtil.fromArray(StringUtil.split(allEntryColumns));
+     
+     				// Left list
+     
+     				List leftList = new ArrayList();
+     
+     				for (int i = 0; i < entryColumns.length; i++) {
+     					String entryColumn = entryColumns[i];
+     
+     					leftList.add(new KeyValuePair(entryColumn, LanguageUtil.get(request, entryColumn)));
+     				}
+     
+     				// Right list
+     
+     				List rightList = new ArrayList();
+     
+     				Arrays.sort(entryColumns);
+     
+     				for (String entryColumn : availableEntryColumns) {
+     					if (Arrays.binarySearch(entryColumns, entryColumn) < 0) {
+     						rightList.add(new KeyValuePair(entryColumn, LanguageUtil.get(request, entryColumn)));
+     					}
+     				}
+     
+     				rightList = ListUtil.sort(rightList, new KeyValuePairComparator(false, true));
+     				
+
+
+
+ response.write( leftList );
+
+
+
+  response.write( rightList );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escapeJS(PortalUtil.getPortletNamespace(portletResource)) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(PortalUtil.getPortletNamespace(portletResource)) );
+
+     response.write( portletResource )+response.write(request.getAttribute(" portletResource "));response.write( LiferayWindowState.POP_UP.toString() )+response.write(request.getAttribute(" LiferayWindowState").POP_UP.toString() );
+}
+
+}

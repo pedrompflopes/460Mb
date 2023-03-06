@@ -1,0 +1,76 @@
+﻿ package PackageNo1421778466; public class toolbar_content_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	List<LayoutSetPrototype> layoutSetPrototypes = LayoutSetPrototypeServiceUtil.search(company.getCompanyId(), Boolean.TRUE, null);
+     	
+
+      
+     	boolean hasAddLayoutSetPrototypePermission = PortalPermissionUtil.contains(permissionChecker, ActionKeys.ADD_LAYOUT_SET_PROTOTYPE);
+     	
+
+
+
+     response.write(sitesListView)+response.write(request.getAttribute("sitesListView"));
+
+
+
+
+     response.write(Constants.getADD())+response.write(request.getAttribute("Constants").getADD());
+     response.write(viewSitesURL)+response.write(request.getAttribute("viewSitesURL"));
+
+
+
+
+ response.write( addSiteURL )+response.write(request.getAttribute(" addSiteURL "));response.write( toolbarItem.equals("add") );
+
+
+     response.write( true )+response.write(request.getAttribute(" true "));response.write( toolbarItem.equals("add") );
+
+ 
+     				addSiteURL.setParameter("showPrototypes", "0");
+     				
+
+  response.write( addSiteURL.toString() )+response.write(request.getAttribute(" addSiteURL").toString() );
+
+ 
+     				addSiteURL.setParameter("showPrototypes", "1");
+     
+     				for (LayoutSetPrototype layoutSetPrototype : layoutSetPrototypes) {
+     					addSiteURL.setParameter("layoutSetPrototypeId", String.valueOf(layoutSetPrototype.getLayoutSetPrototypeId()));
+     				
+
+   response.write( addSiteURL.toString() )+response.write(request.getAttribute(" addSiteURL").toString() );response.write( HtmlUtil.escape(layoutSetPrototype.getName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(layoutSetPrototype.getName(locale)) );
+
+ 
+     				}
+     				
+
+
+
+
+       response.write( PortletKeys.LAYOUT_SET_PROTOTYPE )+response.write(request.getAttribute(" PortletKeys").LAYOUT_SET_PROTOTYPE );
+
+ response.write(viewSitesURL)+response.write(request.getAttribute("viewSitesURL"));
+ response.write(viewSitesURL)+response.write(request.getAttribute("viewSitesURL"));
+
+
+   response.write( manageSiteTemplateURL.toString() )+response.write(request.getAttribute(" manageSiteTemplateURL").toString() );
+}
+
+}

@@ -1,0 +1,202 @@
+﻿ package PackageNo1903935385;import _html_taglib_init_jsp;import com.liferay.portal.kernel.lar.ExportImportDateUtil;import com.liferay.portal.kernel.util.DateRange;import com.liferay.portal.lar.LayoutExporter; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ boolean disableInputs = GetterUtil.getBoolean(request.getAttribute("liferay-staging:content:disableInputs")); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ PortletRequest renderRequest = (PortletRequest)request.getAttribute("liferay-staging:content:renderRequest"); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ Map<String, String[]> parameterMap = (Map<String, String[]>)GetterUtil.getObject(request.getAttribute("liferay-staging:content:parameterMap"), Collections.emptyMap()); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ String type = GetterUtil.getString(request.getAttribute("liferay-staging:content:type")); /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ DateRange dateRange = null; /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ if (type.equals(Constants.EXPORT)) { /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ 	dateRange = ExportImportDateUtil.getDateRange(renderRequest, liveGroupId, privateLayout, 0, null, ExportImportDateUtil.RANGE_ALL); /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ } /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ else { /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ 	dateRange = ExportImportDateUtil.getDateRange(renderRequest, stagingGroupId, privateLayout, 0, null, ExportImportDateUtil.RANGE_FROM_LAST_PUBLISH_DATE); /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ } /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ Date startDate = dateRange.getStartDate(); /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ Date endDate = dateRange.getEndDate(); /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ List<Portlet> dataSiteLevelPortlets = LayoutExporter.getDataSiteLevelPortlets(company.getCompanyId(), false); /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\staging\content\page.jsp */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( PortletDataHandlerKeys.DELETE_PORTLET_DATA )+response.write(request.getAttribute(" PortletDataHandlerKeys").DELETE_PORTLET_DATA );
+
+
+
+
+
+
+
+
+       response.write( !disableInputs ? StringPool.BLANK : "class=\"hide\"" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     										String selectedRange = MapUtil.getString(parameterMap, "range", ExportImportDateUtil.RANGE_ALL);
+     										
+
+
+
+
+
+
+
+
+
+       
+     										Calendar endCalendar = CalendarFactoryUtil.getCalendar(timeZone, locale);
+     
+     										if (endDate != null) {
+     											endCalendar.setTime(endDate);
+     										}
+     
+     										Calendar startCalendar = CalendarFactoryUtil.getCalendar(timeZone, locale);
+     
+     										if (startDate != null) {
+     											startCalendar.setTime(startDate);
+     										}
+     										else {
+     											startCalendar.add(Calendar.DATE, -1);
+     										}
+     										
+
+
+
+
+
+
+  response.write( startCalendar.get(Calendar.DATE) );
+  response.write( false )+response.write(request.getAttribute(" false "));
+response.write( startCalendar.getFirstDayOfWeek() - 1 );
+
+    response.write( startCalendar.get(Calendar.MONTH) );
+
+
+   response.write( startCalendar.get(Calendar.YEAR) );
+
+
+
+
+
+   response.write( "startDateAmPm" );
+   response.write( startCalendar.get(Calendar.AM_PM) );
+
+   response.write( startCalendar.getTime() );
+  response.write( false )+response.write(request.getAttribute(" false "));
+   response.write( "startDateHour" );
+   response.write( startCalendar.get(Calendar.HOUR) );
+     response.write( "startDateMinute" );
+     response.write( startCalendar.get(Calendar.MINUTE) );
+
+
+
+
+
+
+
+
+
+  response.write( endCalendar.get(Calendar.DATE) )+response.write(request.getAttribute(" endCalendar").get(Calendar.DATE) );
+  response.write( false )+response.write(request.getAttribute(" false "));
+response.write( endCalendar.getFirstDayOfWeek() - 1 )+response.write(request.getAttribute(" endCalendar").getFirstDayOfWeek() - 1 );
+
+    response.write( endCalendar.get(Calendar.MONTH) )+response.write(request.getAttribute(" endCalendar").get(Calendar.MONTH) );
+
+
+   response.write( endCalendar.get(Calendar.YEAR) )+response.write(request.getAttribute(" endCalendar").get(Calendar.YEAR) );
+
+
+
+
+
+   response.write( "endDateAmPm" );
+   response.write( endCalendar.get(Calendar.AM_PM) )+response.write(request.getAttribute(" endCalendar").get(Calendar.AM_PM) );
+
+   response.write( endCalendar.getTime() )+response.write(request.getAttribute(" endCalendar").getTime() );
+  response.write( false )+response.write(request.getAttribute(" false "));
+   response.write( "endDateHour" );
+   response.write( endCalendar.get(Calendar.HOUR) )+response.write(request.getAttribute(" endCalendar").get(Calendar.HOUR) );
+     response.write( "endDateMinute" );
+     response.write( endCalendar.get(Calendar.MINUTE) )+response.write(request.getAttribute(" endCalendar").get(Calendar.MINUTE) );
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     													String last = MapUtil.getString(parameterMap, "last");
+     													
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( !disableInputs ? StringPool.BLANK : "class=\"hide\"" );
+
+
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+  response.write( LanguageUtil.get(request, "date-range") + selectedLabelsHTML );
+
+
+
+
+ response.write( dateRange )+response.write(request.getAttribute(" dateRange "));response.write( disableInputs )+response.write(request.getAttribute(" disableInputs "));response.write( parameterMap )+response.write(request.getAttribute(" parameterMap "));response.write( dataSiteLevelPortlets )+response.write(request.getAttribute(" dataSiteLevelPortlets "));response.write( type )+response.write(request.getAttribute(" type "));
+}
+
+}

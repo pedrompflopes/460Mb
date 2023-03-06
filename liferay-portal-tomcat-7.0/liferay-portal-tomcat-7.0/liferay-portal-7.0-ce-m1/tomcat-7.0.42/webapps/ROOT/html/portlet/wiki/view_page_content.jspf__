@@ -1,0 +1,90 @@
+﻿ package PackageNo732467720; public class view_page_content_jspf {  /* 1 */ private static Log _log = LogFactoryUtil.getLog("portal-web.docroot.html.wiki.view_page_content_jspf"); /* 90 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String formattedContent = null;
+     
+     try {
+     	formattedContent = WikiUtil.getFormattedContent(renderRequest, renderResponse, wikiPage, viewPageURL, editPageURL, title, preview);
+     
+
+
+
+
+
+       response.write( LanguageUtil.format(request, "this-page-is-currently-redirected-to-x", redirectPage.getTitle(), false) );
+
+
+
+
+
+ response.write(String.getValueOf(node().getNodeId()))+response.write(request.getAttribute("String").getValueOf(node().getNodeId()));
+ response.write(title)+response.write(request.getAttribute("title"));
+
+
+
+
+
+   
+     						String taglibRemoveRedirect = "location.href = '" + removeRedirectURL + "';";
+     						
+
+
+
+
+
+
+
+
+
+
+
+      response.write( formattedContent );
+
+
+
+
+     
+     }
+     catch (WikiFormatException wfe) {
+     
+
+
+
+
+
+
+
+  response.write( wikiPage.getContent() )+response.write(request.getAttribute(" wikiPage").getContent() );
+
+
+
+     
+     }
+     catch (Exception e) {
+     	_log.error("Error formatting the wiki page " + wikiPage.getPageId() + " with the format " + wikiPage.getFormat(), e);
+     
+
+
+
+
+
+     
+     }
+     
+}
+
+}

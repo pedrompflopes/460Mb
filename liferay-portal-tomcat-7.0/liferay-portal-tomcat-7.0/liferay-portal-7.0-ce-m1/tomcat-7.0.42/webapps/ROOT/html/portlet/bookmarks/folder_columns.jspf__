@@ -1,0 +1,140 @@
+﻿ package PackageNo1218149604; public class folder_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     List subfolderIds = new ArrayList();
+     
+     subfolderIds.add(new Long(curFolder.getFolderId()));
+     
+     if (ArrayUtil.contains(folderColumns, "num-of-entries") || ArrayUtil.contains(folderColumns, "num-of-folders")) {
+     	BookmarksFolderServiceUtil.getSubfolderIds(subfolderIds, scopeGroupId, curFolder.getFolderId(), true);
+     }
+     
+     int curFoldersCount = subfolderIds.size() - 1;
+     
+     int curEntriesCount = 0;
+     
+     if (ArrayUtil.contains(folderColumns, "num-of-entries")) {
+     	curEntriesCount = BookmarksEntryServiceUtil.getFoldersEntriesCount(scopeGroupId, subfolderIds);
+     }
+     
+     for (int j = 0; j < folderColumns.length; j++) {
+     	String folderColumn = folderColumns[j];
+     
+
+
+
+
+
+     			String align = SearchEntry.DEFAULT_ALIGN;
+     
+     			if ((j + 1) == folderColumns.length) {
+     				align = "right";
+     			}
+     			
+
+
+     response.write( align );
+
+
+
+
+
+
+
+
+
+ 
+     				AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(BookmarksFolder.class.getName());
+     
+     				AssetRenderer assetRenderer = assetRendererFactory.getAssetRenderer(curFolder.getFolderId());
+     				
+
+       response.write(assetRenderer.getIconCssClass());response.write(rowURL)+response.write(request.getAttribute("rowURL"));
+       response.write( curFolder.getName() )+response.write(request.getAttribute(" curFolder").getName() );
+
+
+
+response.write( curFolder.getDescription() )+response.write(request.getAttribute(" curFolder").getDescription() );
+
+
+
+
+
+  
+     					List<BookmarksFolder> subfolders = BookmarksFolderServiceUtil.getFolders(scopeGroupId, curFolder.getFolderId(), 0, 5);
+     					
+
+
+
+  response.write( LanguageUtil.get(request, "subfolders") );
+
+   
+     						int subfoldersCount = BookmarksFolderServiceUtil.getFoldersCount(scopeGroupId, curFolder.getFolderId());
+     
+     						for (int k = 0; k < subfolders.size(); k++) {
+     							BookmarksFolder subfolder = subfolders.get(k);
+     
+     							subfolder = subfolder.toEscapedModel();
+     
+     							rowURL.setParameter("folderId", String.valueOf(subfolder.getFolderId()));
+     						
+
+  response.write(rowURL)+response.write(request.getAttribute("rowURL"));response.write( subfolder.getName() );response.write( ((k + 1) < subfolders.size()) ? "," : StringPool.BLANK );
+
+   
+     						}
+     						
+
+
+
+    
+     							rowURL.setParameter("folderId", String.valueOf(curFolder.getFolderId()));
+     							
+
+  response.write(rowURL)+response.write(request.getAttribute("rowURL"));response.write( LanguageUtil.get(request, "more") );
+
+
+   
+     						rowURL.setParameter("folderId", String.valueOf(curFolder.getFolderId()));
+     						
+
+
+
+
+
+
+
+    response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+     response.write( String.valueOf(curEntriesCount) );
+
+
+
+
+    response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+     response.write( String.valueOf(curFoldersCount) );
+
+
+
+
+     
+     }
+     
+}
+
+}

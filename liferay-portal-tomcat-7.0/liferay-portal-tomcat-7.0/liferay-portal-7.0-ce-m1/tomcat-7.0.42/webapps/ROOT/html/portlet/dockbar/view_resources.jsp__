@@ -1,0 +1,200 @@
+﻿ package PackageNo1828850054;import _html_portlet_init_jsp;import _html_portlet_dockbar_init_ext_jsp;import com.liferay.portal.util.PortletCategoryUtil;import com.liferay.taglib.aui.AUIUtil;import java.util.regex.Matcher;import java.util.regex.Pattern; public class view_resources_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\view_resources.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\view_resources.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\dockbar\view_resources.jsp */
+
+     
+     boolean viewEntries = ParamUtil.getBoolean(request, "viewEntries");
+     boolean viewPreview = ParamUtil.getBoolean(request, "viewPreview");
+     
+
+
+
+
+
+
+     			String displayStyleDefault = GetterUtil.getString(SessionClicks.get(request, "liferay_addpanel_displaystyle", "descriptive"));
+     			String displayStyle = ParamUtil.getString(request, "displayStyle", displayStyleDefault);
+     			String keywords = ParamUtil.getString(request, "keywords");
+     
+     			String panelTitle = "recent";
+     
+     			if (Validator.isNotNull(keywords)) {
+     				panelTitle = "search-results";
+     			}
+     
+     			String navListCssClass = "add-content ";
+     
+     			if (displayStyle.equals("icon")) {
+     				navListCssClass += "add-content-icon";
+     			}
+     			else if (displayStyle.equals("descriptive")) {
+     				navListCssClass += "add-content-descriptive";
+     			}
+     			else if (displayStyle.equals("icon")) {
+     				navListCssClass += "add-content-list";
+     			}
+     			
+
+    response.write( false )+response.write(request.getAttribute(" false "));     response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( panelTitle );
+
+
+  
+     					int deltaDefault = GetterUtil.getInteger(SessionClicks.get(request, "liferay_addpanel_numitems", "10"));
+     					int delta = ParamUtil.getInteger(request, "delta", deltaDefault);
+     
+     					long[] availableClassNameIds = AssetRendererFactoryRegistryUtil.getClassNameIds(company.getCompanyId());
+     
+     					for (long classNameId : availableClassNameIds) {
+     						AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassNameId(classNameId);
+     
+     						if (!assetRendererFactory.isSelectable()) {
+     							availableClassNameIds = ArrayUtil.remove(availableClassNameIds, classNameId);
+     						}
+     					}
+     
+     					AssetEntryQuery assetEntryQuery = new AssetEntryQuery();
+     
+     					assetEntryQuery.setClassNameIds(availableClassNameIds);
+     					assetEntryQuery.setEnd(delta);
+     					assetEntryQuery.setGroupIds(new long[] {scopeGroupId});
+     					assetEntryQuery.setKeywords(keywords);
+     					assetEntryQuery.setOrderByCol1("modifiedDate");
+     					assetEntryQuery.setOrderByCol2("title");
+     					assetEntryQuery.setOrderByType1("DESC");
+     					assetEntryQuery.setOrderByType2("ASC");
+     					assetEntryQuery.setStart(0);
+     
+     					List<AssetEntry> results = null;
+     
+     					if (PropsValues.ASSET_PUBLISHER_SEARCH_WITH_INDEX && (assetEntryQuery.getLinkedAssetEntryId() == 0)) {
+     						BaseModelSearchResult<AssetEntry> baseModelSearchResult = AssetUtil.searchAssetEntries(request, assetEntryQuery, 0, delta);
+     
+     						results = baseModelSearchResult.getBaseModels();
+     					}
+     					else {
+     						results = AssetEntryServiceUtil.getEntries(assetEntryQuery);
+     					}
+     
+     					for (AssetEntry assetEntry : results) {
+     						String className = PortalUtil.getClassName(assetEntry.getClassNameId());
+     						long classPK = assetEntry.getClassPK();
+     
+     						AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(className);
+     
+     						if (assetRendererFactory == null) {
+     							continue;
+     						}
+     
+     						AssetRenderer assetRenderer = null;
+     
+     						try {
+     							assetRenderer = assetRendererFactory.getAssetRenderer(classPK);
+     						}
+     						catch (Exception e) {
+     						}
+     
+     						if ((assetRenderer == null) || !assetRenderer.isDisplayable()) {
+     							continue;
+     						}
+     
+     						String title = HtmlUtil.escape(StringUtil.shorten(assetRenderer.getTitle(themeDisplay.getLocale()), 60));
+     
+     						boolean hasAddToPagePermission = PortletPermissionUtil.contains(permissionChecker, layout, assetRenderer.getAddToPagePortletId(), ActionKeys.ADD_TO_PAGE);
+     
+     						Map<String, Object> data = new HashMap<String, Object>();
+     
+     						data.put("class-name", assetEntry.getClassName());
+     						data.put("class-pk", assetEntry.getClassPK());
+     
+     						if (hasAddToPagePermission) {
+     							data.put("draggable", true);
+     						}
+     
+     						data.put("instanceable", true);
+     						data.put("portlet-id", assetRenderer.getAddToPagePortletId());
+     						data.put("title", title);
+     
+     						String navItemCssClass="content-shortcut drag-content-item lfr-content-item ";
+     
+     						if (!displayStyle.equals("icon")) {
+     							navItemCssClass += "has-preview";
+     						}
+     					
+
+response.write( navItemCssClass );
+       response.write( data )+response.write(request.getAttribute(" data "));
+
+       response.write( displayStyle.equals("list") ? "icon-file" : StringPool.BLANK );
+response.write( displayStyle.equals("list") ? title : "" );
+
+
+
+     response.write( displayStyle.equals("descriptive") ? "col-md-4" : StringPool.BLANK );
+     response.write(true)+response.write(request.getAttribute("true"));  response.write( HtmlUtil.escapeAttribute(assetRenderer.getThumbnailPath(liferayPortletRequest)) );
+
+
+   response.write( displayStyle.equals("descriptive") ? "col-md-8" : StringPool.BLANK );
+
+     response.write( title );
+
+
+
+     response.write( HtmlUtil.escape(StringUtil.shorten(assetRenderer.getSummary(liferayPortletRequest, liferayPortletResponse), 120)) );
+
+
+
+
+response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );
+
+
+
+
+
+
+  
+     					}
+     					
+
+
+
+
+
+
+
+
+       
+     		long classPK = ParamUtil.getLong(request, "classPK");
+     		String className = ParamUtil.getString(request, "className");
+     		
+
+
+
+
+     			AssetEntry assetEntry = AssetEntryLocalServiceUtil.getEntry(className, classPK);
+     			AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(className);
+     			AssetRenderer assetRenderer = assetRendererFactory.getAssetRenderer(classPK);
+     
+     			request.setAttribute("add_panel.jsp-assetEntry", assetEntry);
+     			request.setAttribute("add_panel.jsp-assetRendererFactory", assetRendererFactory);
+     			request.setAttribute("add_panel.jsp-assetRenderer", assetRenderer);
+     			
+
+
+  response.write( assetRenderer.getPreviewPath(liferayPortletRequest, liferayPortletResponse) ); response.write( assetRendererFactory.getPortletId() );      response.write( application )+response.write(request.getAttribute(" application "));
+}
+
+}

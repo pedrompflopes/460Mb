@@ -1,0 +1,88 @@
+﻿ package PackageNo410607175; public class view_entry_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     UserNotificationFeedEntry userNotificationFeedEntry = UserNotificationManagerUtil.interpret(StringPool.BLANK, userNotificationEvent, ServiceContextFactory.getInstance(request));
+     
+     if (userNotificationFeedEntry == null) {
+     	continue;
+     }
+     
+     JSONObject userNotificationEventJSONObject = JSONFactoryUtil.createJSONObject(userNotificationEvent.getPayload());
+     
+     long userId = userNotificationEventJSONObject.getLong("userId");
+     
+     String userFullName = HtmlUtil.escape(PortalUtil.getUserName(userId, StringPool.BLANK));
+     
+     String userPortaitURL = StringPool.BLANK;
+     
+     User curUser = UserLocalServiceUtil.fetchUserById(userId);
+     
+     if (curUser != null) {
+     	userPortaitURL = curUser.getPortraitURL(themeDisplay);
+     }
+     
+     boolean read = userNotificationEvent.isArchived();
+     
+
+      response.write( read ? "" : " unread" );
+
+
+ response.write(String.getValueOf(userNotificationEvent().getUserNotificationEventId()))+response.write(request.getAttribute("String").getValueOf(userNotificationEvent().getUserNotificationEventId()));
+
+      response.write(deleteUserNotificationEventURL)+response.write(request.getAttribute("deleteUserNotificationEventURL"));
+
+
+
+
+response.write(userNotificationFeedEntry.getLink());response.write(String.getValueOf(userNotificationFeedEntry().getIsOpenDialog()));
+
+
+ response.write(String.getValueOf(userNotificationEvent().getUserNotificationEventId()))+response.write(request.getAttribute("String").getValueOf(userNotificationEvent().getUserNotificationEventId()));
+
+response.write(userNotificationFeedEntry.getLink());response.write(markAsReadURL)+response.write(request.getAttribute("markAsReadURL"));response.write(String.getValueOf(userNotificationFeedEntry().getIsOpenDialog()));
+
+
+
+
+
+
+
+       response.write(userFullName);response.write(userPortaitURL);
+
+
+
+
+
+      response.write( userNotificationFeedEntry.getBody() );
+
+
+
+
+
+ response.write( PortletLocalServiceUtil.getPortletById(company.getCompanyId(), userNotificationEvent.getType()) );
+
+
+
+      response.write( simpleDateFormat.format(userNotificationEvent.getTimestamp()) );
+
+
+
+
+response.write( read ? "read" : "unread" );
+}
+
+}

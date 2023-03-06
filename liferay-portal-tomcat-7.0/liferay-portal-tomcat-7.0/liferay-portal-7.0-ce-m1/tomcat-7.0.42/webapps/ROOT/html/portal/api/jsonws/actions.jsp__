@@ -1,0 +1,147 @@
+﻿ package PackageNo59144776;import _html_portal_init_jsp;import com.liferay.portal.javadoc.JavadocUtil;import com.liferay.portal.kernel.javadoc.JavadocClass;import com.liferay.portal.kernel.javadoc.JavadocManagerUtil;import com.liferay.portal.kernel.javadoc.JavadocMethod;import com.liferay.portal.kernel.jsonwebservice.JSONWebServiceActionMapping;import com.liferay.portal.kernel.jsonwebservice.JSONWebServiceActionsManagerUtil;import com.liferay.portal.kernel.util.MethodParameter;import java.io.File;import java.lang.reflect.Method; public class actions_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\actions.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\actions.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ String jsonWSPath = themeDisplay.getPathContext() + "/api/jsonws"; /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ String contextName = ParamUtil.getString(request, "contextName"); /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ String jsonWSContextPath = jsonWSPath + "?contextName=" + contextName; /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\actions.jsp */
+
+     
+     String signature = ParamUtil.getString(request, "signature");
+     
+     Set<String> contextNames = JSONWebServiceActionsManagerUtil.getContextNames();
+     
+
+
+
+
+       
+     		for (String curContextName : contextNames) {
+     			String curContextNameView = curContextName;
+     
+     			if (Validator.isNull(curContextName)) {
+     				curContextNameView = "portal";
+     			}
+     		
+
+
+
+       
+     		}
+     		
+
+
+
+
+
+
+
+
+      
+     	Map<String, Set> jsonWebServiceClasses = new LinkedHashMap<String, Set>();
+     
+     	List<JSONWebServiceActionMapping> jsonWebServiceActionMappings = JSONWebServiceActionsManagerUtil.getJSONWebServiceActionMappings(contextName);
+     
+     	for (JSONWebServiceActionMapping jsonWebServiceActionMapping : jsonWebServiceActionMappings) {
+     		Class<?> actionClass = jsonWebServiceActionMapping.getActionClass();
+     
+     		String actionClassName = actionClass.getSimpleName();
+     
+     		if (actionClassName.endsWith("ServiceUtil")) {
+     			actionClassName = actionClassName.substring(0, actionClassName.length() - 11);
+     		}
+     
+     		Set<JSONWebServiceActionMapping> jsonWebServiceMappings = jsonWebServiceClasses.get(actionClassName);
+     
+     		if (jsonWebServiceMappings == null) {
+     			jsonWebServiceMappings = new LinkedHashSet<JSONWebServiceActionMapping>();
+     
+     			jsonWebServiceClasses.put(actionClassName, jsonWebServiceMappings);
+     		}
+     
+     		jsonWebServiceMappings.add(jsonWebServiceActionMapping);
+     	}
+     
+     	for (String jsonWebServiceClassName : jsonWebServiceClasses.keySet()) {
+     		Set<JSONWebServiceActionMapping> jsonWebServiceMappings = jsonWebServiceClasses.get(jsonWebServiceClassName);
+     
+     		String panelTitle = jsonWebServiceClassName;
+     
+     		if (panelTitle.endsWith("Impl")) {
+     			panelTitle = panelTitle.substring(0, panelTitle.length() - 4);
+     		}
+     		if (panelTitle.endsWith("Service")) {
+     			panelTitle = panelTitle.substring(0, panelTitle.length() - 7);
+     		}
+     	
+
+   response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( "apiService" + jsonWebServiceClassName + "Panel" );response.write( true )+response.write(request.getAttribute(" true "));response.write( panelTitle );
+
+
+ 
+     				for (JSONWebServiceActionMapping jsonWebServiceActionMapping : jsonWebServiceMappings) {
+     					String path = jsonWebServiceActionMapping.getPath();
+     
+     					int pos = path.lastIndexOf(CharPool.SLASH);
+     
+     					path = path.substring(pos + 1);
+     
+     					String serviceSignature = jsonWebServiceActionMapping.getSignature();
+     				
+
+    response.write( (serviceSignature.equals(signature)) ? "selected" : StringPool.BLANK );
+
+   
+     						String methodURL = HttpUtil.addParameter(jsonWSContextPath, "signature", serviceSignature);
+     						
+
+ response.write(jsonWebServiceClassName)+response.write(request.getAttribute("jsonWebServiceClassName"));response.write(methodURL)+response.write(request.getAttribute("methodURL"));
+ response.write( path )+response.write(request.getAttribute(" path "));
+
+
+
+ 
+     				}
+     				
+
+
+
+
+      
+     	}
+     	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( jsonWSPath )+response.write(request.getAttribute(" jsonWSPath "));
+}
+
+}

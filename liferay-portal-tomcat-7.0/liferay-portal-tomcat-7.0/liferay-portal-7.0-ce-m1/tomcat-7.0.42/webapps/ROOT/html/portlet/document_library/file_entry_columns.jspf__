@@ -1,0 +1,142 @@
+﻿ package PackageNo1303426909; public class file_entry_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     for (int j = 0; j < fileEntryColumns.length; j++) {
+     	String fileEntryColumn = fileEntryColumns[j];
+     
+     	FileVersion latestFileVersion = fileEntry.getFileVersion();
+     
+     	if ((user.getUserId() == fileEntry.getUserId()) || permissionChecker.isContentReviewer(user.getCompanyId(), scopeGroupId) || DLFileEntryPermission.contains(permissionChecker, fileEntry, ActionKeys.UPDATE)) {
+     		latestFileVersion = fileEntry.getLatestFileVersion();
+     	}
+     
+     	int latestFileVersionStatus = latestFileVersion.getStatus();
+     
+
+
+
+
+
+     			String align = SearchEntry.DEFAULT_ALIGN;
+     
+     			if ((j + 1) == fileEntryColumns.length) {
+     				align = "right";
+     			}
+     			
+
+
+     response.write( align );
+
+     response.write( j );
+
+
+
+
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+     response.write( j );
+    response.write( fileEntryColumn );
+     response.write( String.valueOf(fileEntry.getReadCount()) )+response.write(request.getAttribute(" String").valueOf(fileEntry.getReadCount()) );
+
+
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+     response.write( j );
+    response.write( fileEntryColumn );
+     response.write( LanguageUtil.get(request, fileEntry.isCheckedOut() ? "yes" : "no") );
+
+
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+     response.write( j );
+    response.write( fileEntryColumn );
+
+
+ 
+     				String thumbnailSrc = DLUtil.getThumbnailSrc(fileEntry, latestFileVersion, fileShortcut, themeDisplay);
+     				
+
+
+response.write(true)+response.write(request.getAttribute("true"));    response.write( thumbnailSrc )+response.write(request.getAttribute(" thumbnailSrc "));
+
+
+ response.write(true)+response.write(request.getAttribute("true"));       response.write( themeDisplay.getPathThemeImages() )+response.write(request.getAttribute(" themeDisplay").getPathThemeImages() );
+
+
+
+ response.write(true)+response.write(request.getAttribute("true"));   response.write( themeDisplay.getPathThemeImages() )+response.write(request.getAttribute(" themeDisplay").getPathThemeImages() );
+
+
+
+       response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));response.write( latestFileVersionStatus );
+
+
+
+
+ response.write( HtmlUtil.escape(latestFileVersion.getTitle()) );
+
+
+
+ response.write( HtmlUtil.escape(latestFileVersion.getDescription()) );
+
+
+
+
+
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+     response.write( j );
+    response.write( fileEntryColumn );
+     response.write( TextFormatter.formatStorageSize(latestFileVersion.getSize(), locale) );
+
+
+
+
+
+     			long classPK = 0;
+     
+     			if (!latestFileVersion.getVersion().equals(DLFileEntryConstants.VERSION_DEFAULT) && (latestFileVersion.getStatus() != WorkflowConstants.STATUS_APPROVED)) {
+     				classPK = latestFileVersion.getFileVersionId();
+     			}
+     			else {
+     				classPK = fileEntry.getFileEntryId();
+     			}
+     
+     			List<AssetTag> assetTags = AssetTagLocalServiceUtil.getTags(DLFileEntryConstants.getClassName(), classPK);
+     
+     			AssetUtil.addLayoutTags(request, assetTags);
+     			
+
+
+    response.write( rowHREF )+response.write(request.getAttribute(" rowHREF "));
+     response.write( j );
+    response.write( fileEntryColumn );
+     response.write( ListUtil.toString(assetTags, AssetTag.NAME_ACCESSOR, StringPool.COMMA_AND_SPACE) );
+
+
+
+
+     
+     }
+     
+}
+
+}

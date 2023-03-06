@@ -1,0 +1,272 @@
+﻿ package PackageNo1064827304;import _html_taglib_taglib_init_jsp;import _html_taglib_aui_input_init_ext_jspf; public class page_jsp {  /* 1 */ private long _getClassPK(Object bean, long classPK) { /* 279 */ 	if ((bean != null) && (classPK <= 0)) { /* 280 */ 		if (bean instanceof ClassedModel) { /* 281 */ 			ClassedModel classedModel = (ClassedModel)bean; /* 282 */ 			Serializable primaryKeyObj = classedModel.getPrimaryKeyObj(); /* 284 */ 			if (primaryKeyObj instanceof Long) { /* 286 */ 				classPK = (Long)primaryKeyObj; /* 287 */ 			} /* 288 */ 			else { /* 289 */ 				classPK = GetterUtil.getLong(primaryKeyObj.toString()); /* 290 */ 			} /* 291 */ 		} /* 292 */ 	} /* 293 */ 	return classPK; /* 295 */ } /* 296 */ private static final String _TEXTAREA_WIDTH_HEIGHT_PREFIX = "liferay_resize_"; /* 298 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean autoFocus = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:autoFocus"))); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean autoSize = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:autoSize"))); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.Object bean = (java.lang.Object)request.getAttribute("aui:input:bean"); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean changesContext = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:changesContext"))); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean checked = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:checked"))); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ long classPK = GetterUtil.getLong(String.valueOf(request.getAttribute("aui:input:classPK"))); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ long classTypePK = GetterUtil.getLong(String.valueOf(request.getAttribute("aui:input:classTypePK")), -1); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String cssClass = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:cssClass")); /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.util.Map data = (java.util.Map)request.getAttribute("aui:input:data"); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String dateTogglerCheckboxLabel = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:dateTogglerCheckboxLabel")); /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String defaultLanguageId = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:defaultLanguageId")); /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean disabled = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:disabled"))); /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String field = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:field")); /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String fieldParam = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:fieldParam")); /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean first = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:first"))); /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String formName = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:formName")); /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String helpMessage = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:helpMessage")); /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String helpTextCssClass = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:helpTextCssClass"), "input-group-addon"); /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String id = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:id")); /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean ignoreRequestValue = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:ignoreRequestValue"))); /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean inlineField = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:inlineField"))); /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String inlineLabel = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:inlineLabel")); /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String label = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:label")); /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean localizeLabel = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:localizeLabel")), true); /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String languageId = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:languageId")); /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean last = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:last"))); /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean localized = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:localized"))); /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.Number max = GetterUtil.getNumber(String.valueOf(request.getAttribute("aui:input:max")), null); /* 49?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.Class<?> model = (java.lang.Class<?>)request.getAttribute("aui:input:model"); /* 50?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.Number min = GetterUtil.getNumber(String.valueOf(request.getAttribute("aui:input:min")), null); /* 51?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean multiple = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:multiple"))); /* 52?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String name = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:name")); /* 53?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String onChange = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:onChange")); /* 54?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String onClick = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:onClick")); /* 55?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String placeholder = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:placeholder")); /* 56?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String prefix = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:prefix")); /* 57?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean required = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:required"))); /* 58?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean resizable = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:resizable"))); /* 59?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean showRequiredLabel = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:showRequiredLabel")), true); /* 60?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String suffix = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:suffix")); /* 61?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String title = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:title")); /* 62?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String type = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:type")); /* 63?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ boolean useNamespace = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:input:useNamespace")), true); /* 64?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.Object value = (java.lang.Object)request.getAttribute("aui:input:value"); /* 65?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ java.lang.String wrapperCssClass = GetterUtil.getString((java.lang.String)request.getAttribute("aui:input:wrapperCssClass")); /* 66?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ Map<String, Object> dynamicAttributes = (Map<String, Object>)request.getAttribute("aui:input:dynamicAttributes"); /* 67?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ Map<String, Object> scopedAttributes = (Map<String, Object>)request.getAttribute("aui:input:scopedAttributes"); /* 68?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 69?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 70?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ /* 71?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\input\page.jsp */
+
+
+    response.write( label )+response.write(request.getAttribute(" label "));response.write( localizeLabel )+response.write(request.getAttribute(" localizeLabel "));
+
+
+
+
+
+
+   response.write( helpMessage )+response.write(request.getAttribute(" helpMessage "));
+
+
+
+
+
+
+
+
+    response.write(controlGroupCssClass)+response.write(request.getAttribute("controlGroupCssClass"));
+
+
+
+  response.write( labelTag )+response.write(request.getAttribute(" labelTag "));
+
+      response.write( labelContent )+response.write(request.getAttribute(" labelContent "));
+
+
+
+
+
+    response.write(addOnCssClass)+response.write(request.getAttribute("addOnCssClass"));
+
+      response.write(helpTextCssClass)+response.write(request.getAttribute("helpTextCssClass"));response.write( prefix )+response.write(request.getAttribute(" prefix "));
+
+
+
+
+
+
+response.write( model.getName() )+response.write(request.getAttribute(" model").getName() );
+      response.write( _getClassPK(bean, classPK) )+response.write(request.getAttribute(" _getClassPK(bean, classPK) "));
+  response.write( classTypePK )+response.write(request.getAttribute(" classTypePK "));
+      response.write( portletResponse.getNamespace() + "getSuggestionsContent" );
+
+
+
+
+response.write( autoFocus )+response.write(request.getAttribute(" autoFocus "));
+response.write( model.getName() )+response.write(request.getAttribute(" model").getName() );
+      response.write( _getClassPK(bean, classPK) )+response.write(request.getAttribute(" _getClassPK(bean, classPK) "));
+      response.write( portletResponse.getNamespace() + "getSuggestionsContent" );
+ response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+
+
+
+
+response.write( autoFocus )+response.write(request.getAttribute(" autoFocus "));
+   response.write( bean )+response.write(request.getAttribute(" bean "));
+       response.write( fieldCssClass )+response.write(request.getAttribute(" fieldCssClass "));
+       response.write( dateTogglerCheckboxLabel )+response.write(request.getAttribute(" dateTogglerCheckboxLabel "));
+response.write( defaultLanguageId )+response.write(request.getAttribute(" defaultLanguageId "));
+   response.write( value )+response.write(request.getAttribute(" value "));
+       response.write( disabled )+response.write(request.getAttribute(" disabled "));
+    response.write( field )+response.write(request.getAttribute(" field "));
+ response.write( fieldParam )+response.write(request.getAttribute(" fieldParam "));
+       response.write( formName )+response.write(request.getAttribute(" formName "));
+     response.write( (Format)dynamicAttributes.get("format") );
+ response.write( id )+response.write(request.getAttribute(" id "));
+ response.write( ignoreRequestValue )+response.write(request.getAttribute(" ignoreRequestValue "));
+ response.write( languageId )+response.write(request.getAttribute(" languageId "));
+    response.write( model )+response.write(request.getAttribute(" model "));
+  response.write( placeholder )+response.write(request.getAttribute(" placeholder "));
+
+
+
+
+       
+     		String valueString = null;
+     
+     		if (value != null) {
+     			valueString = value.toString();
+     
+     			if (Validator.isBoolean(valueString)) {
+     				checked = GetterUtil.getBoolean(valueString);
+     
+     				valueString = null;
+     			}
+     		}
+     
+     		if (!ignoreRequestValue && Validator.isNotNull(ParamUtil.getString(request, "checkboxNames"))) {
+     			if (Validator.isNotNull(valueString)) {
+     				String[] requestValues = ParamUtil.getParameterValues(request, name);
+     
+     				checked = ArrayUtil.contains(requestValues, valueString);
+     			}
+     			else {
+     				checked = Validator.isNotNull(ParamUtil.getString(request, name));
+     			}
+     		}
+     		
+
+   response.write( checked ? "checked" : StringPool.BLANK );response.write( fieldCssClass )+response.write(request.getAttribute(" fieldCssClass "));response.write( disabled ? "disabled" : StringPool.BLANK );response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );response.write( namespace + name )+response.write(request.getAttribute(" namespace ")+ name );response.write( Validator.isNotNull(onChange) ? "onChange=\"" + onChange + "\"" : StringPool.BLANK );response.write( onClick )+response.write(request.getAttribute(" onClick "));response.write( Validator.isNotNull(title) ? "title=\"" + LanguageUtil.get(locale, title) + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(valueString) ? ("value=\"" + HtmlUtil.escapeAttribute(valueString)) + "\"" : StringPool.BLANK );response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );response.write( InlineUtil.buildDynamicAttributes(dynamicAttributes) )+response.write(request.getAttribute(" InlineUtil").buildDynamicAttributes(dynamicAttributes) );
+
+
+
+       
+     		String valueString = String.valueOf(checked);
+     
+     		if (value != null) {
+     			valueString = value.toString();
+     		}
+     
+     		if (!ignoreRequestValue) {
+     			String requestValue = ParamUtil.getString(request, name);
+     
+     			if (Validator.isNotNull(requestValue)) {
+     				checked = valueString.equals(requestValue);
+     			}
+     		}
+     		
+
+   response.write( checked ? "checked" : StringPool.BLANK );response.write( fieldCssClass )+response.write(request.getAttribute(" fieldCssClass "));response.write( disabled ? "disabled" : StringPool.BLANK );response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );response.write( namespace + name )+response.write(request.getAttribute(" namespace ")+ name );response.write( Validator.isNotNull(onChange) ? "onChange=\"" + onChange + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(onClick) ? "onClick=\"" + onClick + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(title) ? "title=\"" + LanguageUtil.get(locale, title) + "\"" : StringPool.BLANK );response.write( HtmlUtil.escapeAttribute(valueString) )+response.write(request.getAttribute(" HtmlUtil").escapeAttribute(valueString) );response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );response.write( InlineUtil.buildDynamicAttributes(dynamicAttributes) )+response.write(request.getAttribute(" InlineUtil").buildDynamicAttributes(dynamicAttributes) );
+
+
+   response.write( id )+response.write(request.getAttribute(" id "));response.write( title )+response.write(request.getAttribute(" title "));response.write( String.valueOf(value) )+response.write(request.getAttribute(" String").valueOf(value) );
+
+
+
+       
+     		int displayStyle = TimeZone.LONG;
+     
+     		if (dynamicAttributes.get("displayStyle") != null) {
+     			displayStyle = GetterUtil.getInteger((String)dynamicAttributes.get("displayStyle"));
+     		}
+     
+     		if (Validator.isNull(value)) {
+     			TimeZone defaultTimeZone = TimeZoneUtil.getDefault();
+     
+     			value = BeanPropertiesUtil.getStringSilent(bean, field, defaultTimeZone.getID());
+     		}
+     		
+
+
+response.write( autoFocus );
+       response.write( GetterUtil.getBoolean((String)dynamicAttributes.get("daylight")) );
+       response.write( disabled )+response.write(request.getAttribute(" disabled "));
+   response.write( displayStyle )+response.write(request.getAttribute(" displayStyle "));
+   response.write( name )+response.write(request.getAttribute(" name "));
+       response.write( GetterUtil.getBoolean((String)dynamicAttributes.get("nullable")) );
+    response.write( value.toString() )+response.write(request.getAttribute(" value").toString() );
+
+
+
+
+       
+     		String valueString = StringPool.BLANK;
+     
+     		if (value != null) {
+     			valueString = value.toString();
+     		}
+     
+     		if (type.equals("hidden") && (value == null)) {
+     			valueString = BeanPropertiesUtil.getStringSilent(bean, name);
+     		}
+     		else if (!ignoreRequestValue && (Validator.isNull(type) || type.equals("email") || type.equals("text") || type.equals("textarea"))) {
+     			valueString = BeanParamUtil.getStringSilent(bean, request, name, valueString);
+     
+     			if (Validator.isNotNull(fieldParam)) {
+     				valueString = ParamUtil.getString(request, fieldParam, valueString);
+     			}
+     		}
+     		
+
+
+
+
+  response.write( autoFocus );
+ response.write( LanguageUtil.getAvailableLocales() )+response.write(request.getAttribute(" LanguageUtil").getAvailableLocales() );
+ response.write( fieldCssClass )+response.write(request.getAttribute(" fieldCssClass "));
+  response.write( defaultLanguageId )+response.write(request.getAttribute(" defaultLanguageId "));
+ response.write( disabled )+response.write(request.getAttribute(" disabled "));
+ response.write( formName )+response.write(request.getAttribute(" formName "));
+   response.write( id )+response.write(request.getAttribute(" id "));
+   response.write( ignoreRequestValue )+response.write(request.getAttribute(" ignoreRequestValue "));
+   response.write( languageId )+response.write(request.getAttribute(" languageId "));
+     response.write( name )+response.write(request.getAttribute(" name "));
+ response.write( onChange )+response.write(request.getAttribute(" onChange "));
+response.write( onClick )+response.write(request.getAttribute(" onClick "));
+    response.write( placeholder )+response.write(request.getAttribute(" placeholder "));
+     response.write( type.equals("text") ? "input" : type );
+    response.write( valueString )+response.write(request.getAttribute(" valueString "));
+
+
+
+
+ 
+     				String[] storedDimensions = resizable ? StringUtil.split(SessionClicks.get(request, _TEXTAREA_WIDTH_HEIGHT_PREFIX + namespace + id, StringPool.BLANK)) : StringPool.EMPTY_ARRAY;
+     				
+
+       response.write( fieldCssClass )+response.write(request.getAttribute(" fieldCssClass "));response.write( disabled ? "disabled" : StringPool.BLANK );response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );response.write( multiple ? "multiple" : StringPool.BLANK );response.write( namespace + name )+response.write(request.getAttribute(" namespace ")+ name );response.write( Validator.isNotNull(onChange) ? "onChange=\"" + onChange + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(onClick) ? "onClick=\"" + onClick + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(placeholder) ? "placeholder=\"" + LanguageUtil.get(request, placeholder) + "\"" : StringPool.BLANK );response.write( (storedDimensions.length > 1) ? "style=\"height: " + storedDimensions[0] + "; width: " + storedDimensions[1] + ";" + title + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(title) ? "title=\"" + LanguageUtil.get(locale, title) + "\"" : StringPool.BLANK );response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );response.write( InlineUtil.buildDynamicAttributes(dynamicAttributes) )+response.write(request.getAttribute(" InlineUtil").buildDynamicAttributes(dynamicAttributes) );response.write( HtmlUtil.escape(valueString) )+response.write(request.getAttribute(" HtmlUtil").escape(valueString) );
+
+
+
+response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+
+
+
+
+
+   response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+
+
+
+
+
+   response.write( _TEXTAREA_WIDTH_HEIGHT_PREFIX )+response.write(request.getAttribute(" _TEXTAREA_WIDTH_HEIGHT_PREFIX "));response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( type.equals("image") ? "alt=\"" + LanguageUtil.get(request, title) + "\"" : StringPool.BLANK );response.write( fieldCssClass )+response.write(request.getAttribute(" fieldCssClass "));response.write( disabled ? "disabled" : StringPool.BLANK );response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );response.write( (max != null) ? "max=\"" + max + "\"": StringPool.BLANK );response.write( (min != null) ? "min=\"" + min + "\"": StringPool.BLANK );response.write( multiple ? "multiple" : StringPool.BLANK );response.write( namespace + name )+response.write(request.getAttribute(" namespace ")+ name );response.write( Validator.isNotNull(onChange) ? "onChange=\"" + onChange + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(onClick) ? "onClick=\"" + onClick + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(placeholder) ? "placeholder=\"" + LanguageUtil.get(request, placeholder) + "\"" : StringPool.BLANK );response.write( Validator.isNotNull(title) ? "title=\"" + LanguageUtil.get(locale, title) + "\"" : StringPool.BLANK );response.write( Validator.isNull(type) ? "text" : type );response.write( !type.equals("image") ? "value=\"" + HtmlUtil.escapeAttribute(valueString) + "\"" : StringPool.BLANK );response.write( AUIUtil.buildData(data) )+response.write(request.getAttribute(" AUIUtil").buildData(data) );response.write( InlineUtil.buildDynamicAttributes(dynamicAttributes) )+response.write(request.getAttribute(" InlineUtil").buildDynamicAttributes(dynamicAttributes) );
+
+
+
+
+
+    response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+
+
+
+
+
+
+
+      response.write(helpTextCssClass)+response.write(request.getAttribute("helpTextCssClass"));response.write( suffix )+response.write(request.getAttribute(" suffix "));
+
+
+
+
+
+
+     response.write( labelContent )+response.write(request.getAttribute(" labelContent "));
+}
+
+}

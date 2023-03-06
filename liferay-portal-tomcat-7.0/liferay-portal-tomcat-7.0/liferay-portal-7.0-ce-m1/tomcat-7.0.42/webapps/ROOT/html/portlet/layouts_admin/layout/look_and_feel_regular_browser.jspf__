@@ -1,0 +1,46 @@
+﻿ package PackageNo1182450026; public class look_and_feel_regular_browser_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     List<Theme> themes = ThemeLocalServiceUtil.getPageThemes(company.getCompanyId(), liveGroupId, user.getUserId(), false);
+     List<ColorScheme> colorSchemes = selTheme.getColorSchemes();
+     
+     request.setAttribute("edit_pages.jsp-themes", themes);
+     request.setAttribute("edit_pages.jsp-colorSchemes", colorSchemes);
+     request.setAttribute("edit_pages.jsp-selTheme", selTheme);
+     request.setAttribute("edit_pages.jsp-selColorScheme", selColorScheme);
+     request.setAttribute("edit_pages.jsp-device", "regular");
+     request.setAttribute("edit_pages.jsp-editable", Boolean.FALSE);
+     
+
+
+
+
+
+
+
+
+
+      
+     	request.setAttribute("edit_pages.jsp-editable", Boolean.TRUE);
+     	
+}
+
+}

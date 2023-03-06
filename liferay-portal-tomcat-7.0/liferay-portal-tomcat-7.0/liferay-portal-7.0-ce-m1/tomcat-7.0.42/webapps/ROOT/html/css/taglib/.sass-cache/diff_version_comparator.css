@@ -1,0 +1,180 @@
+.diff-version-comparator .taglib-diff-html .diff-html-changed {
+  border-bottom: 2px dotted transparent; }
+.diff-version-comparator .diff-version-head {
+  border-bottom: 1px solid transparent;
+  margin-bottom: 40px;
+  padding-bottom: 10px; }
+  .diff-version-comparator .diff-version-head .diff-selector-version {
+    margin-bottom: 0;
+    margin-top: 0;
+    position: static;
+    vertical-align: baseline; }
+    .diff-version-comparator .diff-version-head .diff-selector-version a .lfr-icon-menu-icon {
+      display: none; }
+    .diff-version-comparator .diff-version-head .diff-selector-version .caret {
+      margin-top: -4px; }
+  .diff-version-comparator .diff-version-head .diff-source-selector {
+    padding-right: 20px; }
+    .diff-version-comparator .diff-version-head .diff-source-selector .diff-selector {
+      overflow: hidden; }
+    .diff-version-comparator .diff-version-head .diff-source-selector .diff-selector-version-info {
+      margin-right: 16px; }
+  .diff-version-comparator .diff-version-head .diff-target-selector {
+    border-left: 1px solid transparent;
+    padding-left: 40px; }
+  .diff-version-comparator .diff-version-head .diff-source-selector, .diff-version-comparator .diff-version-head .diff-target-selector {
+    padding-bottom: 20px; }
+.diff-version-comparator .search-container-column {
+  padding-left: 10px; }
+  .diff-version-comparator .search-container-column .language-selector .form-group {
+    margin-bottom: 10px; }
+  .diff-version-comparator .search-container-column .search-panels {
+    padding: 0;
+    position: relative; }
+    .diff-version-comparator .search-container-column .search-panels .search-panels-bar .form-group {
+      margin-bottom: 10px; }
+    .diff-version-comparator .search-container-column .search-panels .search-panels-bar .search-panel-icon {
+      height: 18px;
+      left: 8px;
+      position: absolute;
+      top: 8px;
+      width: 27px; }
+    .diff-version-comparator .search-container-column .search-panels .search-panels-bar input {
+      padding-left: 40px; }
+  .diff-version-comparator .search-container-column .version-item {
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 10px; }
+    .diff-version-comparator .search-container-column .version-item.last {
+      border-width: 0; }
+    .diff-version-comparator .search-container-column .version-item .version-avatar {
+      padding-right: 5px; }
+      .diff-version-comparator .search-container-column .version-item .version-avatar .avatar {
+        width: 45px; }
+    .diff-version-comparator .search-container-column .version-item .version-title {
+      display: block;
+      margin-bottom: 5px; }
+    .diff-version-comparator .search-container-column .version-item .version-info {
+      margin-top: 14px; }
+      .diff-version-comparator .search-container-column .version-item .version-info .user-info {
+        display: block;
+        line-height: 13px; }
+.diff-version-comparator .diff-container-column {
+  border: 1px solid transparent;
+  padding: 25px; }
+  .diff-version-comparator .diff-container-column .diff-container {
+    border: 1px solid transparent;
+    border-bottom-width: 0;
+    min-height: 400px;
+    padding: 25px 20px;
+    position: relative; }
+  .diff-version-comparator .diff-container-column .diff-version-filter {
+    border: 1px solid transparent;
+    border-bottom-width: 0;
+    padding: 10px 15px; }
+    .diff-version-comparator .diff-container-column .diff-version-filter .close-version-filter {
+      cursor: pointer; }
+    .diff-version-comparator .diff-container-column .diff-version-filter .user-name {
+      margin-right: 5px; }
+  .diff-version-comparator .diff-container-column .legend-info {
+    border: 1px solid transparent;
+    border-top-width: 0;
+    padding: 20px; }
+    .diff-version-comparator .diff-container-column .legend-info .legend-item {
+      margin-right: 15px; }
+      .diff-version-comparator .diff-container-column .legend-info .legend-item.diff-html-changed {
+        border-bottom: 2px dotted transparent; }
+.diff-version-comparator .diff-version-title {
+  display: block;
+  margin-bottom: 10px; }
+
+/* Skin */
+.diff-version-comparator .taglib-diff-html .diff-html-changed {
+  background-image: none;
+  border-bottom-color: #009AE5; }
+  .diff-version-comparator .taglib-diff-html .diff-html-changed img {
+    border-color: #009AE5; }
+.diff-version-comparator .diff-version-head {
+  border-bottom-color: #E5E5E5; }
+  .diff-version-comparator .diff-version-head .diff-selector-version {
+    font-size: inherit; }
+    .diff-version-comparator .diff-version-head .diff-selector-version a {
+      text-decoration: none; }
+      .diff-version-comparator .diff-version-head .diff-selector-version a .lfr-icon-menu-text:hover, .diff-version-comparator .diff-version-head .diff-selector-version a .lfr-icon-menu-text:focus {
+        text-decoration: underline; }
+    .diff-version-comparator .diff-version-head .diff-selector-version .caret {
+      border-top-color: #FFF; }
+  .diff-version-comparator .diff-version-head .diff-target-selector {
+    border-left-color: #E5E5E5; }
+  .diff-version-comparator .diff-version-head .diff-source-selector, .diff-version-comparator .diff-version-head .diff-target-selector {
+    font-size: 20px;
+    font-weight: 200; }
+    .diff-version-comparator .diff-version-head .diff-source-selector .diff-selector-version-info, .diff-version-comparator .diff-version-head .diff-target-selector .diff-selector-version-info {
+      color: #8C8C8C;
+      font-size: 12px; }
+.diff-version-comparator .search-container-column .language-selector .form-group select {
+  font-size: 13px; }
+.diff-version-comparator .search-container-column .search-panels .search-panels-bar .form-group .search-panels-input {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0; }
+.diff-version-comparator .search-container-column .search-panels .search-panels-bar .search-panel-icon {
+  background: url(@theme_image_path@/diff/search_panel_icon.png) no-repeat 0 50%;
+  color: #D4D4D4;
+  font-size: 0; }
+.diff-version-comparator .search-container-column .search-panels .search-panels-bar input {
+  font-size: 14px; }
+.diff-version-comparator .search-container-column .version-item {
+  border-bottom-color: #E5E5E5; }
+  .diff-version-comparator .search-container-column .version-item.selected {
+    background-color: #F0F0F0; }
+    .diff-version-comparator .search-container-column .version-item.selected .version-title {
+      color: #555; }
+    .diff-version-comparator .search-container-column .version-item.selected .version-info .user-info, .diff-version-comparator .search-container-column .version-item.selected .version-info .date-info {
+      color: #555; }
+  .diff-version-comparator .search-container-column .version-item .version-title {
+    color: #009AE5;
+    font-weight: 400; }
+  .diff-version-comparator .search-container-column .version-item .version-info .user-info {
+    color: #009AE5;
+    font-size: 13px;
+    line-height: 13px; }
+  .diff-version-comparator .search-container-column .version-item .version-info .date-info {
+    color: #8C8C8C;
+    font-size: 10px; }
+.diff-version-comparator .diff-container-column {
+  background-color: #F1F1F1;
+  border-color: #EBEBEB; }
+  .diff-version-comparator .diff-container-column .diff-container {
+    background-color: #FFF;
+    border-color: #E5E5E5; }
+  .diff-version-comparator .diff-container-column .legend-info {
+    background-color: #FFF;
+    border-color: #E5E5E5; }
+    .diff-version-comparator .diff-container-column .legend-info .add.icon-stop {
+      color: #CFC; }
+    .diff-version-comparator .diff-container-column .legend-info .delete.icon-stop {
+      color: #FDC6C6; }
+    .diff-version-comparator .diff-container-column .legend-info .legend-item.diff-html-changed {
+      border-bottom-color: #009AE5; }
+  .diff-version-comparator .diff-container-column .diff-version-filter {
+    background-color: #F9F9F9;
+    border-color: #E5E5E5; }
+    .diff-version-comparator .diff-container-column .diff-version-filter .close-version-filter {
+      color: #CCC; }
+    .diff-version-comparator .diff-container-column .diff-version-filter .display-date {
+      color: #8C8C8C;
+      font-size: 10px; }
+    .diff-version-comparator .diff-container-column .diff-version-filter .user-name {
+      color: #009AE5;
+      font-size: 13px; }
+    .diff-version-comparator .diff-container-column .diff-version-filter .version {
+      color: #555;
+      font-weight: 400; }
+.diff-version-comparator .diff-version-title {
+  color: #8C8C8C;
+  font-size: 12px; }

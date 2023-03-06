@@ -1,0 +1,105 @@
+﻿ package PackageNo752388414; public class asset_metadata_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     for (int j = 0; j < metadataFields.length; j++) {
+     	String iconCssClass = StringPool.BLANK;
+     	String value = null;
+     
+     	if (metadataFields[j].equals("create-date")) {
+     		iconCssClass = "icon-calendar";
+     		value = dateFormatDate.format(assetEntry.getCreateDate());
+     	}
+     	else if (metadataFields[j].equals("modified-date")) {
+     		iconCssClass = "icon-calendar";
+     		value = dateFormatDate.format(assetEntry.getModifiedDate());
+     	}
+     	else if (metadataFields[j].equals("publish-date")) {
+     		iconCssClass = "icon-calendar";
+     
+     		if (assetEntry.getPublishDate() == null) {
+     			value = StringPool.BLANK;
+     		}
+     		else {
+     			value = dateFormatDate.format(assetEntry.getPublishDate());
+     		}
+     	}
+     	else if (metadataFields[j].equals("expiration-date")) {
+     		iconCssClass = "icon-calendar";
+     
+     		if (assetEntry.getExpirationDate() == null) {
+     			value = StringPool.BLANK;
+     		}
+     		else {
+     			value = dateFormatDate.format(assetEntry.getExpirationDate());
+     		}
+     	}
+     	else if (metadataFields[j].equals("priority")) {
+     		iconCssClass = "icon-long-arrow-up";
+     
+     		value = LanguageUtil.get(request, "priority") + StringPool.COLON + StringPool.SPACE + assetEntry.getPriority();
+     	}
+     	else if (metadataFields[j].equals("author")) {
+     		iconCssClass = "icon-user";
+     
+     		String userName = PortalUtil.getUserName(assetRenderer.getUserId(), assetRenderer.getUserName());
+     
+     		value = LanguageUtil.get(request, "by") + StringPool.SPACE + HtmlUtil.escape(userName);
+     	}
+     	else if (metadataFields[j].equals("view-count")) {
+     		int viewCount = assetEntry.getViewCount();
+     
+     		value = viewCount + StringPool.SPACE + LanguageUtil.get(request, (viewCount == 1) ? "view" : "views");
+     	}
+     	else if (metadataFields[j].equals("categories")) {
+     		value = "categories";
+     	}
+     	else if (metadataFields[j].equals("tags")) {
+     		value = "tags";
+     	}
+     
+     	if (Validator.isNotNull(value)) {
+     
+
+response.write( "metadata-" + metadataFields[j] );response.write( iconCssClass );
+
+
+
+   response.write( assetEntry.getClassName() )+response.write(request.getAttribute(" assetEntry").getClassName() );
+ response.write( assetEntry.getClassPK () )+response.write(request.getAttribute(" assetEntry").getClassPK () );
+    response.write( filterByMetadata ? renderResponse.createRenderURL() : null )+response.write(request.getAttribute(" filterByMetadata ? renderResponse").createRenderURL() : null );
+
+
+
+
+   response.write( assetEntry.getClassName() )+response.write(request.getAttribute(" assetEntry").getClassName() );
+ response.write( assetEntry.getClassPK () )+response.write(request.getAttribute(" assetEntry").getClassPK () );
+    response.write( filterByMetadata ? renderResponse.createRenderURL() : null )+response.write(request.getAttribute(" filterByMetadata ? renderResponse").createRenderURL() : null );
+
+
+
+       response.write( value );
+
+
+
+
+     
+     	}
+     }
+     
+}
+
+}

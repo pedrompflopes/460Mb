@@ -1,0 +1,193 @@
+﻿ package PackageNo962801984; public class display_settings_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		TemplateHandler templateHandler = TemplateHandlerRegistryUtil.getTemplateHandler(AssetEntry.class.getName());
+     		
+
+
+  response.write( PortalUtil.getClassNameId(templateHandler.getClassName()) )+response.write(request.getAttribute(" PortalUtil").getClassNameId(templateHandler.getClassName()) );
+   response.write( assetPublisherDisplayContext.getDisplayStyle() )+response.write(request.getAttribute(" assetPublisherDisplayContext").getDisplayStyle() );
+  response.write( assetPublisherDisplayContext.getDisplayStyleGroupId() )+response.write(request.getAttribute(" assetPublisherDisplayContext").getDisplayStyleGroupId() );
+    response.write( Arrays.asList(PropsValues.ASSET_PUBLISHER_DISPLAY_STYLES) )+response.write(request.getAttribute(" Arrays").asList(PropsValues.ASSET_PUBLISHER_DISPLAY_STYLES) );
+
+ response.write( configurationRenderURL.toString() )+response.write(request.getAttribute(" configurationRenderURL").toString() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		for (int currentDelta : PropsValues.SEARCH_CONTAINER_PAGE_DELTA_VALUES) {
+     		
+
+
+
+       
+     		}
+     		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	String helpMessage1 = "<em>" + LanguageUtil.format(request, "content-related-to-x", StringPool.DOUBLE_PERIOD, false) + "</em>";
+     	String helpMessage2 = "<em>" + LanguageUtil.format(request, "content-with-tag-x", StringPool.DOUBLE_PERIOD, false) + "</em>";
+     	
+
+
+
+
+
+
+
+   response.write( !assetPublisherDisplayContext.isOpenOfficeServerEnabled() ? "enabling-openoffice-integration-provides-document-conversion-functionality" : StringPool.BLANK );
+
+
+
+     			String[] conversions = DocumentConversionUtil.getConversions("html");
+     
+     			for (String conversion : conversions) {
+     			
+
+
+
+
+     			}
+     			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( assetPublisherDisplayContext.getSocialBookmarksDisplayPosition() )+response.write(request.getAttribute(" assetPublisherDisplayContext").getSocialBookmarksDisplayPosition() );
+  response.write( assetPublisherDisplayContext.getSocialBookmarksDisplayStyle() )+response.write(request.getAttribute(" assetPublisherDisplayContext").getSocialBookmarksDisplayStyle() );
+     response.write( assetPublisherDisplayContext.isEnableSocialBookmarks() )+response.write(request.getAttribute(" assetPublisherDisplayContext").isEnableSocialBookmarks() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     
+     		// Left list
+     
+     		List leftList = new ArrayList();
+     
+     		String[] metadataFields = assetPublisherDisplayContext.getMetadataFields();
+     
+     		for (int i = 0; i < metadataFields.length; i++) {
+     			String folderColumn = metadataFields[i];
+     
+     			leftList.add(new KeyValuePair(folderColumn, LanguageUtil.get(request, folderColumn)));
+     		}
+     
+     		// Right list
+     
+     		List rightList = new ArrayList();
+     
+     		Arrays.sort(metadataFields);
+     
+     		String[] allMetadataFields = new String[] {"create-date", "modified-date", "publish-date", "expiration-date", "priority", "author", "view-count", "categories", "tags"};
+     
+     		for (String folderColumn : allMetadataFields) {
+     			if (Arrays.binarySearch(metadataFields, folderColumn) < 0) {
+     				rightList.add(new KeyValuePair(folderColumn, LanguageUtil.get(request, folderColumn)));
+     			}
+     		}
+     
+     		rightList = ListUtil.sort(rightList, new KeyValuePairComparator(false, true));
+     		
+
+
+
+       response.write( leftList )+response.write(request.getAttribute(" leftList "));
+
+
+
+response.write( rightList );
+}
+
+}

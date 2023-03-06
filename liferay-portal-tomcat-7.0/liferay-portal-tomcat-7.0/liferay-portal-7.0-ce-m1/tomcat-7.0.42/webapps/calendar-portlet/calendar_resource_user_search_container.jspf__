@@ -1,0 +1,59 @@
+﻿ package PackageNo1427179787; public class calendar_resource_user_search_container_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( new CalendarResourceSearch(renderRequest, CalendarResourceSearch.DEFAULT_CUR_PARAM + "Users", iteratorURL) );
+
+
+      
+     	if (displayTerms.isAdvancedSearch()) {
+     		total = UserLocalServiceUtil.searchCount(themeDisplay.getCompanyId(), displayTerms.getName(), displayTerms.getDescription(), displayTerms.getDescription(), displayTerms.getCode(), null, WorkflowConstants.STATUS_ANY, null, displayTerms.isAndOperator());
+     
+     		searchContainer.setTotal(total);
+     
+     		searchContainer.setResults(UserLocalServiceUtil.search(themeDisplay.getCompanyId(), displayTerms.getName(), displayTerms.getDescription(), displayTerms.getDescription(), displayTerms.getCode(), null, WorkflowConstants.STATUS_ANY, null, displayTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(), new UserScreenNameComparator()));
+     	}
+     	else {
+     		total = UserLocalServiceUtil.searchCount(themeDisplay.getCompanyId(), displayTerms.getKeywords(), WorkflowConstants.STATUS_ANY, null);
+     
+     		searchContainer.setTotal(total);
+     
+     		searchContainer.setResults(UserLocalServiceUtil.search(themeDisplay.getCompanyId(), displayTerms.getKeywords(), WorkflowConstants.STATUS_ANY, null, searchContainer.getStart(), searchContainer.getEnd(), new UserScreenNameComparator()));
+     	}
+     	
+
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(user.getFullName()) )+response.write(request.getAttribute(" HtmlUtil").escape(user.getFullName()) );
+
+
+
+
+    response.write( user.getEmailAddress() )+response.write(request.getAttribute(" user").getEmailAddress() );
+
+
+
+
+    response.write( LanguageUtil.get(request, "user") );
+}
+
+}

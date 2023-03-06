@@ -1,0 +1,200 @@
+﻿ package PackageNo1918016552; public class folder_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     int curFoldersCount = 0;
+     int curFileEntriesCount = 0;
+     
+     boolean repositoryAccess = true;
+     
+     try {
+     	curFoldersCount = DLAppServiceUtil.getFoldersCount(curFolder.getRepositoryId(), curFolder.getFolderId());
+     	curFileEntriesCount = DLAppServiceUtil.getFileEntriesAndFileShortcutsCount(curFolder.getRepositoryId(), curFolder.getFolderId(), status);
+     }
+     catch (RepositoryException re) {
+     	_log.error(re.getMessage());
+     }
+     catch (Exception e) {
+     	repositoryAccess = false;
+     
+     	row.setClassName("repository-error");
+     }
+     
+     for (int j = 0; j < folderColumns.length; j++) {
+     	String folderColumn = folderColumns[j];
+     
+
+
+
+
+
+     			String align = SearchEntry.DEFAULT_ALIGN;
+     
+     			if ((j + 1) == folderColumns.length) {
+     				align = "right";
+     			}
+     			
+
+
+     response.write( align );
+
+
+
+
+
+
+    response.write( folderColumn );
+
+
+
+
+
+    response.write( repositoryAccess ? rowURL : null );
+    response.write( folderColumn );
+
+
+response.write(rowURL)+response.write(request.getAttribute("rowURL"));
+
+
+
+
+  
+     					AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(DLFolder.class.getName());
+     
+     					AssetRenderer assetRenderer = assetRendererFactory.getAssetRenderer(curFolder.getFolderId());
+     					
+
+response.write(assetRenderer.getIconCssClass());
+
+
+
+
+
+     response.write( LanguageUtil.get(request, "an-unexpected-error-occurred-while-connecting-to-the-repository") );
+
+
+
+
+ response.write( HtmlUtil.escape(curFolder.getName()) )+response.write(request.getAttribute(" HtmlUtil").escape(curFolder.getName()) );
+
+
+
+
+
+
+
+
+
+ response.write( HtmlUtil.escape(curFolder.getDescription()) )+response.write(request.getAttribute(" HtmlUtil").escape(curFolder.getDescription()) );
+
+
+
+
+
+
+
+
+
+
+  
+     					List subfolders = new ArrayList();
+     
+     					try {
+     						subfolders = DLAppServiceUtil.getFolders(curFolder.getRepositoryId(), curFolder.getFolderId(), 0, 5);
+     					}
+     					catch (Exception e) {
+     					}
+     					
+
+
+
+
+
+
+   
+     						for (int k = 0; k < subfolders.size(); k++) {
+     							Folder subfolder = (Folder)subfolders.get(k);
+     
+     							rowURL.setParameter("folderId", String.valueOf(subfolder.getFolderId()));
+     
+     							String name = HtmlUtil.escape(subfolder.getName());
+     
+     							if (((k + 1) < subfolders.size()) || (curFoldersCount > subfolders.size())) {
+     								name += StringPool.COMMA_AND_SPACE;
+     							}
+     						
+
+  response.write(rowURL)+response.write(request.getAttribute("rowURL"));response.write( name );
+
+   
+     						}
+     
+     						rowURL.setParameter("folderId", String.valueOf(curFolder.getFolderId()));
+     						
+
+
+  response.write(rowURL)+response.write(request.getAttribute("rowURL"));
+
+
+
+
+
+
+
+
+     			boolean isLocked = curFolder.isLocked();
+     			
+
+
+    response.write( repositoryAccess ? rowURL : null );
+    response.write( folderColumn );
+     response.write( LanguageUtil.get(request, isLocked ? "yes" : "no") );
+
+
+
+
+    response.write( repositoryAccess ? rowURL : null );
+    response.write( folderColumn );
+     response.write( String.valueOf(curFileEntriesCount) );
+
+
+
+
+    response.write( repositoryAccess ? rowURL : null );
+    response.write( folderColumn );
+     response.write( String.valueOf(curFoldersCount) );
+
+
+
+
+    response.write( folderColumn );
+
+
+
+
+
+    response.write( folderColumn );
+
+
+
+
+
+     
+     }
+     
+}
+
+}

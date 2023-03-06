@@ -1,0 +1,390 @@
+﻿ package PackageNo321763740;import _html_portlet_init_jsp;import com.liferay.portlet.documentlibrary.DuplicateFolderNameException;import com.liferay.portlet.documentlibrary.FileMimeTypeException;import com.liferay.portlet.documentlibrary.NoSuchFolderException;import com.liferay.portlet.documentlibrary.SourceFileNameException;import com.liferay.portlet.documentlibrary.model.DLFileEntryMetadata;import com.liferay.portlet.documentlibrary.model.DLFileEntryType;import com.liferay.portlet.documentlibrary.service.DLFileEntryMetadataLocalServiceUtil;import com.liferay.portlet.documentlibrary.service.DLFileEntryTypeLocalServiceUtil;import com.liferay.portlet.documentlibrary.service.permission.DLFolderPermission;import com.liferay.portlet.documentselector.util.DocumentSelectorUtil;import com.liferay.portlet.dynamicdatamapping.storage.StorageEngineUtil;import com.liferay.portlet.journal.search.FileEntryDisplayTerms;import com.liferay.portlet.journal.search.FileEntrySearch;import com.liferay.portlet.layoutsadmin.context.LayoutsAdminDisplayContext;import com.liferay.portlet.wiki.model.WikiPage;import com.liferay.portlet.wiki.model.WikiPageResource;import com.liferay.portlet.wiki.service.WikiPageLocalServiceUtil;import com.liferay.portlet.wiki.service.WikiPageResourceLocalServiceUtil; public class documents_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\documents.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\documents.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\document_selector\documents.jsp */
+
+     
+     String[] tabs1Names = DocumentSelectorUtil.getTabs1Names(request);
+     
+     long groupId = ParamUtil.getLong(request, "groupId", scopeGroupId);
+     
+     Folder folder = (Folder)request.getAttribute(WebKeys.DOCUMENT_LIBRARY_FOLDER);
+     
+     long folderId = BeanParamUtil.getLong(folder, request, "folderId", DLFolderConstants.DEFAULT_PARENT_FOLDER_ID);
+     
+     if ((folder != null) && (folder.getGroupId() != groupId)) {
+     	folder = null;
+     
+     	folderId = 0;
+     }
+     
+     if (folderId > 0) {
+     	folder = DLAppServiceUtil.getFolder(folderId);
+     }
+     
+     String ckEditorFuncNum = DocumentSelectorUtil.getCKEditorFuncNum(request);
+     String eventName = ParamUtil.getString(request, "eventName");
+     boolean showGroupsSelector = ParamUtil.getBoolean(request, "showGroupsSelector");
+     String type = DocumentSelectorUtil.getType(request);
+     
+     if (folder != null) {
+     	PortletURL breadcrumbURL = renderResponse.createRenderURL();
+     
+     	breadcrumbURL.setParameter("struts_action", "/document_selector/view");
+     	breadcrumbURL.setParameter("tabs1Names", StringUtil.merge(tabs1Names));
+     	breadcrumbURL.setParameter("groupId", String.valueOf(groupId));
+     	breadcrumbURL.setParameter("folderId", String.valueOf(DLFolderConstants.DEFAULT_PARENT_FOLDER_ID));
+     	breadcrumbURL.setParameter("ckEditorFuncNum", ckEditorFuncNum);
+     	breadcrumbURL.setParameter("eventName", eventName);
+     	breadcrumbURL.setParameter("showGroupsSelector", String.valueOf(showGroupsSelector));
+     	breadcrumbURL.setParameter("type", type);
+     
+     	PortalUtil.addPortletBreadcrumbEntry(request, themeDisplay.translate("home"), breadcrumbURL.toString());
+     
+     	breadcrumbURL.setParameter("folderId", String.valueOf(folderId));
+     
+     	DLUtil.addPortletBreadcrumbEntries(folder, request, breadcrumbURL);
+     }
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/document_selector/view");
+     portletURL.setParameter("tabs1Names", StringUtil.merge(tabs1Names));
+     portletURL.setParameter("groupId", String.valueOf(groupId));
+     portletURL.setParameter("folderId", String.valueOf(folderId));
+     portletURL.setParameter("ckEditorFuncNum", ckEditorFuncNum);
+     portletURL.setParameter("eventName", eventName);
+     portletURL.setParameter("showGroupsSelector", String.valueOf(showGroupsSelector));
+     portletURL.setParameter("type", type);
+     
+
+
+
+
+
+
+
+
+
+      
+     	FileEntrySearch fileEntrySearchContainer = new FileEntrySearch(renderRequest, portletURL);
+     
+     	FileEntryDisplayTerms displayTerms = (FileEntryDisplayTerms)fileEntrySearchContainer.getDisplayTerms();
+     
+     	displayTerms.setSelectedGroupId(groupId);
+     	
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+       response.write( PortletKeys.DOCUMENT_LIBRARY )+response.write(request.getAttribute(" PortletKeys").DOCUMENT_LIBRARY );
+
+ response.write(portletURL.getToString());
+ response.write(String.getValueOf(groupId));
+ response.write(String.getValueOf(folderId));
+
+
+  
+     					AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(DLFolder.class.getName());
+     					
+
+
+      response.write( addFolderURL )+response.write(request.getAttribute(" addFolderURL "));
+      response.write( assetRendererFactory.getIconCssClass() )+response.write(request.getAttribute(" assetRendererFactory").getIconCssClass() );
+       response.write( (folder != null) ? "subfolder" : "folder" );
+
+
+
+
+
+  
+     					List<DLFileEntryType> fileEntryTypes = Collections.emptyList();
+     
+     					if ((folder == null) || folder.isSupportsMetadata()) {
+     						fileEntryTypes = DLFileEntryTypeLocalServiceUtil.getFolderFileEntryTypes(PortalUtil.getCurrentAndAncestorSiteGroupIds(groupId), folderId, true);
+     					}
+     					
+
+
+
+
+  response.write(Constants.getADD())+response.write(request.getAttribute("Constants").getADD());
+  response.write(portletURL.getToString());
+  response.write(String.getValueOf(folderId));
+  response.write(type);
+
+
+   
+     						AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(DLFileEntry.class.getName());
+     						
+
+
+       response.write( editFileEntryURL )+response.write(request.getAttribute(" editFileEntryURL "));
+       response.write( assetRendererFactory.getIconCssClass() )+response.write(request.getAttribute(" assetRendererFactory").getIconCssClass() );
+
+
+
+
+  
+     					for (DLFileEntryType fileEntryType : fileEntryTypes) {
+     					
+
+
+
+  response.write(Constants.getADD())+response.write(request.getAttribute("Constants").getADD());
+  response.write(portletURL.getToString());
+  response.write(String.getValueOf(folderId));
+  response.write(String.getValueOf(fileEntryType().getFileEntryTypeId()))+response.write(request.getAttribute("String").getValueOf(fileEntryType().getFileEntryTypeId()));
+  response.write(type);
+
+
+   
+     						AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(DLFileEntry.class.getName());
+     						
+
+
+       response.write( addFileEntryTypeURL )+response.write(request.getAttribute(" addFileEntryTypeURL "));
+       response.write( assetRendererFactory.getIconCssClass() )+response.write(request.getAttribute(" assetRendererFactory").getIconCssClass() );
+response.write( HtmlUtil.escape(fileEntryType.getName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(fileEntryType.getName(locale)) );
+
+
+  
+     					}
+     					
+
+
+
+
+
+
+
+      response.write( fileEntrySearchContainer )+response.write(request.getAttribute(" fileEntrySearchContainer "));
+
+
+
+
+
+
+
+
+   response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+  response.write( portletURL );
+
+
+       response.write( DLAppServiceUtil.getFolders(groupId, folderId, searchContainer.getStart(), searchContainer.getEnd()) );
+     response.write( DLAppServiceUtil.getFoldersCount(groupId, folderId) );
+
+
+
+
+
+
+
+
+
+response.write(StringUtil.getMerge(tabs1Names))+response.write(request.getAttribute("StringUtil").getMerge(tabs1Names));
+response.write(String.getValueOf(groupId));
+response.write(String.getValueOf(curFolder().getFolderId()))+response.write(request.getAttribute("String").getValueOf(curFolder().getFolderId()));
+response.write(ckEditorFuncNum);
+response.write(eventName);
+response.write(String.getValueOf(showGroupsSelector));
+response.write(type);
+
+
+
+     response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+
+  
+     					AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(DLFolder.class.getName());
+     
+     					AssetRenderer assetRenderer = assetRendererFactory.getAssetRenderer(curFolder.getFolderId());
+     					
+
+
+      response.write( assetRenderer.getIconCssClass() );
+       response.write( true )+response.write(request.getAttribute(" true "));
+ response.write( HtmlUtil.escape(curFolder.getName()) )+response.write(request.getAttribute(" HtmlUtil").escape(curFolder.getName()) );
+
+
+
+ 
+     				List<Long> subfolderIds = DLAppServiceUtil.getSubfolderIds(curFolder.getRepositoryId(), curFolder.getFolderId(), false);
+     
+     				int foldersCount = subfolderIds.size();
+     
+     				subfolderIds.clear();
+     				subfolderIds.add(curFolder.getFolderId());
+     
+     				int fileEntriesCount = DLAppServiceUtil.getFoldersFileEntriesCount(curFolder.getRepositoryId(), subfolderIds, WorkflowConstants.STATUS_APPROVED);
+     				
+
+
+
+      response.write( String.valueOf(foldersCount) );
+
+
+
+
+      response.write( String.valueOf(fileEntriesCount) );
+
+
+
+  response.write( searchContainer )+response.write(request.getAttribute(" searchContainer "));
+
+
+
+      
+     	PortletURL backURL = renderResponse.createRenderURL();
+     
+     	backURL.setParameter("struts_action", "/document_selector/view");
+     	backURL.setParameter("tabs1Names", StringUtil.merge(tabs1Names));
+     	backURL.setParameter("groupId", String.valueOf(groupId));
+     	backURL.setParameter("ckEditorFuncNum", ckEditorFuncNum);
+     	backURL.setParameter("eventName", eventName);
+     	backURL.setParameter("showGroupsSelector", String.valueOf(showGroupsSelector));
+     	backURL.setParameter("type", type);
+     	
+
+
+     response.write( backURL.toString() );
+ response.write( Validator.isNotNull(displayTerms.getKeywords()) );
+
+
+
+      
+     	PortletURL iteratorURL = renderResponse.createRenderURL();
+     
+     	iteratorURL.setParameter("struts_action", "/document_selector/view");
+     	iteratorURL.setParameter("tabs1Names", StringUtil.merge(tabs1Names));
+     	iteratorURL.setParameter("groupId", String.valueOf(groupId));
+     	iteratorURL.setParameter("folderId", String.valueOf(folderId));
+     	iteratorURL.setParameter("ckEditorFuncNum", ckEditorFuncNum);
+     	iteratorURL.setParameter("eventName", eventName);
+     	iteratorURL.setParameter("showGroupsSelector", String.valueOf(showGroupsSelector));
+     	iteratorURL.setParameter("type", type);
+     	
+
+
+
+ response.write( iteratorURL )+response.write(request.getAttribute(" iteratorURL "));
+
+
+       
+     		String keywords = ParamUtil.getString(request, "keywords");
+     
+     		if (Validator.isNotNull(keywords)) {
+     			SearchContext searchContext = SearchContextFactory.getInstance(request);
+     
+     			searchContext.setAttribute("groupId", groupId);
+     			searchContext.setAttribute("mimeTypes", DocumentSelectorUtil.getMimeTypes(request));
+     			searchContext.setAttribute("paginationType", "regular");
+     
+     			int entryEnd = ParamUtil.getInteger(request, "entryEnd", PropsValues.SEARCH_CONTAINER_PAGE_DEFAULT_DELTA);
+     
+     			searchContext.setEnd(entryEnd);
+     
+     			searchContext.setFolderIds(new long[]{folderId});
+     			searchContext.setGroupIds(new long[]{groupId});
+     			searchContext.setIncludeFolders(false);
+     
+     			searchContext.setKeywords(keywords);
+     
+     			searchContext.setScopeStrict(false);
+     
+     			int entryStart = ParamUtil.getInteger(request, "entryStart");
+     
+     			searchContext.setStart(entryStart);
+     
+     			Hits hits = DLAppServiceUtil.search(groupId, searchContext);
+     
+     			searchContainer.setTotal(hits.getLength());
+     
+     			searchContainer.setResults(DLUtil.getFileEntries(hits));
+     		}
+     		else {
+     			String[] mimeTypes = DocumentSelectorUtil.getMimeTypes(request);
+     
+     			searchContainer.setTotal(DLAppServiceUtil.getFileEntriesCount(groupId, folderId, mimeTypes));
+     
+     			searchContainer.setResults(DLAppServiceUtil.getFileEntries(groupId, folderId, mimeTypes, searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator()));
+     		}
+     		
+
+
+
+
+
+
+
+
+
+       response.write(DLUtil.getThumbnailStyle())+response.write(request.getAttribute("DLUtil").getThumbnailStyle());
+      response.write( HtmlUtil.escape(fileEntry.getTitle()) )+response.write(request.getAttribute(" HtmlUtil").escape(fileEntry.getTitle()) );
+
+
+
+
+     response.write( TextFormatter.formatStorageSize(fileEntry.getSize(), locale) )+response.write(request.getAttribute(" TextFormatter").formatStorageSize(fileEntry.getSize(), locale) );
+
+
+
+
+
+      response.write( String.valueOf(fileEntry.getReadCount()) )+response.write(request.getAttribute(" String").valueOf(fileEntry.getReadCount()) );
+
+
+
+
+
+     response.write( fileEntry.isCheckedOut() ? "yes" : "no" );
+
+
+
+
+ 
+     				Map<String, Object> data = new HashMap<String, Object>();
+     
+     				data.put("ckeditorfuncnum", ckEditorFuncNum);
+     				data.put("groupid", fileEntry.getGroupId());
+     				data.put("title", fileEntry.getTitle());
+     				data.put("url", DLUtil.getPreviewURL(fileEntry, fileEntry.getFileVersion(), themeDisplay, StringPool.BLANK, false, false));
+     				data.put("uuid", fileEntry.getUuid());
+     				data.put("version", fileEntry.getVersion());
+     				
+
+
+
+
+
+
+
+
+
+
+       response.write( HtmlUtil.escapeJS(eventName) );
+}
+
+}

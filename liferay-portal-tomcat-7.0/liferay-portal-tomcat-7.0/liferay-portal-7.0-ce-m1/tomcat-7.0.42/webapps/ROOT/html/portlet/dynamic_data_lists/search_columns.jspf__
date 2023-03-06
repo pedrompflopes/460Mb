@@ -1,0 +1,45 @@
+﻿ package PackageNo1330487713; public class search_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+  response.write( recordSet.getName(locale) )+response.write(request.getAttribute(" recordSet").getName(locale) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+  response.write( StringUtil.shorten(recordSet.getDescription(locale), 100) )+response.write(request.getAttribute(" StringUtil").shorten(recordSet.getDescription(locale), 100) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( false )+response.write(request.getAttribute(" false "));
+  response.write( recordSet.getModifiedDate() )+response.write(request.getAttribute(" recordSet").getModifiedDate() );
+}
+
+}

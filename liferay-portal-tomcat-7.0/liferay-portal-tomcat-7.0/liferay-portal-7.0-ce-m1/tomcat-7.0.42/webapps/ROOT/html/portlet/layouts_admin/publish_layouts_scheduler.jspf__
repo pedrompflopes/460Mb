@@ -1,0 +1,66 @@
+﻿ package PackageNo1375121637; public class publish_layouts_scheduler_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write(closeRedirect)+response.write(request.getAttribute("closeRedirect"));
+     response.write(String.getValueOf(stagingGroupId))+response.write(request.getAttribute("String").getValueOf(stagingGroupId));
+     response.write(String.getValueOf(layoutSetBranchId))+response.write(request.getAttribute("String").getValueOf(layoutSetBranchId));
+     response.write(layoutSetBranchName)+response.write(request.getAttribute("layoutSetBranchName"));
+     response.write(String.getValueOf(privateLayout))+response.write(request.getAttribute("String").getValueOf(privateLayout));
+
+
+
+
+
+
+      response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( scheduleCMD )+response.write(request.getAttribute(" scheduleCMD "));
+response.write( scheduledEventsURL )+response.write(request.getAttribute(" scheduledEventsURL "));
+
+
+
+
+
+
+
+
+
+  response.write( UnicodeLanguageUtil.get(request, "are-you-sure-you-want-to-delete-the-scheduled-event") );
+       response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( unscheduleCMD )+response.write(request.getAttribute(" unscheduleCMD "));
+ response.write( scheduledEventsURL )+response.write(request.getAttribute(" scheduledEventsURL "));
+}
+
+}

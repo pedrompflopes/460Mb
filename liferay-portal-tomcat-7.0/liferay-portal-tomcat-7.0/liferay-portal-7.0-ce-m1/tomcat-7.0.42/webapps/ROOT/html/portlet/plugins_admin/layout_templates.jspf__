@@ -1,0 +1,100 @@
+﻿ package PackageNo995745139; public class layout_templates_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	String taglibOnClick = "submitForm(document." + renderResponse.getNamespace() + "fm , '" + marketplaceURL.toString() +"');";
+     	
+
+
+
+
+
+
+     
+     List layoutTemplates = LayoutTemplateLocalServiceUtil.getLayoutTemplates();
+     
+
+
+response.write( portletURL )+response.write(request.getAttribute(" portletURL "));
+  response.write( layoutTemplates.size() )+response.write(request.getAttribute(" layoutTemplates").size() );
+
+
+     response.write( ListUtil.subList(layoutTemplates, searchContainer.getStart(), searchContainer.getEnd()) )+response.write(request.getAttribute(" ListUtil").subList(layoutTemplates, searchContainer.getStart(), searchContainer.getEnd()) );
+
+
+
+
+
+
+
+       
+     		PluginPackage pluginPackage = layoutTemplate.getPluginPackage();
+     		PluginSetting pluginSetting = PluginSettingLocalServiceUtil.getPluginSetting(company.getCompanyId(), layoutTemplate.getLayoutTemplateId(), Plugin.TYPE_LAYOUT_TEMPLATE);
+     
+     		PortletURL rowURL = renderResponse.createRenderURL();
+     
+     		rowURL.setParameter("struts_action", "/plugins_admin/edit_plugin");
+     		rowURL.setParameter("redirect", currentURL);
+     
+     		if (pluginPackage != null) {
+     			rowURL.setParameter("moduleId", pluginPackage.getModuleId());
+     		}
+     
+     		rowURL.setParameter("pluginId", layoutTemplate.getLayoutTemplateId());
+     		rowURL.setParameter("pluginType", Plugin.TYPE_LAYOUT_TEMPLATE);
+     		rowURL.setParameter("title", layoutTemplate.getName());
+     		
+
+
+
+
+
+       response.write(true)+response.write(request.getAttribute("true"));   response.write( layoutTemplate.getStaticResourcePath() + HtmlUtil.escapeAttribute(layoutTemplate.getThumbnailPath()) )+response.write(request.getAttribute(" layoutTemplate").getStaticResourcePath() + HtmlUtil.escapeAttribute(layoutTemplate.getThumbnailPath()) );
+
+      response.write( HtmlUtil.escape(layoutTemplate.getName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(layoutTemplate.getName(locale)) );
+
+
+
+
+
+
+
+
+
+
+
+       response.write( HtmlUtil.escape(pluginPackage.getName()) )+response.write(request.getAttribute(" HtmlUtil").escape(pluginPackage.getName()) );
+
+
+ response.write( pluginPackage.getContext() )+response.write(request.getAttribute(" pluginPackage").getContext() );
+
+
+
+
+
+
+
+    response.write( LanguageUtil.get(request, (pluginSetting.isActive() ? "yes" : "no")) );
+
+
+
+
+    response.write( HtmlUtil.escape(StringUtil.merge(pluginSetting.getRolesArray(), StringPool.COMMA_AND_SPACE)) );
+}
+
+}

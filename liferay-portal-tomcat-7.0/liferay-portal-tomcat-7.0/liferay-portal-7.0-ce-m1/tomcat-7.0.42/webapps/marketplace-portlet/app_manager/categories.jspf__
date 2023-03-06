@@ -1,0 +1,55 @@
+﻿ package PackageNo1349787763; public class categories_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     List<App> allApps = AppLocalServiceUtil.getApps(QueryUtil.ALL_POS, QueryUtil.ALL_POS);
+     
+     List<String> categories = ListUtil.fromArray(StringUtil.split(ListUtil.toString(allApps, "category")));
+     
+     ListUtil.distinct(categories);
+     ListUtil.sort(categories);
+     
+
+
+
+
+
+      response.write( category.equals(StringPool.BLANK) ? "active" : StringPool.BLANK );
+
+       
+     		portletURL.setParameter("category", StringPool.BLANK);
+     		
+
+     response.write(portletURL.getToString())+response.write(request.getAttribute("portletURL").getToString());
+
+
+      
+     	for (String curCategory : categories) {
+     		portletURL.setParameter("category", curCategory);
+     	
+
+       response.write( category.equals(curCategory) ? "active" : StringPool.BLANK );
+      response.write(portletURL.getToString())+response.write(request.getAttribute("portletURL").getToString());response.write( curCategory )+response.write(request.getAttribute(" curCategory "));
+
+
+      
+     	}
+     
+     	portletURL.setParameter("category", category);
+     	
+}
+
+}

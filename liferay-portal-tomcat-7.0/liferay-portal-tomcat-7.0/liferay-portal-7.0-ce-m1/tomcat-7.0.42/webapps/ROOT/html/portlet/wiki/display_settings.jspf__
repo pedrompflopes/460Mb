@@ -1,0 +1,105 @@
+﻿ package PackageNo1040823121; public class display_settings_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		TemplateHandler templateHandler = TemplateHandlerRegistryUtil.getTemplateHandler(WikiPage.class.getName());
+     		
+
+
+  response.write( PortalUtil.getClassNameId(templateHandler.getClassName()) )+response.write(request.getAttribute(" PortalUtil").getClassNameId(templateHandler.getClassName()) );
+   response.write( wikiPortletInstanceSettings.getDisplayStyle() )+response.write(request.getAttribute(" wikiPortletInstanceSettings").getDisplayStyle() );
+  response.write( wikiPortletInstanceSettings.getDisplayStyleGroupId(themeDisplay.getScopeGroupId()) )+response.write(request.getAttribute(" wikiPortletInstanceSettings").getDisplayStyleGroupId(themeDisplay.getScopeGroupId()) );
+ response.write( configurationRenderURL )+response.write(request.getAttribute(" configurationRenderURL "));
+      response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+
+      
+     	Set<String> currentVisibleNodes = new HashSet<String>(wikiConfigurationDisplayContext.getAllNodeNames());
+     
+     	// Left list
+     
+     	List<KeyValuePair> leftList = new ArrayList<KeyValuePair>();
+     
+     	String[] visibleNodeNames = wikiConfigurationDisplayContext.getVisibleNodeNames();
+     
+     	for (String folderColumn : visibleNodeNames) {
+     		if (currentVisibleNodes.contains(folderColumn)) {
+     			leftList.add(new KeyValuePair(folderColumn, HtmlUtil.escape(LanguageUtil.get(request, folderColumn))));
+     		}
+     	}
+     
+     	Arrays.sort(visibleNodeNames);
+     
+     	String[] hiddenNodes = wikiPortletInstanceSettings.getHiddenNodes();
+     
+     	Arrays.sort(hiddenNodes);
+     
+     	for (String folderColumn : currentVisibleNodes) {
+     		if ((Arrays.binarySearch(hiddenNodes, folderColumn) < 0) && (Arrays.binarySearch(visibleNodeNames, folderColumn) < 0)) {
+     			leftList.add(new KeyValuePair(folderColumn, HtmlUtil.escape(LanguageUtil.get(request, folderColumn))));
+     		}
+     	}
+     
+     	// Right list
+     
+     	List<KeyValuePair> rightList = new ArrayList<KeyValuePair>();
+     
+     	for (String folderColumn : hiddenNodes) {
+     		if (currentVisibleNodes.contains(folderColumn)) {
+     			if (Arrays.binarySearch(visibleNodeNames, folderColumn) < 0) {
+     				rightList.add(new KeyValuePair(folderColumn, HtmlUtil.escape(LanguageUtil.get(request, folderColumn))));
+     			}
+     		}
+     	}
+     
+     	rightList = ListUtil.sort(rightList, new KeyValuePairComparator(false, true));
+     	
+
+
+
+      response.write( leftList )+response.write(request.getAttribute(" leftList "));
+
+
+
+       response.write( rightList )+response.write(request.getAttribute(" rightList "));
+}
+
+}

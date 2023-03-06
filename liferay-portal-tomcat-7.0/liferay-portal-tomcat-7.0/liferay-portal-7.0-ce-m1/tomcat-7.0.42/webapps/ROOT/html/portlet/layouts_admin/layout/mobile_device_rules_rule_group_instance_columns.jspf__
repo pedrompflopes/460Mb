@@ -1,0 +1,66 @@
+﻿ package PackageNo2140091298; public class mobile_device_rules_rule_group_instance_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     MDRRuleGroup mdrRuleGroup = MDRRuleGroupLocalServiceUtil.fetchRuleGroup(mdrRuleGroupInstance.getRuleGroupId());
+     
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+
+   response.write( HtmlUtil.escape(mdrRuleGroup.getName(locale)) );
+
+
+   response.write( HtmlUtil.escape(mdrRuleGroup.getDescription(locale)) );
+
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+
+      
+     	List<MDRAction> mdrActions = MDRActionLocalServiceUtil.getActions(mdrRuleGroupInstance.getRuleGroupInstanceId(), 0, 10);
+     
+     	StringBundler sb = new StringBundler(mdrActions.size() * 2);
+     
+     	for (int i = 0; i < mdrActions.size(); i++) {
+     		MDRAction mdrAction = mdrActions.get(i);
+     
+     		sb.append(HtmlUtil.escape(mdrAction.getName(locale)));
+     
+     		if (i < (mdrActions.size() -1)) {
+     			sb.append(", ");
+     		}
+     	}
+     	
+
+   response.write( sb.toString() );
+
+
+
+
+
+
+  response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+}
+
+}

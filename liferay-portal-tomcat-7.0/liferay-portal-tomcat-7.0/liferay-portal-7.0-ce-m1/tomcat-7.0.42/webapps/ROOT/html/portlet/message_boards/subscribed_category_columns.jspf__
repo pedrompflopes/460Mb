@@ -1,0 +1,50 @@
+﻿ package PackageNo861463929; public class subscribed_category_columns_jspf {  /* 1 */ private void _buildCategoryBreadcrumb(HttpServletRequest request, MBCategory category, StringBundler sb) throws Exception { /* 50 */ 	ThemeDisplay themeDisplay = (ThemeDisplay)request.getAttribute(WebKeys.THEME_DISPLAY); /* 51 */ 	List<MBCategory> ancestorCategories = category.getAncestors(); /* 53 */ 	Collections.reverse(ancestorCategories); /* 55 */ 	sb.append("<ul class=\"breadcrumb\">"); /* 57 */ 	for (int i = 0; i < ancestorCategories.size(); i++) { /* 59 */ 		MBCategory ancestorCategory = ancestorCategories.get(i); /* 60 */ 		PortletURL portletURL = PortletURLFactoryUtil.create(request, PortletKeys.MESSAGE_BOARDS, themeDisplay.getPlid(), PortletRequest.RENDER_PHASE); /* 62 */ 		portletURL.setParameter("struts_action", "/message_boards/view"); /* 64 */ 		portletURL.setParameter("mbCategoryId", String.valueOf(ancestorCategory.getCategoryId())); /* 65 */ 		String cssClass = StringPool.BLANK; /* 67 */ 		if (i == 0) { /* 69 */ 			cssClass = "first"; /* 70 */ 		} /* 71 */ 		sb.append("<li"); /* 73 */ 		sb.append(" class=\""); /* 74 */ 		sb.append(cssClass); /* 75 */ 		sb.append("\">"); /* 76 */ 		sb.append("<a href=\""); /* 77 */ 		sb.append(portletURL.toString()); /* 78 */ 		sb.append("\">"); /* 79 */ 		sb.append(HtmlUtil.escape(ancestorCategory.getName())); /* 80 */ 		sb.append("</a>"); /* 81 */ 		sb.append("<span class=\"divider\">/</span>"); /* 82 */ 		sb.append("</li>"); /* 83 */ 	} /* 84 */ 	PortletURL portletURL = PortletURLFactoryUtil.create(request, PortletKeys.MESSAGE_BOARDS, themeDisplay.getPlid(), PortletRequest.RENDER_PHASE); /* 86 */ 	portletURL.setParameter("struts_action", "/message_boards/view"); /* 88 */ 	portletURL.setParameter("mbCategoryId", String.valueOf(category.getCategoryId())); /* 89 */ 	sb.append("<li class=\"active last\">"); /* 91 */ 	sb.append("<strong>"); /* 92 */ 	sb.append("<a href=\""); /* 93 */ 	sb.append(portletURL.toString()); /* 94 */ 	sb.append("\">"); /* 95 */ 	sb.append(category.getName()); /* 96 */ 	sb.append("</strong>"); /* 97 */ 	sb.append("</a>"); /* 98 */ 	if (Validator.isNotNull(category.getDescription())) { /* 100 */ 		sb.append("<p>"); /* 101 */ 		sb.append(category.getDescription()); /* 102 */ 		sb.append("</p>"); /* 103 */ 	} /* 104 */ 	sb.append("</li>"); /* 106 */ 	sb.append("</ul>"); /* 107 */ } /* 108 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     StringBundler sb = new StringBundler();
+     
+     _buildCategoryBreadcrumb(request, curCategory, sb);
+     
+
+  response.write( sb.toString() )+response.write(request.getAttribute(" sb").toString() );
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( String.valueOf(categoryDisplay.getSubcategoriesCount(curCategory)) )+response.write(request.getAttribute(" String").valueOf(categoryDisplay.getSubcategoriesCount(curCategory)) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( String.valueOf(categoryDisplay.getSubcategoriesThreadsCount(curCategory)) )+response.write(request.getAttribute(" String").valueOf(categoryDisplay.getSubcategoriesThreadsCount(curCategory)) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( String.valueOf(categoryDisplay.getSubcategoriesMessagesCount(curCategory)) )+response.write(request.getAttribute(" String").valueOf(categoryDisplay.getSubcategoriesMessagesCount(curCategory)) );
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns.jspf */ /* 47?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns.jspf */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns_action.jspf */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 47?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\subscribed_category_columns.jspf */
+}
+
+}

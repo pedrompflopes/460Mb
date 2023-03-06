@@ -1,0 +1,52 @@
+﻿ package PackageNo679354162; public class action_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Group group = GroupLocalServiceUtil.getGroup(action.getGroupId());
+     
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( LanguageUtil.get(request, group.getScopeLabel(themeDisplay)) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( action.getName(locale) )+response.write(request.getAttribute(" action").getName(locale) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( action.getDescription(locale) )+response.write(request.getAttribute(" action").getDescription(locale) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( true )+response.write(request.getAttribute(" true "));
+  response.write( action.getType() )+response.write(request.getAttribute(" action").getType() );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( action.getModifiedDate() )+response.write(request.getAttribute(" action").getModifiedDate() );
+}
+
+}

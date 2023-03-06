@@ -1,0 +1,35 @@
+﻿ package PackageNo1661024728; public class download_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( LanguageUtil.get(request, "download") + " (" + TextFormatter.formatStorageSize(fileEntry.getSize(), locale) + ")" );
+   response.write( DLUtil.getDownloadURL(fileEntry, fileEntry.getFileVersion(), themeDisplay, StringPool.BLANK, false, true) )+response.write(request.getAttribute(" DLUtil").getDownloadURL(fileEntry, fileEntry.getFileVersion(), themeDisplay, StringPool.BLANK, false, true) );
+
+
+
+
+
+
+
+       response.write( LanguageUtil.get(request, "download") + " (" + TextFormatter.formatStorageSize(fileEntry.getSize(), locale) + ")" );
+   response.write( themeDisplay.getPortalURL() + themeDisplay.getPathContext() + "/documents/" + fileShortcut.getFileShortcutId() );
+}
+
+}

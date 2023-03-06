@@ -1,0 +1,41 @@
+﻿ package PackageNo428943810; public class view_display_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if (!ArrayUtil.contains(PropsValues.ASSET_PUBLISHER_DISPLAY_STYLES, assetPublisherDisplayContext.getDisplayStyle())) {
+     
+
+   response.write( HtmlUtil.escape(LanguageUtil.format(request, "x-is-not-a-display-type", assetPublisherDisplayContext.getDisplayStyle())) );
+
+     
+     }
+     else {
+     	for (String curDisplayStyle : PropsValues.ASSET_PUBLISHER_DISPLAY_STYLES) {
+     		if (assetPublisherDisplayContext.getDisplayStyle().equals(curDisplayStyle)) {
+     			String displayStyleJsp = "/html/portlet/asset_publisher/display/" + TextFormatter.format(curDisplayStyle, TextFormatter.N) + ".jsp";
+     
+
+ response.write( displayStyleJsp );
+
+     
+     			break;
+     		}
+     	}
+     }
+     
+}
+
+}

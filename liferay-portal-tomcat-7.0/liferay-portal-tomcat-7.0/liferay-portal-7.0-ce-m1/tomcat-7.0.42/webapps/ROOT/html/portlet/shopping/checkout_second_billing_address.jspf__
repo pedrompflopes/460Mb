@@ -1,0 +1,98 @@
+﻿ package PackageNo2135815461; public class checkout_second_billing_address_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingFirstName()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingFirstName()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingLastName()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingLastName()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingEmailAddress()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingEmailAddress()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingCompany()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingCompany()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingStreet()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingStreet()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingCity()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingCity()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingState()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingState()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingZip()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingZip()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingCountry()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingCountry()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getBillingPhone()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getBillingPhone()) );
+}
+
+}

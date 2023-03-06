@@ -1,0 +1,55 @@
+﻿ package PackageNo1293629844; public class record_search_results_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     DisplayTerms displayTerms = searchContainer.getDisplayTerms();
+     
+     int status = WorkflowConstants.STATUS_APPROVED;
+     
+     if (DDLRecordSetPermission.contains(permissionChecker, recordSet, ActionKeys.ADD_RECORD)) {
+     	status = WorkflowConstants.STATUS_ANY;
+     }
+     
+     if (Validator.isNull(displayTerms.getKeywords())) {
+     	total = DDLRecordLocalServiceUtil.getRecordsCount(recordSet.getRecordSetId(), status);
+     
+     	searchContainer.setTotal(total);
+     
+     	results = DDLRecordLocalServiceUtil.getRecords(recordSet.getRecordSetId(), status, searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator());
+     }
+     else {
+     	SearchContext searchContext = SearchContextFactory.getInstance(request);
+     
+     	searchContext.setAttribute("recordSetId", recordSet.getRecordSetId());
+     	searchContext.setAttribute(Field.STATUS, status);
+     	searchContext.setEnd(searchContainer.getEnd());
+     	searchContext.setKeywords(displayTerms.getKeywords());
+     	searchContext.setStart(searchContainer.getStart());
+     
+     	BaseModelSearchResult<DDLRecord> baseModelSearchResult = DDLRecordLocalServiceUtil.searchDDLRecords(searchContext);
+     
+     	results = baseModelSearchResult.getBaseModels();
+     
+     	total = baseModelSearchResult.getLength();
+     
+     	searchContainer.setTotal(total);
+     }
+     
+     searchContainer.setResults(results);
+     
+}
+
+}

@@ -1,0 +1,55 @@
+﻿ package PackageNo1119320007; public class calendar_resource_search_container_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( new CalendarResourceSearch(renderRequest, CalendarResourceSearch.DEFAULT_CUR_PARAM, iteratorURL) )+response.write(request.getAttribute(" new CalendarResourceSearch(renderRequest, CalendarResourceSearch").DEFAULT_CUR_PARAM, iteratorURL) );
+
+      
+     	long[] groupIds = new long[] {themeDisplay.getScopeGroupId()};
+     	long[] classNameIds = new long[] {PortalUtil.getClassNameId(CalendarResource.class.getName())};
+     
+     	if (displayTerms.isAdvancedSearch()) {
+     		total = CalendarResourceServiceUtil.searchCount(themeDisplay.getCompanyId(), groupIds, classNameIds, displayTerms.getCode(), displayTerms.getName(), displayTerms.getDescription(), displayTerms.isActive(), displayTerms.isAndOperator());
+     
+     		searchContainer.setTotal(total);
+     
+     		searchContainer.setResults(CalendarResourceServiceUtil.search(themeDisplay.getCompanyId(), groupIds, classNameIds, displayTerms.getCode(), displayTerms.getName(), displayTerms.getDescription(), displayTerms.isActive(), displayTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator()));
+     	}
+     	else {
+     		total = CalendarResourceServiceUtil.searchCount(themeDisplay.getCompanyId(), groupIds, classNameIds, displayTerms.getKeywords(), true);
+     
+     		searchContainer.setTotal(total);
+     
+     		searchContainer.setResults(CalendarResourceServiceUtil.search(themeDisplay.getCompanyId(), groupIds, classNameIds, displayTerms.getKeywords(), true, displayTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd(), searchContainer.getOrderByComparator()));
+     	}
+     	
+
+
+
+
+
+
+
+
+response.write( true )+response.write(request.getAttribute(" true "));
+    response.write( HtmlUtil.escape(resource.getName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(resource.getName(locale)) );
+
+
+
+
+    response.write( HtmlUtil.escape(StringUtil.shorten(resource.getDescription(locale))) )+response.write(request.getAttribute(" HtmlUtil").escape(StringUtil.shorten(resource.getDescription(locale))) );
+}
+
+}

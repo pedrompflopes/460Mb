@@ -1,0 +1,107 @@
+﻿ package PackageNo13884307;import _html_taglib_init_jsp;import com.liferay.portal.kernel.util.ListMergeable; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\theme\meta_tags\page.jsp */
+
+
+
+      
+     	String currentLanguageId = LanguageUtil.getLanguageId(request);
+     	Locale defaultLocale = LocaleUtil.getSiteDefault();
+     	String defaultLanguageId = LocaleUtil.toLanguageId(defaultLocale);
+     
+     	String w3cCurrentLanguageId = LocaleUtil.toW3cLanguageId(currentLanguageId);
+     	String w3cDefaultLanguageId = LocaleUtil.toW3cLanguageId(defaultLanguageId);
+     
+     	String metaRobots = layout.getRobots(locale, false);
+     	String metaRobotsLanguageId = w3cCurrentLanguageId;
+     
+     	if (Validator.isNull(metaRobots)) {
+     		metaRobots = layout.getRobots(defaultLocale);
+     		metaRobotsLanguageId = w3cDefaultLanguageId;
+     	}
+     	
+
+
+     response.write(HtmlUtil.getEscape(metaRobots));response.write(metaRobotsLanguageId);
+
+
+      
+     	String metaDescription = layout.getDescription(locale, false);
+     	String metaDescriptionLanguageId = w3cCurrentLanguageId;
+     
+     	if (Validator.isNull(metaDescription)) {
+     		metaDescription = layout.getDescription(defaultLocale);
+     		metaDescriptionLanguageId = w3cDefaultLanguageId;
+     	}
+     
+     	ListMergeable<String> pageDescriptionListMergeable = (ListMergeable<String>)request.getAttribute(WebKeys.PAGE_DESCRIPTION);
+     
+     	if (pageDescriptionListMergeable != null) {
+     		if (Validator.isNotNull(metaDescription)) {
+     			StringBundler sb = new StringBundler(4);
+     
+     			sb.append(pageDescriptionListMergeable.mergeToString(StringPool.SPACE));
+     			sb.append(StringPool.PERIOD);
+     			sb.append(StringPool.SPACE);
+     			sb.append(metaDescription);
+     
+     			metaDescription = sb.toString();
+     		}
+     		else {
+     			metaDescription = pageDescriptionListMergeable.mergeToString(StringPool.SPACE);
+     		}
+     	}
+     	
+
+
+     response.write(HtmlUtil.getEscape(metaDescription))+response.write(request.getAttribute("HtmlUtil").getEscape(metaDescription));response.write(metaDescriptionLanguageId);
+
+
+      
+     	String metaKeywords = layout.getKeywords(locale, false);
+     	String metaKeywordsLanguageId = w3cCurrentLanguageId;
+     
+     	if (Validator.isNull(metaKeywords)) {
+     		metaKeywords = layout.getKeywords(defaultLocale);
+     		metaKeywordsLanguageId = w3cDefaultLanguageId;
+     	}
+     
+     	ListMergeable<String> pageKeywordsListMergeable = (ListMergeable<String>)request.getAttribute(WebKeys.PAGE_KEYWORDS);
+     
+     	if (pageKeywordsListMergeable != null) {
+     		if (Validator.isNotNull(metaKeywords)) {
+     			StringBundler sb = new StringBundler(4);
+     
+     			sb.append(pageKeywordsListMergeable.mergeToString(StringPool.COMMA));
+     			sb.append(StringPool.COMMA);
+     			sb.append(StringPool.SPACE);
+     			sb.append(metaKeywords);
+     
+     			metaKeywords = sb.toString();
+     		}
+     		else {
+     			metaKeywords = pageKeywordsListMergeable.mergeToString(StringPool.COMMA);
+     		}
+     
+     	}
+     	
+
+
+     response.write(HtmlUtil.getEscape(metaKeywords))+response.write(request.getAttribute("HtmlUtil").getEscape(metaKeywords));response.write(metaKeywordsLanguageId);
+}
+
+}

@@ -1,0 +1,74 @@
+﻿ package PackageNo465038220;import _html_portlet_search_init_jsp; public class asset_vocabulary_jsp {  /* 1 */ private static final String _RANDOM_KEY_INPUT = "portlet_search_facets_" + StringUtil.randomString(); /* 38 */ private void _buildCategoriesNavigation(String[] assetCategoryIdsOrNames, boolean matchByName, FacetCollector facetCollector, List<AssetCategory> assetCategories, String clearFields, PageContext pageContext, Locale locale, StringBundler sb) throws Exception { /* 76 */ 	for (AssetCategory assetCategory : assetCategories) { /* 77 */ 		String term = String.valueOf(assetCategory.getCategoryId()); /* 78 */ 		String assetCategoryName = HtmlUtil.escape(assetCategory.getName()); /* 80 */ 		if (matchByName) { /* 82 */ 			term = assetCategoryName; /* 83 */ 		} /* 84 */ 		int frequency = 0; /* 86 */ 		TermCollector termCollector = facetCollector.getTermCollector(term); /* 88 */ 		if (termCollector != null) { /* 90 */ 			frequency = termCollector.getFrequency(); /* 91 */ 		} /* 92 */ 		sb.append("<li class=\"facet-value"); /* 94 */ 		if (ArrayUtil.contains(assetCategoryIdsOrNames, term)) { /* 96 */ 			sb.append(" active"); /* 97 */ 			ScriptTag.doTag(null, "liferay-token-list", "Liferay.Search.tokenList.add({clearFields: '" + HtmlUtil.escapeJS(clearFields) + "', text: '" + HtmlUtil.escapeJS(assetCategoryName) + "'});", null, pageContext); /* 99 */ 		} /* 100 */ 		sb.append("\"><a href=\"#\" data-value=\""); /* 102 */ 		sb.append(HtmlUtil.escapeAttribute(term)); /* 103 */ 		sb.append("\">"); /* 104 */ 		sb.append(assetCategory.getTitle(locale)); /* 105 */ 		sb.append("</a> <span class=\"frequency\">("); /* 106 */ 		sb.append(frequency); /* 107 */ 		sb.append(")</span>"); /* 108 */ 		List<AssetCategory> childAssetCategories = AssetCategoryServiceUtil.getChildCategories(assetCategory.getCategoryId(), QueryUtil.ALL_POS, QueryUtil.ALL_POS, null); /* 110 */ 		if (!childAssetCategories.isEmpty()) { /* 112 */ 			sb.append("<ul>"); /* 113 */ 			_buildCategoriesNavigation(assetCategoryIdsOrNames, matchByName, facetCollector, childAssetCategories, clearFields, pageContext, locale, sb); /* 115 */ 			sb.append("</ul>"); /* 117 */ 		} /* 118 */ 		sb.append("</li>"); /* 120 */ 	} /* 121 */ } /* 122 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\asset_vocabulary.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\asset_vocabulary.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ String randomNamespace = PortalUtil.generateRandomKey(request, _RANDOM_KEY_INPUT) + StringPool.UNDERLINE; /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ Facet facet = (Facet)request.getAttribute("search.jsp-facet"); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ String fieldParam = ParamUtil.getString(request, facet.getFieldId()); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ FacetConfiguration facetConfiguration = facet.getFacetConfiguration(); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ JSONObject dataJSONObject = facetConfiguration.getData(); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ FacetCollector facetCollector = facet.getFacetCollector(); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ List<TermCollector> termCollectors = facetCollector.getTermCollectors(); /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ String cssClass = "search-facet search-".concat(HtmlUtil.escapeAttribute(facetConfiguration.getDisplayStyle())); /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\search\facets\asset_vocabulary.jsp */
+
+     
+     String[] assetCategoryIdsOrNames = StringUtil.split(fieldParam);
+     
+     long assetVocabularyId = dataJSONObject.getLong("assetVocabularyId");
+     boolean matchByName = dataJSONObject.getBoolean("matchByName");
+     
+     List<AssetVocabulary> assetVocabularies = new ArrayList<AssetVocabulary>();
+     
+     if (assetVocabularyId > 0) {
+     	AssetVocabulary assetVocabulary = AssetVocabularyServiceUtil.getVocabulary(assetVocabularyId);
+     
+     	assetVocabularies.add(assetVocabulary);
+     }
+     else {
+     	assetVocabularies = AssetVocabularyServiceUtil.getGroupVocabularies(PortalUtil.getCurrentAndAncestorSiteGroupIds(scopeGroupId));
+     }
+     
+     if (assetVocabularies.isEmpty()) {
+     	return;
+     }
+     
+
+   response.write(cssClass)+response.write(request.getAttribute("cssClass"));response.write(HtmlUtil.getEscapeAttribute(facet().getFieldId()))+response.write(request.getAttribute("HtmlUtil").getEscapeAttribute(facet().getFieldId()));response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+      
+     	for (AssetVocabulary assetVocabulary : assetVocabularies) {
+     		List<AssetCategory> assetCategories = AssetCategoryServiceUtil.getVocabularyRootCategories(assetVocabulary.getVocabularyId(), QueryUtil.ALL_POS, QueryUtil.ALL_POS, null);
+     
+     		if (assetCategories.isEmpty()) {
+     			continue;
+     		}
+     	
+
+
+
+
+ 
+     				StringBundler sb = new StringBundler();
+     
+     				String clearFields = renderResponse.getNamespace() + facet.getFieldId();
+     
+     				_buildCategoriesNavigation(assetCategoryIdsOrNames, matchByName, facetCollector, assetCategories, clearFields, pageContext, locale, sb);
+     				
+
+      response.write( sb.toString() )+response.write(request.getAttribute(" sb").toString() );
+
+
+
+
+      
+     	}
+     	
+}
+
+}

@@ -1,0 +1,174 @@
+﻿ package PackageNo1141935995;import com.liferay.calendar.CalendarBookingDurationException;import com.liferay.calendar.CalendarNameException;import com.liferay.calendar.CalendarResourceCodeException;import com.liferay.calendar.CalendarResourceNameException;import com.liferay.calendar.DuplicateCalendarResourceException;import com.liferay.calendar.NoSuchResourceException;import com.liferay.calendar.model.Calendar;import com.liferay.calendar.model.CalendarBooking;import com.liferay.calendar.model.CalendarNotificationTemplate;import com.liferay.calendar.model.CalendarNotificationTemplateConstants;import com.liferay.calendar.model.CalendarResource;import com.liferay.calendar.notification.NotificationField;import com.liferay.calendar.notification.NotificationTemplateType;import com.liferay.calendar.notification.NotificationType;import com.liferay.calendar.recurrence.Frequency;import com.liferay.calendar.recurrence.Recurrence;import com.liferay.calendar.recurrence.Weekday;import com.liferay.calendar.search.CalendarResourceDisplayTerms;import com.liferay.calendar.search.CalendarResourceSearch;import com.liferay.calendar.service.CalendarBookingLocalServiceUtil;import com.liferay.calendar.service.CalendarBookingServiceUtil;import com.liferay.calendar.service.CalendarNotificationTemplateLocalServiceUtil;import com.liferay.calendar.service.CalendarResourceServiceUtil;import com.liferay.calendar.service.CalendarServiceUtil;import com.liferay.calendar.service.permission.CalendarPermission;import com.liferay.calendar.service.permission.CalendarPortletPermission;import com.liferay.calendar.service.permission.CalendarResourcePermission;import com.liferay.calendar.util.ActionKeys;import com.liferay.calendar.util.CalendarResourceUtil;import com.liferay.calendar.util.CalendarUtil;import com.liferay.calendar.util.ColorUtil;import com.liferay.calendar.util.JCalendarUtil;import com.liferay.calendar.util.NotificationUtil;import com.liferay.calendar.util.PortletPropsValues;import com.liferay.calendar.util.RecurrenceUtil;import com.liferay.calendar.util.WebKeys;import com.liferay.calendar.util.comparator.CalendarNameComparator;import com.liferay.calendar.workflow.CalendarBookingWorkflowConstants;import com.liferay.portal.kernel.bean.BeanParamUtil;import com.liferay.portal.kernel.bean.BeanPropertiesUtil;import com.liferay.portal.kernel.dao.orm.QueryUtil;import com.liferay.portal.kernel.dao.search.SearchContainer;import com.liferay.portal.kernel.json.JSONArray;import com.liferay.portal.kernel.json.JSONFactoryUtil;import com.liferay.portal.kernel.json.JSONObject;import com.liferay.portal.kernel.json.JSONSerializer;import com.liferay.portal.kernel.language.LanguageUtil;import com.liferay.portal.kernel.language.UnicodeLanguageUtil;import com.liferay.portal.kernel.portlet.LiferayWindowState;import com.liferay.portal.kernel.servlet.BrowserSnifferUtil;import com.liferay.portal.kernel.util.CalendarFactoryUtil;import com.liferay.portal.kernel.util.Constants;import com.liferay.portal.kernel.util.DateUtil;import com.liferay.portal.kernel.util.FastDateFormatConstants;import com.liferay.portal.kernel.util.FastDateFormatFactoryUtil;import com.liferay.portal.kernel.util.GetterUtil;import com.liferay.portal.kernel.util.HtmlUtil;import com.liferay.portal.kernel.util.OrderByComparator;import com.liferay.portal.kernel.util.ParamUtil;import com.liferay.portal.kernel.util.StringBundler;import com.liferay.portal.kernel.util.StringPool;import com.liferay.portal.kernel.util.StringUtil;import com.liferay.portal.kernel.util.Time;import com.liferay.portal.kernel.util.UnicodeFormatter;import com.liferay.portal.kernel.util.Validator;import com.liferay.portal.kernel.workflow.WorkflowConstants;import com.liferay.portal.model.Group;import com.liferay.portal.model.User;import com.liferay.portal.security.auth.PrincipalException;import com.liferay.portal.service.GroupServiceUtil;import com.liferay.portal.service.UserLocalServiceUtil;import com.liferay.portal.util.PortalUtil;import com.liferay.portal.util.SessionClicks;import com.liferay.portal.util.comparator.UserScreenNameComparator;import com.liferay.portlet.asset.model.AssetEntry;import com.liferay.portlet.asset.service.AssetEntryLocalServiceUtil;import com.liferay.taglib.search.ResultRow;import com.liferay.util.RSSUtil;import java.text.Format;import java.util.ArrayList;import java.util.Collections;import java.util.Date;import java.util.Iterator;import java.util.List;import java.util.TimeZone;import javax.portlet.PortletURL; public class init_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String currentURL = PortalUtil.getCurrentURL(request);
+     
+     CalendarResource groupCalendarResource = CalendarResourceUtil.getGroupCalendarResource(liferayPortletRequest, scopeGroupId);
+     CalendarResource userCalendarResource = CalendarResourceUtil.getUserCalendarResource(liferayPortletRequest, themeDisplay.getUserId());
+     
+     Calendar userDefaultCalendar = null;
+     
+     if (userCalendarResource != null) {
+     	long defaultCalendarId = userCalendarResource.getDefaultCalendarId();
+     
+     	if (defaultCalendarId > 0) {
+     		userDefaultCalendar = CalendarServiceUtil.getCalendar(defaultCalendarId);
+     	}
+     }
+     
+     int defaultDuration = GetterUtil.getInteger(portletPreferences.getValue("defaultDuration", null), 60);
+     String defaultView = portletPreferences.getValue("defaultView", "week");
+     boolean isoTimeFormat = GetterUtil.getBoolean(portletPreferences.getValue("isoTimeFormat", null), !DateUtil.isFormatAmPm(locale));
+     String timeZoneId = portletPreferences.getValue("timeZoneId", user.getTimeZoneId());
+     boolean usePortalTimeZone = GetterUtil.getBoolean(portletPreferences.getValue("usePortalTimeZone", Boolean.TRUE.toString()));
+     int weekStartsOn = GetterUtil.getInteger(portletPreferences.getValue("weekStartsOn", null), 0);
+     
+     String sessionClicksDefaultView = SessionClicks.get(request, "calendar-portlet-default-view", defaultView);
+     
+     if (usePortalTimeZone) {
+     	timeZoneId = user.getTimeZoneId();
+     }
+     
+     boolean enableRSS = !PortalUtil.isRSSFeedsEnabled() ? false : GetterUtil.getBoolean(portletPreferences.getValue("enableRss", null), true);
+     int rssDelta = GetterUtil.getInteger(portletPreferences.getValue("rssDelta", StringPool.BLANK), SearchContainer.DEFAULT_DELTA);
+     String rssDisplayStyle = portletPreferences.getValue("rssDisplayStyle", RSSUtil.DISPLAY_STYLE_DEFAULT);
+     String rssFeedType = portletPreferences.getValue("rssFeedType", RSSUtil.FEED_TYPE_DEFAULT);
+     long rssTimeInterval = GetterUtil.getLong(portletPreferences.getValue("rssTimeInterval", StringPool.BLANK), Time.WEEK);
+     
+     TimeZone userTimeZone = TimeZone.getTimeZone(timeZoneId);
+     TimeZone utcTimeZone = TimeZone.getTimeZone(StringPool.UTC);
+     
+     Format dateFormatDate = FastDateFormatFactoryUtil.getDate(locale);
+     Format dateFormatLongDate = FastDateFormatFactoryUtil.getDate(FastDateFormatConstants.LONG, locale, timeZone);
+     
+     Format dateFormatTime = null;
+     
+     if (isoTimeFormat) {
+     	dateFormatTime = FastDateFormatFactoryUtil.getSimpleDateFormat("HH:mm", locale, timeZone);
+     }
+     else {
+     	dateFormatTime = FastDateFormatFactoryUtil.getSimpleDateFormat("hh:mm a", locale, timeZone);
+     }
+     
+}
+
+}

@@ -1,0 +1,203 @@
+﻿ package PackageNo458353790; public class view_question_results_jspf {  /* 1 */ private static final String[] _CHARTS = {"area", "horizontal-bar", "line", "pie", "vertical-bar"}; /* 205 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     NumberFormat numberFormat = NumberFormat.getNumberInstance(locale);
+     NumberFormat percentFormat = NumberFormat.getPercentInstance(locale);
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     int totalVotes = question.getVotesCount();
+     
+     for (int i = 0; i < choices.size(); i++) {
+     	PollsChoice choice = (PollsChoice)choices.get(i);
+     
+     	choice = choice.toEscapedModel();
+     
+     	int choiceVotes = choice.getVotesCount();
+     
+     	double votesPercent = 0.0;
+     
+     	if (totalVotes > 0) {
+     		votesPercent = (double)choiceVotes / totalVotes;
+     	}
+     
+     	int votesPixelWidth = 35;
+     
+     	if (windowState.equals(WindowState.MAXIMIZED)) {
+     		votesPixelWidth = 100;
+     	}
+     
+     	int votesPercentWidth = (int)Math.floor(votesPercent * 100);
+     
+
+
+
+
+    response.write( percentFormat.format(votesPercent) );
+
+
+    response.write( numberFormat.format(choiceVotes) );
+
+
+
+     response.write( votesPercentWidth == 0 ? "no-progress" : StringPool.BLANK );   response.write( votesPixelWidth );
+
+       response.write(votesPercentWidth);
+
+
+
+
+
+    response.write( choice.getName() );
+
+
+    response.write( choice.getDescription(locale) );
+
+
+
+     
+     }
+     
+
+
+
+
+
+
+
+      response.write( numberFormat.format(totalVotes) );
+
+
+
+
+
+
+
+
+       
+     		for (int i = 0; i < _CHARTS.length; i++) {
+     			String chart = _CHARTS[i];
+     
+     			String hrefTaglib = "javascript:var viewChartWindow = window.open('" + themeDisplay.getPathMain() + "/polls/view_chart?questionId=" + question.getQuestionId() +"&chartType=" + TextFormatter.format(chart, TextFormatter.N) + "', 'viewChart', 'directories=no,height=430,location=no,menubar=no,resizable=no,scrollbars=no,status=no,toolbar=no,width=420'); void(''); viewChartWindow.focus();";
+     		
+
+      response.write( chart );response.write( (i != (_CHARTS.length - 1)) ? StringPool.COMMA_AND_SPACE : StringPool.BLANK );
+
+       
+     			}
+     		
+
+
+
+
+
+
+
+  response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+       
+     		PortletURL portletURL = renderResponse.createRenderURL();
+     
+     		portletURL.setParameter("struts_action", "/polls/view_question");
+     		portletURL.setParameter("redirect", redirect);
+     		portletURL.setParameter("questionId", String.valueOf(question.getQuestionId()));
+     		portletURL.setParameter("viewResults", Boolean.TRUE.toString());
+     
+     		List<String> headerNames = new ArrayList<String>();
+     
+     		headerNames.add("user");
+     		headerNames.add("choice");
+     		headerNames.add("vote-date");
+     
+     		SearchContainer searchContainer = new SearchContainer(renderRequest, null, null, SearchContainer.DEFAULT_CUR_PARAM, SearchContainer.DEFAULT_DELTA, portletURL, headerNames, null);
+     
+     		int total = PollsVoteLocalServiceUtil.getQuestionVotesCount(question.getQuestionId());
+     
+     		searchContainer.setTotal(total);
+     
+     		List results = PollsVoteLocalServiceUtil.getQuestionVotes(question.getQuestionId(), searchContainer.getStart(), searchContainer.getEnd());
+     
+     		searchContainer.setResults(results);
+     
+     		List resultRows = searchContainer.getResultRows();
+     
+     		for (int i = 0; i < results.size(); i++) {
+     			PollsVote vote = (PollsVote)results.get(i);
+     
+     			ResultRow row = new ResultRow(vote, vote.getVoteId(), i);
+     
+     			// User
+     
+     			User user2 = null;
+     
+     			try {
+     				user2 = UserLocalServiceUtil.getUserById(vote.getUserId());
+     			}
+     			catch (Exception e) {
+     			}
+     
+     			if (user2 != null) {
+     				row.addText(HtmlUtil.escape(user2.getFullName()), user2.getDisplayURL(themeDisplay));
+     			}
+     			else {
+     				row.addText(String.valueOf(vote.getUserId()));
+     			}
+     
+     			// Choice
+     
+     			PollsChoice choice = vote.getChoice();
+     
+     			choice = choice.toEscapedModel();
+     
+     			row.addText(choice.getName() + ". " + choice.getDescription(locale));
+     
+     			// Vote date
+     
+     			row.addDate(vote.getVoteDate());
+     
+     			// Add result row
+     
+     			resultRows.add(row);
+     		}
+     		
+
+ response.write( searchContainer );
+
+
+
+
+
+
+
+    response.write( LanguageUtil.format(request, "voting-is-disabled-because-this-poll-expired-on-x", dateFormatDateTime.format(question.getExpirationDate()), false) );
+}
+
+}

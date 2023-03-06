@@ -1,0 +1,81 @@
+﻿ package PackageNo722609745;import com.liferay.portal.kernel.language.LanguageUtil;import com.liferay.portal.kernel.util.ContentTypes;import com.liferay.portal.kernel.util.HtmlUtil;import com.liferay.portal.kernel.util.LocaleUtil;import com.liferay.portal.kernel.util.ParamUtil;import java.util.Locale; public class alloyconfig_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String contentsLanguageId = ParamUtil.getString(request, "contentsLanguageId");
+     
+     Locale contentsLocale = LocaleUtil.fromLanguageId(contentsLanguageId);
+     
+     contentsLanguageId = LocaleUtil.toLanguageId(contentsLocale);
+     
+     String languageId = ParamUtil.getString(request, "languageId");
+     
+     Locale locale = LocaleUtil.fromLanguageId(languageId);
+     
+     languageId = LocaleUtil.toLanguageId(locale);
+     
+     String name = ParamUtil.getString(request, "name");
+     
+     response.setContentType(ContentTypes.TEXT_JAVASCRIPT);
+     
+
+   response.write( HtmlUtil.escapeJS(name) );
+ response.write( HtmlUtil.escapeJS(name) );
+
+
+
+
+
+      
+     	String contentsLanguageDir = LanguageUtil.get(contentsLocale, "lang.dir");
+     	
+
+   response.write( HtmlUtil.escapeJS(contentsLanguageDir) );
+
+      response.write( contentsLanguageId.replace("iw_", "he_") );
+
+
+
+
+
+
+
+
+
+
+      response.write( languageId.replace("iw_", "he_") );
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escapeJS(name) );
+}
+
+}

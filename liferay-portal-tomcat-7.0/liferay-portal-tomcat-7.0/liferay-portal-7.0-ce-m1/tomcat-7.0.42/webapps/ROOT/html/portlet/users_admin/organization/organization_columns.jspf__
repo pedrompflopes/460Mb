@@ -1,0 +1,72 @@
+﻿ package PackageNo1587131399; public class organization_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	int suborganizationsCount = OrganizationLocalServiceUtil.searchCount(company.getCompanyId(), curOrganization.getOrganizationId(), null, null, null, null, organizationParams);
+     
+     	LinkedHashMap<String, Object> userParams = new LinkedHashMap<String, Object>();
+     
+     	userParams.put("usersOrgs", curOrganization.getOrganizationId());
+     
+     	int organizationUserCount = UserLocalServiceUtil.searchCount(company.getCompanyId(), null, 0, userParams);
+     	
+
+       response.write( curOrganization.getName() )+response.write(request.getAttribute(" curOrganization").getName() );
+
+
+
+
+
+
+
+
+       response.write( suborganizationsCount )+response.write(request.getAttribute(" suborganizationsCount "));
+
+
+       response.write( suborganizationsCount )+response.write(request.getAttribute(" suborganizationsCount "));
+
+
+
+
+
+response.write( StringUtil.toLowerCase(LanguageUtil.get(request, "and")) );
+
+
+
+
+
+       response.write( organizationUserCount );
+
+
+       response.write( organizationUserCount );
+
+
+
+
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( LanguageUtil.get(request, curOrganization.getType()) );
+}
+
+}

@@ -1,0 +1,227 @@
+﻿ package PackageNo1591507240;import _html_taglib_init_jsp; public class start_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\start.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\start.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ String formName = (String)request.getAttribute("liferay-ui:tabs:formName"); /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ String[] names = (String[])request.getAttribute("liferay-ui:tabs:names"); /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ String namesJS = (String)request.getAttribute("liferay-ui:tabs:namesJS"); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ String param = (String)request.getAttribute("liferay-ui:tabs:param"); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ String value = (String)request.getAttribute("liferay-ui:tabs:value"); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ String[] values = (String[])request.getAttribute("liferay-ui:tabs:values"); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\tabs\start.jsp */
+
+     
+     
+     // URL
+     
+     LiferayPortletURL portletURL = (LiferayPortletURL)request.getAttribute("liferay-ui:tabs:portletURL");
+     
+     String url = GetterUtil.getString((String)request.getAttribute("liferay-ui:tabs:url"));
+     String anchor = StringPool.BLANK;
+     String separator = StringPool.AMPERSAND;
+     
+     if (url != null) {
+     
+     	// Strip existing tab parameter and value from the URL
+     
+     	int x = url.indexOf(param + "=");
+     
+     	if (x != -1) {
+     		int y = url.lastIndexOf("&", x);
+     
+     		if (y == -1) {
+     			y = url.lastIndexOf("?", x);
+     		}
+     
+     		int z = url.indexOf("&", y + 1);
+     
+     		if (z == -1) {
+     			z = url.length();
+     		}
+     
+     		url = url.substring(0, y) + url.substring(z);
+     	}
+     
+     	// Strip trailing &
+     
+     	if (url.endsWith("&")) {
+     		url = url.substring(0, url.length() - 1);
+     	}
+     
+     	// Strip anchor
+     
+     	String[] urlArray = PortalUtil.stripURLAnchor(url, "&#");
+     
+     	anchor = urlArray[1];
+     	url = urlArray[0];
+     
+     	if (!url.contains(StringPool.QUESTION)) {
+     		separator = StringPool.QUESTION;
+     	}
+     }
+     
+     // Back url
+     
+     String backLabel = (String)request.getAttribute("liferay-ui:tabs:backLabel");
+     String backURL = (String)request.getAttribute("liferay-ui:tabs:backURL");
+     
+     if (Validator.isNotNull(backURL) && !backURL.equals("javascript:history.go(-1);")) {
+     	backURL = HtmlUtil.escapeHREF(PortalUtil.escapeRedirect(backURL));
+     }
+     
+     // Refresh
+     
+     boolean refresh = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:tabs:refresh"));
+     
+     // onClick
+     
+     String onClick = GetterUtil.getString((String)request.getAttribute("liferay-ui:tabs:onClick"));
+     
+     // Type
+     
+     String type = GetterUtil.getString((String)request.getAttribute("liferay-ui:tabs:type"), "tabs");
+     
+
+
+
+      
+     	String oldPortletURLValue = null;
+     
+     	if ((portletURL != null) && (param != null)) {
+     		oldPortletURLValue = portletURL.getParameter(param);
+     	}
+     	
+
+
+
+
+
+
+      response.write(namespace)+response.write(request.getAttribute("namespace"));response.write(param)+response.write(request.getAttribute("param"));
+
+      response.write(type);
+
+
+
+      
+     	for (int i = 0; i < values.length; i++) {
+     		String curURL = (String)request.getAttribute("liferay-ui:tabs:url" + i);
+     
+     		if (Validator.isNull(curURL)) {
+     			if (values.length == 1) {
+     				      
+     
+     
+     			}
+     			else {
+     				if (refresh) {
+     					if (portletURL != null) {
+     						portletURL.setParameter(param, values[i]);
+     
+     						curURL = portletURL.toString();
+     					}
+     					else {
+     						if (values[i].equals("&raquo;")) {
+     							curURL = url + separator + namespace + param + "=" + values[0] + anchor;
+     						}
+     						else {
+     							curURL = url + separator + namespace + param + "=" + values[i] + anchor;
+     						}
+     					}
+     				}
+     				else {
+     					curURL = "javascript:";
+     
+     					if (Validator.isNotNull(formName)) {
+     						curURL += "document." + namespace + formName + "." + namespace + param + ".value = '" + names[i] + "';";
+     					}
+     
+     					curURL += "Liferay.Portal.Tabs.show('" + namespace + param + "', " + namesJS + ", '" + UnicodeFormatter.toString(names[i]) + "');";
+     				}
+     			}
+     		}
+     
+     		String curOnClick = StringPool.BLANK;
+     
+     		if (Validator.isNotNull(onClick)) {
+     			if (refresh) {
+     				curOnClick = onClick + "('" + curURL + "', '" + values[i] + "'); return false;";
+     			}
+     			else {
+     				curOnClick = "Liferay.Portal.Tabs.show('" + namespace + param + "', " + namesJS + ", '" + UnicodeFormatter.toString(names[i]) + "', " + onClick + ");";
+     				curURL = "javascript:;";
+     			}
+     		}
+     
+     		boolean selected = (values.length == 1) || value.equals(values[i]);
+     
+     		String cssClassName = "tab";
+     
+     		if (selected) {
+     			cssClassName += " active";
+     		}
+     	
+
+
+
+
+
+
+
+
+
+
+
+       response.write(cssClassName);response.write(namespace)+response.write(request.getAttribute("namespace"));response.write(param)+response.write(request.getAttribute("param"));response.write(StringUtil.toCharCode(values[i]))+response.write(request.getAttribute("StringUtil").toCharCode(values[i]));
+response.write( Validator.isNotNull(curURL) ? HtmlUtil.escapeAttribute(curURL) : "javascript:;" );response.write( Validator.isNotNull(curOnClick) ? curOnClick : StringPool.BLANK );
+response.write( LanguageUtil.get(request, names[i]) )+response.write(request.getAttribute(" LanguageUtil").get(request, names[i]) );
+
+
+
+
+
+      
+     	}
+     	
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write(backURL);response.write(namespace)+response.write(request.getAttribute("namespace"));response.write(param)+response.write(request.getAttribute("param"));response.write( Validator.isNotNull(backLabel) ? HtmlUtil.escape(backLabel) : "&laquo;" + LanguageUtil.get(request, "back") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	if ((portletURL != null) && (param != null) && (oldPortletURLValue != null)) {
+     		portletURL.setParameter(param, oldPortletURLValue);
+     	}
+     	
+}
+
+}

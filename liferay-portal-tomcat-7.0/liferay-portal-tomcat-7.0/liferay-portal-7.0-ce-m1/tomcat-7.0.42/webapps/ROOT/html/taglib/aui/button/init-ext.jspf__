@@ -1,0 +1,71 @@
+﻿ package PackageNo206215183; public class init_ext_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String escapedHREF = StringPool.BLANK;
+     
+     if (Validator.isNotNull(href)) {
+     	escapedHREF = HtmlUtil.escapeAttribute(PortalUtil.escapeRedirect(href));
+     }
+     else if (onClick.startsWith(Http.HTTP_WITH_SLASH) || onClick.startsWith(Http.HTTPS_WITH_SLASH) || onClick.startsWith(StringPool.SLASH)) {
+     	href = onClick;
+     
+     	escapedHREF = HtmlUtil.escapeAttribute(PortalUtil.escapeRedirect(href));
+     }
+     else if (onClick.startsWith("wsrp_rewrite?")) {
+     	href = onClick;
+     
+     	escapedHREF = HtmlUtil.escapeAttribute(href);
+     }
+     
+     if (useDialog && Validator.isNotNull(escapedHREF)) {
+     	if (data == null) {
+     		data = new HashMap<String, Object>();
+     	}
+     
+     	data.put("href", href);
+     	data.put("title", LanguageUtil.get(request, value));
+     
+     	onClick = StringPool.BLANK;
+     
+     	if (Validator.isNull(name)) {
+     		name = StringUtil.randomId();
+     	}
+     }
+     
+     if (primary == null) {
+     	if (type.equals("submit")) {
+     		primary = true;
+     	}
+     	else {
+     		primary = false;
+     	}
+     }
+     else {
+     	primary = GetterUtil.getBoolean(String.valueOf(primary));
+     }
+     
+     if (primary == Boolean.TRUE) {
+     	cssClass += " btn-primary";
+     }
+     
+     if (type.equals("cancel")) {
+     	cssClass += " btn-cancel btn-default";
+     }
+     
+}
+
+}

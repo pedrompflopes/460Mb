@@ -1,0 +1,58 @@
+﻿ package PackageNo118933682; public class error_friendly_url_exception_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( "../language/" + LocaleUtil.toLanguageId(exceptionLocale) );
+   response.write( LocaleUtil.toW3cLanguageId(exceptionLocale) )+response.write(request.getAttribute(" LocaleUtil").toW3cLanguageId(exceptionLocale) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		long duplicateClassPK = lfurle.getDuplicateClassPK();
+     		String duplicateClassName = lfurle.getDuplicateClassName();
+     
+     		Layout duplicateLayout = LayoutLocalServiceUtil.getLayout(duplicateClassPK);
+     		
+
+   response.write( new Object[] {ResourceActionsUtil.getModelResource(locale, duplicateClassName), duplicateLayout.getName(locale)} );   response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+
+
+
+
+
+
+    response.write( LanguageUtil.format(request, "please-enter-a-friendly-url-that-does-not-conflict-with-the-keyword-x", lfurle.getKeywordConflict(), false) );
+}
+
+}

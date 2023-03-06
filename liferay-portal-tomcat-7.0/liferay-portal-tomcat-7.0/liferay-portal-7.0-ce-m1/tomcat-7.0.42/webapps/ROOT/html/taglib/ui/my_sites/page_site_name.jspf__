@@ -1,0 +1,23 @@
+﻿ package PackageNo1882467260; public class page_site_name_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write(iconCssClass)+response.write(request.getAttribute("iconCssClass"));
+
+
+   response.write( HtmlUtil.escape(siteName) )+response.write(request.getAttribute(" HtmlUtil").escape(siteName) );
+}
+
+}

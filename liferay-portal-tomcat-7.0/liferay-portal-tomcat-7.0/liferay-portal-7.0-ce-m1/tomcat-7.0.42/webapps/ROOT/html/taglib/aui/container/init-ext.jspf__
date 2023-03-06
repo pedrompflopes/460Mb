@@ -1,0 +1,24 @@
+﻿ package PackageNo1200492680; public class init_ext_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if ((portletResponse != null) && Validator.isNotNull(id)) {
+     	id = portletResponse.getNamespace() + id;
+     }
+     
+}
+
+}

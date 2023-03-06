@@ -1,0 +1,180 @@
+﻿ package PackageNo772245000;import _html_portlet_init_jsp;import _html_portlet_monitoring_init_ext_jsp;import com.liferay.portal.kernel.servlet.PortalSessionContext;import com.liferay.portal.liveusers.LiveUsers;import com.liferay.portal.util.comparator.UserTrackerModifiedDateComparator; public class edit_session_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\edit_session.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\edit_session.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\monitoring\edit_session.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     String sessionId = ParamUtil.getString(request, "sessionId");
+     
+     UserTracker userTracker = LiveUsers.getUserTracker(company.getCompanyId(), sessionId);
+     
+     List<UserTrackerPath> paths = userTracker.getPaths();
+     int numHits = userTracker.getHits();
+     
+     userTracker = userTracker.toEscapedModel();
+     
+
+
+
+
+
+
+
+
+
+
+     response.write( redirect )+response.write(request.getAttribute(" redirect "));
+
+
+
+
+
+
+
+
+
+
+
+
+     			User user2 = null;
+     
+     			try {
+     				user2 = UserLocalServiceUtil.getUserById(userTracker.getUserId());
+     			}
+     			catch (NoSuchUserException nsue) {
+     			}
+     
+     			boolean userSessionAlive = false;
+     			
+
+   response.write( true )+response.write(request.getAttribute(" true ")); response.write( true )+response.write(request.getAttribute(" true "));
+     response.write( true )+response.write(request.getAttribute(" true "));response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+ response.write( HtmlUtil.escape(sessionId) );
+
+
+
+
+
+ response.write( userTracker.getUserId() );
+
+
+
+
+
+ response.write( (user2 != null) ? HtmlUtil.escape(user2.getFullName()) : LanguageUtil.get(request, "not-available") );
+
+
+
+
+
+ response.write( (user2 != null) ? user2.getEmailAddress() : LanguageUtil.get(request, "not-available") );
+
+
+
+
+
+ response.write( dateFormatDateTime.format(userTracker.getModifiedDate()) );
+
+
+
+
+
+ response.write( numHits );
+
+
+
+
+
+ response.write( userTracker.getUserAgent() );
+
+
+
+
+
+ response.write( userTracker.getRemoteAddr() );response.write( userTracker.getRemoteHost() );
+
+
+
+
+     response.write( true )+response.write(request.getAttribute(" true "));response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+   
+     						for (int i = 0; i < paths.size(); i++) {
+     							UserTrackerPath userTrackerPath = paths.get(i);
+     						
+
+
+ response.write( StringUtil.replace(userTrackerPath.getPath(), "&", "& ") );
+
+
+ response.write( dateFormatDateTime.format(userTrackerPath.getPathDate()) );
+
+
+   
+     						}
+     						
+
+
+
+
+     response.write( true )+response.write(request.getAttribute(" true "));response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+   
+     						userSessionAlive = true;
+     
+     						HttpSession userSession = PortalSessionContext.get(sessionId);
+     
+     						if (userSession != null) {
+     							try {
+     								Set<String> sortedAttrNames = new TreeSet<String>();
+     
+     								Enumeration<String> enu = userSession.getAttributeNames();
+     
+     								while (enu.hasMoreElements()) {
+     									String attrName = enu.nextElement();
+     
+     									sortedAttrNames.add(attrName);
+     								}
+     
+     								for (String attrName : sortedAttrNames) {
+     						
+
+
+    response.write( HtmlUtil.escape(attrName) );
+
+
+   
+     								}
+     							}
+     							catch (Exception e) {
+     								userSessionAlive = false;
+     
+     								e.printStackTrace();
+     							}
+     						}
+     						
+}
+
+}

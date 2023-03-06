@@ -1,0 +1,569 @@
+﻿ package PackageNo717574597;import _html_portlet_init_jsp;import _html_portlet_blogs_init_ext_jsp;import com.liferay.portal.service.SubscriptionLocalServiceUtil;import com.liferay.portlet.blogs.BlogsPortletInstanceSettings;import com.liferay.portlet.blogs.BlogsSettings;import com.liferay.portlet.blogs.EntryContentException;import com.liferay.portlet.blogs.EntrySmallImageNameException;import com.liferay.portlet.blogs.EntrySmallImageSizeException;import com.liferay.portlet.blogs.EntryTitleException;import com.liferay.portlet.blogs.NoSuchEntryException;import com.liferay.portlet.blogs.model.impl.BlogsEntryImpl;import com.liferay.portlet.blogs.service.BlogsEntryLocalServiceUtil;import com.liferay.portlet.blogs.service.BlogsEntryServiceUtil;import com.liferay.portlet.blogs.service.permission.BlogsEntryPermission;import com.liferay.portlet.blogs.service.permission.BlogsPermission;import com.liferay.portlet.blogs.util.BlogsConstants;import com.liferay.portlet.blogs.util.BlogsUtil; public class edit_entry_jsp {  /* 1 */ public static final String EDITOR_WYSIWYG_IMPL_KEY = "editor.wysiwyg.portal-web.docroot.html.portlet.blogs.edit_entry.jsp"; /* 569 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\edit_entry.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\edit_entry.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ String portletResource = ParamUtil.getString(request, "portletResource"); /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ String portletId = portletDisplay.getId(); /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ if (portletId.equals(PortletKeys.PORTLET_CONFIGURATION)) { /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ 	portletId = portletResource; /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ 	portletName = portletResource; /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ } /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ BlogsPortletInstanceSettings blogsPortletInstanceSettings = BlogsPortletInstanceSettings.getInstance(layout, portletId); /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ BlogsSettings blogsSettings = BlogsSettings.getInstance(scopeGroupId); /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ int pageAbstractLength = PropsValues.BLOGS_PAGE_ABSTRACT_LENGTH; /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 49?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ boolean showSearch = true; /* 50?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ boolean showEditEntryPermissions = true; /* 51?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 52?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone); /* 53?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 54?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 55?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ /* 56?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\blogs\edit_entry.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     String backURL = ParamUtil.getString(request, "backURL");
+     
+     String referringPortletResource = ParamUtil.getString(request, "referringPortletResource");
+     
+     BlogsEntry entry = (BlogsEntry)request.getAttribute(WebKeys.BLOGS_ENTRY);
+     
+     long entryId = BeanParamUtil.getLong(entry, request, "entryId");
+     
+     String content = BeanParamUtil.getString(entry, request, "content");
+     boolean allowPingbacks = PropsValues.BLOGS_PINGBACK_ENABLED && BeanParamUtil.getBoolean(entry, request, "allowPingbacks", true);
+     boolean allowTrackbacks = PropsValues.BLOGS_TRACKBACK_ENABLED && BeanParamUtil.getBoolean(entry, request, "allowTrackbacks", true);
+     boolean smallImage = BeanParamUtil.getBoolean(entry, request, "smallImage");
+     
+     boolean preview = ParamUtil.getBoolean(request, "preview");
+     boolean showHeader = ParamUtil.getBoolean(request, "showHeader", true);
+     
+
+
+
+     response.write( backURL );
+   response.write( (entry == null) );
+   response.write( (entry == null) ? "new-blog-entry" : entry.getTitle() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( EntryContentException.class )+response.write(request.getAttribute(" EntryContentException").class );
+response.write( EntryTitleException.class )+response.write(request.getAttribute(" EntryTitleException").class );
+
+response.write( LiferayFileItemException.class )+response.write(request.getAttribute(" LiferayFileItemException").class );
+   response.write( TextFormatter.formatStorageSize(LiferayFileItem.THRESHOLD_SIZE, locale) )+response.write(request.getAttribute(" TextFormatter").formatStorageSize(LiferayFileItem.THRESHOLD_SIZE, locale) );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+response.write( FileSizeException.class )+response.write(request.getAttribute(" FileSizeException").class );
+
+       
+     		long fileMaxSize = PrefsPropsUtil.getLong(PropsKeys.DL_FILE_MAX_SIZE);
+     
+     		if (fileMaxSize == 0) {
+     			fileMaxSize = PrefsPropsUtil.getLong(PropsKeys.UPLOAD_SERVLET_REQUEST_IMPL_MAX_SIZE);
+     		}
+     		
+
+   response.write( TextFormatter.formatStorageSize(fileMaxSize, locale) )+response.write(request.getAttribute(" TextFormatter").formatStorageSize(fileMaxSize, locale) );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+
+    response.write( entry );response.write( BlogsEntry.class )+response.write(request.getAttribute(" BlogsEntry").class );
+
+
+
+
+
+
+     response.write( String.valueOf(entry.getEntryId()) );response.write( false )+response.write(request.getAttribute(" false "));response.write( false )+response.write(request.getAttribute(" false "));response.write( entry.getStatus() );
+
+
+
+
+
+
+
+
+
+
+
+
+     			if (entry == null) {
+     				entry = new BlogsEntryImpl();
+     			}
+     
+     			entry.setContent(content);
+     			
+
+
+
+
+      response.write( entry.getContent() );
+
+
+
+
+
+
+  response.write( EDITOR_WYSIWYG_IMPL_KEY )+response.write(request.getAttribute(" EDITOR_WYSIWYG_IMPL_KEY "));
+
+
+
+
+       response.write( BlogsEntry.class.getName() )+response.write(request.getAttribute(" BlogsEntry").class.getName() );
+
+ response.write( BlogsEntry.class.getName() )+response.write(request.getAttribute(" BlogsEntry").class.getName() );
+       response.write( entryId );
+response.write( true )+response.write(request.getAttribute(" true "));
+     response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     					int i = 0;
+     
+     					for (String trackback : StringUtil.split(entry.getTrackbacks())) {
+     					
+
+
+
+  
+     					}
+     					
+
+
+
+
+
+
+
+
+  response.write( BlogsEntry.class.getName() )+response.write(request.getAttribute(" BlogsEntry").class.getName() );
+
+
+
+
+
+
+      response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+  response.write( EntrySmallImageNameException.class )+response.write(request.getAttribute(" EntrySmallImageNameException").class );
+
+ 
+     				String[] imageExtensions = PrefsPropsUtil.getStringArray(PropsKeys.BLOGS_IMAGE_EXTENSIONS, StringPool.COMMA);
+     				
+
+     response.write( StringUtil.merge(imageExtensions, ", ") );
+
+
+  response.write( EntrySmallImageSizeException.class )+response.write(request.getAttribute(" EntrySmallImageSizeException").class );
+
+ 
+     				long imageMaxSize = PrefsPropsUtil.getLong(PropsKeys.BLOGS_IMAGE_SMALL_MAX_SIZE);
+     				
+
+     response.write( TextFormatter.formatStorageSize(imageMaxSize, locale) )+response.write(request.getAttribute(" TextFormatter").formatStorageSize(imageMaxSize, locale) );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write(true)+response.write(request.getAttribute("true"));      response.write( Validator.isNotNull(entry.getSmallImageURL()) ? entry.getSmallImageURL() : themeDisplay.getPathImage() + "/template?img_id=" + entry.getSmallImageId() + "&t=" + WebServerServletTokenUtil.getToken(entry.getSmallImageId()) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+
+
+
+      response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+  response.write( BlogsEntry.class.getName() )+response.write(request.getAttribute(" BlogsEntry").class.getName() );
+response.write( entryId );
+
+
+
+
+       
+     		boolean pending = false;
+     
+     		if (entry != null) {
+     			pending = entry.isPending();
+     		}
+     		
+
+
+
+
+
+
+
+
+
+
+     			String saveButtonLabel = "save";
+     
+     			if ((entry == null) || entry.isDraft() || entry.isApproved()) {
+     				saveButtonLabel = "save-as-draft";
+     			}
+     
+     			String publishButtonLabel = "publish";
+     
+     			if (WorkflowDefinitionLinkLocalServiceUtil.hasWorkflowDefinitionLink(themeDisplay.getCompanyId(), scopeGroupId, BlogsEntry.class.getName())) {
+     				publishButtonLabel = "submit-for-publication";
+     			}
+     			
+
+
+
+       response.write( LanguageUtil.format(request, "this-x-is-approved.-publishing-these-changes-will-cause-it-to-be-unpublished-and-go-through-the-approval-process-again", ResourceActionsUtil.getModelResource(locale, BlogsEntry.class.getName()), false) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( UnicodeFormatter.toString(content) );
+
+
+
+  response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( (entry == null) ? Constants.ADD : Constants.UPDATE );
+
+  response.write( WorkflowConstants.ACTION_SAVE_DRAFT )+response.write(request.getAttribute(" WorkflowConstants").ACTION_SAVE_DRAFT );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( UnicodeLanguageUtil.format(request, ((entry != null) && entry.isPending()) ? "entry-saved-at-x" : "draft-saved-at-x", "[TIME]", false) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( Constants.ADD )+response.write(request.getAttribute(" Constants").ADD );
+
+
+
+
+
+
+
+
+
+
+
+    response.write( WorkflowConstants.ACTION_SAVE_DRAFT )+response.write(request.getAttribute(" WorkflowConstants").ACTION_SAVE_DRAFT );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( UnicodeLanguageUtil.get(request, "could-not-save-draft-to-the-server") );
+
+
+
+
+
+
+
+    response.write( UnicodeLanguageUtil.get(request, "saving-draft") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( (entry == null) ? Constants.ADD : Constants.UPDATE );
+
+
+
+    response.write( WorkflowConstants.ACTION_SAVE_DRAFT )+response.write(request.getAttribute(" WorkflowConstants").ACTION_SAVE_DRAFT );
+
+
+    response.write( WorkflowConstants.ACTION_PUBLISH )+response.write(request.getAttribute(" WorkflowConstants").ACTION_PUBLISH );
+
+
+
+
+
+
+
+
+
+     response.write( portletDisplay.getRootPortletId() )+response.write(request.getAttribute(" portletDisplay").getRootPortletId() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( HtmlUtil.escapeJS(PortalUtil.escapeRedirect(redirect)) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(PortalUtil.escapeRedirect(redirect)) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( smallImage );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( (entry != null) && Validator.isNotNull(entry.getSmallImageURL()) ? 0 : 1 );
+
+
+     
+     if (entry != null) {
+     	PortletURL portletURL = renderResponse.createRenderURL();
+     
+     	portletURL.setParameter("struts_action", "/blogs/view_entry");
+     	portletURL.setParameter("entryId", String.valueOf(entry.getEntryId()));
+     
+     	PortalUtil.addPortletBreadcrumbEntry(request, entry.getTitle(), portletURL.toString());
+     	PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, "edit"), currentURL);
+     }
+     else {
+     	PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, "add-entry"), currentURL);
+     }
+     
+}
+
+}

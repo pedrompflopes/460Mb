@@ -1,0 +1,35 @@
+﻿ package PackageNo1563848864;import com.liferay.portal.kernel.json.JSONTransformer; public class init_ext_jspf {  /* 1 */ public String _serialize(Object value, String javaScriptAttributes) { /* 35 */ 	List<String> javaScriptAttributesList = Arrays.asList(StringUtil.split(javaScriptAttributes)); /* 36 */ 	JSONTransformer jsonTransformer = JSONFactoryUtil.createJavaScriptNormalizerJSONTransformer(javaScriptAttributesList); /* 38 */ 	return JSONFactoryUtil.looseSerialize(value, jsonTransformer, String.class); /* 40 */ } /* 41 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Map<String, Object> jsonifiedOptions = (Map<String, Object>)request.getAttribute("aui:component:jsonifiedOptions");
+     
+     Object render = String.valueOf(AUIUtil.getAttribute(request, "aui:component:", "render"));
+     
+     if (Validator.isNull(render)) {
+     	render = true;
+     }
+     else if (render.equals("true") || render.equals("false")) {
+     	render = GetterUtil.getBoolean((String)render);
+     }
+     
+     jsonifiedOptions.put("render", render);
+     
+}
+
+}

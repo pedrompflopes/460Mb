@@ -1,0 +1,570 @@
+﻿ package PackageNo1578878801;import _html_portal_init_jsp;import com.liferay.portal.javadoc.JavadocUtil;import com.liferay.portal.kernel.javadoc.JavadocClass;import com.liferay.portal.kernel.javadoc.JavadocManagerUtil;import com.liferay.portal.kernel.javadoc.JavadocMethod;import com.liferay.portal.kernel.jsonwebservice.JSONWebServiceActionMapping;import com.liferay.portal.kernel.jsonwebservice.JSONWebServiceActionsManagerUtil;import com.liferay.portal.kernel.util.MethodParameter;import java.io.File;import java.lang.reflect.Method; public class action_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\action.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\action.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ String jsonWSPath = themeDisplay.getPathContext() + "/api/jsonws"; /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ String contextName = ParamUtil.getString(request, "contextName"); /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ String jsonWSContextPath = jsonWSPath + "?contextName=" + contextName; /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portal\api\jsonws\action.jsp */
+
+     
+     String signature = ParamUtil.getString(request, "signature");
+     
+
+
+
+
+
+
+     			JSONWebServiceActionMapping jsonWebServiceActionMapping = JSONWebServiceActionsManagerUtil.getJSONWebServiceActionMapping(signature);
+     			
+
+ response.write( jsonWebServiceActionMapping.getPath() )+response.write(request.getAttribute(" jsonWebServiceActionMapping").getPath() );
+
+
+
+
+
+
+       response.write( jsonWebServiceActionMapping.getMethod() )+response.write(request.getAttribute(" jsonWebServiceActionMapping").getMethod() );
+
+
+
+
+     			Class<?> actionClass = jsonWebServiceActionMapping.getActionClass();
+     
+     			String actionClassName = actionClass.getName();
+     
+     			int pos = actionClassName.lastIndexOf(CharPool.PERIOD);
+     
+     			Method actionMethod = jsonWebServiceActionMapping.getActionMethod();
+     			
+
+
+
+       response.write( actionClassName.substring(0, pos) );      response.write( actionClassName.substring(pos + 1) );
+
+
+ 
+     				Class<?> serviceClass = actionClass;
+     
+     				if (actionClassName.contains(".service.") && actionClassName.endsWith("ServiceUtil")) {
+     					String implClassName = StringUtil.replace(actionClassName, new String[] {".service.", "ServiceUtil"}, new String[] {".service.impl.", "ServiceImpl"});
+     
+     					try {
+     						serviceClass = JavadocUtil.loadClass(actionClass.getClassLoader(), implClassName);
+     					}
+     					catch (Exception e) {
+     					}
+     				}
+     
+     				JavadocClass javadocClass = JavadocManagerUtil.lookupJavadocClass(serviceClass);
+     
+     				String javadocClassComment = null;
+     
+     				if (javadocClass != null) {
+     					javadocClassComment = javadocClass.getComment();
+     				}
+     				
+
+
+
+response.write( javadocClassComment );
+
+
+
+
+
+ response.write( actionMethod.getName() );
+
+
+ 
+     				JavadocMethod javadocMethod = JavadocManagerUtil.lookupJavadocMethod(actionMethod);
+     
+     				String javadocMethodComment = null;
+     
+     				if (javadocMethod != null) {
+     					javadocMethodComment = javadocMethod.getComment();
+     				}
+     				
+
+
+
+response.write( javadocMethodComment );
+
+
+
+
+
+
+
+
+
+     			if (PropsValues.JSON_SERVICE_AUTH_TOKEN_ENABLED) {
+     			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     			}
+     
+     			MethodParameter[] methodParameters = jsonWebServiceActionMapping.getMethodParameters();
+     
+     			for (int i = 0; i < methodParameters.length; i++) {
+     				MethodParameter methodParameter = methodParameters[i];
+     
+     				Class methodParameterTypeClass = methodParameter.getType();
+     
+     				String methodParameterTypeClassName = null;
+     
+     				if (methodParameterTypeClass.isArray()) {
+     					methodParameterTypeClassName = methodParameterTypeClass.getComponentType() + "[]";
+     				}
+     				else {
+     					methodParameterTypeClassName = methodParameterTypeClass.getName();
+     				}
+     			
+
+
+
+response.write( methodParameter.getName() );
+
+
+
+response.write( methodParameterTypeClassName );
+
+
+  
+     					String parameterComment = null;
+     
+     					if (javadocMethod != null) {
+     						parameterComment = javadocMethod.getParameterComment(i);
+     					}
+     					
+
+
+
+ response.write( parameterComment )+response.write(request.getAttribute(" parameterComment "));
+
+
+
+
+
+     			}
+     			
+
+
+
+
+
+
+
+
+ 
+     				Class<?> returnTypeClass = actionMethod.getReturnType();
+     
+     				String returnTypeName = StringPool.BLANK;
+     
+     				while (returnTypeClass.isArray()) {
+     					returnTypeClass = returnTypeClass.getComponentType();
+     
+     					returnTypeName += "[]";
+     				}
+     
+     				returnTypeName = returnTypeClass.getName() + returnTypeName;
+     				
+
+
+       response.write( returnTypeName );
+
+
+ 
+     				String returnComment = null;
+     
+     				if (javadocMethod != null) {
+     					returnComment = javadocMethod.getReturnComment();
+     				}
+     				
+
+
+
+response.write( returnComment )+response.write(request.getAttribute(" returnComment "));
+
+
+
+
+
+
+
+
+
+     			Class<?>[] exceptionTypeClasses = actionMethod.getExceptionTypes();
+     
+     			for (int i = 0; i < exceptionTypeClasses.length; i++) {
+     				Class<?> exceptionTypeClass = exceptionTypeClasses[i];
+     			
+
+
+
+response.write( exceptionTypeClass.getName() )+response.write(request.getAttribute(" exceptionTypeClass").getName() );
+
+
+  
+     					String throwsComment = null;
+     
+     					if (javadocMethod != null) {
+     						throwsComment = javadocMethod.getThrowsComment(i);
+     					}
+     					
+
+
+
+ response.write( throwsComment )+response.write(request.getAttribute(" throwsComment "));
+
+
+
+
+
+     				}
+     			
+
+
+
+
+
+
+
+     			String enctype = StringPool.BLANK;
+     
+     			for (MethodParameter methodParameter : methodParameters) {
+     				Class<?> methodParameterTypeClass = methodParameter.getType();
+     
+     				if (methodParameterTypeClass.equals(File.class)) {
+     					enctype = "multipart/form-data";
+     
+     					break;
+     				}
+     			}
+     			
+
+
+
+
+response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     				if (PropsValues.JSON_SERVICE_AUTH_TOKEN_ENABLED) {
+     				
+
+
+
+ 
+     				}
+     
+     				for (int i = 0; i < methodParameters.length; i++) {
+     					MethodParameter methodParameter = methodParameters[i];
+     
+     					String methodParameterName = methodParameter.getName();
+     
+     					if (methodParameterName.equals("serviceContext")) {
+     						continue;
+     					}
+     
+     					Class<?> methodParameterTypeClass = methodParameter.getType();
+     
+     					String methodParameterTypeClassName = null;
+     
+     					if (methodParameterTypeClass.isArray()) {
+     						methodParameterTypeClassName = methodParameterTypeClass.getComponentType() + "[]";
+     					}
+     					else {
+     						methodParameterTypeClassName = methodParameterTypeClass.getName();
+     					}
+     
+     					if (methodParameterTypeClass.equals(File.class)) {
+     				
+
+
+
+  
+     					}
+     					else if (methodParameterTypeClass.equals(boolean.class)) {
+     					
+
+  response.write( methodParameterName );
+
+
+
+
+      response.write( methodParameterTypeClassName );
+
+
+  
+     					}
+     					else {
+     						int size = 10;
+     
+     						if (methodParameterTypeClass.equals(String.class)) {
+     							size = 60;
+     						}
+     					
+
+
+
+ 
+     					}
+     				
+
+
+
+   
+     						String jsObjectType = "other";
+     
+     						if (methodParameterTypeClass.isArray()) {
+     							jsObjectType = "array";
+     						}
+     						else if (methodParameterTypeClass.equals(String.class)) {
+     							jsObjectType = "string";
+     						}
+     						
+
+response.write( jsObjectType )+response.write(request.getAttribute(" jsObjectType "));response.write( methodParameterName );
+
+
+ 
+     				}
+     				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( jsonWebServiceActionMapping.getPath() )+response.write(request.getAttribute(" jsonWebServiceActionMapping").getPath() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( jsonWebServiceActionMapping.getPath() )+response.write(request.getAttribute(" jsonWebServiceActionMapping").getPath() );
+
+  response.write( StringPool.FOUR_SPACES )+response.write(request.getAttribute(" StringPool").FOUR_SPACES );
+  response.write( StringPool.FOUR_SPACES )+response.write(request.getAttribute(" StringPool").FOUR_SPACES );
+
+
+  response.write( StringPool.FOUR_SPACES )+response.write(request.getAttribute(" StringPool").FOUR_SPACES );
+
+
+
+
+
+       response.write( themeDisplay.getPortalURL() + jsonWSPath + jsonWebServiceActionMapping.getPath() )+response.write(request.getAttribute(" themeDisplay").getPortalURL() + jsonWSPath + jsonWebServiceActionMapping.getPath() );
+
+
+
+
+
+
+  response.write( themeDisplay.getPortalURL() + jsonWSPath + jsonWebServiceActionMapping.getPath() )+response.write(request.getAttribute(" themeDisplay").getPortalURL() + jsonWSPath + jsonWebServiceActionMapping.getPath() );
+}
+
+}

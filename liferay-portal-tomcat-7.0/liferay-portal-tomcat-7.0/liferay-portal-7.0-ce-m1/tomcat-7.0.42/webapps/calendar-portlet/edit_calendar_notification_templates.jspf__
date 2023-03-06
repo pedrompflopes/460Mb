@@ -1,0 +1,158 @@
+﻿ package PackageNo711647608; public class edit_calendar_notification_templates_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String tabs3 = ParamUtil.getString(request, "tabs3", "invite-email");
+     
+     String[] tabs3Values = StringUtil.split(tabs3, StringPool.DASH);
+     
+     NotificationTemplateType notificationTemplateType = NotificationTemplateType.parse(tabs3Values[0]);
+     NotificationType notificationType = NotificationType.parse(tabs3Values[1]);
+     
+     CalendarNotificationTemplate calendarNotificationTemplate = CalendarNotificationTemplateLocalServiceUtil.fetchCalendarNotificationTemplate(calendar.getCalendarId(), notificationType, notificationTemplateType);
+     
+     long calendarNotificationTemplateId = BeanPropertiesUtil.getLong(calendarNotificationTemplate, "calendarNotificationTemplateId");
+     
+     User defaultSenderUser = NotificationUtil.getDefaultSenderUser(calendar);
+     
+     String fromAddress = NotificationUtil.getTemplatePropertyValue(calendarNotificationTemplate, CalendarNotificationTemplateConstants.PROPERTY_FROM_ADDRESS, defaultSenderUser.getEmailAddress());
+     String fromName = NotificationUtil.getTemplatePropertyValue(calendarNotificationTemplate, CalendarNotificationTemplateConstants.PROPERTY_FROM_NAME, defaultSenderUser.getFullName());
+     
+     String defaultTemplateSubject = NotificationUtil.getDefaultTemplate(notificationType, notificationTemplateType, NotificationField.SUBJECT);
+     String notificationTemplateSubject = BeanPropertiesUtil.getString(calendarNotificationTemplate, "subject", defaultTemplateSubject);
+     
+     String defaultTemplateBody = NotificationUtil.getDefaultTemplate(notificationType, notificationTemplateType, NotificationField.BODY);
+     String notificationTemplateBody = BeanPropertiesUtil.getString(calendarNotificationTemplate, "body", defaultTemplateBody);
+     
+
+
+    response.write( backURL );
+  response.write( calendar.getName(locale) )+response.write(request.getAttribute(" calendar").getName(locale) );
+
+
+
+
+
+response.write( portletURL )+response.write(request.getAttribute(" portletURL "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( calendarNotificationTemplate );response.write( CalendarNotificationTemplate.class )+response.write(request.getAttribute(" CalendarNotificationTemplate").class );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write( HtmlUtil.escape(fromAddress) );
+
+
+
+
+
+      response.write( HtmlUtil.escape(fromName) );
+
+
+
+
+
+      response.write( company.getVirtualHostname() )+response.write(request.getAttribute(" company").getVirtualHostname() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( UnicodeFormatter.toString(notificationTemplateBody) );
+}
+
+}

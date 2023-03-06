@@ -1,0 +1,185 @@
+﻿ package PackageNo1892656453; public class view_resources_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     long groupId = themeDisplay.getSiteGroupIdOrLiveGroupId();
+     
+     List<WorkflowHandler<?>> workflowHandlers = null;
+     
+     if (portletName.equals(PortletKeys.WORKFLOW_DEFINITIONS)) {
+     	groupId = WorkflowConstants.DEFAULT_GROUP_ID;
+     
+     	workflowHandlers = WorkflowHandlerRegistryUtil.getWorkflowHandlers();
+     }
+     else {
+     	workflowHandlers = WorkflowHandlerRegistryUtil.getScopeableWorkflowHandlers();
+     }
+     
+     List<WorkflowHandler<?>> hiddenWorkflowHandlers = new ArrayList<WorkflowHandler<?>>();
+     
+     Iterator<WorkflowHandler<?>> itr = workflowHandlers.iterator();
+     
+     while (itr.hasNext()) {
+     	WorkflowHandler<?> workflowHandler = itr.next();
+     
+     	if (!workflowHandler.isVisible()) {
+     		hiddenWorkflowHandlers.add(workflowHandler);
+     
+     		itr.remove();
+     	}
+     }
+     
+     List<WorkflowDefinition> workflowDefinitions = WorkflowDefinitionManagerUtil.getActiveWorkflowDefinitions(company.getCompanyId(), 0, 100, WorkflowComparatorFactoryUtil.getDefinitionNameComparator(true));
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/workflow_definition_links/view");
+     portletURL.setParameter("tabs1", "default-configuration");
+     
+
+
+
+
+
+
+
+
+
+
+ response.write( portletURL );
+   response.write( workflowHandlers.size() )+response.write(request.getAttribute(" workflowHandlers").size() );
+
+
+      response.write( ListUtil.subList(workflowHandlers, searchContainer.getStart(), searchContainer.getEnd()) )+response.write(request.getAttribute(" ListUtil").subList(workflowHandlers, searchContainer.getStart(), searchContainer.getEnd()) );
+
+
+
+
+
+
+
+
+
+     response.write( workflowHandler )+response.write(request.getAttribute(" workflowHandler "));
+
+
+
+
+
+
+     response.write( workflowHandler.getIconCssClass() )+response.write(request.getAttribute(" workflowHandler").getIconCssClass() );
+      response.write( true )+response.write(request.getAttribute(" true "));
+response.write( ResourceActionsUtil.getModelResource(locale, workflowHandler.getClassName()) )+response.write(request.getAttribute(" ResourceActionsUtil").getModelResource(locale, workflowHandler.getClassName()) );
+
+
+
+
+
+
+
+
+  
+     					WorkflowDefinitionLink workflowDefinitionLink = null;
+     
+     					try {
+     						if (portletName.equals(PortletKeys.WORKFLOW_DEFINITIONS)) {
+     							workflowDefinitionLink = WorkflowDefinitionLinkLocalServiceUtil.getDefaultWorkflowDefinitionLink(company.getCompanyId(), workflowHandler.getClassName(), 0, 0);
+     						}
+     						else {
+     							workflowDefinitionLink = WorkflowDefinitionLinkLocalServiceUtil.getWorkflowDefinitionLink(company.getCompanyId(), groupId, workflowHandler.getClassName(), 0, 0, true);
+     						}
+     					}
+     					catch (NoSuchWorkflowDefinitionLinkException nswdle) {
+     					}
+     
+     					String defaultOptionMessage = null;
+     
+     					if (!portletName.equals(PortletKeys.WORKFLOW_DEFINITIONS)) {
+     						try {
+     							WorkflowDefinitionLink defaultWorkflowDefinitionLink = WorkflowDefinitionLinkLocalServiceUtil.getDefaultWorkflowDefinitionLink(company.getCompanyId(), workflowHandler.getClassName(), 0, 0);
+     
+     							defaultOptionMessage = LanguageUtil.get(request, "default") + StringPool.COLON + StringPool.SPACE + defaultWorkflowDefinitionLink.getWorkflowDefinitionName();
+     						}
+     						catch (NoSuchWorkflowDefinitionLinkException nswdle) {
+     							defaultOptionMessage = LanguageUtil.get(request, "default") + StringPool.COLON + StringPool.SPACE + LanguageUtil.get(request, "no-workflow");
+     						}
+     					}
+     					else {
+     						defaultOptionMessage = LanguageUtil.get(request, "no-workflow");
+     					}
+     					
+
+   response.write( defaultOptionMessage );
+
+  
+     					for (WorkflowDefinition workflowDefinition : workflowDefinitions) {
+     						boolean selected = false;
+     
+     						if ((workflowDefinitionLink != null) && workflowDefinitionLink.getWorkflowDefinitionName().equals(workflowDefinition.getName()) && (workflowDefinitionLink.getWorkflowDefinitionVersion() == workflowDefinition.getVersion())) {
+     							selected = true;
+     						}
+     					
+
+
+
+  
+     					}
+     					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( portletURL );
+   response.write( hiddenWorkflowHandlers.size() )+response.write(request.getAttribute(" hiddenWorkflowHandlers").size() );
+
+
+      response.write( ListUtil.subList(hiddenWorkflowHandlers, searchContainer.getStart(), searchContainer.getEnd()) )+response.write(request.getAttribute(" ListUtil").subList(hiddenWorkflowHandlers, searchContainer.getStart(), searchContainer.getEnd()) );
+
+
+
+
+
+
+
+
+     response.write( workflowHandler );
+
+
+
+
+
+
+     response.write( workflowHandler.getIconCssClass() );
+      response.write( true )+response.write(request.getAttribute(" true "));
+response.write( ResourceActionsUtil.getModelResource(locale, workflowHandler.getClassName()) );
+}
+
+}

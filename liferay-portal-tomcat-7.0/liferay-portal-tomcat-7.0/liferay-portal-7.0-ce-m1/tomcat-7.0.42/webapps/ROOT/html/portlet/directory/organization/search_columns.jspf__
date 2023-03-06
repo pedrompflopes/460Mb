@@ -1,0 +1,57 @@
+﻿ package PackageNo309992437; public class search_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( true )+response.write(request.getAttribute(" true "));
+
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( HtmlUtil.escape(organization.getParentOrganizationName()) )+response.write(request.getAttribute(" HtmlUtil").escape(organization.getParentOrganizationName()) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+      response.write( true )+response.write(request.getAttribute(" true "));
+  response.write( LanguageUtil.get(request, organization.getType()) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+  response.write( HtmlUtil.escape(organization.getAddress().getCity()) );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+   response.write( organization );
+
+
+
+ response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+   response.write( organization );
+}
+
+}

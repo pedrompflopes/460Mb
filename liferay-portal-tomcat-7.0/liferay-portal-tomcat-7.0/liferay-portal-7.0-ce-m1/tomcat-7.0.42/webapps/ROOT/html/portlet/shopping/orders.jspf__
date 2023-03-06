@@ -1,0 +1,126 @@
+﻿ package PackageNo223405842; public class orders_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/shopping/view");
+     portletURL.setParameter("tabs1", tabs1);
+     
+
+
+
+
+
+      
+     	OrderSearch searchContainer = new OrderSearch(renderRequest, portletURL);
+     
+     	List headerNames = searchContainer.getHeaderNames();
+     
+     	headerNames.add(StringPool.BLANK);
+     
+     	searchContainer.setRowChecker(new RowChecker(renderResponse));
+     	
+
+
+
+     response.write( searchContainer )+response.write(request.getAttribute(" searchContainer "));
+
+
+      
+     	OrderSearchTerms searchTerms = (OrderSearchTerms)searchContainer.getSearchTerms();
+     
+     	long searchUserId = user.getUserId();
+     
+     	if (ShoppingPermission.contains(permissionChecker, scopeGroupId, ActionKeys.MANAGE_ORDERS)) {
+     		searchUserId = 0;
+     	}
+     
+     	int total = ShoppingOrderLocalServiceUtil.searchCount(scopeGroupId, company.getCompanyId(), searchUserId, searchTerms.getNumber(), searchTerms.getFirstName(), searchTerms.getLastName(), searchTerms.getEmailAddress(), searchTerms.getFirstName(), searchTerms.getLastName(), searchTerms.getEmailAddress(), searchTerms.getStatus(), searchTerms.isAndOperator());
+     
+     	searchContainer.setTotal(total);
+     
+     	List results = ShoppingOrderLocalServiceUtil.search(scopeGroupId, company.getCompanyId(), searchUserId, searchTerms.getNumber(), searchTerms.getFirstName(), searchTerms.getLastName(), searchTerms.getEmailAddress(), searchTerms.getFirstName(), searchTerms.getLastName(), searchTerms.getEmailAddress(), searchTerms.getStatus(), searchTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd());
+     
+     	searchContainer.setResults(results);
+     	
+
+
+
+
+
+
+
+      
+     	List resultRows = searchContainer.getResultRows();
+     
+     	for (int i = 0; i < results.size(); i++) {
+     		ShoppingOrder order = (ShoppingOrder)results.get(i);
+     
+     		order = order.toEscapedModel();
+     
+     		ResultRow row = new ResultRow(order, order.getOrderId(), i);
+     
+     		PortletURL rowURL = renderResponse.createRenderURL();
+     
+     		rowURL.setParameter("struts_action", "/shopping/edit_order");
+     		rowURL.setParameter("redirect", currentURL);
+     		rowURL.setParameter("orderId", String.valueOf(order.getOrderId()));
+     
+     		// Number
+     
+     		row.addText(order.getNumber(), rowURL);
+     
+     		// Date
+     
+     		row.addDate(order.getCreateDate(), rowURL);
+     
+     		// Status
+     
+     		row.addText(ShoppingUtil.getPpPaymentStatus(order, request), rowURL);
+     
+     		// Customer
+     
+     		row.addText(HtmlUtil.escape(PortalUtil.getUserName(order.getUserId(), order.getBillingFirstName() + StringPool.SPACE + order.getBillingLastName())));
+     
+     		// Action
+     
+     		row.addJSP("/html/portlet/shopping/order_action.jsp", "entry-action");
+     
+     		// Add result row
+     
+     		resultRows.add(row);
+     	}
+     	
+
+response.write( searchContainer );
+
+
+
+   response.write( searchContainerReference.getId() )+response.write(request.getAttribute(" searchContainerReference").getId() );
+
+
+
+
+
+  response.write( UnicodeLanguageUtil.get(request, "are-you-sure-you-want-to-delete-the-selected-orders") );
+    response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( Constants.DELETE )+response.write(request.getAttribute(" Constants").DELETE );
+
+
+   response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+}
+
+}

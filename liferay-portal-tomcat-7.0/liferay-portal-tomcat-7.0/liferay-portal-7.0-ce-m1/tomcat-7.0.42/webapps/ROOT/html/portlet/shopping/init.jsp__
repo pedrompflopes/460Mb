@@ -1,0 +1,134 @@
+﻿ package PackageNo140065575;import _html_common_init_jsp;import _html_portlet_init_ext_jsp;import com.liferay.portlet.amazonrankings.util.AmazonRankingsUtil;import com.liferay.portlet.shopping.AmazonException;import com.liferay.portlet.shopping.BillingCityException;import com.liferay.portlet.shopping.BillingCountryException;import com.liferay.portlet.shopping.BillingEmailAddressException;import com.liferay.portlet.shopping.BillingFirstNameException;import com.liferay.portlet.shopping.BillingLastNameException;import com.liferay.portlet.shopping.BillingPhoneException;import com.liferay.portlet.shopping.BillingStateException;import com.liferay.portlet.shopping.BillingStreetException;import com.liferay.portlet.shopping.BillingZipException;import com.liferay.portlet.shopping.CCExpirationException;import com.liferay.portlet.shopping.CCNameException;import com.liferay.portlet.shopping.CCNumberException;import com.liferay.portlet.shopping.CCTypeException;import com.liferay.portlet.shopping.CartMinQuantityException;import com.liferay.portlet.shopping.CategoryNameException;import com.liferay.portlet.shopping.CouponActiveException;import com.liferay.portlet.shopping.CouponCodeException;import com.liferay.portlet.shopping.CouponDateException;import com.liferay.portlet.shopping.CouponDescriptionException;import com.liferay.portlet.shopping.CouponDiscountException;import com.liferay.portlet.shopping.CouponEndDateException;import com.liferay.portlet.shopping.CouponLimitCategoriesException;import com.liferay.portlet.shopping.CouponLimitSKUsException;import com.liferay.portlet.shopping.CouponMinimumOrderException;import com.liferay.portlet.shopping.CouponNameException;import com.liferay.portlet.shopping.CouponStartDateException;import com.liferay.portlet.shopping.DuplicateCouponCodeException;import com.liferay.portlet.shopping.DuplicateItemSKUException;import com.liferay.portlet.shopping.ItemLargeImageNameException;import com.liferay.portlet.shopping.ItemLargeImageSizeException;import com.liferay.portlet.shopping.ItemMediumImageNameException;import com.liferay.portlet.shopping.ItemMediumImageSizeException;import com.liferay.portlet.shopping.ItemNameException;import com.liferay.portlet.shopping.ItemSKUException;import com.liferay.portlet.shopping.ItemSmallImageNameException;import com.liferay.portlet.shopping.ItemSmallImageSizeException;import com.liferay.portlet.shopping.NoSuchCategoryException;import com.liferay.portlet.shopping.NoSuchCouponException;import com.liferay.portlet.shopping.NoSuchItemException;import com.liferay.portlet.shopping.NoSuchOrderException;import com.liferay.portlet.shopping.ShippingCityException;import com.liferay.portlet.shopping.ShippingCountryException;import com.liferay.portlet.shopping.ShippingEmailAddressException;import com.liferay.portlet.shopping.ShippingFirstNameException;import com.liferay.portlet.shopping.ShippingLastNameException;import com.liferay.portlet.shopping.ShippingPhoneException;import com.liferay.portlet.shopping.ShippingStateException;import com.liferay.portlet.shopping.ShippingStreetException;import com.liferay.portlet.shopping.ShippingZipException;import com.liferay.portlet.shopping.ShoppingSettings;import com.liferay.portlet.shopping.model.ShoppingCart;import com.liferay.portlet.shopping.model.ShoppingCartItem;import com.liferay.portlet.shopping.model.ShoppingCategory;import com.liferay.portlet.shopping.model.ShoppingCategoryConstants;import com.liferay.portlet.shopping.model.ShoppingCoupon;import com.liferay.portlet.shopping.model.ShoppingCouponConstants;import com.liferay.portlet.shopping.model.ShoppingItem;import com.liferay.portlet.shopping.model.ShoppingItemField;import com.liferay.portlet.shopping.model.ShoppingItemPrice;import com.liferay.portlet.shopping.model.ShoppingItemPriceConstants;import com.liferay.portlet.shopping.model.ShoppingOrder;import com.liferay.portlet.shopping.model.ShoppingOrderConstants;import com.liferay.portlet.shopping.model.ShoppingOrderItem;import com.liferay.portlet.shopping.search.CouponDisplayTerms;import com.liferay.portlet.shopping.search.CouponSearch;import com.liferay.portlet.shopping.search.OrderDisplayTerms;import com.liferay.portlet.shopping.search.OrderSearch;import com.liferay.portlet.shopping.search.OrderSearchTerms;import com.liferay.portlet.shopping.service.ShoppingCartLocalServiceUtil;import com.liferay.portlet.shopping.service.ShoppingCategoryServiceUtil;import com.liferay.portlet.shopping.service.ShoppingCouponLocalServiceUtil;import com.liferay.portlet.shopping.service.ShoppingCouponServiceUtil;import com.liferay.portlet.shopping.service.ShoppingItemFieldLocalServiceUtil;import com.liferay.portlet.shopping.service.ShoppingItemLocalServiceUtil;import com.liferay.portlet.shopping.service.ShoppingItemPriceLocalServiceUtil;import com.liferay.portlet.shopping.service.ShoppingItemServiceUtil;import com.liferay.portlet.shopping.service.ShoppingOrderItemLocalServiceUtil;import com.liferay.portlet.shopping.service.ShoppingOrderLocalServiceUtil;import com.liferay.portlet.shopping.service.permission.ShoppingCategoryPermission;import com.liferay.portlet.shopping.service.permission.ShoppingItemPermission;import com.liferay.portlet.shopping.service.permission.ShoppingOrderPermission;import com.liferay.portlet.shopping.service.permission.ShoppingPermission;import com.liferay.portlet.shopping.util.ShoppingConstants;import com.liferay.portlet.shopping.util.ShoppingUtil; public class init_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ PortletMode portletMode = liferayPortletRequest.getPortletMode(); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ WindowState windowState = liferayPortletRequest.getWindowState(); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ PortletURL currentURLObj = PortletURLUtil.getCurrent(liferayPortletRequest, liferayPortletResponse); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ String currentURL = currentURLObj.toString(); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init.jsp */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     PortalPreferences portalPreferences = PortletPreferencesFactoryUtil.getPortalPreferences(request);
+     
+     ShoppingSettings shoppingSettings = ShoppingSettings.getInstance(themeDisplay.getSiteGroupId());
+     
+     Currency currency = Currency.getInstance(shoppingSettings.getCurrencyId());
+     
+     NumberFormat currencyFormat = NumberFormat.getCurrencyInstance(locale);
+     
+     currencyFormat.setCurrency(currency);
+     
+     Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone);
+     
+     NumberFormat doubleFormat = NumberFormat.getNumberInstance(locale);
+     
+     doubleFormat.setMaximumFractionDigits(2);
+     doubleFormat.setMinimumFractionDigits(2);
+     
+     NumberFormat percentFormat = NumberFormat.getPercentInstance(locale);
+     
+     NumberFormat taxFormat = NumberFormat.getPercentInstance(locale);
+     
+     taxFormat.setMinimumFractionDigits(3);
+     
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init.jsp */ /* 131?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init-ext.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 131?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\shopping\init.jsp */
+}
+
+}

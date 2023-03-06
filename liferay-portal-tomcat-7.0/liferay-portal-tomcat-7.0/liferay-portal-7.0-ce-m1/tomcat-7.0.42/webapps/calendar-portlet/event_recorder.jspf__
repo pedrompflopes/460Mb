@@ -1,0 +1,4 @@
+﻿ package PackageNo919145832; public class event_recorder_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+}
+
+}

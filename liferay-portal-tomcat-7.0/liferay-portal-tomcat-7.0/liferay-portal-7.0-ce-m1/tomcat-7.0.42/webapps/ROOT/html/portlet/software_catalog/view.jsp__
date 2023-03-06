@@ -1,0 +1,707 @@
+﻿ package PackageNo510053447;import _html_portlet_init_jsp;import _html_portlet_software_catalog_init_ext_jsp;import com.liferay.portal.kernel.search.Document;import com.liferay.portal.kernel.search.DocumentComparator;import com.liferay.portal.plugin.PluginPackageUtil;import com.liferay.portlet.softwarecatalog.DuplicateProductEntryModuleIdException;import com.liferay.portlet.softwarecatalog.DuplicateProductVersionDirectDownloadURLException;import com.liferay.portlet.softwarecatalog.FrameworkVersionNameException;import com.liferay.portlet.softwarecatalog.LicenseNameException;import com.liferay.portlet.softwarecatalog.NoSuchFrameworkVersionException;import com.liferay.portlet.softwarecatalog.NoSuchLicenseException;import com.liferay.portlet.softwarecatalog.NoSuchProductEntryException;import com.liferay.portlet.softwarecatalog.NoSuchProductVersionException;import com.liferay.portlet.softwarecatalog.ProductEntryAuthorException;import com.liferay.portlet.softwarecatalog.ProductEntryLicenseException;import com.liferay.portlet.softwarecatalog.ProductEntryNameException;import com.liferay.portlet.softwarecatalog.ProductEntryPageURLException;import com.liferay.portlet.softwarecatalog.ProductEntryScreenshotsException;import com.liferay.portlet.softwarecatalog.ProductEntryShortDescriptionException;import com.liferay.portlet.softwarecatalog.ProductEntryTypeException;import com.liferay.portlet.softwarecatalog.ProductVersionChangeLogException;import com.liferay.portlet.softwarecatalog.ProductVersionDownloadURLException;import com.liferay.portlet.softwarecatalog.ProductVersionFrameworkVersionException;import com.liferay.portlet.softwarecatalog.ProductVersionNameException;import com.liferay.portlet.softwarecatalog.RequiredLicenseException;import com.liferay.portlet.softwarecatalog.UnavailableProductVersionDirectDownloadURLException;import com.liferay.portlet.softwarecatalog.model.SCFrameworkVersion;import com.liferay.portlet.softwarecatalog.model.SCLicense;import com.liferay.portlet.softwarecatalog.model.SCProductEntry;import com.liferay.portlet.softwarecatalog.model.SCProductScreenshot;import com.liferay.portlet.softwarecatalog.model.SCProductVersion;import com.liferay.portlet.softwarecatalog.service.SCFrameworkVersionLocalServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCFrameworkVersionServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCLicenseLocalServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCProductEntryLocalServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCProductScreenshotLocalServiceUtil;import com.liferay.portlet.softwarecatalog.service.SCProductVersionServiceUtil;import com.liferay.portlet.softwarecatalog.service.permission.SCFrameworkVersionPermission;import com.liferay.portlet.softwarecatalog.service.permission.SCLicensePermission;import com.liferay.portlet.softwarecatalog.service.permission.SCPermission;import com.liferay.portlet.softwarecatalog.service.permission.SCProductEntryPermission;import com.liferay.portlet.softwarecatalog.util.SCUtil; public class view_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\view.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\view.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 49?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 50?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 51?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 52?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 53?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 54?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 55?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 56?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 57?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 58?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 59?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 60?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ PortalPreferences portalPreferences = PortletPreferencesFactoryUtil.getPortalPreferences(request); /* 61?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 62?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone); /* 63?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 64?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 65?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ /* 66?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\software_catalog\view.jsp */
+
+     
+     String tabs1 = ParamUtil.getString(request, "tabs1", "products");
+     
+     String tabs1Values = "products";
+     
+     if (themeDisplay.isSignedIn()) {
+     	tabs1Values += ",my_products";
+     }
+     
+     boolean hasAddLicensePermission = PortalPermissionUtil.contains(permissionChecker, ActionKeys.ADD_LICENSE);
+     
+     if (hasAddLicensePermission) {
+     	tabs1Values += ",licenses";
+     }
+     
+     if (SCPermission.contains(permissionChecker, scopeGroupId, ActionKeys.ADD_FRAMEWORK_VERSION)) {
+     	tabs1Values += ",framework_versions";
+     }
+     
+     String tabs1Names = StringUtil.replace(tabs1Values, StringPool.UNDERLINE, StringPool.DASH);
+     
+     String keywords = ParamUtil.getString(request, "keywords");
+     String type = ParamUtil.getString(request, "type");
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/software_catalog/view");
+     portletURL.setParameter("tabs1", tabs1);
+     
+
+   response.write(HtmlUtil.getEscape(portletURL().getToString()));
+
+
+
+  response.write( tabs1Names );
+       response.write( portletURL );
+       response.write( tabs1Values );
+
+
+
+
+
+       
+     		portletURL.setParameter("type", type);
+     
+     		String orderByCol = ParamUtil.getString(request, "orderByCol");
+     		String orderByType = ParamUtil.getString(request, "orderByType");
+     
+     		if (Validator.isNotNull(orderByCol) && Validator.isNotNull(orderByType)) {
+     			portalPreferences.setValue(PortletKeys.SOFTWARE_CATALOG, "product-entries-order-by-col", orderByCol);
+     			portalPreferences.setValue(PortletKeys.SOFTWARE_CATALOG, "product-entries-order-by-type", orderByType);
+     		}
+     		else {
+     			orderByCol = portalPreferences.getValue(PortletKeys.SOFTWARE_CATALOG, "product-entries-order-by-col", "modified-date");
+     			orderByType = portalPreferences.getValue(PortletKeys.SOFTWARE_CATALOG, "product-entries-order-by-type", "desc");
+     		}
+     
+     		List<String> headerNames = new ArrayList<String>();
+     
+     		headerNames.add("name");
+     		headerNames.add("version");
+     		headerNames.add("type");
+     		headerNames.add("tags");
+     		headerNames.add("licenses");
+     		headerNames.add("modified-date");
+     		headerNames.add(StringPool.BLANK);
+     
+     		Map orderableHeaders = new HashMap();
+     
+     		orderableHeaders.put("name", "name");
+     		orderableHeaders.put("version", "version");
+     		orderableHeaders.put("type", "type");
+     		orderableHeaders.put("modified-date", "modified-date");
+     
+     		SearchContainer searchContainer = new SearchContainer(renderRequest, null, null, SearchContainer.DEFAULT_CUR_PARAM, SearchContainer.DEFAULT_DELTA, portletURL, headerNames, LanguageUtil.get(request, "no-products-were-found"));
+     
+     		searchContainer.setOrderableHeaders(orderableHeaders);
+     		searchContainer.setOrderByCol(orderByCol);
+     		searchContainer.setOrderByType(orderByType);
+     
+     		Indexer indexer = IndexerRegistryUtil.getIndexer(SCProductEntry.class);
+     
+     		SearchContext searchContext = SearchContextFactory.getInstance(request);
+     
+     		searchContext.setKeywords(keywords);
+     
+     		List results = indexer.search(searchContext).toList();
+     
+     		DocumentComparator docComparator = new DocumentComparator();
+     
+     		boolean ascending = true;
+     
+     		if (orderByType.equals("desc")) {
+     			ascending = false;
+     		}
+     
+     		if (orderByCol.equals("version")) {
+     			docComparator.addOrderBy("version", ascending);
+     			docComparator.addOrderBy(Field.MODIFIED_DATE);
+     			docComparator.addOrderBy(Field.TITLE);
+     			docComparator.addOrderBy("type");
+     		}
+     		else if (orderByCol.equals("modified-date")) {
+     			docComparator.addOrderBy(Field.MODIFIED_DATE, ascending);
+     			docComparator.addOrderBy(Field.TITLE);
+     			docComparator.addOrderBy("version");
+     			docComparator.addOrderBy("type");
+     		}
+     		else if (orderByCol.equals("type")) {
+     			docComparator.addOrderBy("type", ascending);
+     			docComparator.addOrderBy(Field.MODIFIED_DATE);
+     			docComparator.addOrderBy(Field.TITLE);
+     			docComparator.addOrderBy("version");
+     		}
+     		else {
+     			docComparator.addOrderBy(Field.TITLE, ascending);
+     			docComparator.addOrderBy("version");
+     			docComparator.addOrderBy(Field.MODIFIED_DATE);
+     			docComparator.addOrderBy("type");
+     		}
+     
+     		results = ListUtil.sort(results, docComparator);
+     
+     		int total = results.size();
+     
+     		searchContainer.setTotal(total);
+     
+     		results = ListUtil.subList(results, searchContainer.getStart(), searchContainer.getEnd());
+     
+     		List resultRows = searchContainer.getResultRows();
+     
+     		for (int i = 0; i < results.size(); i++) {
+     			Document doc = (Document)results.get(i);
+     
+     			long productEntryId = GetterUtil.getLong(doc.get(Field.ENTRY_CLASS_PK));
+     
+     			SCProductEntry productEntry = SCProductEntryLocalServiceUtil.getProductEntry(productEntryId);
+     
+     			productEntry = productEntry.toEscapedModel();
+     
+     			SCProductVersion latestProductVersion = productEntry.getLatestVersion();
+     
+     			if (latestProductVersion != null) {
+     				latestProductVersion = latestProductVersion.toEscapedModel();
+     			}
+     
+     			ResultRow row = new ResultRow(productEntry, productEntryId, i);
+     
+     			PortletURL rowURL = renderResponse.createRenderURL();
+     
+     			rowURL.setParameter("struts_action", "/software_catalog/view_product_entry");
+     			rowURL.setParameter("redirect", currentURL);
+     			rowURL.setParameter("productEntryId", String.valueOf(productEntryId));
+     
+     			// Name and short description
+     
+     			StringBundler sb = new StringBundler(5);
+     
+     			sb.append("<strong>");
+     			sb.append(productEntry.getName());
+     			sb.append("</strong>");
+     
+     			if (Validator.isNotNull(productEntry.getShortDescription())) {
+     				sb.append("<br />");
+     				sb.append(productEntry.getShortDescription());
+     			}
+     
+     			row.addText(sb.toString(), rowURL);
+     
+     			// Version
+     
+     			if (latestProductVersion != null) {
+     				row.addText(latestProductVersion.getVersion(), rowURL);
+     			}
+     			else {
+     				row.addText(LanguageUtil.get(request, "not-available"), rowURL);
+     			}
+     
+     			// Type
+     
+     			row.addText(LanguageUtil.get(request, productEntry.getType()), rowURL);
+     
+     			// Tags
+     
+     			row.addText(LanguageUtil.get(request, productEntry.getTags()), rowURL);
+     
+     			// Licenses
+     
+     			List<SCLicense> licenses = productEntry.getLicenses();
+     
+     			if (licenses.isEmpty()) {
+     				row.addText(StringPool.BLANK, rowURL);
+     			}
+     			else {
+     				sb = new StringBundler(licenses.size() * 2);
+     
+     				for (SCLicense license : licenses) {
+     					license = license.toEscapedModel();
+     
+     					sb.append(license.getName());
+     					sb.append(", ");
+     				}
+     
+     				sb.setIndex(sb.index() - 1);
+     
+     				row.addText(sb.toString(), rowURL);
+     			}
+     
+     			// Modified date
+     
+     			row.addDate(productEntry.getModifiedDate(), rowURL);
+     
+     			// Action
+     
+     			row.addJSP("/html/portlet/software_catalog/product_entry_action.jsp", "entry-action");
+     
+     			// Add result row
+     
+     			resultRows.add(row);
+     		}
+     
+     		boolean showAddProductEntryButton = SCPermission.contains(permissionChecker, scopeGroupId, ActionKeys.ADD_PRODUCT_ENTRY);
+     		boolean showPermissionsButton = SCPermission.contains(permissionChecker, scopeGroupId, ActionKeys.PERMISSIONS);
+     		
+
+
+
+
+      response.write(HtmlUtil.getEscape(keywords));
+
+
+
+
+ 
+     				for (String supportedType : PluginPackageUtil.getSupportedTypes()) {
+     				
+
+       response.write( type.equals(supportedType) ? "selected" : "" );response.write( supportedType )+response.write(request.getAttribute(" supportedType "));response.write( supportedType + "-plugin" );
+
+ 
+     				}
+     				
+
+
+
+
+
+
+
+
+
+
+  
+     					String taglibAddProduct = renderResponse.getNamespace() + "addProduct();";
+     					
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escape(themeDisplay.getScopeGroupName()) )+response.write(request.getAttribute(" HtmlUtil").escape(themeDisplay.getScopeGroupName()) );
+ response.write( String.valueOf(scopeGroupId) )+response.write(request.getAttribute(" String").valueOf(scopeGroupId) );
+
+
+
+  
+     					String taglibPermissions = "location.href = '" + permissionsURL + "';";
+     					
+
+
+
+
+
+
+ response.write( searchContainer );
+
+
+
+       
+     		String orderByCol = ParamUtil.getString(request, "orderByCol");
+     		String orderByType = ParamUtil.getString(request, "orderByType");
+     
+     		if (Validator.isNotNull(orderByCol) && Validator.isNotNull(orderByType)) {
+     			portalPreferences.setValue(PortletKeys.SOFTWARE_CATALOG, "product-entries-order-by-col", orderByCol);
+     			portalPreferences.setValue(PortletKeys.SOFTWARE_CATALOG, "product-entries-order-by-type", orderByType);
+     		}
+     		else {
+     			orderByCol = portalPreferences.getValue(PortletKeys.SOFTWARE_CATALOG, "product-entries-order-by-col", "modified-date");
+     			orderByType = portalPreferences.getValue(PortletKeys.SOFTWARE_CATALOG, "product-entries-order-by-type", "desc");
+     		}
+     
+     		OrderByComparator<SCProductEntry> orderByComparator = SCUtil.getProductEntryOrderByComparator(orderByCol, orderByType);
+     
+     		List<String> headerNames = new ArrayList<String>();
+     
+     		headerNames.add("name");
+     		headerNames.add("version");
+     		headerNames.add("type");
+     		headerNames.add("tags");
+     		headerNames.add("licenses");
+     		headerNames.add("modified-date");
+     		headerNames.add(StringPool.BLANK);
+     
+     		Map orderableHeaders = new HashMap();
+     
+     		orderableHeaders.put("name", "name");
+     		orderableHeaders.put("type", "type");
+     		orderableHeaders.put("modified-date", "modified-date");
+     
+     		SearchContainer searchContainer = new SearchContainer(renderRequest, null, null, SearchContainer.DEFAULT_CUR_PARAM, SearchContainer.DEFAULT_DELTA, portletURL, headerNames, null);
+     
+     		searchContainer.setOrderableHeaders(orderableHeaders);
+     		searchContainer.setOrderByCol(orderByCol);
+     		searchContainer.setOrderByType(orderByType);
+     
+     		List results = null;
+     		int total = 0;
+     
+     		if (tabs1.equals("products")) {
+     			total = SCProductEntryLocalServiceUtil.getProductEntriesCount(scopeGroupId);
+     
+     			searchContainer.setTotal(total);
+     
+     			results = SCProductEntryLocalServiceUtil.getProductEntries(scopeGroupId, searchContainer.getStart(), searchContainer.getEnd(), orderByComparator);
+     		}
+     		else {
+     			total = SCProductEntryLocalServiceUtil.getProductEntriesCount(scopeGroupId, user.getUserId());
+     
+     			searchContainer.setTotal(total);
+     
+     			results = SCProductEntryLocalServiceUtil.getProductEntries(scopeGroupId, user.getUserId(), searchContainer.getStart(), searchContainer.getEnd(), orderByComparator);
+     		}
+     
+     		searchContainer.setResults(results);
+     
+     		List resultRows = searchContainer.getResultRows();
+     
+     		for (int i = 0; i < results.size(); i++) {
+     			SCProductEntry productEntry = (SCProductEntry)results.get(i);
+     
+     			productEntry = productEntry.toEscapedModel();
+     
+     			long productEntryId = productEntry.getProductEntryId();
+     
+     			SCProductVersion latestProductVersion = productEntry.getLatestVersion();
+     
+     			if (latestProductVersion != null) {
+     				latestProductVersion = latestProductVersion.toEscapedModel();
+     			}
+     
+     			ResultRow row = new ResultRow(productEntry, productEntryId, i);
+     
+     			PortletURL rowURL = renderResponse.createRenderURL();
+     
+     			rowURL.setParameter("struts_action", "/software_catalog/view_product_entry");
+     			rowURL.setParameter("redirect", currentURL);
+     			rowURL.setParameter("productEntryId", String.valueOf(productEntryId));
+     
+     			// Name and short description
+     
+     			StringBundler sb = new StringBundler(5);
+     
+     			sb.append("<strong>");
+     			sb.append(productEntry.getName());
+     			sb.append("</strong>");
+     
+     			if (Validator.isNotNull(productEntry.getShortDescription())) {
+     				sb.append("<br />");
+     				sb.append(productEntry.getShortDescription());
+     			}
+     
+     			row.addText(sb.toString(), rowURL);
+     
+     			// Version
+     
+     			if (latestProductVersion != null) {
+     				row.addText(latestProductVersion.getVersion(), rowURL);
+     			}
+     			else {
+     				row.addText(LanguageUtil.get(request, "not-available"), rowURL);
+     			}
+     
+     			// Type
+     
+     			row.addText(LanguageUtil.get(request, productEntry.getType()), rowURL);
+     
+     			// Tags
+     
+     			row.addText(LanguageUtil.get(request, productEntry.getTags()), rowURL);
+     
+     			// Licenses
+     
+     			List<SCLicense> licenses = productEntry.getLicenses();
+     
+     			if (licenses.isEmpty()) {
+     				row.addText(StringPool.BLANK, rowURL);
+     			}
+     			else {
+     				sb = new StringBundler(licenses.size() * 2);
+     
+     				for (SCLicense license : licenses) {
+     					license = license.toEscapedModel();
+     
+     					sb.append(license.getName());
+     					sb.append(", ");
+     				}
+     
+     				sb.setIndex(sb.index() - 1);
+     
+     				row.addText(sb.toString(), rowURL);
+     			}
+     
+     			// Modified date
+     
+     			row.addDate(productEntry.getModifiedDate(), rowURL);
+     
+     			// Action
+     
+     			row.addJSP("/html/portlet/software_catalog/product_entry_action.jsp", "entry-action");
+     
+     			// Add result row
+     
+     			resultRows.add(row);
+     		}
+     
+     		boolean showAddProductEntryButton = SCPermission.contains(permissionChecker, scopeGroupId, ActionKeys.ADD_PRODUCT_ENTRY);
+     		
+
+
+
+
+
+response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+ 
+     				String taglibAddProduct = "location.href = '" + addProductURL + "';";
+     				
+
+
+
+
+
+ response.write( searchContainer );
+
+
+
+       
+     		List<String> headerNames = new ArrayList<String>();
+     
+     		headerNames.add("name");
+     		headerNames.add("url");
+     		headerNames.add("active");
+     		headerNames.add(StringPool.BLANK);
+     
+     		SearchContainer searchContainer = new SearchContainer(renderRequest, null, null, SearchContainer.DEFAULT_CUR_PARAM, SearchContainer.DEFAULT_DELTA, portletURL, headerNames, null);
+     
+     		int total = SCFrameworkVersionLocalServiceUtil.getFrameworkVersionsCount(scopeGroupId);
+     
+     		searchContainer.setTotal(total);
+     
+     		List results = SCFrameworkVersionLocalServiceUtil.getFrameworkVersions(scopeGroupId, searchContainer.getStart(),searchContainer.getEnd());
+     
+     		searchContainer.setResults(results);
+     
+     		List resultRows = searchContainer.getResultRows();
+     
+     		for (int i = 0; i < results.size(); i++) {
+     			SCFrameworkVersion frameworkVersion = (SCFrameworkVersion)results.get(i);
+     
+     			frameworkVersion = frameworkVersion.toEscapedModel();
+     
+     			ResultRow row = new ResultRow(frameworkVersion, frameworkVersion.getFrameworkVersionId(), i);
+     
+     			String rowHREF = frameworkVersion.getUrl();
+     
+     			TextSearchEntry rowTextEntry = new TextSearchEntry();
+     
+     			rowTextEntry.setHref(rowHREF);
+     			rowTextEntry.setName(frameworkVersion.getName());
+     			rowTextEntry.setTarget("_blank");
+     			rowTextEntry.setTitle(frameworkVersion.getName());
+     
+     			// Name
+     
+     			row.addText(rowTextEntry);
+     
+     			// URL
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(frameworkVersion.getUrl());
+     
+     			row.addText(rowTextEntry);
+     
+     			// Active
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(LanguageUtil.get(request,frameworkVersion.isActive() ? "yes" : "no"));
+     
+     			row.addText(rowTextEntry);
+     
+     			// Action
+     
+     			row.addJSP("/html/portlet/software_catalog/framework_version_action.jsp", "entry-action");
+     
+     			// Add result row
+     
+     			resultRows.add(row);
+     		}
+     		
+
+       
+     		boolean showAddFrameworkVersionButton = SCPermission.contains(permissionChecker, scopeGroupId, ActionKeys.ADD_FRAMEWORK_VERSION);
+     		boolean showPermissionsButton = SCPermission.contains(permissionChecker, scopeGroupId, ActionKeys.PERMISSIONS);
+     		
+
+
+
+
+
+
+ response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+  
+     					String taglibAddFramework = "location.href = '" + addFrameworkURL + "';";
+     					
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escape(themeDisplay.getScopeGroupName()) )+response.write(request.getAttribute(" HtmlUtil").escape(themeDisplay.getScopeGroupName()) );
+ response.write( String.valueOf(scopeGroupId) )+response.write(request.getAttribute(" String").valueOf(scopeGroupId) );
+
+
+
+  
+     					String taglibPermissions = "location.href = '" + permissionsURL + "';";
+     					
+
+
+
+
+
+
+ response.write( searchContainer );
+
+
+
+       
+     		List<String> headerNames = new ArrayList<String>();
+     
+     		headerNames.add("name");
+     		headerNames.add("url");
+     		headerNames.add("open-source");
+     		headerNames.add("active");
+     		headerNames.add("recommended");
+     		headerNames.add(StringPool.BLANK);
+     
+     		SearchContainer searchContainer = new SearchContainer(renderRequest, null, null, SearchContainer.DEFAULT_CUR_PARAM, SearchContainer.DEFAULT_DELTA, portletURL, headerNames, null);
+     
+     		int total = SCLicenseLocalServiceUtil.getLicensesCount();
+     
+     		searchContainer.setTotal(total);
+     
+     		List results = SCLicenseLocalServiceUtil.getLicenses(searchContainer.getStart(), searchContainer.getEnd());
+     
+     		searchContainer.setResults(results);
+     
+     		List resultRows = searchContainer.getResultRows();
+     
+     		for (int i = 0; i < results.size(); i++) {
+     			SCLicense license = (SCLicense)results.get(i);
+     
+     			license = license.toEscapedModel();
+     
+     			ResultRow row = new ResultRow(license, license.getLicenseId(), i);
+     
+     			String rowHREF = license.getUrl();
+     
+     			TextSearchEntry rowTextEntry = new TextSearchEntry();
+     
+     			rowTextEntry.setHref(rowHREF);
+     			rowTextEntry.setName(license.getName());
+     			rowTextEntry.setTarget("_blank");
+     			rowTextEntry.setTitle(license.getName());
+     
+     			// Name
+     
+     			row.addText(rowTextEntry);
+     
+     			// URL
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(license.getUrl());
+     
+     			row.addText(rowTextEntry);
+     
+     			// Open source
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(LanguageUtil.get(request, license.isOpenSource() ? "yes" : "no"));
+     
+     			row.addText(rowTextEntry);
+     
+     			// Active
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(LanguageUtil.get(request, license.isActive() ? "yes" : "no"));
+     
+     			row.addText(rowTextEntry);
+     
+     			// Recommended
+     
+     			rowTextEntry = (TextSearchEntry)rowTextEntry.clone();
+     
+     			rowTextEntry.setName(LanguageUtil.get(request, license.isRecommended() ? "yes" : "no"));
+     
+     			row.addText(rowTextEntry);
+     
+     			// Action
+     
+     			row.addJSP("/html/portlet/software_catalog/license_action.jsp", "entry-action");
+     
+     			// Add result row
+     
+     			resultRows.add(row);
+     		}
+     		
+
+
+
+
+
+response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+ 
+     				String taglibAddLicense = "location.href = '" + addLicenseURL + "';";
+     				
+
+
+
+
+
+ response.write( searchContainer );
+
+
+
+
+
+
+
+      response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     if (!tabs1.equals("products")) {
+     	PortalUtil.setPageSubtitle(LanguageUtil.get(request, StringUtil.replace(tabs1, StringPool.UNDERLINE, StringPool.DASH)), request);
+     
+     	PortalUtil.addPortletBreadcrumbEntry(request, LanguageUtil.get(request, TextFormatter.format(tabs1, TextFormatter.O)), portletURL.toString());
+     }
+     
+}
+
+}

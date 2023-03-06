@@ -1,0 +1,62 @@
+﻿ package PackageNo1230904943; public class cast_result_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Folder curFolder = null;
+     FileEntry fileEntry = null;
+     DLFileShortcut fileShortcut = null;
+     
+     if (result instanceof AssetEntry) {
+     	AssetEntry assetEntry = (AssetEntry)result;
+     
+     	if (assetEntry.getClassName().equals(DLFileEntryConstants.getClassName())) {
+     		fileEntry = DLAppLocalServiceUtil.getFileEntry(assetEntry.getClassPK());
+     
+     		fileEntry = fileEntry.toEscapedModel();
+     	}
+     	else {
+     		fileShortcut = DLAppLocalServiceUtil.getFileShortcut(assetEntry.getClassPK());
+     
+     		fileShortcut = fileShortcut.toEscapedModel();
+     
+     		fileEntry = DLAppLocalServiceUtil.getFileEntry(fileShortcut.getToFileEntryId());
+     
+     		fileEntry = fileEntry.toEscapedModel();
+     	}
+     }
+     else if (result instanceof Folder) {
+     	curFolder = (Folder)result;
+     
+     	curFolder = curFolder.toEscapedModel();
+     }
+     else if (result instanceof FileEntry) {
+     	fileEntry = (FileEntry)result;
+     
+     	fileEntry = fileEntry.toEscapedModel();
+     }
+     else {
+     	fileShortcut = (DLFileShortcut)result;
+     
+     	fileShortcut = fileShortcut.toEscapedModel();
+     
+     	fileEntry = DLAppLocalServiceUtil.getFileEntry(fileShortcut.getToFileEntryId());
+     
+     	fileEntry = fileEntry.toEscapedModel();
+     }
+     
+}
+
+}

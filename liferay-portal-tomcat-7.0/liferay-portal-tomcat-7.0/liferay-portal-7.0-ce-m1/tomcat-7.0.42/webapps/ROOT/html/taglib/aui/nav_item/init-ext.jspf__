@@ -1,0 +1,46 @@
+﻿ package PackageNo1492209966; public class init_ext_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String randomNamespace = StringUtil.randomId() + StringPool.UNDERLINE;
+     
+     if (Validator.isNull(id)) {
+     	id = randomNamespace;
+     }
+     else if (portletResponse != null) {
+     	id = portletResponse.getNamespace() + id;
+     }
+     
+     if (useDialog && Validator.isNull(anchorId)) {
+     	anchorId = StringUtil.randomId();
+     }
+     
+     if ((portletResponse != null) && Validator.isNotNull(anchorId)) {
+     	anchorId = portletResponse.getNamespace() + anchorId;
+     }
+     
+     if (dropdown) {
+     	cssClass += " dropdown";
+     	anchorCssClass += " dropdown-toggle";
+     }
+     
+     if (Validator.isNull(state)) {
+     	state = GetterUtil.getString(SessionClicks.get(request, id, null));
+     }
+     
+}
+
+}

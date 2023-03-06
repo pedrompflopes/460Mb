@@ -1,0 +1,144 @@
+﻿ package PackageNo503285061;import _html_portlet_init_jsp;import _html_portlet_journal_content_search_init_ext_jsp;import com.liferay.portal.kernel.search.Document;import com.liferay.portlet.journal.service.JournalContentSearchLocalServiceUtil;import com.liferay.portlet.journalcontentsearch.util.ContentHits; public class search_jsp {  /* 1 */ private static Log _log = LogFactoryUtil.getLog("portal-web.docroot.html.portlet.journal_content_search.search_jsp"); /* 147 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\search.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\search.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ boolean showListedDefault = true; /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ if (portletName.equals(PortletKeys.JOURNAL_CONTENT_SEARCH)) { /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ 	showListedDefault = PropsValues.JOURNAL_CONTENT_SEARCH_SHOW_LISTED; /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ } /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ boolean showListed = PrefsParamUtil.getBoolean(portletPreferences, request, "showListed", showListedDefault); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ String targetPortletId = StringPool.BLANK; /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ if (!showListed) { /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ 	targetPortletId = PrefsParamUtil.getString(portletPreferences, request, "targetPortletId", StringPool.BLANK); /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ } /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ String type = PrefsParamUtil.getString(portletPreferences, request, "type", StringPool.BLANK); /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\journal_content_search\search.jsp */
+
+
+
+
+
+
+
+
+
+       
+     		String defaultKeywords = LanguageUtil.get(request, "search") + StringPool.TRIPLE_PERIOD;
+     
+     		String keywords = ParamUtil.getString(request, "keywords", defaultKeywords);
+     		
+
+
+
+      response.write(String.getValueOf(showListed))+response.write(request.getAttribute("String").getValueOf(showListed));
+      response.write(targetPortletId)+response.write(request.getAttribute("targetPortletId"));
+      response.write(type)+response.write(request.getAttribute("type"));
+
+
+
+
+
+     			PortletURL portletURL = renderResponse.createRenderURL();
+     
+     			portletURL.setParameter("struts_action", "/journal_content_search/search");
+     			portletURL.setParameter("keywords", keywords);
+     
+     			List<String> headerNames = new ArrayList<String>();
+     
+     			headerNames.add("#");
+     			headerNames.add("language");
+     			headerNames.add("name");
+     			headerNames.add("content");
+     
+     			SearchContainer searchContainer = new SearchContainer(renderRequest, null, null, SearchContainer.DEFAULT_CUR_PARAM, SearchContainer.DEFAULT_DELTA, portletURL, headerNames, LanguageUtil.format(request, "no-pages-were-found-that-matched-the-keywords-x", "<strong>" + HtmlUtil.escape(keywords) + "</strong>", false));
+     
+     			try {
+     				Indexer indexer = IndexerRegistryUtil.getIndexer(JournalArticle.class);
+     
+     				SearchContext searchContext = SearchContextFactory.getInstance(request);
+     
+     				searchContext.setAttribute("articleType", type);
+     				searchContext.setGroupIds(null);
+     				searchContext.setKeywords(keywords);
+     
+     				Hits hits = indexer.search(searchContext);
+     
+     				String[] queryTerms = hits.getQueryTerms();
+     
+     				ContentHits contentHits = new ContentHits();
+     
+     				contentHits.setShowListed(showListed);
+     
+     				contentHits.recordHits(hits, layout.getGroupId(), layout.isPrivateLayout(), searchContainer.getStart(), searchContainer.getEnd());
+     
+     				int total = hits.getLength();
+     
+     				searchContainer.setTotal(total);
+     
+     				List<Document> results = ListUtil.toList(hits.getDocs());
+     
+     				List resultRows = searchContainer.getResultRows();
+     
+     				for (int i = 0; i < results.size(); i++) {
+     					Document doc = results.get(i);
+     
+     					PortletURL summaryURL = PortletURLUtil.clone(portletURL, renderResponse);
+     
+     					Summary summary = indexer.getSummary(doc, StringPool.BLANK, summaryURL, renderRequest, renderResponse);
+     
+     					summary.setHighlight(PropsValues.INDEX_SEARCH_HIGHLIGHT_ENABLED);
+     					summary.setQueryTerms(queryTerms);
+     
+     					ResultRow row = new ResultRow(new Object[] {doc, summary}, i, i);
+     
+     					// Position
+     
+     					row.addText(searchContainer.getStart() + i + 1 + StringPool.PERIOD);
+     
+     					row.addJSP("/html/portlet/journal_content_search/article_language.jsp");
+     
+     					// Title
+     
+     					String title = summary.getHighlightedTitle();
+     
+     					row.addText(title);
+     
+     					// Content
+     
+     					row.addJSP("/html/portlet/journal_content_search/article_content.jsp");
+     
+     					// Add result row
+     
+     					resultRows.add(row);
+     				}
+     			
+
+
+    response.write( LanguageUtil.get(locale, "keywords") );
+
+
+
+     response.write( hits );       response.write( searchContainer );
+
+   response.write( searchContainer );
+
+
+
+     			}
+     			catch (Exception e) {
+     				_log.error(e.getMessage());
+     			}
+     			
+
+
+
+
+
+ response.write( showListed );
+      response.write( targetPortletId )+response.write(request.getAttribute(" targetPortletId "));
+   response.write( type )+response.write(request.getAttribute(" type "));
+}
+
+}

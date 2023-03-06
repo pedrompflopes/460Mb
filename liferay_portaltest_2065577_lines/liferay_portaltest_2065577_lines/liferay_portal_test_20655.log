@@ -1,0 +1,325 @@
+2012-03-09 09:11:04,126 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-03-09 09:11:55,612 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "liferay_portal_test_20655"
+2012-03-09 09:11:56,167 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-03-09 09:11:56,201 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-03-09 09:11:56,214 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-03-09 09:11:56,242 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-03-09 09:11:56,326 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-03-09 09:15:31,472 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:4c28bad1-3665-4153-88a7-ba100ab14da5,projectId:137)
+2012-03-09 09:15:31,487 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 4c28bad1-3665-4153-88a7-ba100ab14da5 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-3-9 9:15:14 | 2014-3-9 9:15:14 | -1 |  | 137| 0 | 137 | 0 })
+2012-03-09 09:15:31,488 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-03-09 09:15:31,488 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-03-09 09:15:31,489 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-03-09 09:15:41,500 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 4c28bad1-3665-4153-88a7-ba100ab14da5 | FAILED | 0 | 0 |  | 0 | Cannot reserve 10234 Mb memory for a current process. |  | 2012-3-9 9:15:14 | 2012-3-9 9:15:31 | -1 | Cannot reserve 10234 Mb memory for a current process. | 137| 0 | 137 | 0 })
+2012-03-09 09:15:41,500 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-03-09 09:15:41,501 [pool-2-thread-1] (WaitScanCompletionJob.java:78) ERROR - Error during scan: Cannot reserve 10234 Mb memory for a current process.
+2012-03-09 09:15:41,503 [pool-1-thread-1] (CxScanJob.java:154) TRACE - Error occured during scan progress monitoring
+java.lang.Exception: Error during scan: Cannot reserve 10234 Mb memory for a current process.
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:79)
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:13)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-03-09 09:15:41,504 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Error during scan: Cannot reserve 10234 Mb memory for a current process.
+2012-03-09 09:15:41,506 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Error during scan: Cannot reserve 10234 Mb memory for a current process.
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Error during scan: Cannot reserve 10234 Mb memory for a current process.
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:160)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:42)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-07-21 00:46:20,551 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-07-21 00:48:34,313 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "liferay_portal_test_20655"
+2012-07-21 00:48:34,950 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-07-21 00:48:34,989 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-07-21 00:48:35,024 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-07-21 00:48:35,051 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-07-21 00:48:35,141 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-07-21 00:52:55,582 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:3be444d4-2b03-4beb-b72a-60938f2d63b3,projectId:84)
+2012-07-21 00:52:55,596 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 3be444d4-2b03-4beb-b72a-60938f2d63b3 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-7-21 0:42:41 | 2014-7-21 0:42:41 | -1 |  | 84| 0 | 84 | 0 })
+2012-07-21 00:52:55,597 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-07-21 00:52:55,598 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-07-21 00:52:55,599 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-07-21 00:53:05,607 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 3be444d4-2b03-4beb-b72a-60938f2d63b3 | FAILED | 0 | 0 |  | 0 |  |  | 2012-7-21 0:42:41 | 2012-7-21 0:43:10 | -1 | N/A | 84| 0 | 84 | 0 })
+2012-07-21 00:53:05,608 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-07-21 00:53:05,609 [pool-2-thread-1] (WaitScanCompletionJob.java:78) ERROR - Error during scan: 
+2012-07-21 00:53:05,612 [pool-1-thread-1] (CxScanJob.java:154) TRACE - Error occured during scan progress monitoring
+java.lang.Exception: Error during scan: 
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:79)
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:13)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-07-21 00:53:05,614 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Error during scan: 
+2012-07-21 00:53:05,615 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Error during scan: 
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Error during scan: 
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:160)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:42)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-09-04 18:56:12,586 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-09-04 18:57:10,066 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "liferay_portal_test_20655"
+2012-09-04 18:57:10,645 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-09-04 18:57:10,683 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-09-04 18:57:10,885 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-09-04 18:57:10,988 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-09-04 18:57:11,080 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-09-04 19:00:38,480 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:0d309c31-2a57-4476-ba96-c83d9ae12751,projectId:84)
+2012-09-04 19:00:38,494 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0d309c31-2a57-4476-ba96-c83d9ae12751 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-9-5 11:2:28 | 2014-9-5 11:2:28 | -1 |  | 84| 0 | 84 | 0 })
+2012-09-04 19:00:38,495 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-09-04 19:00:38,496 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-09-04 19:00:38,497 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-09-04 19:00:48,518 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 0d309c31-2a57-4476-ba96-c83d9ae12751 | FAILED | 0 | 0 |  | 0 |  |  | 2012-9-5 11:2:28 | 2012-9-5 11:2:48 | -1 | N/A | 84| 0 | 84 | 0 })
+2012-09-04 19:00:48,521 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-09-04 19:00:48,522 [pool-2-thread-1] (WaitScanCompletionJob.java:78) ERROR - Error during scan: 
+2012-09-04 19:00:48,524 [pool-1-thread-1] (CxScanJob.java:154) TRACE - Error occured during scan progress monitoring
+java.lang.Exception: Error during scan: 
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:79)
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:13)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-09-04 19:00:48,526 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Error during scan: 
+2012-09-04 19:00:48,527 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Error during scan: 
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Error during scan: 
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:160)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:42)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-09-08 18:28:19,698 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-09-08 18:29:08,669 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "liferay_portal_test_20655"
+2012-09-08 18:29:09,488 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-09-08 18:29:09,529 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-09-08 18:29:10,036 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-09-08 18:29:10,125 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-09-08 18:29:10,242 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-09-08 18:32:29,726 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:493c17b7-f24b-4b60-af5c-eb3d5cd52570,projectId:152)
+2012-09-08 18:32:29,742 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 493c17b7-f24b-4b60-af5c-eb3d5cd52570 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-9-9 10:34:21 | 2014-9-9 10:34:21 | -1 |  | 152| 0 | 152 | 0 })
+2012-09-08 18:32:29,742 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-09-08 18:32:29,743 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-09-08 18:32:29,744 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-09-08 18:32:39,756 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 493c17b7-f24b-4b60-af5c-eb3d5cd52570 | FAILED | 0 | 0 |  | 0 |  |  | 2012-9-9 10:34:21 | 2012-9-9 10:34:37 | -1 | N/A | 152| 0 | 152 | 0 })
+2012-09-08 18:32:39,758 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-09-08 18:32:39,759 [pool-2-thread-1] (WaitScanCompletionJob.java:78) ERROR - Error during scan: 
+2012-09-08 18:32:39,760 [pool-1-thread-1] (CxScanJob.java:154) TRACE - Error occured during scan progress monitoring
+java.lang.Exception: Error during scan: 
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:79)
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:13)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-09-08 18:32:39,762 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Error during scan: 
+2012-09-08 18:32:39,763 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Error during scan: 
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Error during scan: 
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:160)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:42)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-12-29 16:07:02,851 [pool-1-thread-1] (CxScanJob.java:87) INFO  - Packing project
+2012-12-29 16:08:10,846 [pool-1-thread-1] (CxScanJob.java:106) INFO  - Project name is "liferay_portal_test_20655"
+2012-12-29 16:08:11,580 [pool-1-thread-1] (CxScanJob.java:273) INFO  - Check CLI version support: 1.2.7
+2012-12-29 16:08:11,618 [pool-1-thread-1] (CxScanJob.java:288) INFO  - Log in
+2012-12-29 16:08:11,706 [pool-1-thread-1] (CxScanJob.java:118) INFO  - Retrieving scan configurations
+2012-12-29 16:08:11,759 [pool-1-thread-1] (CxScanJob.java:139) INFO  - Request scan
+2012-12-29 16:08:11,847 [pool-1-thread-1] (CxScanJob.java:432) INFO  - isVisible to others flag: true
+2012-12-29 16:11:52,876 [pool-1-thread-1] (CxScanJob.java:489) TRACE - Project scan request response:RunScanResult(scanId:589174ea-85b6-406a-a110-50d0676fe526,projectId:108)
+2012-12-29 16:11:53,193 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:11:53,194 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:11:53,195 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:11:53,195 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:11:54,221 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:11:54,222 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:11:54,223 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:11:54,224 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:11:55,235 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:11:55,236 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:11:55,237 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:11:55,237 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:11:56,248 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:00,716 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:00,717 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:00,718 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:00,734 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:00,735 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:00,736 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:00,736 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:01,750 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:01,752 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:01,753 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:01,753 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:02,766 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:02,766 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:02,767 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:02,768 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:03,776 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:03,777 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:03,778 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:03,779 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:04,788 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:04,789 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:04,790 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:04,791 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:05,801 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:05,802 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:05,802 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:05,803 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:06,812 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:06,813 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:06,814 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:06,815 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:07,830 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:07,831 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:07,831 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:07,832 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:08,849 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:08,850 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:08,850 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:08,851 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:09,877 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:09,878 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:09,878 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:09,879 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:10,897 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:10,899 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:10,900 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:10,902 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:11,912 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:11,913 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:11,914 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:11,914 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:12,928 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:12,930 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:12,932 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:12,934 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:13,945 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:13,947 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:13,950 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:13,952 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:14,969 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:14,969 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:14,970 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:14,971 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:15,981 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:15,981 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:15,982 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:15,983 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:16,997 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:16,999 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:17,001 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:17,003 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:18,014 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:18,015 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:18,016 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:18,016 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:19,027 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:19,028 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:19,029 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:19,030 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:20,041 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:20,042 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:20,043 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:20,043 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:21,054 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | QUEUED | 0 | 0 |  | 0 |  |  | 2012-12-29 16:0:48 | 2014-12-29 16:0:48 | -1 |  | 108| 0 | 108 | 0 })
+2012-12-29 16:12:21,055 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:21,056 [pool-2-thread-1] (WaitScanCompletionJob.java:110) INFO  - Scan state: QUEUED
+2012-12-29 16:12:21,056 [pool-2-thread-1] (WaitScanCompletionJob.java:114) TRACE - QUEUED
+ (0%) 
+2012-12-29 16:12:22,066 [pool-2-thread-1] (WaitScanCompletionJob.java:62) TRACE - getScanStatus: GetStatusOfScanResult({ 589174ea-85b6-406a-a110-50d0676fe526 | FAILED | 0 | 0 |  | 0 | Cannot reserve 5850 Mb memory for a current process. |  | 2012-12-29 16:0:48 | 2012-12-29 16:1:30 | -1 | Cannot reserve 5850 Mb memory for a current process. | 108| 0 | 108 | 0 })
+2012-12-29 16:12:22,067 [pool-2-thread-1] (WaitScanCompletionJob.java:74) INFO  - Total scan worked: 0%
+2012-12-29 16:12:22,068 [pool-2-thread-1] (WaitScanCompletionJob.java:78) ERROR - Error during scan: Cannot reserve 5850 Mb memory for a current process.
+2012-12-29 16:12:22,071 [pool-1-thread-1] (CxScanJob.java:154) TRACE - Error occured during scan progress monitoring
+java.lang.Exception: Error during scan: Cannot reserve 5850 Mb memory for a current process.
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:79)
+	at com.checkmarx.cxconsole.commands.job.WaitScanCompletionJob.call(WaitScanCompletionJob.java:13)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2012-12-29 16:12:22,072 [main] (ScanFolderCommand.java:70) ERROR - Error during scan job execution: Error during scan: Cannot reserve 5850 Mb memory for a current process.
+2012-12-29 16:12:22,073 [main] (ScanFolderCommand.java:73) TRACE - Error during scan job execution.
+java.util.concurrent.ExecutionException: java.lang.Exception: Error during scan: Cannot reserve 5850 Mb memory for a current process.
+	at java.util.concurrent.FutureTask$Sync.innerGet(Unknown Source)
+	at java.util.concurrent.FutureTask.get(Unknown Source)
+	at com.checkmarx.cxconsole.commands.ScanFolderCommand.executeCommand(ScanFolderCommand.java:61)
+	at com.checkmarx.cxconsole.commands.CxConsoleCommand.execute(CxConsoleCommand.java:78)
+	at com.checkmarx.cxconsole.CxConsoleLauncher.main(CxConsoleLauncher.java:94)
+Caused by: java.lang.Exception: Error during scan: Cannot reserve 5850 Mb memory for a current process.
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:160)
+	at com.checkmarx.cxconsole.commands.job.CxScanJob.call(CxScanJob.java:42)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)

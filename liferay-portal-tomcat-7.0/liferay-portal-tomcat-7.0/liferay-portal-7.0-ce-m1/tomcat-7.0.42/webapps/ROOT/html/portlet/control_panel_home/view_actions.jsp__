@@ -1,0 +1,124 @@
+﻿ package PackageNo1818702606;import _html_portlet_init_jsp;import _html_portlet_control_panel_home_init_ext_jsp; public class view_actions_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\view_actions.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\view_actions.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_home\view_actions.jsp */
+
+
+
+      
+     	Map<String, List<Portlet>> categoriesMap = PortalUtil.getControlPanelCategoriesMap(request);
+     
+     	for (String category : categoriesMap.keySet()) {
+     	
+
+
+
+
+
+
+
+
+
+
+
+  response.write( PortletKeys.MARKETPLACE_APP_MANAGER )+response.write(request.getAttribute(" PortletKeys").MARKETPLACE_APP_MANAGER );
+    response.write(PortalUtil.getCurrentURL(request))+response.write(request.getAttribute("PortalUtil").getCurrentURL(request));
+
+
+
+
+
+
+
+
+
+  response.write( PortletKeys.PLUGINS_ADMIN )+response.write(request.getAttribute(" PortletKeys").PLUGINS_ADMIN );
+    response.write(PortalUtil.getCurrentURL(request))+response.write(request.getAttribute("PortalUtil").getCurrentURL(request));
+
+
+
+
+
+
+
+
+
+
+
+response.write( PortletKeys.PORTAL_SETTINGS )+response.write(request.getAttribute(" PortletKeys").PORTAL_SETTINGS );
+  response.write(PortalUtil.getCurrentURL(request))+response.write(request.getAttribute("PortalUtil").getCurrentURL(request));
+
+
+
+
+
+
+   
+     						if (themeDisplay.getRefererPlid() > 0) {
+     							Layout refererLayout = LayoutLocalServiceUtil.fetchLayout(themeDisplay.getRefererPlid());
+     
+     							if (refererLayout != null) {
+     								Group refererGroup = refererLayout.getGroup();
+     
+     								ThemeDisplay siteThemeDisplay = (ThemeDisplay)themeDisplay.clone();
+     
+     								siteThemeDisplay.setScopeGroupId(refererGroup.getGroupId());
+     
+     								String siteName = HtmlUtil.escape(StringUtil.shorten(refererGroup.getDescriptiveName(locale), 35));
+     
+     								String buttonLabel = LanguageUtil.format(request, "manage-x", siteName, false);
+     
+     								PortletURL siteAdministrationURL = PortalUtil.getSiteAdministrationURL(renderResponse, siteThemeDisplay);
+     						
+
+
+
+
+
+
+
+
+
+   
+     							}
+     						}
+     						
+
+
+
+
+
+
+
+
+ response.write( PortletKeys.USERS_ADMIN )+response.write(request.getAttribute(" PortletKeys").USERS_ADMIN );
+
+   response.write(PortalUtil.getCurrentURL(request))+response.write(request.getAttribute("PortalUtil").getCurrentURL(request));
+
+
+
+
+
+
+
+
+
+      
+     	}
+     	
+}
+
+}

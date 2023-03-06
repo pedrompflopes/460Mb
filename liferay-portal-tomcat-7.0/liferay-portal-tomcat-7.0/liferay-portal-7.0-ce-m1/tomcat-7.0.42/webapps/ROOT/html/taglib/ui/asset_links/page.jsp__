@@ -1,0 +1,117 @@
+﻿ package PackageNo293687447;import _html_taglib_init_jsp;import com.liferay.portlet.asset.model.AssetLink;import com.liferay.portlet.asset.service.AssetLinkLocalServiceUtil; public class page_jsp {  /* 1 */ private static Log _log = LogFactoryUtil.getLog("portal-web.docroot.html.taglib.ui.asset_links.page_jsp"); /* 121 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_links\page.jsp */
+
+     
+     long assetEntryId = GetterUtil.getLong((String)request.getAttribute("liferay-ui:asset-links:assetEntryId"));
+     
+     List<AssetLink> assetLinks = null;
+     
+     if (assetEntryId > 0) {
+     	assetLinks = AssetLinkLocalServiceUtil.getDirectLinks(assetEntryId);
+     }
+     
+
+
+
+
+
+
+
+
+     			for (AssetLink assetLink : assetLinks) {
+     				AssetEntry assetLinkEntry = null;
+     
+     				if (assetLink.getEntryId1() == assetEntryId) {
+     					assetLinkEntry = AssetEntryLocalServiceUtil.getEntry(assetLink.getEntryId2());
+     				}
+     				else {
+     					assetLinkEntry = AssetEntryLocalServiceUtil.getEntry(assetLink.getEntryId1());
+     				}
+     
+     				if (!assetLinkEntry.isVisible()) {
+     					continue;
+     				}
+     
+     				assetLinkEntry = assetLinkEntry.toEscapedModel();
+     
+     				AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassNameId(assetLinkEntry.getClassNameId());
+     
+     				if (Validator.isNull(assetRendererFactory)) {
+     					if (_log.isWarnEnabled()) {
+     						_log.warn("No asset renderer factory found for class " + PortalUtil.getClassName(assetLinkEntry.getClassNameId()));
+     					}
+     
+     					continue;
+     				}
+     
+     				if (!assetRendererFactory.isActive(company.getCompanyId())) {
+     					continue;
+     				}
+     
+     				AssetRenderer assetRenderer = assetRendererFactory.getAssetRenderer(assetLinkEntry.getClassPK());
+     
+     				if (assetRenderer.hasViewPermission(permissionChecker)) {
+     					String asseLinktEntryTitle = assetLinkEntry.getTitle(locale);
+     
+     					LiferayPortletURL assetPublisherURL = new PortletURLImpl(request, PortletKeys.ASSET_PUBLISHER, plid, PortletRequest.RENDER_PHASE);
+     
+     					assetPublisherURL.setParameter("struts_action", "/asset_publisher/view_content");
+     					assetPublisherURL.setParameter("redirect", currentURL);
+     					assetPublisherURL.setParameter("assetEntryId", String.valueOf(assetLinkEntry.getEntryId()));
+     					assetPublisherURL.setParameter("type", assetRendererFactory.getType());
+     
+     					if (Validator.isNotNull(assetRenderer.getUrlTitle())) {
+     						if (assetRenderer.getGroupId() != themeDisplay.getSiteGroupId()) {
+     							assetPublisherURL.setParameter("groupId", String.valueOf(assetRenderer.getGroupId()));
+     						}
+     
+     						assetPublisherURL.setParameter("urlTitle", assetRenderer.getUrlTitle());
+     					}
+     
+     					if (themeDisplay.isStatePopUp()) {
+     						assetPublisherURL.setWindowState(LiferayWindowState.POP_UP);
+     					}
+     					else {
+     						assetPublisherURL.setWindowState(WindowState.MAXIMIZED);
+     					}
+     
+     					String viewFullContentURLString = assetPublisherURL.toString();
+     
+     					viewFullContentURLString = HttpUtil.setParameter(viewFullContentURLString, "redirect", currentURL);
+     
+     					String urlViewInContext = assetRenderer.getURLViewInContext((LiferayPortletRequest)portletRequest, (LiferayPortletResponse)portletResponse, viewFullContentURLString);
+     
+     					urlViewInContext = HttpUtil.setParameter(urlViewInContext, "inheritRedirect", true);
+     			
+
+
+
+       response.write( assetRenderer.getIconCssClass() );
+response.write( true )+response.write(request.getAttribute(" true "));
+  response.write( asseLinktEntryTitle );
+      response.write( urlViewInContext );
+
+
+
+
+     				}
+     			}
+     			
+}
+
+}

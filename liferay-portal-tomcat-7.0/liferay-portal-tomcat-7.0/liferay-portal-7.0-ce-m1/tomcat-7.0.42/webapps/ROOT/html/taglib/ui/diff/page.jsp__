@@ -1,0 +1,102 @@
+﻿ package PackageNo247071520;import _html_taglib_init_jsp;import com.liferay.portal.kernel.diff.Diff;import com.liferay.portal.kernel.diff.DiffResult; public class page_jsp {  /* 1 */ private static String _processColumn(String changedLine) { /* 104 */ 	changedLine = StringUtil.replace(changedLine, " ", "&nbsp;"); /* 105 */ 	changedLine = StringUtil.replace(changedLine, "\t", "&nbsp;&nbsp;&nbsp;"); /* 106 */ 	String column = "<td>" + changedLine + "</td>"; /* 108 */ 	if (changedLine.equals(StringPool.BLANK)) { /* 110 */ 		return "<td>&nbsp;</td>"; /* 111 */ 	} /* 112 */ 	else if (changedLine.equals(Diff.CONTEXT_LINE)) { /* 113 */ 		return "<td class=\"taglib-diff-context\">&nbsp;</td>"; /* 114 */ 	} /* 115 */ 	else if (changedLine.equals(Diff.OPEN_INS + Diff.CLOSE_INS)) { /* 116 */ 		return "<td class=\"taglib-diff-addedline\">&nbsp;</td>"; /* 117 */ 	} /* 118 */ 	else if (changedLine.equals(Diff.OPEN_DEL + Diff.CLOSE_DEL)) { /* 119 */ 		return "<td class=\"taglib-diff-deletedline\">&nbsp;</td>"; /* 120 */ 	} /* 121 */ 	return column; /* 123 */ } /* 124 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\diff\page.jsp */
+
+     
+     String sourceName = (String)request.getAttribute("liferay-ui:diff:sourceName");
+     String targetName = (String)request.getAttribute("liferay-ui:diff:targetName");
+     List<DiffResult>[] diffResults = (List<DiffResult>[])request.getAttribute("liferay-ui:diff:diffResults");
+     
+     List<DiffResult> sourceResults = diffResults[0];
+     List<DiffResult> targetResults = diffResults[1];
+     
+
+
+
+
+
+
+      response.write( sourceName )+response.write(request.getAttribute(" sourceName "));
+
+
+      response.write( targetName );
+
+
+
+       
+     		for (int i = 0; i < sourceResults.size(); i++) {
+     			DiffResult sourceResult = sourceResults.get(i);
+     			DiffResult targetResult = targetResults.get(i);
+     		
+
+
+
+ response.write( sourceResult.getLineNumber() );
+
+
+ response.write( targetResult.getLineNumber() );
+
+
+
+
+
+
+
+  
+     					for (String changedLine : sourceResult.getChangedLines()) {
+     					
+
+
+ response.write( _processColumn(changedLine) )+response.write(request.getAttribute(" _processColumn(changedLine) "));
+
+
+  
+     					}
+     					
+
+
+
+
+
+
+  
+     					for (String changedLine : targetResult.getChangedLines()) {
+     					
+
+
+ response.write( _processColumn(changedLine) )+response.write(request.getAttribute(" _processColumn(changedLine) "));
+
+
+  
+     					}
+     					
+
+
+
+
+
+       
+     		}
+     		
+
+
+
+
+    response.write( LanguageUtil.format(request, "there-are-no-differences-between-x-and-x", new Object[] {sourceName, targetName}, false) );
+}
+
+}

@@ -1,0 +1,116 @@
+﻿ package PackageNo449577492; public class instances_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( RequiredCompanyException.class )+response.write(request.getAttribute(" RequiredCompanyException").class );
+
+
+
+
+     response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+
+
+      
+     	String taglibAdd = "location.href = '" + addURL + "';";
+     	
+
+
+
+
+
+response.write( portletURL )+response.write(request.getAttribute(" portletURL "));
+  response.write( CompanyLocalServiceUtil.getCompaniesCount(false) )+response.write(request.getAttribute(" CompanyLocalServiceUtil").getCompaniesCount(false) );
+
+
+     response.write( CompanyLocalServiceUtil.getCompanies(false, searchContainer.getStart(), searchContainer.getEnd()) )+response.write(request.getAttribute(" CompanyLocalServiceUtil").getCompanies(false, searchContainer.getStart(), searchContainer.getEnd()) );
+
+
+
+
+
+
+
+       
+     		PortletURL rowURL = renderResponse.createRenderURL();
+     
+     		rowURL.setParameter("struts_action", "/admin/edit_instance");
+     		rowURL.setParameter("redirect", currentURL);
+     		rowURL.setParameter("companyId", String.valueOf(curCompany.getCompanyId()));
+     		
+
+
+   response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+
+
+
+   response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+
+
+
+   response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+    response.write( curCompany.getVirtualHostname() );
+
+
+
+   response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+
+
+
+
+
+    response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+     response.write( LanguageUtil.get(request, curCompany.getShardName()) );
+
+
+
+
+   response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+    response.write( String.valueOf(UserLocalServiceUtil.searchCount(curCompany.getCompanyId(), null, WorkflowConstants.STATUS_APPROVED, null)) );
+
+
+       
+     		int maxUsers = curCompany.getMaxUsers();
+     		
+
+
+   response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+    response.write( (maxUsers > 0) ? String.valueOf(maxUsers) : LanguageUtil.get(request, "unlimited") );
+
+
+
+   response.write( rowURL )+response.write(request.getAttribute(" rowURL "));
+
+    response.write( LanguageUtil.get(request, curCompany.isActive() ? "yes" : "no") );
+
+
+
+
+
+
+
+
+response.write( searchContainer )+response.write(request.getAttribute(" searchContainer "));
+}
+
+}

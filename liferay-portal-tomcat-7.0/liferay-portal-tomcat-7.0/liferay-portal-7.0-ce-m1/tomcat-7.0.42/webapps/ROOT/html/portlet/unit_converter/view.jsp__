@@ -1,0 +1,269 @@
+﻿ package PackageNo1934498103;import _html_portlet_init_jsp;import _html_portlet_unit_converter_init_ext_jsp;import com.liferay.portlet.unitconverter.model.Conversion;import com.liferay.portlet.unitconverter.util.ConverterUtil; public class view_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\view.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\view.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\unit_converter\view.jsp */
+
+     
+     int type = ParamUtil.getInteger(request, "type");
+     int fromId = ParamUtil.getInteger(request, "fromId");
+     int toId = ParamUtil.getInteger(request, "toId");
+     double fromValue = ParamUtil.getDouble(request, "fromValue");
+     
+     Conversion conversion = ConverterUtil.getConversion(type, fromId, toId, fromValue);
+     
+
+   response.write(LiferayWindowState.getEXCLUSIVE().getToString())+response.write(request.getAttribute("LiferayWindowState").getEXCLUSIVE().getToString());
+
+
+
+
+
+
+
+     response.write(conversion.getFromValue());
+
+
+
+      response.write( (fromId == 0) ? "selected" : "" );
+      response.write( (fromId == 1) ? "selected" : "" );
+      response.write( (fromId == 2) ? "selected" : "" );
+      response.write( (fromId == 3) ? "selected" : "" );
+      response.write( (fromId == 4) ? "selected" : "" );
+      response.write( (fromId == 5) ? "selected" : "" );
+      response.write( (fromId == 6) ? "selected" : "" );
+      response.write( (fromId == 7) ? "selected" : "" );
+      response.write( (fromId == 8) ? "selected" : "" );
+      response.write( (fromId == 9) ? "selected" : "" );
+      response.write( (fromId == 10) ? "selected" : "" );
+
+
+      response.write( (fromId == 0) ? "selected" : "" );
+      response.write( (fromId == 1) ? "selected" : "" );
+      response.write( (fromId == 2) ? "selected" : "" );
+      response.write( (fromId == 3) ? "selected" : "" );
+      response.write( (fromId == 4) ? "selected" : "" );
+      response.write( (fromId == 5) ? "selected" : "" );
+      response.write( (fromId == 6) ? "selected" : "" );
+      response.write( (fromId == 7) ? "selected" : "" );
+      response.write( (fromId == 8) ? "selected" : "" );
+      response.write( (fromId == 9) ? "selected" : "" );
+
+
+      response.write( (fromId == 0) ? "selected" : "" );
+      response.write( (fromId == 1) ? "selected" : "" );
+      response.write( (fromId == 2) ? "selected" : "" );
+      response.write( (fromId == 3) ? "selected" : "" );
+      response.write( (fromId == 4) ? "selected" : "" );
+      response.write( (fromId == 5) ? "selected" : "" );
+      response.write( (fromId == 6) ? "selected" : "" );
+      response.write( (fromId == 7) ? "selected" : "" );
+      response.write( (fromId == 8) ? "selected" : "" );
+      response.write( (fromId == 9) ? "selected" : "" );
+      response.write( (fromId == 10) ? "selected" : "" );
+      response.write( (fromId == 11) ? "selected" : "" );
+      response.write( (fromId == 12) ? "selected" : "" );
+
+
+      response.write( (fromId == 0) ? "selected" : "" );
+      response.write( (fromId == 1) ? "selected" : "" );
+      response.write( (fromId == 2) ? "selected" : "" );
+      response.write( (fromId == 3) ? "selected" : "" );
+      response.write( (fromId == 4) ? "selected" : "" );
+      response.write( (fromId == 5) ? "selected" : "" );
+      response.write( (fromId == 6) ? "selected" : "" );
+      response.write( (fromId == 7) ? "selected" : "" );
+      response.write( (fromId == 8) ? "selected" : "" );
+
+
+      response.write( (fromId == 0) ? "selected" : "" );
+      response.write( (fromId == 1) ? "selected" : "" );
+      response.write( (fromId == 2) ? "selected" : "" );
+      response.write( (fromId == 3) ? "selected" : "" );
+      response.write( (fromId == 4) ? "selected" : "" );
+
+
+
+
+
+
+
+
+
+     response.write(conversion.getToValue());
+
+
+
+      response.write( (toId == 0) ? "selected" : "" );
+      response.write( (toId == 1) ? "selected" : "" );
+      response.write( (toId == 2) ? "selected" : "" );
+      response.write( (toId == 3) ? "selected" : "" );
+      response.write( (toId == 4) ? "selected" : "" );
+      response.write( (toId == 5) ? "selected" : "" );
+      response.write( (toId == 6) ? "selected" : "" );
+      response.write( (toId == 7) ? "selected" : "" );
+      response.write( (toId == 8) ? "selected" : "" );
+      response.write( (toId == 9) ? "selected" : "" );
+      response.write( (toId == 10) ? "selected" : "" );
+
+
+      response.write( (toId == 0) ? "selected" : "" );
+      response.write( (toId == 1) ? "selected" : "" );
+      response.write( (toId == 2) ? "selected" : "" );
+      response.write( (toId == 3) ? "selected" : "" );
+      response.write( (toId == 4) ? "selected" : "" );
+      response.write( (toId == 5) ? "selected" : "" );
+      response.write( (toId == 6) ? "selected" : "" );
+      response.write( (toId == 7) ? "selected" : "" );
+      response.write( (toId == 8) ? "selected" : "" );
+      response.write( (toId == 9) ? "selected" : "" );
+
+
+      response.write( (toId == 0) ? "selected" : "" );
+      response.write( (toId == 1) ? "selected" : "" );
+      response.write( (toId == 2) ? "selected" : "" );
+      response.write( (toId == 3) ? "selected" : "" );
+      response.write( (toId == 4) ? "selected" : "" );
+      response.write( (toId == 5) ? "selected" : "" );
+      response.write( (toId == 6) ? "selected" : "" );
+      response.write( (toId == 7) ? "selected" : "" );
+      response.write( (toId == 8) ? "selected" : "" );
+      response.write( (toId == 9) ? "selected" : "" );
+      response.write( (toId == 10) ? "selected" : "" );
+      response.write( (toId == 11) ? "selected" : "" );
+      response.write( (toId == 12) ? "selected" : "" );
+
+
+      response.write( (toId == 0) ? "selected" : "" );
+      response.write( (toId == 1) ? "selected" : "" );
+      response.write( (toId == 2) ? "selected" : "" );
+      response.write( (toId == 3) ? "selected" : "" );
+      response.write( (toId == 4) ? "selected" : "" );
+      response.write( (toId == 5) ? "selected" : "" );
+      response.write( (toId == 6) ? "selected" : "" );
+      response.write( (toId == 7) ? "selected" : "" );
+      response.write( (toId == 8) ? "selected" : "" );
+
+
+      response.write( (toId == 0) ? "selected" : "" );
+      response.write( (toId == 1) ? "selected" : "" );
+      response.write( (toId == 2) ? "selected" : "" );
+      response.write( (toId == 3) ? "selected" : "" );
+      response.write( (toId == 4) ? "selected" : "" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( (type == 0) ? "selected" : "" );
+     response.write( (type == 1) ? "selected" : "" );
+     response.write( (type == 2) ? "selected" : "" );
+     response.write( (type == 3) ? "selected" : "" );
+     response.write( (type == 4) ? "selected" : "" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( UnicodeLanguageUtil.get(request, "meter") );
+   response.write( UnicodeLanguageUtil.get(request, "millimeter") );
+   response.write( UnicodeLanguageUtil.get(request, "centimeter") );
+   response.write( UnicodeLanguageUtil.get(request, "kilometer") );
+   response.write( UnicodeLanguageUtil.get(request, "foot") );
+   response.write( UnicodeLanguageUtil.get(request, "inch") );
+   response.write( UnicodeLanguageUtil.get(request, "yard") );
+   response.write( UnicodeLanguageUtil.get(request, "mile") );
+   response.write( UnicodeLanguageUtil.get(request, "cubit") );
+   response.write( UnicodeLanguageUtil.get(request, "talent") );
+    response.write( UnicodeLanguageUtil.get(request, "handbreath") );
+
+
+
+   response.write( UnicodeLanguageUtil.get(request, "square-kilometer") );
+   response.write( UnicodeLanguageUtil.get(request, "square-meter") );
+   response.write( UnicodeLanguageUtil.get(request, "square-centimeter") );
+   response.write( UnicodeLanguageUtil.get(request, "square-millimeter") );
+   response.write( UnicodeLanguageUtil.get(request, "square-foot") );
+   response.write( UnicodeLanguageUtil.get(request, "square-inch") );
+   response.write( UnicodeLanguageUtil.get(request, "square-yard") );
+   response.write( UnicodeLanguageUtil.get(request, "square-mile") );
+   response.write( UnicodeLanguageUtil.get(request, "hectare") );
+   response.write( UnicodeLanguageUtil.get(request, "acre") );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( UnicodeLanguageUtil.get(request, "kilogram") );
+   response.write( UnicodeLanguageUtil.get(request, "pound") );
+   response.write( UnicodeLanguageUtil.get(request, "ton") );
+   response.write( UnicodeLanguageUtil.get(request, "talent") );
+   response.write( UnicodeLanguageUtil.get(request, "mina") );
+   response.write( UnicodeLanguageUtil.get(request, "shekel") );
+   response.write( UnicodeLanguageUtil.get(request, "pim") );
+   response.write( UnicodeLanguageUtil.get(request, "beka") );
+   response.write( UnicodeLanguageUtil.get(request, "gerah") );
+}
+
+}

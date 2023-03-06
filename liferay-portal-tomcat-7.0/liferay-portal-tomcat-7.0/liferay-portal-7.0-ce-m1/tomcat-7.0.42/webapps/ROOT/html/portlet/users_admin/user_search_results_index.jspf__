@@ -1,0 +1,38 @@
+﻿ package PackageNo1976073455; public class user_search_results_index_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     userParams.put("expandoAttributes", searchTerms.getKeywords());
+     
+     Sort sort = SortFactoryUtil.getSort(User.class, userSearchContainer.getOrderByCol(), userSearchContainer.getOrderByType());
+     
+     BaseModelSearchResult<User> baseModelSearchResult = null;
+     
+     if (searchTerms.isAdvancedSearch()) {
+     	baseModelSearchResult = UserLocalServiceUtil.searchUsers(company.getCompanyId(), searchTerms.getFirstName(), searchTerms.getMiddleName(), searchTerms.getLastName(), searchTerms.getScreenName(), searchTerms.getEmailAddress(), searchTerms.getStatus(), userParams, searchTerms.isAndOperator(), userSearchContainer.getStart(), userSearchContainer.getEnd(), sort);
+     }
+     else {
+     	baseModelSearchResult = UserLocalServiceUtil.searchUsers(company.getCompanyId(), searchTerms.getKeywords(), searchTerms.getStatus(), userParams, userSearchContainer.getStart(), userSearchContainer.getEnd(), sort);
+     }
+     
+     results = baseModelSearchResult.getBaseModels();
+     
+     userSearchContainer.setResults(results);
+     userSearchContainer.setTotal(baseModelSearchResult.getLength());
+     
+}
+
+}

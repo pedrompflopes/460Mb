@@ -1,0 +1,60 @@
+﻿ package PackageNo414820451; public class lock_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      response.write(Constants.getCHECKOUT())+response.write(request.getAttribute("Constants").getCHECKOUT());
+      response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+      response.write(String.getValueOf(fileEntry().getFileEntryId()))+response.write(request.getAttribute("String").getValueOf(fileEntry().getFileEntryId()));
+
+
+
+
+
+  response.write( checkOutURL )+response.write(request.getAttribute(" checkOutURL "));
+
+
+
+
+
+      response.write(Constants.getCHECKIN())+response.write(request.getAttribute("Constants").getCHECKIN());
+      response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+      response.write(String.getValueOf(fileEntry().getFileEntryId()))+response.write(request.getAttribute("String").getValueOf(fileEntry().getFileEntryId()));
+
+
+
+
+
+  response.write( checkInURL )+response.write(request.getAttribute(" checkInURL "));
+
+
+
+
+
+      response.write(Constants.getCANCEL_CHECKOUT())+response.write(request.getAttribute("Constants").getCANCEL_CHECKOUT());
+      response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+      response.write(String.getValueOf(fileEntry().getFileEntryId()))+response.write(request.getAttribute("String").getValueOf(fileEntry().getFileEntryId()));
+
+
+
+
+
+  response.write( cancelCheckOutURL )+response.write(request.getAttribute(" cancelCheckOutURL "));
+}
+
+}

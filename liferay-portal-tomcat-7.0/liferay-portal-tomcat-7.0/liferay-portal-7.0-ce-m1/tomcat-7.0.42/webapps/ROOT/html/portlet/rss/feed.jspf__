@@ -1,0 +1,237 @@
+﻿ package PackageNo830443381; public class feed_jspf {  /* 1 */ private String _escapeJavaScriptLink(String link) { /* 240 */ 	if (Validator.isNull(link)) { /* 241 */ 		return StringPool.BLANK; /* 242 */ 	} /* 243 */ 	if (link.indexOf(StringPool.COLON) == 10) { /* 245 */ 		String protocol = StringUtil.toLowerCase(link.substring(0, 10)); /* 246 */ 		if (protocol.equals("javascript")) { /* 248 */ 			link = StringUtil.replaceFirst(link, StringPool.COLON, "%3a"); /* 249 */ 		} /* 250 */ 	} /* 251 */ 	return link; /* 253 */ } /* 254 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     SyndFeed feed = null;
+     
+     try {
+     	ObjectValuePair ovp = RSSUtil.getFeed(url);
+     
+     	feed = (SyndFeed)ovp.getValue();
+     
+     	if (Validator.isNull(title)) {
+     		title = feed.getTitle();
+     	}
+     }
+     catch (Exception e) {
+     }
+     
+
+
+
+
+
+
+     			String baseURL = null;
+     
+     			String feedLink = feed.getLink();
+     
+     			if (Validator.isNull(feedLink) || !HttpUtil.hasDomain(feedLink)) {
+     				baseURL = HttpUtil.getProtocol(url).concat(Http.PROTOCOL_DELIMITER).concat(HttpUtil.getDomain(url));
+     
+     				if (Validator.isNotNull(feedLink)) {
+     					feedLink = baseURL.concat(feedLink);
+     				}
+     				else {
+     					feedLink = baseURL;
+     				}
+     			}
+     			else {
+     				baseURL = HttpUtil.getProtocol(feedLink).concat(Http.PROTOCOL_DELIMITER).concat(HttpUtil.getDomain(feedLink));
+     			}
+     
+     			Date publishedDate = feed.getPublishedDate();
+     			String description = feed.getDescription();
+     
+     			SyndImage feedImage = feed.getImage();
+     
+     			String feedImageLink = StringPool.BLANK;
+     			String feedImageURL = StringPool.BLANK;
+     
+     			if (feedImage != null) {
+     				feedImageLink = feedImage.getLink();
+     
+     				if (!HttpUtil.hasDomain(feedImageLink)) {
+     					feedImageLink = baseURL + feedImageLink;
+     				}
+     
+     				feedImageURL = feedImage.getUrl();
+     
+     				if (!HttpUtil.hasDomain(feedImageURL)) {
+     					feedImageURL = baseURL + feedImageURL;
+     				}
+     			}
+     			
+
+
+
+      response.write( HtmlUtil.escape(title) )+response.write(request.getAttribute(" HtmlUtil").escape(title) );
+
+
+
+
+
+   response.write( dateFormatDateTime.format(publishedDate) );
+
+
+
+
+
+       response.write( HtmlUtil.escape(description) );
+
+
+
+
+       response.write(feedImageAlignment)+response.write(request.getAttribute("feedImageAlignment"));
+      response.write(HtmlUtil.getEscapeAttribute(feedImage().getDescription()));response.write(HtmlUtil.getEscapeHREF(feedImageURL));
+
+
+
+
+
+ 
+     				List entries = feed.getEntries();
+     
+     				for (int j = 0; j < entries.size(); j++) {
+     					SyndEntry entry = (SyndEntry)entries.get(j);
+     
+     					String entryLink = entry.getLink();
+     
+     					if (Validator.isNotNull(entryLink) && !HttpUtil.hasDomain(entryLink)) {
+     						entryLink = baseURL + entryLink;
+     					}
+     
+     					String author = entry.getAuthor();
+     
+     					SyndContent content = entry.getDescription();
+     
+     					List contents = new ArrayList();
+     
+     					if (content == null) {
+     						contents = entry.getContents();
+     					}
+     					else {
+     						contents.add(content);
+     					}
+     
+     					List<SyndEnclosure> enclosures = (List<SyndEnclosure>)entry.getEnclosures();
+     
+     					String enclosureLink = StringPool.BLANK;
+     					String enclosureLinkTitle = entry.getTitle();
+     
+     					for (SyndEnclosure enclosure : enclosures) {
+     						if (Validator.isNotNull(enclosure.getUrl())) {
+     							enclosureLink = enclosure.getUrl();
+     
+     							int pos = enclosureLink.lastIndexOf(StringPool.FORWARD_SLASH);
+     
+     							if (pos > -1) {
+     								enclosureLinkTitle = enclosureLink.substring(pos + 1);
+     							}
+     							else {
+     								enclosureLinkTitle = enclosureLink;
+     							}
+     
+     							break;
+     						}
+     					}
+     				
+
+
+
+
+   response.write( HtmlUtil.escape(entry.getTitle()) );
+
+       response.write( (windowState.equals(WindowState.MAXIMIZED) || (j < expandedEntriesPerFeed)) ? "" : "hide" );
+
+
+   response.write( dateFormatDateTime.format(entry.getPublishedDate()) );
+
+
+
+
+  response.write( HtmlUtil.escape(author) );
+
+
+
+     response.write( HtmlUtil.escape(enclosureLinkTitle) );
+
+
+    
+     							for (int k = 0; k < contents.size(); k++) {
+     								content = (SyndContent)contents.get(k);
+     
+     								if ((content == null) || Validator.isNull(content.getValue())) {
+     									continue;
+     								}
+     
+     								String sanitizedValue = null;
+     
+     								String type = content.getType();
+     
+     								if (com.liferay.util.RSSUtil.getFormatType(feed.getFeedType()).equals(com.liferay.util.RSSUtil.ATOM) && (type.equals("html") || type.equals("xhtml"))) {
+     									String value = StringUtil.replace(
+     										content.getValue(),
+     										new String[] {
+     											"src=\"/",
+     											"href=\"/"
+     										},
+     										new String[] {
+     											"src=\"" + baseURL + "/",
+     											"href=\"" + baseURL + "/"
+     										});
+     
+     									try {
+     										sanitizedValue = SanitizerUtil.sanitize(company.getCompanyId(), scopeGroupId, user.getUserId(), null, 0, ContentTypes.TEXT_HTML, Sanitizer.MODE_XSS, value, null);
+     									}
+     									catch (SanitizerException se) {
+     										sanitizedValue = StringPool.BLANK;
+     									}
+     								}
+     								else {
+     									sanitizedValue = HtmlUtil.escape(content.getValue());
+     								}
+     							
+
+  response.write( sanitizedValue );
+
+    
+     							}
+     							
+
+
+
+
+ 
+     					if ((j + 1) >= entriesPerFeed) {
+     						break;
+     					}
+     				}
+     				
+
+
+
+
+
+
+
+
+
+
+     response.write( LanguageUtil.format(request, "cannot-be-found", HtmlUtil.escape(urls[i]), false) );
+}
+
+}

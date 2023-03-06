@@ -1,0 +1,60 @@
+﻿ package PackageNo536760470; public class rule_group_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Group group = GroupLocalServiceUtil.getGroup(ruleGroup.getGroupId());
+     
+     String rowHREF = null;
+     
+     if (MDRRuleGroupPermissionUtil.contains(permissionChecker, ruleGroup, ActionKeys.UPDATE)) {
+     
+
+
+
+     response.write(portletURL.getToString())+response.write(request.getAttribute("portletURL").getToString());
+     response.write(String.getValueOf(ruleGroup().getRuleGroupId()))+response.write(request.getAttribute("String").getValueOf(ruleGroup().getRuleGroupId()));
+
+
+     
+     	rowHREF = editURL;
+     }
+     
+
+
+ response.write( rowHREF );
+
+  response.write( LanguageUtil.get(request, group.getScopeLabel(themeDisplay)) );
+
+
+
+ response.write( rowHREF );
+
+  response.write( ruleGroup.getName(locale) )+response.write(request.getAttribute(" ruleGroup").getName(locale) );
+
+
+
+ response.write( rowHREF );
+
+  response.write( ruleGroup.getDescription(locale) )+response.write(request.getAttribute(" ruleGroup").getDescription(locale) );
+
+
+
+ response.write( rowHREF );
+
+  response.write( ruleGroup.getModifiedDate() )+response.write(request.getAttribute(" ruleGroup").getModifiedDate() );
+}
+
+}

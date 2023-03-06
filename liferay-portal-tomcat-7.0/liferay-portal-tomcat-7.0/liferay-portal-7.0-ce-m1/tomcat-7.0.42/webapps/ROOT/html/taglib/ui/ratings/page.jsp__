@@ -1,0 +1,207 @@
+﻿ package PackageNo1357916329;import _html_taglib_init_jsp;import com.liferay.portlet.ratings.model.RatingsEntry;import com.liferay.portlet.ratings.model.RatingsStats;import com.liferay.portlet.ratings.service.RatingsEntryLocalServiceUtil;import com.liferay.portlet.ratings.service.RatingsStatsLocalServiceUtil; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\ratings\page.jsp */
+
+     
+     String randomNamespace = PortalUtil.generateRandomKey(request, "taglib_ui_ratings_page") + StringPool.UNDERLINE;
+     
+     String className = (String)request.getAttribute("liferay-ui:ratings:className");
+     long classPK = GetterUtil.getLong((String)request.getAttribute("liferay-ui:ratings:classPK"));
+     int numberOfStars = GetterUtil.getInteger((String)request.getAttribute("liferay-ui:ratings:numberOfStars"));
+     RatingsEntry ratingsEntry = (RatingsEntry)request.getAttribute("liferay-ui:ratings:ratingsEntry");
+     RatingsStats ratingsStats = (RatingsStats)request.getAttribute("liferay-ui:ratings:ratingsStats");
+     boolean round = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:ratings:round"), true);
+     boolean setRatingsEntry = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:ratings:setRatingsEntry"));
+     boolean setRatingsStats = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:ratings:setRatingsStats"));
+     String type = GetterUtil.getString((String)request.getAttribute("liferay-ui:ratings:type"));
+     String url = (String)request.getAttribute("liferay-ui:ratings:url");
+     
+     if (numberOfStars < 1) {
+     	numberOfStars = 1;
+     }
+     
+     if (!setRatingsEntry) {
+     	ratingsEntry = RatingsEntryLocalServiceUtil.fetchEntry(themeDisplay.getUserId(), className, classPK);
+     }
+     
+     if (!setRatingsStats) {
+     	ratingsStats = RatingsStatsLocalServiceUtil.getStats(className, classPK);
+     }
+     
+     if (Validator.isNull(url)) {
+     	url = themeDisplay.getPathMain() + "/portal/rate_entry";
+     }
+     
+     double averageScore = 0.0;
+     
+     if (ratingsStats != null) {
+     	averageScore = ratingsStats.getAverageScore();
+     }
+     
+     int averageIndex = (int)Math.round(averageScore);
+     
+     if (!round) {
+     	averageIndex = (int)Math.floor(averageScore);
+     }
+     
+     double yourScore = 0.0;
+     
+     if (ratingsEntry != null) {
+     	yourScore = ratingsEntry.getScore();
+     }
+     
+
+
+    response.write(type);response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+
+
+ response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+  response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+
+
+      
+     									for (int i = 1; i <= numberOfStars; i++) {
+     										String ratingId = PortalUtil.generateRandomKey(request, "taglib_ui_ratings_page_rating");
+     									
+
+     response.write( (i <= yourScore) ? "icon-star" : "icon-star-empty" );
+
+
+      response.write(ratingId);  response.write( new Object[] {i, numberOfStars} );response.write( (yourScore == i) ? "you-have-rated-this-x-stars-out-of-x" : "rate-this-x-stars-out-of-x" );     response.write( false )+response.write(request.getAttribute(" false "));
+
+      response.write(ratingId);response.write(i)+response.write(request.getAttribute("i"));
+
+
+      
+     									}
+     									
+
+
+
+
+
+
+
+       response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+
+  response.write( ratingsStats.getTotalEntries() );      response.write( (ratingsStats.getTotalEntries() == 1) ? "vote" : "votes" );
+
+
+
+
+    
+     							for (int i = 1; i <= numberOfStars; i++) {
+     							
+
+      response.write( (i <= averageIndex) ? "icon-star" : "icon-star-empty" );response.write( TrashUtil.isInTrash(className, classPK) ? LanguageUtil.get(request, "ratings-are-disabled-because-this-entry-is-in-the-recycle-bin") : ((i == 1) ? LanguageUtil.format(request, "the-average-rating-is-x-stars-out-of-x", new Object[] {averageScore, numberOfStars}, false) : StringPool.BLANK) );
+
+    
+     							}
+     							
+
+
+
+
+
+
+
+
+ response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+  response.write(randomNamespace)+response.write(request.getAttribute("randomNamespace"));
+
+
+
+
+
+
+
+      response.write( (averageScore > 0) ? "+" : StringPool.BLANK );response.write( (int)ratingsStats.getTotalScore() );
+
+
+
+    response.write( StringPool.SPACE )+response.write(request.getAttribute(" StringPool").SPACE );response.write( ratingsStats.getTotalEntries() );response.write( (ratingsStats.getTotalEntries() == 1) ? "vote" : "votes" );
+
+
+
+
+response.write( (yourScore > 0) ? "on" : "off" );
+
+response.write( (yourScore < 0) ? "on" : "off" );
+
+
+     response.write( (yourScore > 0) ? "on" : "off" );
+
+     response.write( (yourScore < 0) ? "on" : "off" );
+
+
+
+ 
+     												String ratingId = PortalUtil.generateRandomKey(request, "taglib_ui_ratings_page_rating");
+     												
+
+       response.write(ratingId)+response.write(request.getAttribute("ratingId"));response.write( (yourScore > 0) ? "you-have-rated-this-as-good" : "rate-this-as-good" );
+
+       response.write(ratingId)+response.write(request.getAttribute("ratingId"));
+
+ 
+     												ratingId = PortalUtil.generateRandomKey(request, "taglib_ui_ratings_page_rating");
+     												
+
+       response.write(ratingId)+response.write(request.getAttribute("ratingId"));response.write( (yourScore > 0) ? "you-have-rated-this-as-bad" : "rate-this-as-bad" );
+
+       response.write(ratingId)+response.write(request.getAttribute("ratingId"));
+
+
+
+
+
+
+
+
+ response.write(themeDisplay.getURLSignIn())+response.write(request.getAttribute("themeDisplay").getURLSignIn());
+
+
+
+
+
+
+
+
+
+
+     response.write( averageScore );
+   response.write( HtmlUtil.escapeJS(className) );
+ response.write( classPK );
+     response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+   response.write( randomNamespace )+response.write(request.getAttribute(" randomNamespace "));
+      response.write( round );
+     response.write( numberOfStars );
+     response.write( ratingsStats.getTotalEntries() );
+   response.write( ratingsStats.getTotalScore() );
+      response.write( type );
+     response.write( url );
+  response.write( yourScore );
+}
+
+}

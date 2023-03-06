@@ -1,0 +1,98 @@
+﻿ package PackageNo1331027532; public class checkout_second_shipping_address_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingFirstName()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingFirstName()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingLastName()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingLastName()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingEmailAddress()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingEmailAddress()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingCompany()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingCompany()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingStreet()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingStreet()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingCity()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingCity()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingState()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingState()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingZip()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingZip()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingCountry()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingCountry()) );
+
+
+
+
+
+
+
+    response.write( HtmlUtil.escape(order.getShippingPhone()) )+response.write(request.getAttribute(" HtmlUtil").escape(order.getShippingPhone()) );
+}
+
+}

@@ -1,0 +1,136 @@
+﻿ package PackageNo1423482659; public class entry_select_scope_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     boolean hasDistributionScope = false;
+     
+
+
+
+
+       
+     		hasDistributionScope = true;
+     		
+
+
+
+
+      
+     	List<Group> groups = GroupLocalServiceUtil.getUserGroups(user.getUserId(), true);
+     	
+
+
+
+
+
+     			for (Group group : groups) {
+     				if (((group.isOrganization() && group.isSite()) || group.isRegularSite()) && GroupPermissionUtil.contains(permissionChecker, group, ActionKeys.MANAGE_ANNOUNCEMENTS)) {
+     					hasDistributionScope = true;
+     			
+
+
+
+
+     				}
+     			}
+     			
+
+
+
+
+      
+     	List<Organization> organizations = OrganizationLocalServiceUtil.getUserOrganizations(user.getUserId());
+     	
+
+
+
+
+
+     			for (Organization organization : organizations) {
+     				if (OrganizationPermissionUtil.contains(permissionChecker, organization, ActionKeys.MANAGE_ANNOUNCEMENTS)) {
+     					hasDistributionScope = true;
+     			
+
+
+
+
+     				}
+     			}
+     			
+
+
+
+
+      
+     	List<Role> roles = RoleLocalServiceUtil.getRoles(themeDisplay.getCompanyId());
+     	
+
+
+
+
+
+     			for (Role role : roles) {
+     				if (role.isTeam()) {
+     					Team team = TeamLocalServiceUtil.getTeam(role.getClassPK());
+     
+     					if (!GroupPermissionUtil.contains(permissionChecker, team.getGroupId(), ActionKeys.MANAGE_ANNOUNCEMENTS)) {
+     						continue;
+     					}
+     				}
+     
+     				if (RolePermissionUtil.contains(permissionChecker, themeDisplay.getScopeGroupId(), role.getRoleId(), ActionKeys.MANAGE_ANNOUNCEMENTS)) {
+     					hasDistributionScope = true;
+     			
+
+
+
+
+     				}
+     			}
+     			
+
+
+
+
+      
+     	List<UserGroup> userGroups = UserGroupLocalServiceUtil.getUserGroups(themeDisplay.getCompanyId());
+     	
+
+
+
+
+
+     			for (UserGroup userGroup : userGroups) {
+     				if (UserGroupPermissionUtil.contains(permissionChecker, userGroup.getUserGroupId(), ActionKeys.MANAGE_ANNOUNCEMENTS)) {
+     					hasDistributionScope = true;
+     			
+
+
+
+
+     				}
+     			}
+     			
+
+
+
+
+
+
+       response.write( !hasDistributionScope );
+}
+
+}

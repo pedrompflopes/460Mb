@@ -1,0 +1,119 @@
+﻿ package PackageNo181914336;import _html_common_init_jsp;import _html_portlet_init_ext_jsp;import com.liferay.portal.kernel.util.MimeTypesUtil;import com.liferay.portlet.messageboards.BannedUserException;import com.liferay.portlet.messageboards.CategoryNameException;import com.liferay.portlet.messageboards.LockedThreadException;import com.liferay.portlet.messageboards.MBSettings;import com.liferay.portlet.messageboards.MailingListEmailAddressException;import com.liferay.portlet.messageboards.MailingListInServerNameException;import com.liferay.portlet.messageboards.MailingListInUserNameException;import com.liferay.portlet.messageboards.MailingListOutEmailAddressException;import com.liferay.portlet.messageboards.MailingListOutServerNameException;import com.liferay.portlet.messageboards.MailingListOutUserNameException;import com.liferay.portlet.messageboards.MessageBodyException;import com.liferay.portlet.messageboards.MessageSubjectException;import com.liferay.portlet.messageboards.NoSuchCategoryException;import com.liferay.portlet.messageboards.NoSuchMailingListException;import com.liferay.portlet.messageboards.NoSuchMessageException;import com.liferay.portlet.messageboards.RequiredMessageException;import com.liferay.portlet.messageboards.SplitThreadException;import com.liferay.portlet.messageboards.model.MBBan;import com.liferay.portlet.messageboards.model.MBCategory;import com.liferay.portlet.messageboards.model.MBCategoryConstants;import com.liferay.portlet.messageboards.model.MBCategoryDisplay;import com.liferay.portlet.messageboards.model.MBMailingList;import com.liferay.portlet.messageboards.model.MBMessageConstants;import com.liferay.portlet.messageboards.model.MBMessageDisplay;import com.liferay.portlet.messageboards.model.MBStatsUser;import com.liferay.portlet.messageboards.model.MBThread;import com.liferay.portlet.messageboards.model.MBThreadConstants;import com.liferay.portlet.messageboards.model.MBThreadFlag;import com.liferay.portlet.messageboards.model.MBTreeWalker;import com.liferay.portlet.messageboards.model.impl.MBCategoryDisplayImpl;import com.liferay.portlet.messageboards.model.impl.MBMessageImpl;import com.liferay.portlet.messageboards.service.MBBanLocalServiceUtil;import com.liferay.portlet.messageboards.service.MBCategoryLocalServiceUtil;import com.liferay.portlet.messageboards.service.MBCategoryServiceUtil;import com.liferay.portlet.messageboards.service.MBMailingListLocalServiceUtil;import com.liferay.portlet.messageboards.service.MBMessageServiceUtil;import com.liferay.portlet.messageboards.service.MBStatsUserLocalServiceUtil;import com.liferay.portlet.messageboards.service.MBThreadFlagLocalServiceUtil;import com.liferay.portlet.messageboards.service.MBThreadLocalServiceUtil;import com.liferay.portlet.messageboards.service.MBThreadServiceUtil;import com.liferay.portlet.messageboards.service.permission.MBCategoryPermission;import com.liferay.portlet.messageboards.service.permission.MBMessagePermission;import com.liferay.portlet.messageboards.service.permission.MBPermission;import com.liferay.portlet.messageboards.util.MBConstants;import com.liferay.portlet.messageboards.util.MBMessageAttachmentsUtil;import com.liferay.portlet.messageboards.util.comparator.MessageCreateDateComparator;import com.liferay.portlet.ratings.model.RatingsStats;import com.liferay.portlet.ratings.service.RatingsStatsLocalServiceUtil;import com.liferay.portlet.trash.service.TrashEntryLocalServiceUtil; public class init_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ PortletMode portletMode = liferayPortletRequest.getPortletMode(); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ WindowState windowState = liferayPortletRequest.getWindowState(); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ PortletURL currentURLObj = PortletURLUtil.getCurrent(liferayPortletRequest, liferayPortletResponse); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ String currentURL = currentURLObj.toString(); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init.jsp */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     String currentLanguageId = LanguageUtil.getLanguageId(request);
+     Locale currentLocale = LocaleUtil.fromLanguageId(currentLanguageId);
+     Locale defaultLocale = themeDisplay.getSiteDefaultLocale();
+     String defaultLanguageId = LocaleUtil.toLanguageId(defaultLocale);
+     
+     Locale[] locales = LanguageUtil.getAvailableLocales(themeDisplay.getSiteGroupId());
+     
+     MBSettings mbSettings = MBSettings.getInstance(themeDisplay.getSiteGroupId());
+     
+     String[] priorities = mbSettings.getPriorities(currentLanguageId);
+     
+     boolean allowAnonymousPosting = mbSettings.isAllowAnonymousPosting();
+     boolean enableFlags = mbSettings.isEnableFlags();
+     boolean enableRatings = mbSettings.isEnableRatings();
+     String messageFormat = mbSettings.getMessageFormat();
+     String recentPostsDateOffset = mbSettings.getRecentPostsDateOffset();
+     boolean subscribeByDefault = mbSettings.isSubscribeByDefault();
+     boolean threadAsQuestionByDefault = mbSettings.isThreadAsQuestionByDefault();
+     
+     boolean enableRSS = mbSettings.isEnableRSS();
+     int rssDelta = mbSettings.getRSSDelta();
+     String rssDisplayStyle = mbSettings.getRSSDisplayStyle();
+     String rssFeedType = mbSettings.getRSSFeedType();
+     
+     ResourceURL rssURL = liferayPortletResponse.createResourceURL();
+     
+     rssURL.setParameter("struts_action", "/message_boards/rss");
+     rssURL.setParameter("p_l_id", String.valueOf(plid));
+     rssURL.setParameter("mbCategoryId", String.valueOf(scopeGroupId));
+     
+     boolean categoriesPanelCollapsible = true;
+     boolean categoriesPanelExtended = true;
+     boolean threadsPanelCollapsible = true;
+     boolean threadsPanelExtended = true;
+     
+     boolean childrenMessagesTaggable = true;
+     boolean includeFormTag = true;
+     boolean showSearch = true;
+     
+     Format dateFormatDate = FastDateFormatFactoryUtil.getDate(locale, timeZone);
+     Format dateFormatDateTime = FastDateFormatFactoryUtil.getDateTime(locale, timeZone);
+     
+     NumberFormat numberFormat = NumberFormat.getNumberInstance(locale);
+     
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init.jsp */ /* 116?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init-ext.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 116?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\message_boards\init.jsp */
+}
+
+}

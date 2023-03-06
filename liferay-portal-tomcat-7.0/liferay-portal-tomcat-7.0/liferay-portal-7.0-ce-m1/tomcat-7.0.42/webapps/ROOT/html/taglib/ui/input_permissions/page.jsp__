@@ -1,0 +1,324 @@
+﻿ package PackageNo1745659074;import _html_taglib_init_jsp;import com.liferay.taglib.ui.InputPermissionsParamsTag; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\page.jsp */ /* 24?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 24?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_permissions\page.jsp */
+
+     
+     String uniqueNamespace = namespace + PortalUtil.getUniqueElementId(request, namespace, StringPool.BLANK);
+     
+     if (!uniqueNamespace.endsWith(StringPool.UNDERLINE)) {
+     	uniqueNamespace = uniqueNamespace.concat(StringPool.UNDERLINE);
+     }
+     
+     String formName = namespace + request.getAttribute("liferay-ui:input-permissions:formName");
+     String modelName = (String)request.getAttribute("liferay-ui:input-permissions:modelName");
+     
+
+
+
+
+
+
+
+       
+     		Group siteGroup = GroupLocalServiceUtil.getGroup(themeDisplay.getSiteGroupId());
+     
+     		Role defaultGroupRole = RoleLocalServiceUtil.getDefaultGroupRole(siteGroup.getGroupId());
+     
+     		boolean hasViewDefaultGroupRolePermission = RolePermissionUtil.contains(themeDisplay.getPermissionChecker(), siteGroup.getGroupId(), defaultGroupRole.getRoleId(), ActionKeys.VIEW);
+     
+     		Role guestRole = RoleLocalServiceUtil.getRole(themeDisplay.getCompanyId(), RoleConstants.GUEST);
+     
+     		String[] roleNames = new String[] {RoleConstants.GUEST};
+     
+     		if (hasViewDefaultGroupRolePermission) {
+     			roleNames = ArrayUtil.append(roleNames, defaultGroupRole.getName());
+     		}
+     
+     		String guestPermissionsName = "guestPermissions";
+     		String groupPermissionsName = "groupPermissions";
+     
+     		if (!uniqueNamespace.equals(namespace)) {
+     			guestPermissionsName = guestPermissionsName + StringPool.UNDERLINE + modelName;
+     			groupPermissionsName = groupPermissionsName + StringPool.UNDERLINE + modelName;
+     		}
+     
+     		List groupPermissions = ListUtil.fromArray(request.getParameterValues(groupPermissionsName));
+     		List guestPermissions = ListUtil.fromArray(request.getParameterValues(guestPermissionsName));
+     
+     		List supportedActions = (List)request.getAttribute("liferay-ui:input-permissions:supportedActions");
+     		List groupDefaultActions = (List)request.getAttribute("liferay-ui:input-permissions:groupDefaultActions");
+     		List guestDefaultActions = (List)request.getAttribute("liferay-ui:input-permissions:guestDefaultActions");
+     		List guestUnsupportedActions = (List)request.getAttribute("liferay-ui:input-permissions:guestUnsupportedActions");
+     
+     		boolean submitted = (request.getParameter(groupPermissionsName) != null);
+     
+     		boolean inputPermissionsShowOptions = ParamUtil.getBoolean(request, "inputPermissionsShowOptions");
+     
+     		String inputPermissionsViewRole = ParamUtil.getString(request, "inputPermissionsViewRole", InputPermissionsParamsTag.getDefaultViewRole(modelName, themeDisplay));
+     		
+
+     response.write(uniqueNamespace)+response.write(request.getAttribute("uniqueNamespace"));response.write(namespace)+response.write(request.getAttribute("namespace"));response.write(inputPermissionsShowOptions);
+
+
+
+       response.write(namespace)+response.write(request.getAttribute("namespace"));
+
+
+
+  response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( uniqueNamespace + "updatePermissionsView();" );
+
+  
+     					String guestRoleLabel = LanguageUtil.format(request, "x-role", guestRole.getTitle(themeDisplay.getLocale()), false);
+     
+     					if (PropsValues.PERMISSIONS_CHECK_GUEST_ENABLED) {
+     						guestRoleLabel = LanguageUtil.get(request, "anyone") + StringPool.SPACE + StringPool.OPEN_PARENTHESIS + guestRoleLabel + StringPool.CLOSE_PARENTHESIS;
+     					}
+     					
+
+       response.write( (inputPermissionsViewRole.equals(RoleConstants.GUEST)) ? "selected=\"selected\"" : "" );response.write( RoleConstants.GUEST )+response.write(request.getAttribute(" RoleConstants").GUEST );response.write( guestRoleLabel );
+
+
+response.write( (inputPermissionsViewRole.equals(defaultGroupRole.getName())) ? "selected=\"selected\"" : "" );response.write( defaultGroupRole.getName() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( (inputPermissionsViewRole.equals(RoleConstants.OWNER)) ? "selected=\"selected\"" : "" );response.write( RoleConstants.OWNER )+response.write(request.getAttribute(" RoleConstants").OWNER );
+
+
+    response.write( inputPermissionsShowOptions ? "class=\"hide\"" : "" );response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+response.write(uniqueNamespace)+response.write(request.getAttribute("uniqueNamespace"));
+
+
+ response.write( inputPermissionsShowOptions ? "" : "class=\"hide\"" );      response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+
+
+
+ response.write( (inputPermissionsShowOptions || !supportedActions.contains(ActionKeys.VIEW)) ? "" : "hide" );response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+
+
+
+
+
+  
+     					for (int i = 0; i < supportedActions.size(); i++) {
+     						String action = (String)supportedActions.get(i);
+     					
+
+    response.write( (action.equals(ActionKeys.VIEW)) ? "class=\"hide\"" : "" );
+ response.write( ResourceActionsUtil.getAction(request, action) );
+
+
+  
+     					}
+     					
+
+
+
+
+
+     			for (String roleName : roleNames) {
+     				Role role = RoleLocalServiceUtil.getRole(themeDisplay.getCompanyId(), roleName);
+     			
+
+
+
+response.write( role.getTitle(themeDisplay.getLocale()) );
+
+
+  
+     					for (int i = 0; i < supportedActions.size(); i++) {
+     						String action = (String)supportedActions.get(i);
+     
+     						boolean checked = false;
+     						boolean disabled = false;
+     
+     						if (roleName.equals(RoleConstants.GUEST)) {
+     							disabled = guestUnsupportedActions.contains(action);
+     
+     							if (disabled) {
+     								checked = false;
+     							}
+     							else if (submitted) {
+     								checked = guestPermissions.contains(action);
+     							}
+     							else {
+     								checked = guestDefaultActions.contains(action) && (inputPermissionsViewRole.equals(RoleConstants.GUEST));
+     							}
+     						}
+     						else if (roleName.equals(defaultGroupRole.getName())) {
+     							if (submitted) {
+     								checked = groupPermissions.contains(action);
+     							}
+     							else {
+     								checked = groupDefaultActions.contains(action);
+     							}
+     						}
+     
+     						String checkboxFieldId = null;
+     						String checkboxFieldName = null;
+     
+     						if (roleName.equals(RoleConstants.GUEST)) {
+     							checkboxFieldId = uniqueNamespace + "guestPermissions";
+     							checkboxFieldName = namespace + guestPermissionsName;
+     						}
+     						else {
+     							checkboxFieldId = uniqueNamespace + "groupPermissions";
+     							checkboxFieldName = namespace + groupPermissionsName;
+     						}
+     
+     						checkboxFieldId = checkboxFieldId + StringPool.UNDERLINE + action;
+     					
+
+    response.write( (action.equals(ActionKeys.VIEW)) ? "class=\"hide-accessible\"" : "" );
+  response.write(checkboxFieldId);       response.write( new Object[] {ResourceActionsUtil.getAction(request, action), role.getTitle(themeDisplay.getLocale())} );       response.write( false )+response.write(request.getAttribute(" false "));
+
+response.write( checked ? "checked" : "" );response.write( disabled ? "disabled" : "" );response.write( checkboxFieldId );response.write( checkboxFieldName );response.write( LanguageUtil.format(request, "give-x-permission-to-users-with-role-x", new Object[] {ResourceActionsUtil.getAction(request, action), role.getTitle(themeDisplay.getLocale())}, false) );response.write( action );
+
+
+  
+     					}
+     					
+
+
+
+
+     			}
+     			
+
+
+
+
+
+
+
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+
+
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+
+
+
+
+
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+
+
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+
+
+
+
+
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+
+
+      response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+       response.write( uniqueNamespace )+response.write(request.getAttribute(" uniqueNamespace "));
+
+      response.write( RoleConstants.GUEST )+response.write(request.getAttribute(" RoleConstants").GUEST );
+
+
+
+   response.write( defaultGroupRole.getName() );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		boolean addGroupPermissions = ParamUtil.getBoolean(request, "addGroupPermissions", true);
+     		boolean addGuestPermissions = ParamUtil.getBoolean(request, "addGuestPermissions", true);
+     		
+
+     response.write(namespace)+response.write(request.getAttribute("namespace"));response.write(addGroupPermissions);
+     response.write(namespace)+response.write(request.getAttribute("namespace"));response.write(addGuestPermissions);
+
+   response.write( addGroupPermissions ? "checked" : "" );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( namespace )+response.write(request.getAttribute(" namespace "));
+   response.write( addGuestPermissions ? "checked" : "" );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( namespace )+response.write(request.getAttribute(" namespace "));
+   response.write( !addGroupPermissions && !addGuestPermissions ? "checked" : "" );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+
+      response.write( namespace )+response.write(request.getAttribute(" namespace "));
+   response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+ response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+  response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+
+
+      response.write( namespace )+response.write(request.getAttribute(" namespace "));
+   response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+
+
+response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+response.write( formName );response.write( namespace )+response.write(request.getAttribute(" namespace "));
+}
+
+}

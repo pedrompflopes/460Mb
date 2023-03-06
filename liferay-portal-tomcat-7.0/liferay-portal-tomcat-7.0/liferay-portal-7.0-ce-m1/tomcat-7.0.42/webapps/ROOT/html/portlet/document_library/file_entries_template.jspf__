@@ -1,0 +1,41 @@
+﻿ package PackageNo1954555526; public class file_entries_template_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	String thumbnailSrc = themeDisplay.getPathThemeImages() + "/file_system/large/default.png";
+     	
+
+
+
+  response.write( Boolean.FALSE )+response.write(request.getAttribute(" Boolean").FALSE );
+  response.write( thumbnailSrc )+response.write(request.getAttribute(" thumbnailSrc "));
+    response.write( DLUtil.getThumbnailStyle() )+response.write(request.getAttribute(" DLUtil").getThumbnailStyle() );
+
+ response.write( uploadURL )+response.write(request.getAttribute(" uploadURL "));
+
+
+
+
+  response.write( Boolean.FALSE )+response.write(request.getAttribute(" Boolean").FALSE );
+  response.write( thumbnailSrc )+response.write(request.getAttribute(" thumbnailSrc "));
+    response.write( DLUtil.getThumbnailStyle() )+response.write(request.getAttribute(" DLUtil").getThumbnailStyle() );
+
+ response.write( uploadURL )+response.write(request.getAttribute(" uploadURL "));
+}
+
+}

@@ -1,0 +1,122 @@
+﻿ package PackageNo474159462; public class article_columns_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( HtmlUtil.escape(curArticle.getArticleId()) )+response.write(request.getAttribute(" HtmlUtil").escape(curArticle.getArticleId()) );
+
+
+
+
+
+
+      
+     	AssetRendererFactory assetRendererFactory = AssetRendererFactoryRegistryUtil.getAssetRendererFactoryByClassName(JournalArticle.class.getName());
+     
+     	AssetRenderer assetRenderer = assetRendererFactory.getAssetRenderer(JournalArticleAssetRenderer.getClassPK(curArticle));
+     
+     	PortletURL rowURL = liferayPortletResponse.createRenderURL();
+     
+     	rowURL.setParameter("struts_action", "/journal/edit_article");
+     	rowURL.setParameter("redirect", currentURL);
+     	rowURL.setParameter("groupId", String.valueOf(curArticle.getGroupId()));
+     	rowURL.setParameter("folderId", String.valueOf(curArticle.getFolderId()));
+     	rowURL.setParameter("articleId", curArticle.getArticleId());
+     	rowURL.setParameter("status", String.valueOf(status));
+     	
+
+
+
+  response.write( assetRenderer.getIconCssClass() );
+   response.write( true )+response.write(request.getAttribute(" true "));
+     response.write( HtmlUtil.escape(curArticle.getTitle(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(curArticle.getTitle(locale)) );
+
+ response.write( rowURL.toString() );
+
+
+
+
+
+
+ 
+     				Group group = GroupLocalServiceUtil.getGroup(curArticle.getGroupId());
+     				
+
+
+
+
+
+
+
+   
+     						String groupDescriptiveName = null;
+     
+     						if (group.isLayout()) {
+     							Group parentGroup = group.getParentGroup();
+     
+     							groupDescriptiveName = parentGroup.getDescriptiveName(locale);
+     						}
+     						else {
+     							groupDescriptiveName = group.getDescriptiveName(locale);
+     						}
+     						
+
+response.write( HtmlUtil.escape(groupDescriptiveName) )+response.write(request.getAttribute(" HtmlUtil").escape(groupDescriptiveName) );
+
+
+
+
+
+
+
+
+response.write( HtmlUtil.escape(group.getDescriptiveName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(group.getDescriptiveName(locale)) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( curArticle.getModifiedDate() )+response.write(request.getAttribute(" curArticle").getModifiedDate() );
+
+
+
+
+  response.write( curArticle.getDisplayDate() )+response.write(request.getAttribute(" curArticle").getDisplayDate() );
+
+
+
+
+  response.write( PortalUtil.getUserName(curArticle) )+response.write(request.getAttribute(" PortalUtil").getUserName(curArticle) );
+
+
+     
+     DDMStructure ddmStructure = DDMStructureLocalServiceUtil.getStructure(scopeGroupId, PortalUtil.getClassNameId(JournalArticle.class), curArticle.getStructureId(), true);
+     
+
+
+
+  response.write( HtmlUtil.escape(ddmStructure.getName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(ddmStructure.getName(locale)) );
+}
+
+}

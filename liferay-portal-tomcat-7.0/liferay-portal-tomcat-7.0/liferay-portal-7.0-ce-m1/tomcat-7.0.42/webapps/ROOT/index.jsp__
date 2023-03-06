@@ -1,0 +1,79 @@
+﻿ package PackageNo1347060222;import com.liferay.portal.events.ServicePreAction;import com.liferay.portal.kernel.servlet.HttpHeaders;import com.liferay.portal.kernel.util.InstancePool;import com.liferay.portal.model.Layout;import com.liferay.portal.model.LayoutConstants;import com.liferay.portal.model.LayoutSet;import com.liferay.portal.service.LayoutLocalServiceUtil;import com.liferay.portal.theme.ThemeDisplay;import com.liferay.portal.util.PortalUtil;import com.liferay.portal.util.WebKeys; public class index_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     
+     // According to http://www.webmasterworld.com/forum91/3087.htm a semicolon in
+     // the URL for a meta-refresh tag does not work in IE 6.
+     
+     // To work around this issue, we use a URL without a session id for meta-refresh
+     // and rely on the load event on the body element to properly rewrite the URL.
+     
+     String redirect = null;
+     
+     LayoutSet layoutSet = (LayoutSet)request.getAttribute(WebKeys.VIRTUAL_HOST_LAYOUT_SET);
+     
+     if (layoutSet != null) {
+     	long defaultPlid = LayoutLocalServiceUtil.getDefaultPlid(layoutSet.getGroupId(), layoutSet.isPrivateLayout());
+     
+     	if (defaultPlid != LayoutConstants.DEFAULT_PLID) {
+     		Layout layout = LayoutLocalServiceUtil.getLayout(defaultPlid);
+     
+     		ServicePreAction servicePreAction = (ServicePreAction)InstancePool.get(ServicePreAction.class.getName());
+     
+     		ThemeDisplay themeDisplay = servicePreAction.initThemeDisplay(request, response);
+     
+     		redirect = PortalUtil.getLayoutURL(layout, themeDisplay);
+     	}
+     	else {
+     		redirect = PortalUtil.getPathMain();
+     	}
+     }
+     else {
+     	redirect = PortalUtil.getHomeURL(request);
+     }
+     
+     if (!request.isRequestedSessionIdFromCookie()) {
+     	redirect = PortalUtil.getURLWithSessionId(redirect, session.getId());
+     }
+     
+     response.setHeader(HttpHeaders.LOCATION, redirect);
+     
+     response.setStatus(HttpServletResponse.SC_MOVED_PERMANENTLY);
+     
+
+
+
+
+
+    response.write(redirect)+response.write(request.getAttribute("redirect"));
+
+
+   response.write(redirect)+response.write(request.getAttribute("redirect"));
+}
+
+}

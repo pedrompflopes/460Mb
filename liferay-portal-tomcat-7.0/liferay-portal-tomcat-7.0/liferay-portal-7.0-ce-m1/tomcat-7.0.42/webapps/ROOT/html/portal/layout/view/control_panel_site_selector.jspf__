@@ -1,0 +1,75 @@
+﻿ package PackageNo1414895568; public class control_panel_site_selector_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     Collection<Portlet> siteAdministrationPortlets = PortalUtil.getControlPanelPortlets(themeDisplay.getCompanyId(), PortletCategoryKeys.SITE_ADMINISTRATION);
+     
+     List<Group> manageableSiteGroups = GroupServiceUtil.getManageableSiteGroups(siteAdministrationPortlets, PropsValues.CONTROL_PANEL_NAVIGATION_MAX_SITES);
+     
+     Group userGroup = user.getGroup();
+     
+     if (PortletPermissionUtil.hasControlPanelAccessPermission(permissionChecker, userGroup.getGroupId(), siteAdministrationPortlets)) {
+     	manageableSiteGroups.add(0, userGroup);
+     }
+     
+     if (PortalUtil.isCompanyControlPanelVisible(themeDisplay)) {
+     	Group companyGroup = company.getGroup();
+     
+     	if (!manageableSiteGroups.contains(companyGroup)) {
+     		manageableSiteGroups.add(0, companyGroup);
+     	}
+     }
+     
+     Group siteGroup = themeDisplay.getSiteGroup();
+     
+     manageableSiteGroups.remove(siteGroup);
+     
+     String switchGroupURL = HttpUtil.setParameter(PortalUtil.getCurrentURL(request), "switchGroup", "1");
+     
+     switchGroupURL = PortalUtil.resetPortletParameters(switchGroupURL, themeDisplay.getPpid());
+     
+
+
+
+
+     response.write( HtmlUtil.escape(siteGroup.getDescriptiveName()) );
+
+
+
+    response.write( false )+response.write(request.getAttribute(" false "));      response.write( false )+response.write(request.getAttribute(" false "));response.write( HtmlUtil.escape(siteGroup.getDescriptiveName()) );response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+     			Map<String, Object> data = new HashMap<String, Object>();
+     
+     			data.put("navigation", Boolean.TRUE.toString());
+     
+     			for (Group manageableSiteGroup : manageableSiteGroups) {
+     			
+
+
+     response.write( data )+response.write(request.getAttribute(" data "));
+     response.write( manageableSiteGroup.getIconCssClass() )+response.write(request.getAttribute(" manageableSiteGroup").getIconCssClass() );
+response.write( false )+response.write(request.getAttribute(" false "));
+response.write( HtmlUtil.escape(manageableSiteGroup.getDescriptiveName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(manageableSiteGroup.getDescriptiveName(locale)) );
+    response.write( HttpUtil.setParameter(switchGroupURL, "doAsGroupId", manageableSiteGroup.getGroupId()) );
+
+
+
+     			}
+     			
+}
+
+}

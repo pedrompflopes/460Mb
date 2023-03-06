@@ -1,0 +1,91 @@
+﻿ package PackageNo2132751293;import _html_taglib_init_jsp;import com.liferay.portlet.asset.NoSuchVocabularyException; public class page_jsp {  /* 1 */ private void _buildCategoriesNavigation(List<AssetCategory> categories, long categoryId, PortletURL portletURL, ThemeDisplay themeDisplay, StringBundler sb) throws Exception { /* 122 */ 	for (AssetCategory category : categories) { /* 123 */ 		category = category.toEscapedModel(); /* 124 */ 		String title = category.getTitle(themeDisplay.getLocale()); /* 126 */ 		List<AssetCategory> categoriesChildren = AssetCategoryServiceUtil.getChildCategories(category.getCategoryId(), QueryUtil.ALL_POS, QueryUtil.ALL_POS, null); /* 128 */ 		sb.append("<li class=\"tree-node\"><span>"); /* 130 */ 		if (categoryId == category.getCategoryId()) { /* 132 */ 			portletURL.setParameter("categoryId", StringPool.BLANK); /* 133 */ 			sb.append("<a class=\"tag-selected\" href=\""); /* 135 */ 		} /* 136 */ 		else { /* 137 */ 			portletURL.setParameter("resetCur", Boolean.TRUE.toString()); /* 138 */ 			portletURL.setParameter("categoryId", String.valueOf(category.getCategoryId())); /* 139 */ 			sb.append("<a href=\""); /* 141 */ 		} /* 142 */ 		sb.append(HtmlUtil.escape(portletURL.toString())); /* 144 */ 		sb.append("\">"); /* 145 */ 		sb.append(title); /* 146 */ 		sb.append("</a>"); /* 147 */ 		sb.append("</span>"); /* 148 */ 		if (!categoriesChildren.isEmpty()) { /* 150 */ 			sb.append("<ul>"); /* 151 */ 			_buildCategoriesNavigation(categoriesChildren, categoryId, portletURL, themeDisplay, sb); /* 153 */ 			sb.append("</ul>"); /* 155 */ 		} /* 156 */ 		sb.append("</li>"); /* 158 */ 	} /* 159 */ } /* 160 */ private String _buildVocabularyNavigation(AssetVocabulary vocabulary, long categoryId, PortletURL portletURL, ThemeDisplay themeDisplay) throws Exception { /* 162 */ 	List<AssetCategory> categories = AssetCategoryServiceUtil.getVocabularyRootCategories(vocabulary.getVocabularyId(), QueryUtil.ALL_POS, QueryUtil.ALL_POS, null); /* 163 */ 	if (categories.isEmpty()) { /* 165 */ 		return null; /* 166 */ 	} /* 167 */ 	StringBundler sb = new StringBundler(); /* 169 */ 	sb.append("<div class=\"lfr-asset-category-list-container\"><ul class=\"lfr-asset-category-list\">"); /* 171 */ 	_buildCategoriesNavigation(categories, categoryId, portletURL, themeDisplay, sb); /* 173 */ 	sb.append("</ul></div>"); /* 175 */ 	return sb.toString(); /* 177 */ } /* 178 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_navigation\page.jsp */
+
+     
+     boolean hidePortletWhenEmpty = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:asset-tags-navigation:hidePortletWhenEmpty"));
+     long[] vocabularyIds = (long[])request.getAttribute("liferay-ui:asset-tags-navigation:vocabularyIds");
+     
+     long categoryId = ParamUtil.getLong(request, "categoryId");
+     
+     List<AssetVocabulary> vocabularies = null;
+     
+     if (vocabularyIds == null) {
+     	vocabularies = AssetVocabularyServiceUtil.getGroupVocabularies(PortalUtil.getCurrentAndAncestorSiteGroupIds(scopeGroupId));
+     }
+     else {
+     	vocabularies = new ArrayList<AssetVocabulary>();
+     
+     	for (long vocabularyId : vocabularyIds) {
+     		try {
+     			vocabularies.add(AssetVocabularyServiceUtil.getVocabulary(vocabularyId));
+     		}
+     		catch (NoSuchVocabularyException nsve) {
+     		}
+     	}
+     }
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+
+      response.write( true )+response.write(request.getAttribute(" true "));response.write( namespace + "taglibAssetCategoriesNavigationPanel" );response.write( true )+response.write(request.getAttribute(" true "));
+
+      
+     	for (int i = 0; i < vocabularies.size(); i++) {
+     		AssetVocabulary vocabulary = vocabularies.get(i);
+     
+     		vocabulary = vocabulary.toEscapedModel();
+     
+     		String vocabularyNavigation = _buildVocabularyNavigation(vocabulary, categoryId, portletURL, themeDisplay);
+     
+     		if (Validator.isNotNull(vocabularyNavigation)) {
+     			hidePortletWhenEmpty = false;
+     	
+
+    response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( vocabulary.getUnambiguousTitle(vocabularies, themeDisplay.getSiteGroupId(), themeDisplay.getLocale()) );
+      response.write( vocabularyNavigation );
+
+
+      
+     		}
+     	}
+     	
+
+
+
+     
+     if (hidePortletWhenEmpty) {
+     	renderRequest.setAttribute(WebKeys.PORTLET_CONFIGURATOR_VISIBILITY, Boolean.TRUE);
+     
+
+
+
+
+
+     
+     }
+     
+     if (categoryId > 0) {
+     	AssetUtil.addPortletBreadcrumbEntries(categoryId, request, portletURL);
+     }
+     
+
+
+   response.write( namespace )+response.write(request.getAttribute(" namespace "));
+}
+
+}

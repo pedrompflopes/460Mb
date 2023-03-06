@@ -1,0 +1,7 @@
+﻿    public class CxXmlConfigClass1312965164 { public CxXmlConfigClass() {
+
+
+if (STRUTS-CONFIG) {
+if (ACTION-MAPPINGS) {}
+}
+    } }

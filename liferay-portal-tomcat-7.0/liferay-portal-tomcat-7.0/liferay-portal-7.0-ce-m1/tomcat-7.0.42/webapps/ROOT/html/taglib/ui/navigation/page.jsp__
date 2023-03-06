@@ -1,0 +1,82 @@
+﻿ package PackageNo1094297729;import _html_taglib_init_jsp; public class page_jsp {  /* 1 */ private String[] _getDisplayStyleDefinition(String displayStyle) { /* 53 */ 	return PropsUtil.getArray("navigation.display.style", new Filter(displayStyle)); /* 54 */ } /* 55 */ private void _buildNavigation(Layout rootLayout, Layout selLayout, List<Layout> branchLayouts, ThemeDisplay themeDisplay, int layoutLevel, String includedLayouts, boolean nestedChildren, StringBundler sb) throws Exception { /* 84 */ 	List<Layout> childLayouts = null; /* 85 */ 	if (rootLayout != null) { /* 87 */ 		childLayouts = rootLayout.getChildren(themeDisplay.getPermissionChecker()); /* 88 */ 	} /* 89 */ 	else { /* 90 */ 		childLayouts = LayoutLocalServiceUtil.getLayouts(selLayout.getGroupId(), selLayout.isPrivateLayout(), LayoutConstants.DEFAULT_PARENT_LAYOUT_ID); /* 91 */ 	} /* 92 */ 	if (childLayouts.isEmpty()) { /* 94 */ 		return; /* 95 */ 	} /* 96 */ 	StringBundler tailSB = null; /* 98 */ 	if (!nestedChildren) { /* 100 */ 		tailSB = new StringBundler(); /* 101 */ 	} /* 102 */ 	sb.append("<ul class=\"layouts level-"); /* 104 */ 	sb.append(layoutLevel); /* 105 */ 	sb.append("\">"); /* 106 */ 	for (Layout childLayout : childLayouts) { /* 108 */ 		if (!childLayout.isHidden() && LayoutPermissionUtil.contains(themeDisplay.getPermissionChecker(), childLayout, ActionKeys.VIEW)) { /* 109 */ 			boolean open = false; /* 110 */ 			if (includedLayouts.equals("auto") && branchLayouts.contains(childLayout) && !childLayout.getChildren().isEmpty()) { /* 112 */ 				open = true; /* 113 */ 			} /* 114 */ 			if (includedLayouts.equals("all")) { /* 116 */ 				open = true; /* 117 */ 			} /* 118 */ 			String className = StringPool.BLANK; /* 120 */ 			if (open) { /* 122 */ 				className += "open "; /* 123 */ 			} /* 124 */ 			if (selLayout.getLayoutId() == childLayout.getLayoutId()) { /* 126 */ 				className += "selected "; /* 127 */ 			} /* 128 */ 			sb.append("<li "); /* 130 */ 			if (Validator.isNotNull(className)) { /* 132 */ 				sb.append("class=\""); /* 133 */ 				sb.append(className); /* 134 */ 				sb.append("\" "); /* 135 */ 			} /* 136 */ 			sb.append("><a "); /* 138 */ 			if (Validator.isNotNull(className)) { /* 140 */ 				sb.append("class=\""); /* 141 */ 				sb.append(className); /* 142 */ 				sb.append("\" "); /* 143 */ 			} /* 144 */ 			sb.append("href=\""); /* 146 */ 			sb.append(HtmlUtil.escapeHREF(PortalUtil.getLayoutURL(childLayout, themeDisplay))); /* 147 */ 			sb.append("\" "); /* 148 */ 			sb.append(PortalUtil.getLayoutTarget(childLayout)); /* 149 */ 			sb.append("> "); /* 150 */ 			sb.append(HtmlUtil.escape(childLayout.getName(themeDisplay.getLocale()))); /* 151 */ 			sb.append("</a>"); /* 152 */ 			if (open) { /* 154 */ 				StringBundler childLayoutSB = null; /* 155 */ 				if (nestedChildren) { /* 157 */ 					childLayoutSB = sb; /* 158 */ 				} /* 159 */ 				else { /* 160 */ 					childLayoutSB = tailSB; /* 161 */ 				} /* 162 */ 				_buildNavigation(childLayout, selLayout, branchLayouts, themeDisplay, layoutLevel + 1, includedLayouts, nestedChildren, childLayoutSB); /* 164 */ 			} /* 165 */ 			sb.append("</li>"); /* 167 */ 		} /* 168 */ 	} /* 169 */ 	sb.append("</ul>"); /* 171 */ 	if (!nestedChildren) { /* 173 */ 		sb.append(tailSB); /* 174 */ 	} /* 175 */ } /* 176 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ String bulletStyle = StringUtil.toLowerCase(((String)request.getAttribute('liferay-ui:navigation:bulletStyle'))); /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ String displayStyle = (String)request.getAttribute('liferay-ui:navigation:displayStyle'); /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ boolean preview = GetterUtil.getBoolean((String)request.getAttribute('liferay-ui:navigation:preview')); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ String headerType = null; /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ String includedLayouts = null; /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ boolean nestedChildren = true; /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ int rootLayoutLevel = 0; /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ String rootLayoutType = null; /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ String[] displayStyleDefinition = _getDisplayStyleDefinition(displayStyle); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ if ((displayStyleDefinition != null) && (displayStyleDefinition.length != 0)) { /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	headerType = displayStyleDefinition[0]; /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	includedLayouts = displayStyleDefinition[3]; /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	if (displayStyleDefinition.length > 4) { /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 		nestedChildren = GetterUtil.getBoolean(displayStyleDefinition[4]); /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	} /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	rootLayoutLevel = GetterUtil.getInteger(displayStyleDefinition[2]); /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	rootLayoutType = displayStyleDefinition[1]; /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ } /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ else { /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	headerType = (String)request.getAttribute('liferay-ui:navigation:headerType'); /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	includedLayouts = (String)request.getAttribute('liferay-ui:navigation:includedLayouts'); /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	nestedChildren = GetterUtil.getBoolean((String)request.getAttribute('liferay-ui:navigation:nestedChildren')); /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	rootLayoutLevel = GetterUtil.getInteger((String)request.getAttribute('liferay-ui:navigation:rootLayoutLevel')); /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ 	rootLayoutType = (String)request.getAttribute('liferay-ui:navigation:rootLayoutType'); /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ } /* 49?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 50?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 51?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 52?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 53?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 54?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 55?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ /* 56?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute('CxResponseWrite')); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\navigation\page.jsp */
+
+
+
+      
+     	Layout rootLayout = null;
+     	boolean hidden = false;
+     
+     	List<Layout> branchLayouts = new ArrayList<Layout>();
+     
+     	branchLayouts.add(layout);
+     	branchLayouts.addAll(layout.getAncestors());
+     
+     	if (rootLayoutType.equals("relative")) {
+     		if ((rootLayoutLevel >= 0) && (rootLayoutLevel < branchLayouts.size())) {
+     			rootLayout = branchLayouts.get(rootLayoutLevel);
+     		}
+     		else {
+     			rootLayout = null;
+     		}
+     	}
+     	else if (rootLayoutType.equals("absolute")) {
+     		int ancestorIndex = branchLayouts.size() - rootLayoutLevel;
+     
+     		if ((ancestorIndex >= 0) && (ancestorIndex < branchLayouts.size())) {
+     			rootLayout = branchLayouts.get(ancestorIndex);
+     		}
+     		else if (ancestorIndex == branchLayouts.size()) {
+     			rootLayout = null;
+     		}
+     		else {
+     			hidden = true;
+     		}
+     	}
+     
+     	StringBundler sb = new StringBundler();
+     
+     	if (!hidden) {
+     		_buildNavigation(rootLayout, layout, branchLayouts, themeDisplay, 1, includedLayouts, nestedChildren, sb);
+     	}
+     	
+
+    response.write(bulletStyle)+response.write(request.getAttribute("bulletStyle"));
+
+
+
+response.write( PortalUtil.getLayoutURL(rootLayout, themeDisplay) )+response.write(request.getAttribute(" PortalUtil").getLayoutURL(rootLayout, themeDisplay) );response.write( PortalUtil.getLayoutTarget(rootLayout) )+response.write(request.getAttribute(" PortalUtil").getLayoutTarget(rootLayout) );response.write( rootLayout.getName(locale) )+response.write(request.getAttribute(" rootLayout").getName(locale) );
+
+
+
+  response.write( HtmlUtil.escape(portletDisplay.getTitle()) )+response.write(request.getAttribute(" HtmlUtil").escape(portletDisplay.getTitle()) );
+
+
+
+
+
+
+
+
+
+
+
+    response.write( sb.toString() );
+}
+
+}

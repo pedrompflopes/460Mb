@@ -1,0 +1,548 @@
+﻿ package PackageNo1671898614;import _html_common_init_jsp;import _html_taglib_init_ext_jsp;import com.liferay.portal.kernel.util.DateFormatFactoryUtil;import com.liferay.taglib.aui.AUIUtil;import com.liferay.taglib.util.InlineUtil; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_field\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_field\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ PortletRequest portletRequest = (PortletRequest)request.getAttribute(JavaConstants.JAVAX_PORTLET_REQUEST); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ PortletResponse portletResponse = (PortletResponse)request.getAttribute(JavaConstants.JAVAX_PORTLET_RESPONSE); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ String namespace = StringPool.BLANK; /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ boolean auiFormUseNamespace = GetterUtil.getBoolean((String)request.getAttribute("aui:form:useNamespace"), true); /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ if ((portletResponse != null) && auiFormUseNamespace) { /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	namespace = GetterUtil.getString(request.getAttribute("aui:form:portletNamespace"), portletResponse.getNamespace()); /* 33?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 34?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 35?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ String currentURL = null; /* 36?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 37?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ if ((portletRequest != null) && (portletResponse != null)) { /* 38?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	PortletURL currentURLObj = PortletURLUtil.getCurrent(PortalUtil.getLiferayPortletRequest(portletRequest), PortalUtil.getLiferayPortletResponse(portletResponse)); /* 39?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 40?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	currentURL = currentURLObj.toString(); /* 41?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 42?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ else { /* 43?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ 	currentURL = PortalUtil.getCurrentURL(request); /* 44?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ } /* 45?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 46?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 47?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ /* 48?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\input_field\page.jsp */
+
+     
+     boolean autoFocus = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:input-field:autoFocus"));
+     boolean autoSize = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:input-field:autoSize"));
+     Object bean = request.getAttribute("liferay-ui:input-field:bean");
+     String cssClass = GetterUtil.getString((String)request.getAttribute("liferay-ui:input-field:cssClass")) + " form-control";
+     String dateTogglerCheckboxLabel = GetterUtil.getString((String) request.getAttribute("liferay-ui:input-field:dateTogglerCheckboxLabel"));
+     String defaultLanguageId = (String)request.getAttribute("liferay-ui:input-field:defaultLanguageId");
+     Object defaultValue = request.getAttribute("liferay-ui:input-field:defaultValue");
+     boolean disabled = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:input-field:disabled"));
+     String field = (String)request.getAttribute("liferay-ui:input-field:field");
+     String fieldParam = GetterUtil.getString((String)request.getAttribute("liferay-ui:input-field:fieldParam"));
+     Format format = (Format)request.getAttribute("liferay-ui:input-field:format");
+     String formName = (String)request.getAttribute("liferay-ui:input-field:formName");
+     String id = GetterUtil.getString((String)request.getAttribute("liferay-ui:input-field:id"));
+     boolean ignoreRequestValue = GetterUtil.getBoolean((String)request.getAttribute("liferay-ui:input-field:ignoreRequestValue"));
+     String languageId = (String)request.getAttribute("liferay-ui:input-field:languageId");
+     String model = (String)request.getAttribute("liferay-ui:input-field:model");
+     String placeholder = (String)request.getAttribute("liferay-ui:input-field:placeholder");
+     
+     String type = ModelHintsUtil.getType(model, field);
+     
+     Map<String, String> hints = ModelHintsUtil.getHints(model, field);
+     
+     if (hints != null) {
+     	type = GetterUtil.getString(hints.get("type"), type);
+     }
+     
+
+
+
+
+
+
+     			boolean defaultBoolean = GetterUtil.DEFAULT_BOOLEAN;
+     
+     			if (defaultValue != null) {
+     				defaultBoolean = ((Boolean)defaultValue).booleanValue();
+     			}
+     			else {
+     				if (hints != null) {
+     					defaultBoolean = GetterUtil.getBoolean(hints.get("default-value"));
+     				}
+     			}
+     
+     			boolean value = BeanPropertiesUtil.getBooleanSilent(bean, field, defaultBoolean);
+     
+     			if (!ignoreRequestValue && Validator.isNotNull(ParamUtil.getString(request, "checkboxNames"))) {
+     				value = Validator.isNotNull(ParamUtil.getString(request, fieldParam));
+     			}
+     			
+
+  response.write( cssClass );    response.write( value );response.write( disabled );response.write( formName );response.write( namespace + id );response.write( fieldParam );
+
+
+
+
+     			boolean checkDefaultDelta = false;
+     
+     			Calendar cal = null;
+     
+     			if (defaultValue != null) {
+     				cal = (Calendar)defaultValue;
+     			}
+     			else {
+     				cal = CalendarFactoryUtil.getCalendar(timeZone, locale);
+     
+     				Date date = (Date)BeanPropertiesUtil.getObject(bean, field);
+     
+     				if (date == null) {
+     					checkDefaultDelta = true;
+     
+     					date = new Date();
+     				}
+     
+     				cal.setTime(date);
+     			}
+     
+     			boolean updateFromDefaultDelta = false;
+     
+     			int month = -1;
+     
+     			if (!ignoreRequestValue) {
+     				month = ParamUtil.getInteger(request, fieldParam + "Month", month);
+     			}
+     
+     			if ((month == -1) && (cal != null)) {
+     				month = cal.get(Calendar.MONTH);
+     
+     				if (checkDefaultDelta && (hints != null)) {
+     					int defaultMonthDelta = GetterUtil.getInteger(hints.get("default-month-delta"));
+     
+     					cal.add(Calendar.MONTH, defaultMonthDelta);
+     
+     					updateFromDefaultDelta = true;
+     				}
+     			}
+     
+     			int day = -1;
+     
+     			if (!ignoreRequestValue) {
+     				day = ParamUtil.getInteger(request, fieldParam + "Day", day);
+     			}
+     
+     			if ((day == -1) && (cal != null)) {
+     				day = cal.get(Calendar.DATE);
+     
+     				if (checkDefaultDelta && (hints != null)) {
+     					int defaultDayDelta = GetterUtil.getInteger(hints.get("default-day-delta"));
+     
+     					cal.add(Calendar.DATE, defaultDayDelta);
+     
+     					updateFromDefaultDelta = true;
+     				}
+     			}
+     
+     			int year = -1;
+     
+     			if (!ignoreRequestValue) {
+     				year = ParamUtil.getInteger(request, fieldParam + "Year", year);
+     			}
+     
+     			if ((year == -1) && (cal != null)) {
+     				year = cal.get(Calendar.YEAR);
+     
+     				if (checkDefaultDelta && (hints != null)) {
+     					int defaultYearDelta = GetterUtil.getInteger(hints.get("default-year-delta"));
+     
+     					cal.add(Calendar.YEAR, defaultYearDelta);
+     
+     					updateFromDefaultDelta = true;
+     				}
+     			}
+     
+     			if (updateFromDefaultDelta) {
+     				month = cal.get(Calendar.MONTH);
+     				day = cal.get(Calendar.DATE);
+     				year = cal.get(Calendar.YEAR);
+     			}
+     
+     			int firstDayOfWeek = Calendar.SUNDAY - 1;
+     
+     			if (cal != null) {
+     				firstDayOfWeek = cal.getFirstDayOfWeek() - 1;
+     			}
+     
+     			int hour = -1;
+     
+     			if (!ignoreRequestValue) {
+     				hour = ParamUtil.getInteger(request, fieldParam + "Hour", hour);
+     			}
+     
+     			if ((hour == -1) && (cal != null)) {
+     				hour = cal.get(Calendar.HOUR_OF_DAY);
+     
+     				if (DateUtil.isFormatAmPm(locale)) {
+     					hour = cal.get(Calendar.HOUR);
+     				}
+     			}
+     
+     			int minute = -1;
+     
+     			if (!ignoreRequestValue) {
+     				minute = ParamUtil.getInteger(request, fieldParam + "Minute", minute);
+     			}
+     
+     			if ((minute == -1) && (cal != null)) {
+     				minute = cal.get(Calendar.MINUTE);
+     			}
+     
+     			int amPm = -1;
+     
+     			if (!ignoreRequestValue) {
+     				amPm = ParamUtil.getInteger(request, fieldParam + "AmPm", amPm);
+     			}
+     
+     			if ((amPm == -1) && (cal != null)) {
+     				amPm = Calendar.AM;
+     
+     				if (DateUtil.isFormatAmPm(locale)) {
+     					amPm = cal.get(Calendar.AM_PM);
+     				}
+     			}
+     
+     			boolean showTime = true;
+     
+     			if (hints != null) {
+     				showTime = GetterUtil.getBoolean(hints.get("show-time"), showTime);
+     			}
+     			
+
+
+
+  response.write( autoFocus )+response.write(request.getAttribute(" autoFocus "));
+ response.write( cssClass );
+ response.write( fieldParam + "Day" );
+ response.write( day );
+ response.write( disabled );
+       response.write( firstDayOfWeek );
+ response.write( formName );
+   response.write( fieldParam + "Month" );
+   response.write( month );
+     response.write( fieldParam );
+  response.write( fieldParam + "Year" );
+  response.write( year );
+
+
+
+
+   response.write( fieldParam + "AmPm" );
+   response.write( amPm );
+  response.write( cssClass );
+  response.write( disabled );
+   response.write( fieldParam + "Hour" );
+   response.write( hour );
+     response.write( fieldParam + "Minute" );
+     response.write( minute );
+      response.write( fieldParam + "Time" );
+
+
+
+
+
+
+ 
+     				String dateTogglerCheckboxName = TextFormatter.format(dateTogglerCheckboxLabel, TextFormatter.M);
+     				
+
+
+
+
+
+
+   response.write( formName + fieldParam );
+
+
+
+
+ response.write( fieldParam );
+
+
+
+
+
+
+     response.write( formName + fieldParam );
+
+       response.write( formName );   response.write( fieldParam );
+       response.write( formName );   response.write( fieldParam );
+       response.write( formName );   response.write( fieldParam );
+       response.write( formName );   response.write( fieldParam );
+
+
+response.write( formName );   response.write( fieldParam );
+response.write( formName );   response.write( fieldParam );
+response.write( formName );   response.write( fieldParam );
+response.write( formName );   response.write( fieldParam );
+
+
+
+
+
+
+
+
+
+     			String defaultString = GetterUtil.DEFAULT_STRING;
+     
+     			if (defaultValue != null) {
+     				defaultString = (String)defaultValue;
+     			}
+     
+     			String value = null;
+     
+     			if (type.equals("double")) {
+     				double doubleValue = BeanPropertiesUtil.getDoubleSilent(bean, field, GetterUtil.getDouble(defaultString));
+     
+     				if (!ignoreRequestValue) {
+     					doubleValue = ParamUtil.getDouble(request, fieldParam, doubleValue);
+     				}
+     
+     				if (format != null) {
+     					value = format.format(doubleValue);
+     				}
+     				else {
+     					value = String.valueOf(doubleValue);
+     				}
+     			}
+     			else if (type.equals("int")) {
+     				int intValue = BeanPropertiesUtil.getIntegerSilent(bean, field, GetterUtil.getInteger(defaultString));
+     
+     				if (!ignoreRequestValue) {
+     					intValue = ParamUtil.getInteger(request, fieldParam, intValue);
+     				}
+     
+     				if (format != null) {
+     					value = format.format(intValue);
+     				}
+     				else {
+     					value = String.valueOf(intValue);
+     				}
+     			}
+     			else if (type.equals("long")) {
+     				long longValue = BeanPropertiesUtil.getLongSilent(bean, field, GetterUtil.getLong(defaultString));
+     
+     				if (!ignoreRequestValue) {
+     					longValue = ParamUtil.getLong(request, fieldParam, longValue);
+     				}
+     
+     				if (format != null) {
+     					value = format.format(longValue);
+     				}
+     				else {
+     					value = String.valueOf(longValue);
+     				}
+     			}
+     			else {
+     				value = BeanPropertiesUtil.getStringSilent(bean, field, defaultString);
+     
+     				if (!ignoreRequestValue) {
+     					value = ParamUtil.getString(request, fieldParam, value);
+     				}
+     			}
+     
+     			boolean autoEscape = true;
+     
+     			if (hints != null) {
+     				autoEscape = GetterUtil.getBoolean(hints.get("auto-escape"), true);
+     			}
+     
+     			boolean checkTab = false;
+     			String displayHeight = ModelHintsConstants.TEXT_DISPLAY_HEIGHT;
+     			String displayWidth = ModelHintsConstants.TEXT_DISPLAY_WIDTH;
+     			boolean editor = false;
+     			String maxLength = ModelHintsConstants.TEXT_MAX_LENGTH;
+     			boolean secret = false;
+     			boolean upperCase = false;
+     
+     			if (hints != null) {
+     				autoSize = GetterUtil.getBoolean(hints.get("autoSize"), autoSize);
+     				checkTab = GetterUtil.getBoolean(hints.get("check-tab"), checkTab);
+     				displayHeight = GetterUtil.getString(hints.get("display-height"), displayHeight);
+     				displayWidth = GetterUtil.getString(hints.get("display-width"), displayWidth);
+     				editor = GetterUtil.getBoolean(hints.get("editor"), editor);
+     				maxLength = GetterUtil.getString(hints.get("max-length"), maxLength);
+     				secret = GetterUtil.getBoolean(hints.get("secret"), secret);
+     				upperCase = GetterUtil.getBoolean(hints.get("upper-case"), upperCase);
+     			}
+     
+     			if (autoSize) {
+     				displayHeight = "auto";
+     			}
+     
+     			if (Validator.isDigit(displayWidth)) {
+     				int displayWidthInt = GetterUtil.getInteger(displayWidth);
+     
+     				if (displayWidthInt <= 60) {
+     					cssClass += " input-mini";
+     				}
+     				else if ((displayWidthInt > 60) && (displayWidthInt <= 90)) {
+     					cssClass += " input-small";
+     				}
+     				else if ((displayWidthInt > 90) && (displayWidthInt <= 150)) {
+     					cssClass += " input-medium";
+     				}
+     				else if ((displayWidthInt > 210) && (displayWidthInt <= 270)) {
+     					cssClass += " input-xlarge";
+     				}
+     				else if (displayWidthInt > 270) {
+     					cssClass += " input-xxlarge";
+     				}
+     				else if (editor) {
+     					cssClass += " lfr-input-editor";
+     				}
+     				else {
+     					cssClass += " input-large";
+     				}
+     			}
+     
+     			boolean localized = ModelHintsUtil.isLocalized(model, field);
+     
+     			Locale[] availableLocales = null;
+     
+     			String xml = StringPool.BLANK;
+     
+     			if (localized) {
+     				if (ModelHintsUtil.hasField(model, "groupId")) {
+     					availableLocales = LanguageUtil.getAvailableLocales(themeDisplay.getSiteGroupId());
+     				}
+     				else {
+     					availableLocales = LanguageUtil.getAvailableLocales();
+     				}
+     
+     				if (Validator.isNotNull(bean)) {
+     					xml = BeanPropertiesUtil.getString(bean, field);
+     				}
+     			}
+     			
+
+
+
+
+
+
+     response.write( autoFocus )+response.write(request.getAttribute(" autoFocus "));
+    response.write( availableLocales )+response.write(request.getAttribute(" availableLocales "));
+    response.write( cssClass );
+     response.write( defaultLanguageId );
+    response.write( disabled );
+    response.write( formName );
+      response.write( id );
+      response.write( ignoreRequestValue );
+      response.write( languageId );
+     response.write( maxLength );
+response.write( fieldParam );
+ response.write( (upperCase ? "text-transform: uppercase;" : "" ) );
+
+       response.write( xml );
+
+
+
+
+      response.write( languageId );
+    response.write( cssClass );
+
+      response.write( fieldParam + "InitEditor" );
+response.write( fieldParam );
+
+
+
+
+response.write( fieldParam );
+   response.write( UnicodeFormatter.toString(value) );
+
+
+
+
+
+
+
+  
+     					if (Validator.isNotNull(value)) {
+     						int maxLengthInt = GetterUtil.getInteger(maxLength);
+     
+     						if (value.length() > maxLengthInt) {
+     							value = value.substring(0, maxLengthInt);
+     						}
+     					}
+     					
+
+
+
+
+     response.write( autoFocus )+response.write(request.getAttribute(" autoFocus "));
+    response.write( availableLocales )+response.write(request.getAttribute(" availableLocales "));
+    response.write( cssClass + " lfr-input-text" );
+     response.write( defaultLanguageId );
+    response.write( disabled );
+    response.write( formName );
+      response.write( id );
+      response.write( ignoreRequestValue );
+      response.write( languageId );
+     response.write( maxLength );
+response.write( fieldParam );
+ response.write( (upperCase ? "text-transform: uppercase;" : "" ) );
+       response.write( xml );
+
+
+
+       response.write( cssClass + " lfr-input-text" );response.write( disabled ? "disabled=\"disabled\"" : "" );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( id );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( fieldParam );response.write( Validator.isNotNull(placeholder) ? "placeholder=\"" + LanguageUtil.get(request, placeholder) + "\"" : StringPool.BLANK );response.write( upperCase ? "text-transform: uppercase;" : "" );response.write( secret ? "password" : "text" );response.write( autoEscape ? HtmlUtil.escape(value) : value );
+
+
+
+
+
+
+
+     response.write( autoFocus )+response.write(request.getAttribute(" autoFocus "));
+    response.write( autoSize );
+    response.write( availableLocales )+response.write(request.getAttribute(" availableLocales "));
+    response.write( cssClass + " lfr-input-text" );
+     response.write( defaultLanguageId );
+    response.write( disabled );
+    response.write( formName );
+      response.write( id );
+      response.write( ignoreRequestValue );
+      response.write( languageId );
+     response.write( maxLength );
+response.write( fieldParam );
+     response.write( (checkTab ? "Liferay.Util.checkTab(this); " : "") + "Liferay.Util.disableEsc();" );
+ response.write( !autoSize ? "height: " + displayHeight + (Validator.isDigit(displayHeight) ? "px" : StringPool.BLANK) + ";" : StringPool.BLANK );
+
+
+       response.write( xml );
+
+
+
+  response.write( cssClass + " lfr-textarea" );response.write( disabled ? "disabled=\"disabled\"" : "" );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( id );response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( fieldParam );response.write( Validator.isNotNull(placeholder) ? "placeholder=\"" + LanguageUtil.get(request, placeholder) + "\"" : StringPool.BLANK );response.write( !autoSize ? "height: " + displayHeight + (Validator.isDigit(displayHeight) ? "px" : StringPool.BLANK) + ";" : StringPool.BLANK );response.write( checkTab ? "Liferay.Util.checkTab(this); " : "" );response.write( autoEscape ? HtmlUtil.escape(value) : value );
+
+
+
+
+
+ response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( id );
+
+
+
+       response.write( displayHeight );
+
+
+
+
+
+
+
+
+
+
+
+      response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( id );
+
+
+
+
+
+
+  response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( id );
+    response.write( maxLength );
+}
+
+}

@@ -1,0 +1,61 @@
+﻿ package PackageNo1290869479; public class delete_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+response.write(Constants.getDELETE())+response.write(request.getAttribute("Constants").getDELETE());
+response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+response.write(String.getValueOf(fileEntry().getFileEntryId()))+response.write(request.getAttribute("String").getValueOf(fileEntry().getFileEntryId()));
+
+
+
+    response.write( deleteURL )+response.write(request.getAttribute(" deleteURL "));
+
+
+
+
+
+
+response.write(Constants.getMOVE_TO_TRASH())+response.write(request.getAttribute("Constants").getMOVE_TO_TRASH());
+response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+response.write(String.getValueOf(fileEntry().getFileEntryId()))+response.write(request.getAttribute("String").getValueOf(fileEntry().getFileEntryId()));
+
+
+
+      response.write( true )+response.write(request.getAttribute(" true "));
+    response.write( deleteURL )+response.write(request.getAttribute(" deleteURL "));
+
+
+
+
+
+
+
+
+response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+response.write(String.getValueOf(fileShortcut().getFileShortcutId()));
+
+
+
+      response.write( TrashUtil.isTrashEnabled(scopeGroupId) )+response.write(request.getAttribute(" TrashUtil").isTrashEnabled(scopeGroupId) );
+    response.write( deleteShortcutURL )+response.write(request.getAttribute(" deleteShortcutURL "));
+}
+
+}

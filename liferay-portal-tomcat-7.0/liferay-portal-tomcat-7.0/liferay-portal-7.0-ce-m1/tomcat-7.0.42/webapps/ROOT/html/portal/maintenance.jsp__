@@ -1,0 +1,71 @@
+﻿ package PackageNo224651988;import com.liferay.portal.util.MaintenanceUtil;import com.liferay.portal.util.PortalUtil; public class maintenance_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     boolean invokingSession = false;
+     
+     if (session.getId().equals(MaintenanceUtil.getSessionId())) {
+     	invokingSession = true;
+     }
+     
+
+
+
+
+    response.write(PortalUtil.getPortalURL(request))+response.write(request.getAttribute("PortalUtil").getPortalURL(request));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						if (invokingSession) {
+     						
+
+
+
+   response.write( MaintenanceUtil.getStatus() )+response.write(request.getAttribute(" MaintenanceUtil").getStatus() );
+
+
+
+   
+     						}
+     						
+}
+
+}

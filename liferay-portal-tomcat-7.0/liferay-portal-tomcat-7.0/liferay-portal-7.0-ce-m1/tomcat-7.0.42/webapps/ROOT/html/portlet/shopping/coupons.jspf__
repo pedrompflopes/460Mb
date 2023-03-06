@@ -1,0 +1,134 @@
+﻿ package PackageNo1118662972; public class coupons_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     PortletURL portletURL = renderResponse.createRenderURL();
+     
+     portletURL.setParameter("struts_action", "/shopping/view");
+     portletURL.setParameter("tabs1", tabs1);
+     
+
+
+
+
+
+      
+     	CouponSearch searchContainer = new CouponSearch(renderRequest, portletURL);
+     
+     	List headerNames = searchContainer.getHeaderNames();
+     
+     	headerNames.add(StringPool.BLANK);
+     
+     	searchContainer.setRowChecker(new RowChecker(renderResponse));
+     	
+
+
+
+     response.write( searchContainer )+response.write(request.getAttribute(" searchContainer "));
+
+
+      
+     	CouponDisplayTerms searchTerms = (CouponDisplayTerms)searchContainer.getSearchTerms();
+     
+     	int total = ShoppingCouponLocalServiceUtil.searchCount(scopeGroupId, company.getCompanyId(), searchTerms.getCode(), searchTerms.isActive(), searchTerms.getDiscountType(), searchTerms.isAndOperator());
+     
+     	searchContainer.setTotal(total);
+     
+     	List results = ShoppingCouponServiceUtil.search(scopeGroupId, company.getCompanyId(), searchTerms.getCode(), searchTerms.isActive(), searchTerms.getDiscountType(), searchTerms.isAndOperator(), searchContainer.getStart(), searchContainer.getEnd());
+     
+     	searchContainer.setResults(results);
+     	
+
+
+
+
+
+
+
+      
+     	List resultRows = searchContainer.getResultRows();
+     
+     	for (int i = 0; i < results.size(); i++) {
+     		ShoppingCoupon coupon = (ShoppingCoupon)results.get(i);
+     
+     		coupon = coupon.toEscapedModel();
+     
+     		ResultRow row = new ResultRow(coupon, coupon.getCouponId(), i);
+     
+     		PortletURL rowURL = renderResponse.createRenderURL();
+     
+     		rowURL.setParameter("struts_action", "/shopping/edit_coupon");
+     		rowURL.setParameter("redirect", currentURL);
+     		rowURL.setParameter("couponId", String.valueOf(coupon.getCouponId()));
+     
+     		// Code
+     
+     		row.addText(coupon.getCode(), rowURL);
+     
+     		// Name and description
+     
+     		if (Validator.isNotNull(coupon.getDescription())) {
+     			row.addText(coupon.getName().concat("<br />").concat(coupon.getDescription()), rowURL);
+     		}
+     		else {
+     			row.addText(coupon.getName(), rowURL);
+     		}
+     
+     		// Start date
+     
+     		row.addDate(coupon.getStartDate(), rowURL);
+     
+     		// End date
+     
+     		if (coupon.getEndDate() == null) {
+     			row.addText(LanguageUtil.get(request, "never"), rowURL);
+     		}
+     		else {
+     			row.addDate(coupon.getEndDate(), rowURL);
+     		}
+     
+     		// Discount type
+     
+     		row.addText(LanguageUtil.get(request, coupon.getDiscountType()), rowURL);
+     
+     		// Action
+     
+     		row.addJSP("/html/portlet/shopping/coupon_action.jsp", "entry-action");
+     
+     		// Add result row
+     
+     		resultRows.add(row);
+     	}
+     	
+
+response.write( searchContainer );
+
+
+
+   response.write( searchContainerReference.getId() )+response.write(request.getAttribute(" searchContainerReference").getId() );
+
+
+
+
+
+  response.write( UnicodeLanguageUtil.get(request, "are-you-sure-you-want-to-delete-the-selected-coupons") );
+    response.write( Constants.CMD )+response.write(request.getAttribute(" Constants").CMD );response.write( Constants.DELETE )+response.write(request.getAttribute(" Constants").DELETE );
+
+
+    response.write(currentURL)+response.write(request.getAttribute("currentURL"));
+}
+
+}

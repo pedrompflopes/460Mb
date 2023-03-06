@@ -1,0 +1,160 @@
+﻿ package PackageNo978182761;import _html_taglib_taglib_init_jsp;import _html_taglib_aui_translation_manager_init_ext_jspf; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ java.util.Locale[] availableLocales = (java.util.Locale[])request.getAttribute("aui:translation-manager:availableLocales"); /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ java.lang.String defaultLanguageId = GetterUtil.getString((java.lang.String)request.getAttribute("aui:translation-manager:defaultLanguageId")); /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ java.lang.String editingLanguageId = GetterUtil.getString((java.lang.String)request.getAttribute("aui:translation-manager:editingLanguageId")); /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ java.lang.String id = GetterUtil.getString((java.lang.String)request.getAttribute("aui:translation-manager:id")); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ boolean initialize = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:translation-manager:initialize")), true); /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ boolean readOnly = GetterUtil.getBoolean(String.valueOf(request.getAttribute("aui:translation-manager:readOnly"))); /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ Map<String, Object> dynamicAttributes = (Map<String, Object>)request.getAttribute("aui:translation-manager:dynamicAttributes"); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ Map<String, Object> scopedAttributes = (Map<String, Object>)request.getAttribute("aui:translation-manager:scopedAttributes"); /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 31?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ /* 32?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\aui\translation_manager\page.jsp */
+
+
+
+
+
+
+
+
+     			Locale defaultLocale = LocaleUtil.fromLanguageId(defaultLanguageId);
+     			
+
+      response.write(HtmlUtil.getEscapeAttribute(defaultLocale().getDisplayName(locale)))+response.write(request.getAttribute("HtmlUtil").getEscapeAttribute(defaultLocale().getDisplayName(locale)));
+
+     response.write( defaultLocale.getDisplayName(locale) )+response.write(request.getAttribute(" defaultLocale").getDisplayName(locale) );
+
+
+
+
+
+     			Locale[] locales = LanguageUtil.getAvailableLocales(themeDisplay.getSiteGroupId());
+     
+     			for (int i = 0; i < locales.length; i++) {
+     			
+
+
+
+
+     			}
+     			
+
+
+
+
+
+
+
+
+
+
+       response.write( LanguageUtil.get(request, "add-translation") );
+ response.write( true )+response.write(request.getAttribute(" true "));
+  response.write( true )+response.write(request.getAttribute(" true "));
+
+
+ 
+     				for (int i = 0; i < locales.length; i++) {
+     				
+
+
+
+    response.write( LocaleUtil.toLanguageId(locales[i]) );
+       response.write( "../language/" + LocaleUtil.toLanguageId(locales[i]) );
+      response.write( LocaleUtil.toLanguageId(locales[i]) );
+ response.write( locales[i].getDisplayName(locale) );
+
+
+
+ 
+     				}
+     				
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						for (int i = 0; i < availableLocales.length; i++) {
+     							if (defaultLanguageId.equals(LocaleUtil.toLanguageId(availableLocales[i]))) {
+     								continue;
+     							}
+     						
+
+  response.write(availableLocales[i]);
+   response.write(HtmlUtil.escapeAttribute(availableLocales[i].getDisplayName(locale)));response.write(themeDisplay.getPathThemeImages())+response.write(request.getAttribute("themeDisplay").getPathThemeImages());response.write(LocaleUtil.toLanguageId(availableLocales[i]));
+
+  response.write( availableLocales[i].getDisplayName(locale) );
+
+
+
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+
+
+
+      
+     	JSONArray availableLocalesJSONArray = JSONFactoryUtil.createJSONArray();
+     
+     	for (int i = 0; i < availableLocales.length; i++) {
+     		availableLocalesJSONArray.put(LocaleUtil.toLanguageId(availableLocales[i]));
+     	}
+     
+     	JSONObject localesMapJSONObject = JSONFactoryUtil.createJSONObject();
+     
+     	for (int i = 0; i < locales.length; i++) {
+     		localesMapJSONObject.put(LocaleUtil.toLanguageId(locales[i]), locales[i].getDisplayName(locale));
+     	}
+     	
+
+
+
+
+
+      response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+
+
+
+
+   response.write( availableLocalesJSONArray.toString() )+response.write(request.getAttribute(" availableLocalesJSONArray").toString() );
+response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+ response.write( HtmlUtil.escapeJS(defaultLanguageId) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(defaultLanguageId) );
+ response.write( HtmlUtil.escapeJS(editingLanguageId) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(editingLanguageId) );
+     response.write( localesMapJSONObject.toString() );
+   response.write( readOnly )+response.write(request.getAttribute(" readOnly "));
+    response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+
+
+
+
+
+
+
+
+       response.write( namespace + id )+response.write(request.getAttribute(" namespace ")+ id );
+}
+
+}

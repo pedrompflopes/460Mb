@@ -1,0 +1,76 @@
+﻿ package PackageNo1156031874; public class display_settings_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+     		for (int pageDeltaValue : PropsValues.BLOGS_ENTRY_PAGE_DELTA_VALUES) {
+     		
+
+
+
+       
+     		}
+     		
+
+
+
+
+
+       
+     		TemplateHandler templateHandler = TemplateHandlerRegistryUtil.getTemplateHandler(BlogsEntry.class.getName());
+     
+     		List<String> displayStyles = new ArrayList<String>();
+     
+     		displayStyles.add(BlogsUtil.DISPLAY_STYLE_ABSTRACT);
+     		displayStyles.add(BlogsUtil.DISPLAY_STYLE_FULL_CONTENT);
+     		displayStyles.add(BlogsUtil.DISPLAY_STYLE_TITLE);
+     		
+
+
+  response.write( PortalUtil.getClassNameId(templateHandler.getClassName()) )+response.write(request.getAttribute(" PortalUtil").getClassNameId(templateHandler.getClassName()) );
+   response.write( blogsPortletInstanceSettings.getDisplayStyle() )+response.write(request.getAttribute(" blogsPortletInstanceSettings").getDisplayStyle() );
+  response.write( blogsPortletInstanceSettings.getDisplayStyleGroupId(themeDisplay.getScopeGroupId()) )+response.write(request.getAttribute(" blogsPortletInstanceSettings").getDisplayStyleGroupId(themeDisplay.getScopeGroupId()) );
+    response.write( displayStyles )+response.write(request.getAttribute(" displayStyles "));
+ response.write( configurationRenderURL )+response.write(request.getAttribute(" configurationRenderURL "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( blogsPortletInstanceSettings.getSocialBookmarksDisplayPosition() )+response.write(request.getAttribute(" blogsPortletInstanceSettings").getSocialBookmarksDisplayPosition() );
+  response.write( blogsPortletInstanceSettings.getSocialBookmarksDisplayStyle() )+response.write(request.getAttribute(" blogsPortletInstanceSettings").getSocialBookmarksDisplayStyle() );
+     response.write( blogsPortletInstanceSettings.isEnableSocialBookmarks() )+response.write(request.getAttribute(" blogsPortletInstanceSettings").isEnableSocialBookmarks() );
+   response.write( blogsPortletInstanceSettings.getSocialBookmarksTypes() )+response.write(request.getAttribute(" blogsPortletInstanceSettings").getSocialBookmarksTypes() );
+}
+
+}

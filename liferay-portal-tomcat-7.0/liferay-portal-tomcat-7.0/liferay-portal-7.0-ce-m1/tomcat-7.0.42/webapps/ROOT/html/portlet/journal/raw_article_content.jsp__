@@ -1,0 +1,18 @@
+﻿ package PackageNo201116181; public class raw_article_content_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( request.getAttribute(com.liferay.portal.util.WebKeys.JOURNAL_ARTICLE_CONTENT) )+response.write(request.getAttribute(" request").getAttribute(com.liferay.portal.util.WebKeys.JOURNAL_ARTICLE_CONTENT) );
+}
+
+}

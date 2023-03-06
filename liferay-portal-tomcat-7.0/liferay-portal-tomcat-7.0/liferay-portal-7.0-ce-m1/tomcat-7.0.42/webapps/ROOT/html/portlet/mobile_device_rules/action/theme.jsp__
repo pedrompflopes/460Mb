@@ -1,0 +1,162 @@
+﻿ package PackageNo702211663;import _html_portlet_mobile_device_rules_init_jsp; public class theme_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\theme.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\theme.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ MDRAction action = (MDRAction)request.getAttribute(WebKeys.MOBILE_DEVICE_RULES_RULE_GROUP_ACTION); /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ UnicodeProperties typeSettingsProperties = null; /* 22?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 23?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ if (action != null) { /* 24?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ 	typeSettingsProperties = action.getTypeSettingsProperties(); /* 25?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ } /* 26?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ else { /* 27?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ 	typeSettingsProperties = new UnicodeProperties(); /* 28?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ } /* 29?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ /* 30?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\mobile_device_rules\action\theme.jsp */
+
+     
+     String selThemeId = GetterUtil.getString(typeSettingsProperties.get("themeId"));
+     String selColorSchemeId = GetterUtil.getString(typeSettingsProperties.get("colorSchemeId"));
+     
+     if (Validator.isNull(selThemeId)) {
+     	String className = BeanParamUtil.getString(action, request, "className");
+     	long classPK = BeanParamUtil.getLong(action, request, "classPK");
+     
+     	if (className.equals(Layout.class.getName())) {
+     		Layout selLayout = LayoutLocalServiceUtil.getLayout(classPK);
+     
+     		groupId = selLayout.getGroupId();
+     
+     		selThemeId = selLayout.getThemeId();
+     		selColorSchemeId = selLayout.getColorSchemeId();
+     	}
+     	else if (className.equals(LayoutSet.class.getName())) {
+     		LayoutSet selLayoutSet = LayoutSetLocalServiceUtil.getLayoutSet(classPK);
+     
+     		groupId = selLayoutSet.getGroupId();
+     
+     		selThemeId = selLayoutSet.getThemeId();
+     		selColorSchemeId = selLayoutSet.getColorSchemeId();
+     	}
+     }
+     
+     Theme selTheme = ThemeLocalServiceUtil.getTheme(company.getCompanyId(), selThemeId, false);
+     ColorScheme selColorScheme = ThemeLocalServiceUtil.getColorScheme(company.getCompanyId(), selThemeId, selColorSchemeId, false);
+     
+
+
+
+
+
+
+      response.write(HtmlUtil.getEscapeAttribute(selTheme().getName()));response.write(selTheme.getStaticResourcePath());response.write(HtmlUtil.getEscapeAttribute(selTheme().getImagesPath()));response.write(HtmlUtil.getEscapeAttribute(selTheme().getName()));
+
+
+
+
+
+
+  
+     					PluginPackage selPluginPackage = selTheme.getPluginPackage();
+     					
+
+
+
+
+
+
+ response.write( HtmlUtil.escape(selPluginPackage.getShortDescription()) )+response.write(request.getAttribute(" HtmlUtil").escape(selPluginPackage.getShortDescription()) );
+
+
+
+
+
+
+
+
+  response.write(HtmlUtil.getEscapeHREF(selPluginPackage().getPageURL()))+response.write(request.getAttribute("HtmlUtil").getEscapeHREF(selPluginPackage().getPageURL()));response.write( HtmlUtil.escape(selPluginPackage.getAuthor()) )+response.write(request.getAttribute(" HtmlUtil").escape(selPluginPackage.getAuthor()) );
+
+
+
+
+
+
+       
+     		List<ColorScheme> colorSchemes = selTheme.getColorSchemes();
+     		
+
+
+   response.write( true )+response.write(request.getAttribute(" true "));      response.write( true )+response.write(request.getAttribute(" true "));
+
+      response.write( true )+response.write(request.getAttribute(" true "));response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));response.write( LanguageUtil.format(request, "color-schemes-x", colorSchemes.size(), false) );
+
+
+
+     
+     								for (int i = 0; i < colorSchemes.size(); i++) {
+     									ColorScheme curColorScheme = colorSchemes.get(i);
+     
+     									String cssClass = StringPool.BLANK;
+     
+     									if (selColorScheme.getColorSchemeId().equals(curColorScheme.getColorSchemeId())) {
+     										cssClass = "selected-color-scheme";
+     									}
+     								
+
+   response.write(cssClass);
+    response.write(true)+response.write(request.getAttribute("true"));     response.write( i )+response.write(request.getAttribute(" i "));response.write( selTheme.getStaticResourcePath() );response.write( HtmlUtil.escapeAttribute(curColorScheme.getColorSchemeThumbnailPath()) );response.write( HtmlUtil.escapeAttribute(curColorScheme.getName()) );
+
+
+
+
+     
+     								}
+     								
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+     				List<Theme> themes = ThemeLocalServiceUtil.getPageThemes(company.getCompanyId(), groupId, user.getUserId(), false);
+     				
+
+      response.write( LanguageUtil.format(request, "available-themes-x", (themes.size() - 1), false) );
+
+
+
+
+
+
+ 
+     				for (int i = 0; i < themes.size(); i++) {
+     					Theme curTheme = themes.get(i);
+     
+     					if (!selTheme.getThemeId().equals(curTheme.getThemeId())) {
+     				
+
+
+
+   response.write(i)+response.write(request.getAttribute("i"));response.write(curTheme.getStaticResourcePath());response.write(HtmlUtil.getEscapeAttribute(curTheme().getImagesPath()));response.write(HtmlUtil.getEscapeAttribute(curTheme().getName()));
+
+
+
+
+
+ 
+     					}
+     				}
+     				
+}
+
+}

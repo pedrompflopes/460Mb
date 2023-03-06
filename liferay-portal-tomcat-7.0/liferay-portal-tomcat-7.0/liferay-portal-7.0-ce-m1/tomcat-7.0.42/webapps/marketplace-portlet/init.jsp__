@@ -1,0 +1,93 @@
+﻿ package PackageNo687794470;import com.liferay.marketplace.model.App;import com.liferay.marketplace.service.AppLocalServiceUtil;import com.liferay.marketplace.util.MarketplaceConstants;import com.liferay.marketplace.util.PortletKeys;import com.liferay.marketplace.util.comparator.PluginComparator;import com.liferay.portal.kernel.dao.orm.QueryUtil;import com.liferay.portal.kernel.deploy.DeployManagerUtil;import com.liferay.portal.kernel.plugin.RequiredPluginPackageException;import com.liferay.portal.kernel.portlet.LiferayPortletURL;import com.liferay.portal.kernel.search.Indexer;import com.liferay.portal.kernel.servlet.ServletContextPool;import com.liferay.portal.kernel.upload.UploadException;import com.liferay.portal.kernel.util.Constants;import com.liferay.portal.kernel.util.ListUtil;import com.liferay.portal.kernel.util.ParamUtil;import com.liferay.portal.kernel.util.ServerDetector;import com.liferay.portal.kernel.util.StringPool;import com.liferay.portal.kernel.util.StringUtil;import com.liferay.portal.kernel.util.Validator;import com.liferay.portal.kernel.util.WebKeys;import com.liferay.portal.model.LayoutTemplate;import com.liferay.portal.model.Plugin;import com.liferay.portal.model.PluginSetting;import com.liferay.portal.model.Portlet;import com.liferay.portal.model.Theme;import com.liferay.portal.service.CompanyLocalServiceUtil;import com.liferay.portal.service.PluginSettingLocalServiceUtil;import com.liferay.portal.service.PortletLocalServiceUtil;import com.liferay.portal.util.PortalUtil;import com.liferay.portal.util.PortletCategoryKeys;import com.liferay.portlet.PortletURLFactoryUtil;import java.util.ArrayList;import java.util.Iterator;import java.util.List;import javax.portlet.PortletRequest;import javax.portlet.PortletURL;import javax.portlet.WindowState;import javax.servlet.ServletContext; public class init_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     long appId = ParamUtil.getLong(request, "appId");
+     
+     String portletId = portletDisplay.getId();
+     
+     String iFrameURL = MarketplaceConstants.MARKETPLACE_URL_LOGOUT;
+     
+     String referer = StringPool.BLANK;
+     
+     if (portletId.equals(PortletKeys.MY_MARKETPLACE)) {
+     	referer = MarketplaceConstants.getPathPurchased();
+     }
+     else if (portletId.equals(PortletKeys.STORE) && (appId > 0)) {
+     	referer = MarketplaceConstants.getPathStore() + "/application/" + appId;
+     }
+     else {
+     	referer = MarketplaceConstants.getPathStore();
+     }
+     
+}
+
+}

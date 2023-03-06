@@ -1,0 +1,172 @@
+﻿ package PackageNo1996209958; public class view_page_customization_bar_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     boolean customizableLayout = !(group.isLayoutPrototype() || group.isLayoutSetPrototype() || group.isStagingGroup() || group.isUserGroup()) && layoutTypePortlet.isCustomizable() && LayoutPermissionUtil.containsWithoutViewableGroup(permissionChecker, layout, false, ActionKeys.CUSTOMIZE);
+     boolean linkedLayout = (!SitesUtil.isLayoutUpdateable(layout) || (layout.isLayoutPrototypeLinkActive() && !group.hasStagingGroup())) && LayoutPermissionUtil.containsWithoutViewableGroup(themeDisplay.getPermissionChecker(), layout, false, ActionKeys.UPDATE);
+     boolean modifiedLayout = (layoutSet != null) && layoutSet.isLayoutSetPrototypeLinkActive() && SitesUtil.isLayoutModifiedSinceLastMerge(layout) && hasLayoutUpdatePermission;
+     
+
+
+
+      
+     	boolean dockbarMessagesHidden = GetterUtil.getBoolean(SessionClicks.get(request, "dockbarMessagesHidden", "false"));
+     	
+
+   response.write( "info-items" + (dockbarMessagesHidden ? " hide" : StringPool.BLANK) );
+
+
+
+
+
+
+
+
+
+
+
+
+response.write( PortletKeys.LAYOUTS_ADMIN )+response.write(request.getAttribute(" PortletKeys").LAYOUTS_ADMIN );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+     						String taglibImage = "search";
+     						String taglibMessage = "view-default-page";
+     
+     						if (!layoutTypePortlet.isCustomizedView()) {
+     							taglibMessage = "view-my-customized-page";
+     						}
+     						else if (layoutTypePortlet.isDefaultUpdated()) {
+     							taglibImage = "activate";
+     							taglibMessage = "the-defaults-for-the-current-page-have-been-updated-click-here-to-see-them";
+     						}
+     						
+
+  response.write( true )+response.write(request.getAttribute(" true "));response.write( taglibMessage );
+
+
+ response.write( PortletKeys.LAYOUTS_ADMIN )+response.write(request.getAttribute(" PortletKeys").LAYOUTS_ADMIN );
+
+   response.write(String.getValueOf(themeDisplay().getSiteGroupId()))+response.write(request.getAttribute("String").getValueOf(themeDisplay().getSiteGroupId()));
+
+
+
+    
+     							String taglibURL = "javascript:if (confirm('" + UnicodeLanguageUtil.get(request, "are-you-sure-you-want-to-reset-your-customizations-to-default") + "')){submitForm(document.hrefFm, '" + HttpUtil.encodeURL(resetCustomizationViewURL) + "');}";
+     							
+
+ response.write( true )+response.write(request.getAttribute(" true "));response.write( taglibURL )+response.write(request.getAttribute(" taglibURL "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( String.valueOf(!layoutTypePortlet.isCustomizedView()) )+response.write(request.getAttribute(" String").valueOf(!layoutTypePortlet.isCustomizedView()) );
+      response.write( AuthTokenUtil.getToken(request) )+response.write(request.getAttribute(" AuthTokenUtil").getToken(request) );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( "info-link-container" + (dockbarMessagesHidden ? StringPool.BLANK : " open") );
+}
+
+}

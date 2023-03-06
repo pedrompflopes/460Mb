@@ -1,0 +1,147 @@
+﻿ package PackageNo1576444238;import _html_taglib_init_jsp;import com.liferay.taglib.util.AssetCategoryUtil; public class page_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\page.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\page.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\taglib\ui\asset_categories_selector\page.jsp */
+
+     
+     String randomNamespace = PortalUtil.generateRandomKey(request, "taglib_ui_asset_categories_selector_page") + StringPool.UNDERLINE;
+     
+     String className = (String)request.getAttribute("liferay-ui:asset-categories-selector:className");
+     long classPK = GetterUtil.getLong((String)request.getAttribute("liferay-ui:asset-categories-selector:classPK"));
+     long classTypePK = GetterUtil.getLong((String)request.getAttribute("liferay-ui:asset-categories-selector:classTypePK"));
+     String hiddenInput = (String)request.getAttribute("liferay-ui:asset-categories-selector:hiddenInput");
+     String curCategoryIds = GetterUtil.getString((String)request.getAttribute("liferay-ui:asset-categories-selector:curCategoryIds"), "");
+     String curCategoryNames = StringPool.BLANK;
+     int maxEntries = GetterUtil.getInteger(PropsUtil.get(PropsKeys.ASSET_CATEGORIES_SELECTOR_MAX_ENTRIES));
+     
+     long[] groupIds = PortalUtil.getCurrentAndAncestorSiteGroupIds(scopeGroupId);
+     
+     List<AssetVocabulary> vocabularies = AssetVocabularyServiceUtil.getGroupVocabularies(groupIds);
+     
+     if (Validator.isNotNull(className)) {
+     	vocabularies = AssetUtil.filterVocabularies(vocabularies, className, classTypePK);
+     
+     	long classNameId = PortalUtil.getClassNameId(className);
+     
+     	for (AssetVocabulary vocabulary : vocabularies) {
+     		vocabulary = vocabulary.toEscapedModel();
+     
+     		if (AssetCategoryServiceUtil.getVocabularyCategoriesCount(vocabulary.getGroupId(), vocabulary.getVocabularyId()) == 0) {
+     			continue;
+     		}
+     
+     		if (Validator.isNotNull(className) && (classPK > 0)) {
+     			List<AssetCategory> categories = AssetCategoryServiceUtil.getCategories(className, classPK);
+     
+     			curCategoryIds = ListUtil.toString(categories, AssetCategory.CATEGORY_ID_ACCESSOR);
+     			curCategoryNames = ListUtil.toString(categories, AssetCategory.NAME_ACCESSOR);
+     		}
+     
+     		String curCategoryIdsParam = request.getParameter(hiddenInput + StringPool.UNDERLINE + vocabulary.getVocabularyId());
+     
+     		if (Validator.isNotNull(curCategoryIdsParam)) {
+     			curCategoryIds = curCategoryIdsParam;
+     			curCategoryNames = StringPool.BLANK;
+     		}
+     
+     		String[] categoryIdsTitles = AssetCategoryUtil.getCategoryIdsTitles(curCategoryIds, curCategoryNames, vocabulary.getVocabularyId(), themeDisplay);
+     	
+
+
+      response.write(namespace)+response.write(request.getAttribute("namespace"));response.write(vocabulary.getVocabularyId())+response.write(request.getAttribute("vocabulary").getVocabularyId());
+      response.write( vocabulary.getTitle(locale) )+response.write(request.getAttribute(" vocabulary").getTitle(locale) );
+
+
+
+  
+     					Group vocabularyGroup = GroupLocalServiceUtil.getGroup(vocabulary.getGroupId());
+     					
+
+response.write( vocabularyGroup.getDescriptiveName(locale) )+response.write(request.getAttribute(" vocabularyGroup").getDescriptiveName(locale) );
+
+
+
+
+
+
+
+      response.write(vocabulary.getVocabularyId())+response.write(request.getAttribute("vocabulary").getVocabularyId());
+
+
+
+
+
+
+
+   response.write( className );
+     response.write( namespace + randomNamespace )+response.write(request.getAttribute(" namespace ")+ randomNamespace );response.write( vocabulary.getVocabularyId() )+response.write(request.getAttribute(" vocabulary").getVocabularyId() );
+    response.write( HtmlUtil.escapeJS(categoryIdsTitles[1]) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(categoryIdsTitles[1]) );
+     response.write( categoryIdsTitles[0] )+response.write(request.getAttribute(" categoryIdsTitles[0] "));
+      response.write( namespace + hiddenInput + StringPool.UNDERLINE + vocabulary.getVocabularyId() );
+     response.write( namespace + randomNamespace )+response.write(request.getAttribute(" namespace ")+ randomNamespace );
+    response.write( namespace )+response.write(request.getAttribute(" namespace "));response.write( vocabulary.getVocabularyId() )+response.write(request.getAttribute(" vocabulary").getVocabularyId() );
+   response.write( maxEntries );
+  response.write( UnicodeLanguageUtil.get(request, "load-more-results") );
+    response.write( Validator.isNotNull(className) && (ResourceActionsUtil.isPortalModelResource(className) || className.equals(Group.class.getName())) );
+     response.write( !vocabulary.isMultiValued() )+response.write(request.getAttribute(" !vocabulary").isMultiValued() );
+       response.write( UnicodeLanguageUtil.format(request, "select-x", vocabulary.getTitle(locale), false) );
+    response.write( StringUtil.merge(groupIds) )+response.write(request.getAttribute(" StringUtil").merge(groupIds) );
+       response.write( String.valueOf(vocabulary.getVocabularyId()) )+response.write(request.getAttribute(" String").valueOf(vocabulary.getVocabularyId()) );
+
+
+
+
+      
+     	}
+     }
+     else {
+     	String curCategoryIdsParam = request.getParameter(hiddenInput);
+     
+     	if (curCategoryIdsParam != null) {
+     		curCategoryIds = curCategoryIdsParam;
+     	}
+     
+     	String[] categoryIdsTitles = AssetCategoryUtil.getCategoryIdsTitles(curCategoryIds, curCategoryNames, 0, themeDisplay);
+     
+
+
+
+
+
+
+
+
+  response.write( className );
+    response.write( namespace + randomNamespace )+response.write(request.getAttribute(" namespace ")+ randomNamespace );
+   response.write( HtmlUtil.escapeJS(categoryIdsTitles[1]) )+response.write(request.getAttribute(" HtmlUtil").escapeJS(categoryIdsTitles[1]) );
+    response.write( categoryIdsTitles[0] )+response.write(request.getAttribute(" categoryIdsTitles[0] "));
+     response.write( namespace + hiddenInput );
+    response.write( namespace + randomNamespace )+response.write(request.getAttribute(" namespace ")+ randomNamespace );
+  response.write( maxEntries );
+ response.write( UnicodeLanguageUtil.get(request, "load-more-results") );
+   response.write( Validator.isNotNull(className) && (ResourceActionsUtil.isPortalModelResource(className) || className.equals(Group.class.getName())) );
+   response.write( StringUtil.merge(groupIds) )+response.write(request.getAttribute(" StringUtil").merge(groupIds) );
+      response.write( ListUtil.toString(vocabularies, "vocabularyId") );
+
+
+
+
+     
+     }
+     
+}
+
+}

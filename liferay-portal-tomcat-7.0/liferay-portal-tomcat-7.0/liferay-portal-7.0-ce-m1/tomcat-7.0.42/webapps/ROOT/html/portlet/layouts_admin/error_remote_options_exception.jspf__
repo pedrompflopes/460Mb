@@ -1,0 +1,39 @@
+﻿ package PackageNo1025991420; public class error_remote_options_exception_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       response.write( RemoteOptionsException.class )+response.write(request.getAttribute(" RemoteOptionsException").class );
+
+      
+     	RemoteOptionsException roe = (RemoteOptionsException)errorException;
+     	
+
+
+   response.write( roe.getRemoteAddress() )+response.write(request.getAttribute(" roe").getRemoteAddress() );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+   response.write( roe.getRemoteGroupId() )+response.write(request.getAttribute(" roe").getRemoteGroupId() );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+   response.write( roe.getRemotePathContext() )+response.write(request.getAttribute(" roe").getRemotePathContext() );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+   response.write( roe.getRemotePort() )+response.write(request.getAttribute(" roe").getRemotePort() );response.write( false )+response.write(request.getAttribute(" false "));
+}
+
+}

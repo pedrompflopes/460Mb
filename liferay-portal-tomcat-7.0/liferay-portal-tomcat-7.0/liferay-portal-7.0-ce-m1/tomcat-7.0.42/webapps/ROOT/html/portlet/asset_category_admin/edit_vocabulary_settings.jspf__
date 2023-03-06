@@ -1,0 +1,121 @@
+﻿ package PackageNo286260357; public class edit_vocabulary_settings_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     List<AssetRendererFactory> availableAssetRendererFactories = ListUtil.filter(
+     	AssetRendererFactoryRegistryUtil.getAssetRendererFactories(company.getCompanyId()),
+     	new PredicateFilter<AssetRendererFactory>() {
+     
+     		@Override
+     		public boolean filter(AssetRendererFactory assetRendererFactory) {
+     			return assetRendererFactory.isCategorizable();
+     		}
+     
+     	});
+     
+     List<AssetRendererFactory> classTypedAssetRendererFactories = ListUtil.filter(
+     	availableAssetRendererFactories,
+     	new PredicateFilter<AssetRendererFactory>() {
+     
+     		@Override
+     		public boolean filter(AssetRendererFactory assetRendererFactory) {
+     			return assetRendererFactory.isSupportsClassTypes();
+     		}
+     
+     	});
+     
+     long[] selectedClassNameIds = AssetVocabularySettingsHelper.DEFAULT_SELECTED_CLASSNAME_IDS;
+     long[] selectedClassTypePKs = AssetVocabularySettingsHelper.DEFAULT_SELECTED_CLASSTYPE_PKS;
+     
+     if (vocabulary != null) {
+     	selectedClassNameIds = vocabulary.getSelectedClassNameIds();
+     	selectedClassTypePKs = vocabulary.getSelectedClassTypePKs();
+     }
+     
+
+
+
+ response.write( true )+response.write(request.getAttribute(" true "));response.write( false )+response.write(request.getAttribute(" false "));response.write( true )+response.write(request.getAttribute(" true "));
+
+
+       
+     		List<String> indexes = new ArrayList<String>();
+     
+     		for (int index = 0; index < selectedClassNameIds.length; index++) {
+     			indexes.add(String.valueOf(index));
+     
+     			long classNameId = selectedClassNameIds[index];
+     			long classTypePK = selectedClassTypePKs[index];
+     		
+
+
+
+
+
+
+   
+     						for (AssetRendererFactory assetRendererFactory : availableAssetRendererFactories) {
+     						
+
+
+
+   
+     						}
+     						
+
+
+
+  
+     					for (AssetRendererFactory assetRendererFactory : classTypedAssetRendererFactories) {
+     					
+
+
+
+
+    
+     							ClassTypeReader classTypeReader = assetRendererFactory.getClassTypeReader();
+     
+     							List<ClassType> classTypes = classTypeReader.getAvailableClassTypes(new long[] {themeDisplay.getCompanyGroupId(), scopeGroupId}, themeDisplay.getLocale());
+     
+     							if (classTypes.isEmpty()) {
+     								continue;
+     							}
+     
+     							for (ClassType classType : classTypes) {
+     							
+
+
+
+    
+     							}
+     							
+
+
+
+  
+     					}
+     					
+
+
+
+
+
+       
+     		}
+     		
+}
+
+}

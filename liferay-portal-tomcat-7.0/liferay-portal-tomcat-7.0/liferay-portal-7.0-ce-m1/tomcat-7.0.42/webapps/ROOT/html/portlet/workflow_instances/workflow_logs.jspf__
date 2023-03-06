@@ -1,0 +1,118 @@
+﻿ package PackageNo283802180; public class workflow_logs_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     for (WorkflowLog workflowLog : workflowLogs) {
+     	Role curRole = null;
+     	User curUser = null;
+     	String actorName = null;
+     
+     	if (workflowLog.getRoleId() != 0) {
+     		curRole = RoleLocalServiceUtil.getRole(workflowLog.getRoleId());
+     		actorName = curRole.getDescriptiveName();
+     	}
+     	else if (workflowLog.getUserId() != 0) {
+     		curUser = UserLocalServiceUtil.getUser(workflowLog.getUserId());
+     		actorName = curUser.getFullName();
+     	}
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     response.write( dateFormatDateTime.format(workflowLog.getCreateDate()) )+response.write(request.getAttribute(" dateFormatDateTime").format(workflowLog.getCreateDate()) );
+
+
+
+
+
+      response.write( new Object[] {HtmlUtil.escape(actorName), HtmlUtil.escape(workflowLog.getState())} );       response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+      response.write( HtmlUtil.escape(actorName) );
+
+
+
+
+      response.write( new Object[] {HtmlUtil.escape(actorName), HtmlUtil.escape(workflowLog.getPreviousState()), HtmlUtil.escape(workflowLog.getState())} );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+
+
+response.write( HtmlUtil.escape(curUser.getFullName()) );response.write( curUser.isMale() ? "x-assigned-the-task-to-himself" : "x-assigned-the-task-to-herself" );     response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+
+   
+     						if (curRole == null) {
+     							String assignerName = PortalUtil.getUserName(workflowLog.getAuditUserId(), StringPool.BLANK);
+     						
+
+
+ response.write( new Object[] {HtmlUtil.escape(assignerName), HtmlUtil.escape(actorName)} ); response.write( false )+response.write(request.getAttribute(" false "));
+
+
+  response.write( HtmlUtil.escape(PortalUtil.getUserName(workflowLog.getPreviousUserId(), StringPool.BLANK)) );response.write( false )+response.write(request.getAttribute(" false "));
+
+
+
+   
+     						}
+     						else {
+     						
+
+
+ response.write( HtmlUtil.escape(actorName) );      response.write( false )+response.write(request.getAttribute(" false "));
+
+
+   
+     						}
+     						
+
+
+
+
+
+
+
+     response.write( HtmlUtil.escape(workflowLog.getComment()) );
+
+
+
+     
+     }
+     
+}
+
+}

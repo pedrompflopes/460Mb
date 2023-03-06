@@ -1,0 +1,183 @@
+﻿ package PackageNo1999872486;import _html_portlet_init_jsp;import _html_portlet_control_panel_menu_init_ext_jsp; public class view_jsp {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\view.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\view.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\control_panel_menu\view.jsp */
+
+
+
+
+
+
+
+
+
+
+
+
+  response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));
+
+       
+     		String ppid = GetterUtil.getString((String)request.getAttribute("control_panel.jsp-ppid"), layoutTypePortlet.getStateMaxPortletId());
+     
+     		String portletCategory = null;
+     
+     		if (Validator.isNotNull(ppid)) {
+     			Portlet portlet = PortletLocalServiceUtil.getPortletById(themeDisplay.getCompanyId(), ppid);
+     
+     			portletCategory = portlet.getControlPanelEntryCategory();
+     		}
+     
+     		Map<String, List<Portlet>> siteAdministrationCategoriesMap = PortalUtil.getSiteAdministrationCategoriesMap(request);
+     
+     		for (String siteAdministrationCategory : siteAdministrationCategoriesMap.keySet()) {
+     			String iconCssClass = "icon-file";
+     
+     			String panelPageCategoryId = "panel-manage-" + siteAdministrationCategory;
+     
+     			if (siteAdministrationCategory.equals(PortletCategoryKeys.SITE_ADMINISTRATION_CONFIGURATION)) {
+     				iconCssClass = "icon-hdd";
+     			}
+     			else if (siteAdministrationCategory.equals(PortletCategoryKeys.SITE_ADMINISTRATION_CONTENT)) {
+     				iconCssClass = "icon-file-text";
+     			}
+     			else if (siteAdministrationCategory.equals(PortletCategoryKeys.SITE_ADMINISTRATION_PAGES)) {
+     				iconCssClass = "icon-sitemap";
+     			}
+     			else if (siteAdministrationCategory.equals(PortletCategoryKeys.SITE_ADMINISTRATION_USERS)) {
+     				iconCssClass = "icon-group";
+     			}
+     		
+
+    response.write( true )+response.write(request.getAttribute(" true "));response.write( true )+response.write(request.getAttribute(" true "));response.write( iconCssClass );response.write( panelPageCategoryId );response.write( true )+response.write(request.getAttribute(" true "));response.write( siteAdministrationCategory.equals(portletCategory) ? "open" : "closed" );response.write( LanguageUtil.get(request, "category." + siteAdministrationCategory) );
+
+
+  
+     					List<Layout> scopeLayouts = new ArrayList<Layout>();
+     
+     					Group curSite = themeDisplay.getSiteGroup();
+     
+     					scopeLayouts.addAll(LayoutLocalServiceUtil.getScopeGroupLayouts(curSite.getGroupId(), false));
+     					scopeLayouts.addAll(LayoutLocalServiceUtil.getScopeGroupLayouts(curSite.getGroupId(), true));
+     
+     					String scopeLabel = null;
+     
+     					Group curScopeGroup = themeDisplay.getScopeGroup();
+     
+     					if (curScopeGroup.isLayout()) {
+     						Layout scopeLayout = LayoutLocalServiceUtil.getLayout(curScopeGroup.getClassPK());
+     
+     						scopeLabel = StringUtil.shorten(scopeLayout.getName(locale), 20);
+     					}
+     					else {
+     						scopeLabel = LanguageUtil.get(request, "default");
+     					}
+     					
+
+
+
+
+ response.write( scopeLabel );
+
+ response.write( curSite.getIconCssClass() );
+
+response.write( HttpUtil.setParameter(PortalUtil.getCurrentURL(request), "doAsGroupId", curSite.getGroupId()) );
+
+
+     
+     								for (Layout curScopeLayout : scopeLayouts) {
+     									Group scopeGroup = curScopeLayout.getScopeGroup();
+     								
+
+
+  response.write( scopeGroup.getIconCssClass() )+response.write(request.getAttribute(" scopeGroup").getIconCssClass() );
+     response.write( HtmlUtil.escape(curScopeLayout.getName(locale)) )+response.write(request.getAttribute(" HtmlUtil").escape(curScopeLayout.getName(locale)) );
+ response.write( HttpUtil.setParameter(PortalUtil.getCurrentURL(request), "doAsGroupId", scopeGroup.getGroupId()) );
+
+
+     
+     								}
+     								
+
+
+
+
+
+
+       response.write(panelPageCategoryId);
+
+  
+     					List<Portlet> portlets = siteAdministrationCategoriesMap.get(siteAdministrationCategory);
+     
+     					for (Portlet portlet : portlets) {
+     						String portletId = portlet.getPortletId();
+     
+     						String portletTitle = PortalUtil.getPortletTitle(portletId, themeDisplay.getLocale());
+     					
+
+   response.write( ppid.equals(portletId) ? "selected-portlet" : "" );   response.write( HtmlUtil.escape(LanguageUtil.get(request, "category." + siteAdministrationCategory) + "-" + portletTitle) );
+
+       response.write( themeDisplay.getScopeGroupId() )+response.write(request.getAttribute(" themeDisplay").getScopeGroupId() );
+       response.write( portlet.getRootPortletId() );
+
+       response.write( WindowState.MAXIMIZED.toString() )+response.write(request.getAttribute(" WindowState").MAXIMIZED.toString() );
+
+
+
+
+      response.write( "portlet_" + portletId );
+ response.write( true )+response.write(request.getAttribute(" true "));
+   response.write( portlet );
+       response.write( portletURL )+response.write(request.getAttribute(" portletURL "));
+
+
+
+
+
+    
+     							String portletClassName = portlet.getPortletClass();
+     							
+
+    
+     							if (portletClassName.equals("com.liferay.alloy.mvc.AlloyPortlet")) {
+     								PortletConfig alloyPortletConfig = PortletConfigFactoryUtil.create(portlet, application);
+     
+     								PortletContext alloyPortletContext = alloyPortletConfig.getPortletContext();
+     
+     								if (alloyPortletContext.getAttribute("com.liferay.alloy.mvc.BaseAlloyControllerImpl#TOUCH#" + portlet.getRootPortletId()) != Boolean.FALSE) {
+     							
+
+   response.write(portletURL)+response.write(request.getAttribute("portletURL"));
+
+    
+     								}
+     							}
+     							
+
+
+
+  
+     					}
+     					
+
+
+
+
+       
+     		}
+     		
+}
+
+}

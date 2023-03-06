@@ -1,0 +1,40 @@
+﻿ package PackageNo1457057157; public class move_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     	PortletURL moveURL = liferayPortletResponse.createRenderURL();
+     
+     	if (fileShortcut != null) {
+     		moveURL.setParameter("struts_action", "/document_library/move_entry");
+     		moveURL.setParameter("fileShortcutIds", String.valueOf(fileShortcut.getFileShortcutId()));
+     	}
+     	else {
+     		moveURL.setParameter("struts_action", "/document_library/move_entry");
+     		moveURL.setParameter("fileEntryIds", String.valueOf(fileEntry.getFileEntryId()));
+     	}
+     
+     	moveURL.setParameter("redirect", viewFolderURL.toString());
+     	
+
+
+
+
+ response.write( moveURL.toString() )+response.write(request.getAttribute(" moveURL").toString() );
+}
+
+}

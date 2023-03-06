@@ -1,0 +1,67 @@
+﻿ package PackageNo1165371378; public class control_panel_nav_main_jspf {  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     List<Portlet> portlets = PortalUtil.getControlPanelPortlets(controlPanelCategory, themeDisplay);
+     
+     if (portlets.size() > 1) {
+     
+
+
+
+
+
+     			for (Portlet curPortlet : portlets) {
+     				String curPortletId = curPortlet.getPortletId();
+     
+     				String urlControlPanelSitesPortlet = HttpUtil.setParameter(themeDisplay.getURLControlPanel(), "p_p_id", curPortletId);
+     
+     				urlControlPanelSitesPortlet = HttpUtil.setParameter(urlControlPanelSitesPortlet, "controlPanelCategory", controlPanelCategory);
+     
+     				boolean selected = curPortletId.equals(ppid);
+     
+     				String portletControlPanelEntryCategory = portlet.getControlPanelEntryCategory();
+     
+     				if (portletControlPanelEntryCategory.startsWith(PortletCategoryKeys.SITE_ADMINISTRATION)) {
+     					Group siteGroup = themeDisplay.getSiteGroup();
+     
+     					if (siteGroup.isLayoutPrototype() && curPortletId.equals(PortletKeys.LAYOUT_PROTOTYPE)) {
+     						selected = true;
+     					}
+     					else if (siteGroup.isLayoutSetPrototype() && curPortletId.equals(PortletKeys.LAYOUT_SET_PROTOTYPE)) {
+     						selected = true;
+     					}
+     					else if (siteGroup.isSite() && curPortletId.equals(PortletKeys.SITES_ADMIN)) {
+     						selected = true;
+     					}
+     				}
+     			
+
+      response.write( "controlPanelSubNav" + curPortletId + "Link" );response.write( urlControlPanelSitesPortlet );response.write( PortalUtil.getPortletTitle(curPortlet, application, locale) )+response.write(request.getAttribute(" PortalUtil").getPortletTitle(curPortlet, application, locale) );response.write( selected );
+
+
+     			}
+     			
+
+
+
+
+     
+     }
+     
+}
+
+}

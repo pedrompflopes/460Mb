@@ -1,0 +1,185 @@
+﻿ package PackageNo2037731523;import _html_portlet_init_jsp;import _html_portlet_plugins_admin_init_ext_jsp;import com.liferay.portal.util.comparator.RoleRoleIdComparator; public class edit_plugin_jsp {  /* 1 */ private List<Role> _filterRoles(List<Role> roles, String portletId, String actionId) throws Exception { /* 210 */ 	List<Role> filteredRoles = new ArrayList<Role>(0); /* 211 */ 	for (Role role : roles) { /* 213 */ 		if ((role.getType() == RoleConstants.TYPE_REGULAR) && _hasPermission(role, actionId, portletId, ResourceConstants.SCOPE_COMPANY) || _hasPermission(role, actionId, portletId, ResourceConstants.SCOPE_GROUP)) { /* 214 */ 			filteredRoles.add(role); /* 215 */ 		} /* 216 */ 		else if (_hasPermission(role, actionId, portletId, ResourceConstants.SCOPE_GROUP_TEMPLATE)) { /* 217 */ 			filteredRoles.add(role); /* 218 */ 		} /* 219 */ 	} /* 220 */ 	return filteredRoles; /* 222 */ } /* 223 */ private boolean _hasPermission(Role role, String actionId, String resourceName, Integer scope) throws Exception { /* 225 */ 	return ResourcePermissionLocalServiceUtil.hasScopeResourcePermission(role.getCompanyId(), resourceName, scope, role.getRoleId(), actionId); /* 226 */ } /* 227 */  public void Checkmarx_Class_Init(HttpServletRequest request, HttpServletResponse response, HttpSession session, ServletContext application, PageContext pageContext) {jspInit();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\edit_plugin.jsp */ /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\edit_plugin.jsp */ /* 1?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 2?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 3?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 4?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 5?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 6?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 7?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 8?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 9?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 10?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 11?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 12?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 13?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 14?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 15?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 16?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 17?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 18?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 19?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 20?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ /* 21?inc?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\init.jsp */ response.write(CxResponseWrite)+response.write(request.getAttribute("CxResponseWrite")); /* 17?c:\cxsrc\_LANGUAGES_\Java\500_1m\liferay-portal-tomcat-7.0\liferay-portal-7.0-ce-m1\tomcat-7.0.42\webapps\ROOT\html\portlet\plugins_admin\edit_plugin.jsp */
+
+     
+     String redirect = ParamUtil.getString(request, "redirect");
+     
+     String moduleId = ParamUtil.getString(request, "moduleId");
+     String pluginId = ParamUtil.getString(request, "pluginId");
+     String pluginType = ParamUtil.getString(request, "pluginType");
+     String title = ParamUtil.getString(request, "title", pluginType);
+     
+     PluginSetting pluginSetting = PluginSettingLocalServiceUtil.getPluginSetting(company.getCompanyId(), pluginId, pluginType);
+     
+     boolean active = pluginSetting.isActive();
+     String[] rolesArray = pluginSetting.getRolesArray();
+     
+     Portlet portlet = null;
+     
+     if (pluginType.equals(Plugin.TYPE_PORTLET)) {
+     	String portletId = pluginId;
+     
+     	portlet = PortletLocalServiceUtil.getPortletById(company.getCompanyId(), portletId);
+     
+     	active = portlet.isActive();
+     	rolesArray = portlet.getRolesArray();
+     }
+     
+
+
+
+
+
+
+
+
+
+
+
+     response.write( redirect )+response.write(request.getAttribute(" redirect "));
+   response.write( false )+response.write(request.getAttribute(" false "));
+   response.write( title );
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+     					List curActions = ResourceActionsUtil.getResourceActions(portlet.getPortletId(), null);
+     
+     					int maxNumberOfRolesChecked = 500;
+     
+     					List<Role> roles = RoleLocalServiceUtil.search(company.getCompanyId(), null, null, (Integer[])null, 0, maxNumberOfRolesChecked, new RoleRoleIdComparator(true));
+     					int rolesCount = RoleLocalServiceUtil.searchCount(company.getCompanyId(), null, null, (Integer[])null);
+     
+     					List<Role> addToPageRoles = null;
+     					List<Role> accessInControlPanelRoles = null;
+     
+     					if (curActions.contains(ActionKeys.ADD_TO_PAGE)) {
+     						addToPageRoles = _filterRoles(roles, portlet.getPortletId(), ActionKeys.ADD_TO_PAGE);
+     					}
+     					else {
+     						addToPageRoles = new ArrayList<Role>();
+     					}
+     
+     					if (curActions.contains(ActionKeys.ACCESS_IN_CONTROL_PANEL)) {
+     						accessInControlPanelRoles = _filterRoles(roles, portlet.getPortletId(), ActionKeys.ACCESS_IN_CONTROL_PANEL);
+     					}
+     					else {
+     						accessInControlPanelRoles = new ArrayList<Role>();
+     					}
+     					
+
+
+
+ response.write( LanguageUtil.format(request, "the-portal-has-more-roles-than-the-maximum-that-can-be-checked-x", maxNumberOfRolesChecked, false) );
+
+
+
+
+
+
+
+
+
+    response.write( addToPageRoles )+response.write(request.getAttribute(" addToPageRoles "));
+
+
+
+
+
+
+
+
+
+
+
+
+   response.write( RolesAdminUtil.getIconCssClass(role) );
+    response.write( true )+response.write(request.getAttribute(" true "));
+      response.write( HtmlUtil.escape(role.getTitle(locale)) );
+
+
+
+
+
+
+    response.write( PortletKeys.ROLES_ADMIN )+response.write(request.getAttribute(" PortletKeys").ROLES_ADMIN );
+
+
+
+      response.write(String.getValueOf(role().getRoleId()));
+      response.write(portlet.getPortletId());
+
+
+     response.write( true )+response.write(request.getAttribute(" true "));response.write( editURL )+response.write(request.getAttribute(" editURL "));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    response.write( accessInControlPanelRoles )+response.write(request.getAttribute(" accessInControlPanelRoles "));
+
+
+
+
+
+
+
+
+
+
+
+   response.write( RolesAdminUtil.getIconCssClass(role) );
+    response.write( true )+response.write(request.getAttribute(" true "));
+      response.write( HtmlUtil.escape(role.getTitle(locale)) );
+
+
+
+
+
+
+    response.write( PortletKeys.ROLES_ADMIN )+response.write(request.getAttribute(" PortletKeys").ROLES_ADMIN );
+
+
+
+      response.write(String.getValueOf(role().getRoleId()));
+      response.write(portlet.getPortletId());
+
+
+     response.write( true )+response.write(request.getAttribute(" true "));response.write( editURL )+response.write(request.getAttribute(" editURL "));
+}
+
+}
