@@ -9,7 +9,7 @@ jobs:
   - task: PowerShell@2
     inputs:
       targetType: 'inline'
-      script: './cx.exe --help'
+      script: './cx.exe scan create -s . --project-name myadotest --branch main --apikey ${env:VARIABLE-NAME} '
 
   # - task: Checkmarx AST@2
   #   inputs:
