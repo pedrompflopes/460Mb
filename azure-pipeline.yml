@@ -7,10 +7,15 @@ jobs:
     vmImage: 'windows-latest'
     vmSize: 'Standard_D4s_v3'
   steps:
-  - task: Checkmarx AST@2
-    inputs:
-      CheckmarxService: 'EU PROD21'
-      projectName: '$(Build.Repository.Name)'
-      branchName: '$(Build.SourceBranchName)'
-      tenantName: 'cxast_rnd_projects_scans'
-      additionalParams: '--debug'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: './cx.exe --help'
+
+  # - task: Checkmarx AST@2
+  #   inputs:
+  #     CheckmarxService: 'EU PROD21'
+  #     projectName: '$(Build.Repository.Name)'
+  #     branchName: '$(Build.SourceBranchName)'
+  #     tenantName: 'cxast_rnd_projects_scans'
+  #     additionalParams: '--debug'
