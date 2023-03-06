@@ -7,6 +7,8 @@ jobs:
     vmImage: 'windows-latest'
   steps:
   - task: PowerShell@2
+    env:
+      CX_APIKEY: $(CX_APIKEY)
     inputs:
       targetType: 'inline'
       script: './cx.exe scan create -s . --project-name myadotest --branch main --debug'
