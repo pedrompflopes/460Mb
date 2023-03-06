@@ -14,3 +14,4 @@ steps:
     branchName: '$(Build.SourceBranchName)'
     tenantName: 'cxast_rnd_projects_scans'
     additionalParams: '--debug'
+  container: mycontainer
