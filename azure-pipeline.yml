@@ -1,0 +1,15 @@
+pool:
+  name: Azure Pipelines
+
+resources:
+  containers:
+    - container: mycontainer
+      image: windows-2019
+      memory: 4096 # Set memory limit to 4 GB
+steps:
+ - task: checkmarx.checkmarx-ast-azure-plugin.cx-scan-task.Checkmarx AST@2
+  displayName: 'Checkmarx AST'
+  inputs:
+    CheckmarxService: 'EU PROD21'
+    tenantName: 'cxast_rnd_projects_scans'
+    additionalParams: '--debug'
